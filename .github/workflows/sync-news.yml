@@ -1,0 +1,36 @@
+name: Sincronizar Concursos & Atualizar Firebase Hosting
+
+on:
+  schedule:
+    # Executa a cada 6 horas (00:00, 06:00, 12:00 e 18:00 no Horário de Brasília / UTC-3)
+    - cron: '0 3,9,15,21 * * *'
+  workflow_dispatch: # Permite acionar manualmente a qualquer momento pelo painel do GitHub
+
+jobs:
+  sync_and_deploy:
+    name: Sincronizar RSS e Deploy Hosting
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 3. Instalar Dependências
+        run: npm ci || npm install
+
+      - name: 4. Ingerir RSS do Google News e Normalizar Notícias (72h)
+        run: npm run sync-news
+
+      - name: 5. Deploy no Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MEU_CICLO_450C9 }}'
+          channelId: live
+          projectId: meu-ciclo-450c9

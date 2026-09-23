@@ -1,0 +1,808 @@
+{
+  "sucesso": true,
+  "total": 100,
+  "fromCache": false,
+  "cachedAt": "2026-09-23T18:36:47.755Z",
+  "dados": [
+    {
+      "id": "CBMiggFBVV95cUxPUkJ4b1pIVnZEOFhIX0xYRTJtT2c0bXZIWWd2b00xazJtZXQtUUpiTW9DSE9pM2RMay0zVWtFSFZHUVlFd3Z5UWY3bWFIc21xdHh0TElMeWg5LWwtemJSTTNNdTF2UVM2cVRKQl9IVFhrYTBxdERGczNrSk8wd003Y0F3",
+      "titulo": "Concurso Guarda de São Gonçalo RJ abre 600 vagas de nível médio",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUkJ4b1pIVnZEOFhIX0xYRTJtT2c0bXZIWWd2b00xazJtZXQtUUpiTW9DSE9pM2RMay0zVWtFSFZHUVlFd3Z5UWY3bWFIc21xdHh0TElMeWg5LWwtemJSTTNNdTF2UVM2cVRKQl9IVFhrYTBxdERGczNrSk8wd003Y0F3?oc=5",
+      "dataPublicacao": "2026-09-23T17:30:11.000Z",
+      "categoriaInferida": "Inscrições Abertas"
+    },
+    {
+      "id": "CBMiqgFBVV95cUxOeXpYaFBzNVlNZi1TNXdOcXg1a0pEOFFsNmxNckp1SXppLTFITVhKVllCd1NXX3JMVzRrZFRLQV83VUF0dlRTVjFYTndHUk1BV2U1b1VISVBnMC0wOTl5S2VPcU5FTjdJNXliWUVwczQtSlA3cnpRT095VXkyNklzTVl6b0JHN0JrdVcxeHRGQzV6WlhYeXVWUkluMkFHaWxudUl3bnZ0SzNqQQ",
+      "titulo": "São Carlos abre concurso com 45 vagas e salários de até R$ 9,8 mil",
+      "fonte": "Jornal Primeira Página",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeXpYaFBzNVlNZi1TNXdOcXg1a0pEOFFsNmxNckp1SXppLTFITVhKVllCd1NXX3JMVzRrZFRLQV83VUF0dlRTVjFYTndHUk1BV2U1b1VISVBnMC0wOTl5S2VPcU5FTjdJNXliWUVwczQtSlA3cnpRT095VXkyNklzTVl6b0JHN0JrdVcxeHRGQzV6WlhYeXVWUkluMkFHaWxudUl3bnZ0SzNqQQ?oc=5",
+      "dataPublicacao": "2026-09-23T16:17:40.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMikgFBVV95cUxNLTZuUzE2OGk2RENrd2h6b2FpUkkyeXJzLVhaV19VeG5PaTZpSXctU0JkRWk4WDdHQkxlWjk1WVpTa29xLThxU25iU3dpU2NhOVY3NTZNY3VOMk5tWjJKNldOV2RYYnlmR052eEpfM1J3Yk5ydmxXR0lQcHZGRjRSdTNEdGJHZUhQU3hocU0wVUd4Zw",
+      "titulo": "Concurso SP Águas: FGV é a banca; edital iminente com 190 vagas",
+      "fonte": "Direção Concursos",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNLTZuUzE2OGk2RENrd2h6b2FpUkkyeXJzLVhaV19VeG5PaTZpSXctU0JkRWk4WDdHQkxlWjk1WVpTa29xLThxU25iU3dpU2NhOVY3NTZNY3VOMk5tWjJKNldOV2RYYnlmR052eEpfM1J3Yk5ydmxXR0lQcHZGRjRSdTNEdGJHZUhQU3hocU0wVUd4Zw?oc=5",
+      "dataPublicacao": "2026-09-23T16:07:00.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMiuAFBVV95cUxOWmg0amlNOUZPdjU3TUtlS0JNRWF4R0JMZjJ3emh1Nm5fb1R3Z3VRNVNhdDdnVEhRR2xIcE5Ua0VqOVJsZUtRTk5MWUdCdlF5N0xJZ2RHSmNzNjNya2pPUi1xMGVRWlBQbjBLcW5YT3Z1T2xUQWs5UzJrR1I4bWVJRl9Ca04xYTUxY0E2dFN3amxhTjBHUjNZODRGdTZGNFRpVXZQZFl2QWlyakZkLUl5SHBIRThWSElG",
+      "titulo": "Marinha do Brasil abre concurso para Serviço Militar Voluntário com vagas em 5 estados",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWmg0amlNOUZPdjU3TUtlS0JNRWF4R0JMZjJ3emh1Nm5fb1R3Z3VRNVNhdDdnVEhRR2xIcE5Ua0VqOVJsZUtRTk5MWUdCdlF5N0xJZ2RHSmNzNjNya2pPUi1xMGVRWlBQbjBLcW5YT3Z1T2xUQWs5UzJrR1I4bWVJRl9Ca04xYTUxY0E2dFN3amxhTjBHUjNZODRGdTZGNFRpVXZQZFl2QWlyakZkLUl5SHBIRThWSElG?oc=5",
+      "dataPublicacao": "2026-09-23T15:33:38.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiakFVX3lxTE9mdmRIRXhRbHVzNUstOXJSc1BDcGo1blp6WlNlQXAyTFpLd2U2OXZBYzdhZ3RBa0hyWGZJV1RpWkRhMHNxQ19sVndadDJTUS0zNjFreXdrMWg2VWU3N1JXMzdCWTBrcnhnaWc",
+      "titulo": "Concurso Cremerj abre inscrições. Acesse edital verticalizado",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9mdmRIRXhRbHVzNUstOXJSc1BDcGo1blp6WlNlQXAyTFpLd2U2OXZBYzdhZ3RBa0hyWGZJV1RpWkRhMHNxQ19sVndadDJTUS0zNjFreXdrMWg2VWU3N1JXMzdCWTBrcnhnaWc?oc=5",
+      "dataPublicacao": "2026-09-23T15:04:45.000Z",
+      "categoriaInferida": "Inscrições Abertas"
+    },
+    {
+      "id": "CBMicEFVX3lxTE5ITTZjQXFWbjRYRmt5SHFGTWVYZE9rQzVmUlUxc0toYTAtRlhMTlhINHkyNlEtazNQRll0Y2ZIbUMwTVdDV2dxR0tpZVl1WXBObVgzck1kdWpoeHVJM29LR2pUN3FGbk0zWnRJN2p1LU7SAXZBVV95cUxPMVRyeHhDWEp6czVRdjBOR19oNnRaMlZydjVsV2dUYTJCRG5BRjI0dmw3dGxJb2d3ZXU5M185UUxEbEQ0bFpaazNXSHRfS0R4QVRiNnlMNy04QWVaYVZUcHVmUDRVQXp4Sl9PMTcxdWZ2VVF5cXZ3",
+      "titulo": "E-Books Estratégia: Materiais gratuitos para sua preparação!",
+      "fonte": "Estratégia Concursos",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ITTZjQXFWbjRYRmt5SHFGTWVYZE9rQzVmUlUxc0toYTAtRlhMTlhINHkyNlEtazNQRll0Y2ZIbUMwTVdDV2dxR0tpZVl1WXBObVgzck1kdWpoeHVJM29LR2pUN3FGbk0zWnRJN2p1LU7SAXZBVV95cUxPMVRyeHhDWEp6czVRdjBOR19oNnRaMlZydjVsV2dUYTJCRG5BRjI0dmw3dGxJb2d3ZXU5M185UUxEbEQ0bFpaazNXSHRfS0R4QVRiNnlMNy04QWVaYVZUcHVmUDRVQXp4Sl9PMTcxdWZ2VVF5cXZ3?oc=5",
+      "dataPublicacao": "2026-09-23T15:01:16.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMi4AFBVV95cUxObDJsSlgycTBjV1RfTUxyLWg4cFZScVp1T3lVR0JyQlR2S2xUUEpCWTcyLXV2V0xRNFdEVzhsLU1tN2tWLW1ENUVjUlhpclBMSmNwODBPTGEza2lINWRmX2xhb3NyaHE4QmRQR2Yzb0JKNVlXUklaX0hTU1RqVEFPQ3REbUluRjBBTDYwem5mX0ZCV1FWcTBWc2ZZT0JCM1lEeEtzN1gwNFA0YW9Zc19IdHpLOHVuMWVuOTBrZkJaQ0Q0OTc1ZUozbVpNY1R2cklSbHJ4MWtHV0JBa2lWdDlkbw",
+      "titulo": "Câmara dos Deputados estabelece novas regras de cotas para concurso",
+      "fonte": "Correio Braziliense",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObDJsSlgycTBjV1RfTUxyLWg4cFZScVp1T3lVR0JyQlR2S2xUUEpCWTcyLXV2V0xRNFdEVzhsLU1tN2tWLW1ENUVjUlhpclBMSmNwODBPTGEza2lINWRmX2xhb3NyaHE4QmRQR2Yzb0JKNVlXUklaX0hTU1RqVEFPQ3REbUluRjBBTDYwem5mX0ZCV1FWcTBWc2ZZT0JCM1lEeEtzN1gwNFA0YW9Zc19IdHpLOHVuMWVuOTBrZkJaQ0Q0OTc1ZUozbVpNY1R2cklSbHJ4MWtHV0JBa2lWdDlkbw?oc=5",
+      "dataPublicacao": "2026-09-23T14:34:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiugFBVV95cUxPalZpdF9xTC1tSHl3c1ZXRlJsQ2FtVjZTX2V6N19nd3ZyX0oxNXVlMDFDQ1FUNUtINlJOcHRNQkVxT1phS0drdzIxb2hrYzlxUnhieV9EOVV3NjhMeXJyOWs5ODc2WjViSmNQVnlTRHJMcDljX1FzVUt6Q0JTclphZ2JRZmhibHBiWDFTanFQRDZpU0dGX2VQbmlWV0ZTV2I0ZEkxQ2Jwem5TSy1ySDZValJCWDMtQzVxWnc",
+      "titulo": "Concurso PMERJ: Fundação Cesgranrio é confirmada como banca para novo edital de Oficiais",
+      "fonte": "Ceisc",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPalZpdF9xTC1tSHl3c1ZXRlJsQ2FtVjZTX2V6N19nd3ZyX0oxNXVlMDFDQ1FUNUtINlJOcHRNQkVxT1phS0drdzIxb2hrYzlxUnhieV9EOVV3NjhMeXJyOWs5ODc2WjViSmNQVnlTRHJMcDljX1FzVUt6Q0JTclphZ2JRZmhibHBiWDFTanFQRDZpU0dGX2VQbmlWV0ZTV2I0ZEkxQ2Jwem5TSy1ySDZValJCWDMtQzVxWnc?oc=5",
+      "dataPublicacao": "2026-09-23T14:25:37.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMia0FVX3lxTFByRFlpQnZDZHZ4MkMxX2dtNWl6T0ZsMFRLdUdBUkdWMEFjdlNabEg0VmdEUHgzQ3B2eVYyTmp2SnhMNEhwMDMtbk9hU2QtelVUNjdjR3czOWJKZnJxZDRKUVdWM3d5eWs1YVdj",
+      "titulo": "Concurso SP Águas tem banca contratada e edital já pode sair",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFByRFlpQnZDZHZ4MkMxX2dtNWl6T0ZsMFRLdUdBUkdWMEFjdlNabEg0VmdEUHgzQ3B2eVYyTmp2SnhMNEhwMDMtbk9hU2QtelVUNjdjR3czOWJKZnJxZDRKUVdWM3d5eWs1YVdj?oc=5",
+      "dataPublicacao": "2026-09-23T14:14:30.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMickFVX3lxTE9mX0xXNkFXWF9kbjFhQVliVmx4UGFlRWdHcmNCaDU5VVNTVGRydm14QU80Ync3OUNqNEViX0VXcWU4czlrR0Rlc1J4SlEwUVFDZDJ5UmVGdDhYNDVsUldBQlZha1FmclJCLW1kWXBrMU42QQ",
+      "titulo": "Concurso Iprem SP: prefeito autoriza novo edital para analista",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9mX0xXNkFXWF9kbjFhQVliVmx4UGFlRWdHcmNCaDU5VVNTVGRydm14QU80Ync3OUNqNEViX0VXcWU4czlrR0Rlc1J4SlEwUVFDZDJ5UmVGdDhYNDVsUldBQlZha1FmclJCLW1kWXBrMU42QQ?oc=5",
+      "dataPublicacao": "2026-09-23T14:11:53.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMizAFBVV95cUxPdVhXMDF1TkdzdlJNVUt0UFNyZEZDWENJQnBqbVNUbG43dUlkakNJWUYtNWtXT2pWRjRqYmxNTXZIY2hBd0lzX29DRUpyamlYWUpOdnF0TnFBc3pjaHZnQTVfdFFSREdTUDE1UlZCUUgyTFJLZG9KQ0ctb0ZWeUlMRVJmcmQ4LUJsSDF1TDZSdjBqaDVXeWV2Q0dZeXV0eVhtZ2YyejVlTnExX3JCSldPMXk5QUZnemQ5X0FNSEN6clNqXzFZVWE2QVlJTkrSAdIBQVVfeXFMTldYN0pqU2hyT1BtdnE5Y1F3cW1ON3NGeW9LRVFyQV9mLWFwSFdDNXNsQzMtSGlhRldWSWM0NnZxRXJKR0tieThVcnBMSElXRDN1TG4yNHBXQ3VhWkNrUE9rVnhXUzBBNHZ5dG9hY28zSmlsRTZJcVlYNmJTbTNIVHNpcUZSQ0V1Z2M1N2ExcUVGaVpsN05XQXpTSVpuZWxVWnFlOXZCWWFXdHRUOFN2S3ZNckk5UzNpV2hsYk9WRVdRRl96Sk91dzVQbTZaZDA3ZW93",
+      "titulo": "Concurso UFC: edital publicado com 61 vagas para Professor do Magistério Superior",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdVhXMDF1TkdzdlJNVUt0UFNyZEZDWENJQnBqbVNUbG43dUlkakNJWUYtNWtXT2pWRjRqYmxNTXZIY2hBd0lzX29DRUpyamlYWUpOdnF0TnFBc3pjaHZnQTVfdFFSREdTUDE1UlZCUUgyTFJLZG9KQ0ctb0ZWeUlMRVJmcmQ4LUJsSDF1TDZSdjBqaDVXeWV2Q0dZeXV0eVhtZ2YyejVlTnExX3JCSldPMXk5QUZnemQ5X0FNSEN6clNqXzFZVWE2QVlJTkrSAdIBQVVfeXFMTldYN0pqU2hyT1BtdnE5Y1F3cW1ON3NGeW9LRVFyQV9mLWFwSFdDNXNsQzMtSGlhRldWSWM0NnZxRXJKR0tieThVcnBMSElXRDN1TG4yNHBXQ3VhWkNrUE9rVnhXUzBBNHZ5dG9hY28zSmlsRTZJcVlYNmJTbTNIVHNpcUZSQ0V1Z2M1N2ExcUVGaVpsN05XQXpTSVpuZWxVWnFlOXZCWWFXdHRUOFN2S3ZNckk5UzNpV2hsYk9WRVdRRl96Sk91dzVQbTZaZDA3ZW93?oc=5",
+      "dataPublicacao": "2026-09-23T13:54:22.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMixgFBVV95cUxQX2hSZVVFNVpuNTZTY0FHcXdjSmpyb2RZTWlUbnVkY3JtUkpyV0ZwUmxSVThQdmwza0RTY0MwUWNDclJfcUhiOUVwaXZ4NWhnTC1uckx6MFdMYW0xVk9xWl9kS09EcTRHZEktcTBDRkU0ckl1OVRxT1pWT1lYV0dodmFnS1JKanEtVnZYaEM4ZFE1VHlIb2E1TnhXTUJhUHhkSnVaN2dRaDVMQjhJbDE2MjBUVno2dDRsZXY3eTJvZmxpLVllb2c",
+      "titulo": "Concurso TRT-8: movimentação revela ajustes antes da publicação de novo edital",
+      "fonte": "Ceisc",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX2hSZVVFNVpuNTZTY0FHcXdjSmpyb2RZTWlUbnVkY3JtUkpyV0ZwUmxSVThQdmwza0RTY0MwUWNDclJfcUhiOUVwaXZ4NWhnTC1uckx6MFdMYW0xVk9xWl9kS09EcTRHZEktcTBDRkU0ckl1OVRxT1pWT1lYV0dodmFnS1JKanEtVnZYaEM4ZFE1VHlIb2E1TnhXTUJhUHhkSnVaN2dRaDVMQjhJbDE2MjBUVno2dDRsZXY3eTJvZmxpLVllb2c?oc=5",
+      "dataPublicacao": "2026-09-23T13:25:34.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMigAFBVV95cUxNNGQyOEk4ZGVHQXpQeXhpNnBXeXRnU1ZDcDJZQldHQjA0SG9tZnJOUTRfbVhpWmdOdTBjR09feGROa19qaGFkNm9MdmFIclFWcHA0THN6RUlvTUNDcmhrVmh2TnNDMVNCSGZGQWZWX0JXYXIwb3FUbmhNWUtoM09kVNIBhgFBVV95cUxQOGRCd2pLcXQ4U2VhVHRZcVZBb0tOZXJwaC1BZEwxT2FQZUNIUHZVOHpnZWZZbFJHMDA0YkRmR3BGQllsdUlPU3A2SXVVRWdPVW13ZVZSUy05Uk1PRWpNZG1TUllmV3E1cjVLV29FbUhqZnByaTRBU0RFR1lIQ1RHMHZockNpZw",
+      "titulo": "Concurso SEDF: escolha da banca iniciada; edital dezembro",
+      "fonte": "Estratégia Concursos",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNGQyOEk4ZGVHQXpQeXhpNnBXeXRnU1ZDcDJZQldHQjA0SG9tZnJOUTRfbVhpWmdOdTBjR09feGROa19qaGFkNm9MdmFIclFWcHA0THN6RUlvTUNDcmhrVmh2TnNDMVNCSGZGQWZWX0JXYXIwb3FUbmhNWUtoM09kVNIBhgFBVV95cUxQOGRCd2pLcXQ4U2VhVHRZcVZBb0tOZXJwaC1BZEwxT2FQZUNIUHZVOHpnZWZZbFJHMDA0YkRmR3BGQllsdUlPU3A2SXVVRWdPVW13ZVZSUy05Uk1PRWpNZG1TUllmV3E1cjVLV29FbUhqZnByaTRBU0RFR1lIQ1RHMHZockNpZw?oc=5",
+      "dataPublicacao": "2026-09-23T13:16:00.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMinAFBVV95cUxPRS1LX2ljVVRhdkRXZFJNNkpuaGl0T2dEMjQ3RkZsclpoaUhIcm5WYUs4bmFfUHRGM21faEI3Z2VrbmhpeldyQjJvU1BYcWcydEJhRzBhSXNDS0hIU2xTVDlJR0NJMFBwWF9WaUNheHBFUkNvYmFtbHVJZWxQMWJQSUY0WklGYzI2SWFaQVY2SDNsSFB5OXk5eXdUUGo",
+      "titulo": "Prefeitura de Maravilha SC publica edital de concurso com 9 vagas",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRS1LX2ljVVRhdkRXZFJNNkpuaGl0T2dEMjQ3RkZsclpoaUhIcm5WYUs4bmFfUHRGM21faEI3Z2VrbmhpeldyQjJvU1BYcWcydEJhRzBhSXNDS0hIU2xTVDlJR0NJMFBwWF9WaUNheHBFUkNvYmFtbHVJZWxQMWJQSUY0WklGYzI2SWFaQVY2SDNsSFB5OXk5eXdUUGo?oc=5",
+      "dataPublicacao": "2026-09-23T13:14:46.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMi4gFBVV95cUxQZnRoRVV0Y2Ftc29SVVY5ZDdkS0k3Z29zUGxqWjJaSXhNQU42S0h1aU5BYkJKbXJla200NmdjMGU3R09CY00tR0xhVC1IeF9CWFdaMHVVdVhXTUJmU1ZUUmFOeU9WX1FrQUlGdEZ5a2hsYzhTS3YwZGI2YXI3cjJsWTFuYTNKZFlpcjBaOWRNSHp3aEJMVENlVDZqSExMTWdJOXFXeEtnUVdSdDZZQ1JRRkRnTThZQ0NEQ0xzM1JwanRueGVVZHJNWDNQY2ZjOXBPb1JtdmVTUVFwTk1XbU1tUm530gHnAUFVX3lxTFB5OTZXNTlOSUp2ZThqNmNhQ0dheHNFam1KbVRzdHJSZWFHYzBhdUlDdmYxY2x3TnBJSmZKSjRlN0dINlZGUzB1aXpaY1RfNTlrbjk2c2ZGTUg2Nk9rcWJORS10MkhBaDZZeUlvb1NrNl9UNW9LYTMwMURaSmRkdnBYdlc1Zi1WNTlZWmJaRVZycElFWWJfTnlUZE1aalhnSVhNVVd2RE54Tld5WEcydVRZMFZRblBqNVhuMUc3UnFtbjF1SzZCSTJuWmcxUXJIWjA0MkFlVXBKVm1mQnMwZFB4NWFrN2pOSQ",
+      "titulo": "CONCURSO Prefeitura de Arandu (SP): edital publicado com vagas para motorista e operador de máquina",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZnRoRVV0Y2Ftc29SVVY5ZDdkS0k3Z29zUGxqWjJaSXhNQU42S0h1aU5BYkJKbXJla200NmdjMGU3R09CY00tR0xhVC1IeF9CWFdaMHVVdVhXTUJmU1ZUUmFOeU9WX1FrQUlGdEZ5a2hsYzhTS3YwZGI2YXI3cjJsWTFuYTNKZFlpcjBaOWRNSHp3aEJMVENlVDZqSExMTWdJOXFXeEtnUVdSdDZZQ1JRRkRnTThZQ0NEQ0xzM1JwanRueGVVZHJNWDNQY2ZjOXBPb1JtdmVTUVFwTk1XbU1tUm530gHnAUFVX3lxTFB5OTZXNTlOSUp2ZThqNmNhQ0dheHNFam1KbVRzdHJSZWFHYzBhdUlDdmYxY2x3TnBJSmZKSjRlN0dINlZGUzB1aXpaY1RfNTlrbjk2c2ZGTUg2Nk9rcWJORS10MkhBaDZZeUlvb1NrNl9UNW9LYTMwMURaSmRkdnBYdlc1Zi1WNTlZWmJaRVZycElFWWJfTnlUZE1aalhnSVhNVVd2RE54Tld5WEcydVRZMFZRblBqNVhuMUc3UnFtbjF1SzZCSTJuWmcxUXJIWjA0MkFlVXBKVm1mQnMwZFB4NWFrN2pOSQ?oc=5",
+      "dataPublicacao": "2026-09-23T13:07:23.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMi3AFBVV95cUxOWTZjVlpCYk1xUURCMlp1bE1aVW1yYjhDMWMyNURESnpVMHVJR3cyeTJKaGxxN1Y1VnZzeXVEUnBMUU5TeWljNWpWNXBFS09VVFlqTURMSHZheUFTZDk4cG5ta2xma0JzckxJdVdmVWZyZlhXUkxyN3lUcE04UDdqTFhMQmlWLUg3eVgzRzhSclNTY2hzYTN5VXd0eHBld081VTNsb1d0SnhTdWZnc2Flei1ta0JZWG81Y1M3NVZDQ2czS3RobWd4X1F4MWNrbGR6VmM3WVlkaTdEMHBD0gHiAUFVX3lxTE1YbU54VTMtMFhfLVN1YlhTbUdUek9NZUZ1TXd0VWhSQXRXYlBTbE9BZnRsUlNaZEFwUnJLN05acTVwSmpCSEZEZmxua01XbTdWVzQyNTZfU2RQRG1YTW93LXVTcDhBWno1czFOYkE1MXdGcE9HR2RBeWZsRFRJRnV5S1cxQ0dIUVJQVmVkY0FoVTJHM1gydWZYQVhjT2lxQmxRcVFnM21lbDcxQjFleTV2VjZWbnlXM0E0aUJzdFp3dnlOWDd3QnY0V2lpbGZrWXpGX09KVS1CN2I5NGw5Mjk1NVE",
+      "titulo": "Concurso Câmara dos Deputados: definidas cotas para nova seleção de 150 vagas; edital iminente",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWTZjVlpCYk1xUURCMlp1bE1aVW1yYjhDMWMyNURESnpVMHVJR3cyeTJKaGxxN1Y1VnZzeXVEUnBMUU5TeWljNWpWNXBFS09VVFlqTURMSHZheUFTZDk4cG5ta2xma0JzckxJdVdmVWZyZlhXUkxyN3lUcE04UDdqTFhMQmlWLUg3eVgzRzhSclNTY2hzYTN5VXd0eHBld081VTNsb1d0SnhTdWZnc2Flei1ta0JZWG81Y1M3NVZDQ2czS3RobWd4X1F4MWNrbGR6VmM3WVlkaTdEMHBD0gHiAUFVX3lxTE1YbU54VTMtMFhfLVN1YlhTbUdUek9NZUZ1TXd0VWhSQXRXYlBTbE9BZnRsUlNaZEFwUnJLN05acTVwSmpCSEZEZmxua01XbTdWVzQyNTZfU2RQRG1YTW93LXVTcDhBWno1czFOYkE1MXdGcE9HR2RBeWZsRFRJRnV5S1cxQ0dIUVJQVmVkY0FoVTJHM1gydWZYQVhjT2lxQmxRcVFnM21lbDcxQjFleTV2VjZWbnlXM0E0aUJzdFp3dnlOWDd3QnY0V2lpbGZrWXpGX09KVS1CN2I5NGw5Mjk1NVE?oc=5",
+      "dataPublicacao": "2026-09-23T12:46:27.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMi3wFBVV95cUxPQjBONDVXQXBjWjE5bDlIdnIwRWZCNmNCZUk4Mnh0cGwwdVdKOU4tLWcxZXZYY05CdU52R0FobUN6VTJTTlExRjRuMWtjdVg2YklPQ096UlpnMnpRdEZMSE9ja2tvQmVmTklONVpJWWFjbThaYXFMT2hIOElxeE1CYlNhSnd3bHZVQzlnSHJublV3OC1Xb3JvOGhwYVBzcUtObGZ2b185bXBRTWdWejF6UHM1QzJPaGxUXzJQYzVyWUdBd0dDak83X1VuMXBjM201OG5BLVdXWG9nNTQ0ekI00gHkAUFVX3lxTE5Sc2hVSTZPUTI0RzRnWUdHVHhNR00wMVM2bGx4UUdSUnE1cXhuVVdYbTVSV2ZycjhQSFItZGZCa3ViNkdoazE5NEVVTjBPclU2N1l5dW1nNk1oWEZGUk8tNlFER2ZrdmVvYnd3RXNZQ29USVV0QzlDRmJ6M3BUOGJEbWYxY1lHS2RkbVI4cEhaRXBJYlB0RlVKZFRfVUJjbHdzQUdmb09takhNak5kajhjcWQxWm05c3hYSURpa2ZhTVJvbE9ac3FyTGRnODdQR1EyeDB5eWtTYVVfV2pmSER3azBaRQ",
+      "titulo": "CONCURSO Prefeitura de Cosmorama (SP): edital publicado com vagas imediatas e cadastro de reserva",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQjBONDVXQXBjWjE5bDlIdnIwRWZCNmNCZUk4Mnh0cGwwdVdKOU4tLWcxZXZYY05CdU52R0FobUN6VTJTTlExRjRuMWtjdVg2YklPQ096UlpnMnpRdEZMSE9ja2tvQmVmTklONVpJWWFjbThaYXFMT2hIOElxeE1CYlNhSnd3bHZVQzlnSHJublV3OC1Xb3JvOGhwYVBzcUtObGZ2b185bXBRTWdWejF6UHM1QzJPaGxUXzJQYzVyWUdBd0dDak83X1VuMXBjM201OG5BLVdXWG9nNTQ0ekI00gHkAUFVX3lxTE5Sc2hVSTZPUTI0RzRnWUdHVHhNR00wMVM2bGx4UUdSUnE1cXhuVVdYbTVSV2ZycjhQSFItZGZCa3ViNkdoazE5NEVVTjBPclU2N1l5dW1nNk1oWEZGUk8tNlFER2ZrdmVvYnd3RXNZQ29USVV0QzlDRmJ6M3BUOGJEbWYxY1lHS2RkbVI4cEhaRXBJYlB0RlVKZFRfVUJjbHdzQUdmb09takhNak5kajhjcWQxWm05c3hYSURpa2ZhTVJvbE9ac3FyTGRnODdQR1EyeDB5eWtTYVVfV2pmSER3azBaRQ?oc=5",
+      "dataPublicacao": "2026-09-23T12:19:06.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiqgFBVV95cUxQd1VNcGRDZ1YzNTlnYjZ4N0RJNGhXNTkwaUhDN3NLMGthNUVnT2xfbFpBZDNxdkxlYy1ObWlzU1JPNEJ4S0djVm9DMkdDZk9wRENXY3lPaWlnYWNNUTh0eFQ5SjVzWjU2LXhIRGtBai1kaFYyUXRjMnVmdm94Yk1qSlN4WTZ3RnFMYU5ObVdUZmdCZFd6a2EtM3hlZzFLUERwZWdNeHo5ak1jUQ",
+      "titulo": "Concurso Guarda de São Gonçalo RJ: saiu edital com 600 vagas. Nível médio!",
+      "fonte": "Degrau Cultural",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQd1VNcGRDZ1YzNTlnYjZ4N0RJNGhXNTkwaUhDN3NLMGthNUVnT2xfbFpBZDNxdkxlYy1ObWlzU1JPNEJ4S0djVm9DMkdDZk9wRENXY3lPaWlnYWNNUTh0eFQ5SjVzWjU2LXhIRGtBai1kaFYyUXRjMnVmdm94Yk1qSlN4WTZ3RnFMYU5ObVdUZmdCZFd6a2EtM3hlZzFLUERwZWdNeHo5ak1jUQ?oc=5",
+      "dataPublicacao": "2026-09-23T12:00:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMimgFBVV95cUxNZU1zb3FISzhBSkxLa1llZ0VVMURzM203YnhleG1PcHF1UzVTM0FfRUdzYWFVdmRzZWMtLWtGM0hhaXQ1OW16OFZzSmI4YWh6aVhDWTN4VHNCVk13cXlYOVU1MThQdGRkNlU2bk5nNVlNTUV0ZFdDNFpGdmJKenhDOVhFNEN5bVZrUWw3ZkJnNDd2akxzbGdMb0Vn",
+      "titulo": "Concurso Inea RJ é autorizado oficialmente com 150 vagas",
+      "fonte": "Degrau Cultural",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZU1zb3FISzhBSkxLa1llZ0VVMURzM203YnhleG1PcHF1UzVTM0FfRUdzYWFVdmRzZWMtLWtGM0hhaXQ1OW16OFZzSmI4YWh6aVhDWTN4VHNCVk13cXlYOVU1MThQdGRkNlU2bk5nNVlNTUV0ZFdDNFpGdmJKenhDOVhFNEN5bVZrUWw3ZkJnNDd2akxzbGdMb0Vn?oc=5",
+      "dataPublicacao": "2026-09-23T12:00:00.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMicEFVX3lxTE9hOWltMHQzbDVNQ1J4YU5ueXJXLTBGeWY1RUFzbTZTclJ4UkYzT1NBdVhTM2pDWDdvXy0xVHBUdkxNM2tWclMyOF9HUkNmSkZKNDFBYzFWS0FqcjdhWThlekNfbFJfYlhjcDNBcFlRaVY",
+      "titulo": "Concurso Inea RJ é oficialmente autorizado com 150 vagas",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9hOWltMHQzbDVNQ1J4YU5ueXJXLTBGeWY1RUFzbTZTclJ4UkYzT1NBdVhTM2pDWDdvXy0xVHBUdkxNM2tWclMyOF9HUkNmSkZKNDFBYzFWS0FqcjdhWThlekNfbFJfYlhjcDNBcFlRaVY?oc=5",
+      "dataPublicacao": "2026-09-23T11:57:12.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMiwwFBVV95cUxPQ0g2WUV5VElWU1M5MTN3OVNOamdZa1c4VHp3Y3lzZ0lFbXYzS3RDaDkxZm1ReWRpeDRINGFIT2VLQ0ZSYUQ5ZnJVSVdnNUdWRkQtSU5LMm1tQ0k4VmhfWThMQ2o0TURkV1ZZckJHRkhmS1IzWXp3N2s4TWRPeUZqb3RkaE41ek9WR0F6N1BUZnZ1aVNuLWJjLTE1cFI0NXRnT1B4VHVXSUZ5QWRQYncyQjU3OXFURUhLVU00RFNPMjMteknSAcgBQVVfeXFMTkV2bWpkcXJDOXJNWWJpTEw2T01XVzYxcUpfNjN1NUJLWEwybUg3VmlFZUNqVFp4bWRlc05Fa05qTFAzTm00TUFJcUtIbzVJdzVhVFBSR05WZTRFaWFvYjRrakoxemhSVk5ES1c0YW1icW9pS3NBZHVJTEY1UFVXTVE0SDQ1Zy1Ba2lndDZUTTlOOTItWEFKZlczR3libzRmcWItVG5IMG1FeVFfNTUybklxYmZhWVdMQnVBQWc5cWQxRlNWTFlGUUk",
+      "titulo": "Concurso INEA RJ é oficialmente autorizado para 150 vagas; edital em breve",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQ0g2WUV5VElWU1M5MTN3OVNOamdZa1c4VHp3Y3lzZ0lFbXYzS3RDaDkxZm1ReWRpeDRINGFIT2VLQ0ZSYUQ5ZnJVSVdnNUdWRkQtSU5LMm1tQ0k4VmhfWThMQ2o0TURkV1ZZckJHRkhmS1IzWXp3N2s4TWRPeUZqb3RkaE41ek9WR0F6N1BUZnZ1aVNuLWJjLTE1cFI0NXRnT1B4VHVXSUZ5QWRQYncyQjU3OXFURUhLVU00RFNPMjMteknSAcgBQVVfeXFMTkV2bWpkcXJDOXJNWWJpTEw2T01XVzYxcUpfNjN1NUJLWEwybUg3VmlFZUNqVFp4bWRlc05Fa05qTFAzTm00TUFJcUtIbzVJdzVhVFBSR05WZTRFaWFvYjRrakoxemhSVk5ES1c0YW1icW9pS3NBZHVJTEY1UFVXTVE0SDQ1Zy1Ba2lndDZUTTlOOTItWEFKZlczR3libzRmcWItVG5IMG1FeVFfNTUybklxYmZhWVdMQnVBQWc5cWQxRlNWTFlGUUk?oc=5",
+      "dataPublicacao": "2026-09-23T11:50:52.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMivgFBVV95cUxOelE0dGp3dnVzVzEwV29qQmFSejI3dF90TWtwY1RQdWlSVHcxLWlyaHRsM0xZSjQzaTdZdXJIa2xnb1FzUlkxN0g4VjZDZklDRWtodWdaaVVLQ21VOG5sUFUxRjN0dHpxVUdlRm13R0kzM0c2dmJlZjNKRUZkd2dnb1FuQ2tTUGdBODltT0ZEYlFyQVNhQlFRcUJkVE5ZU1p2T1V2Uzk2bnk2VHo0MW94Qmtjc2k0OTVCU3RLSEtB0gHDAUFVX3lxTFA0S1Njdnl1dWJBM3FjaEJwejd3WmVPZWQ0aDJtZ0VNT0l3X2hnRklBcm9NZEFldFFzdFl1eWtjNnhsSWJXUTNiUzZMVTlyYzBnRTduc3BVVU1DYjBLd3U4V1NXOGxhSTZwZHVodGdZeUlvdDNuMWdhVUZjUTFmcXprR1F0QTc1UGJTRDMtVUFFbm4weEFuMHNhYnBLV0RVcnI4UDNJbFVNcjZkVGpqTGRtZWs2c3lMWkVjSjBEOUYzNXc1TQ",
+      "titulo": "Concurso CREMERJ: edital passa por retificação e reduz número de vagas",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOelE0dGp3dnVzVzEwV29qQmFSejI3dF90TWtwY1RQdWlSVHcxLWlyaHRsM0xZSjQzaTdZdXJIa2xnb1FzUlkxN0g4VjZDZklDRWtodWdaaVVLQ21VOG5sUFUxRjN0dHpxVUdlRm13R0kzM0c2dmJlZjNKRUZkd2dnb1FuQ2tTUGdBODltT0ZEYlFyQVNhQlFRcUJkVE5ZU1p2T1V2Uzk2bnk2VHo0MW94Qmtjc2k0OTVCU3RLSEtB0gHDAUFVX3lxTFA0S1Njdnl1dWJBM3FjaEJwejd3WmVPZWQ0aDJtZ0VNT0l3X2hnRklBcm9NZEFldFFzdFl1eWtjNnhsSWJXUTNiUzZMVTlyYzBnRTduc3BVVU1DYjBLd3U4V1NXOGxhSTZwZHVodGdZeUlvdDNuMWdhVUZjUTFmcXprR1F0QTc1UGJTRDMtVUFFbm4weEFuMHNhYnBLV0RVcnI4UDNJbFVNcjZkVGpqTGRtZWs2c3lMWkVjSjBEOUYzNXc1TQ?oc=5",
+      "dataPublicacao": "2026-09-23T11:38:16.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMixwFBVV95cUxNR2JBaXgwaVdiSTlXX3FKZ2hYWFlielM4RHVNclhVamZYc3RneUlVYWFZSTdELVhBV0dwdFBPanJTbWs0M3VodFRKT0Z3c3hnNVRUcHF6TXhCeU1abmdhVEZXSmFicXVMMGNMb0xIRGJNTmhBVG00aUZyZ09kWUw4cjJYdGFoUkdzc3pSZ0NvOG42OVJOUkR6WjY4WEctR253aVotN254dkt0Tk5XN0ZqVDlBT01qTTN4OXJrREo2d1E5dUFhb2VZ0gHMAUFVX3lxTFBKckc4ZlhmajZZUEhrTjNFVEVKeUNMNGFvMnNtaHlYamdKMXh2eUkwSENKc0hIdl94UWxGOUQzVU9aemVMX3JsMENEcW1YcDE2QzdkdDAtZUwtZWFnSFpTNk5kVk1zdGJUNzRyYmR1SDNJYkFWb0NrbExDRE9ZRmNheDFRMUE0MXpQRUYxVmduZ3JELS1iY0VCXzN0NDJoeDAwWmM4WkJkR0NmckZxZmZxZFBNdXNVLURxb2JZTVA0cEdPQllSelZKR0xqZA",
+      "titulo": "Concurso SEDF: iniciada escolha da banca para 10.604 vagas; edital até novembro",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNR2JBaXgwaVdiSTlXX3FKZ2hYWFlielM4RHVNclhVamZYc3RneUlVYWFZSTdELVhBV0dwdFBPanJTbWs0M3VodFRKT0Z3c3hnNVRUcHF6TXhCeU1abmdhVEZXSmFicXVMMGNMb0xIRGJNTmhBVG00aUZyZ09kWUw4cjJYdGFoUkdzc3pSZ0NvOG42OVJOUkR6WjY4WEctR253aVotN254dkt0Tk5XN0ZqVDlBT01qTTN4OXJrREo2d1E5dUFhb2VZ0gHMAUFVX3lxTFBKckc4ZlhmajZZUEhrTjNFVEVKeUNMNGFvMnNtaHlYamdKMXh2eUkwSENKc0hIdl94UWxGOUQzVU9aemVMX3JsMENEcW1YcDE2QzdkdDAtZUwtZWFnSFpTNk5kVk1zdGJUNzRyYmR1SDNJYkFWb0NrbExDRE9ZRmNheDFRMUE0MXpQRUYxVmduZ3JELS1iY0VCXzN0NDJoeDAwWmM4WkJkR0NmckZxZmZxZFBNdXNVLURxb2JZTVA0cEdPQllSelZKR0xqZA?oc=5",
+      "dataPublicacao": "2026-09-23T10:56:23.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMitwFBVV95cUxQMnhjVDFOWXpaQVI4OGNyZThRSmNDOVRPN0EyemZkbHE0d1M3UDN3R0ZlRlZFTGo0OWJSN2dZRUNzWXNERlI2U0FhZ2FSRVZJNkJaZWREcTlyZ3YyakkydERNTFp2WGVDV2dyVVpmaHFCSnlSd2VXdzRYWmFxQ25nenJfQ2ZHQ0JPVmhRRkpSeWRXUnprUGFLUnJxWGY3bXppeGhBRk41Tm1ka0RpUndwUXd0MFJPYVHSAbwBQVVfeXFMTUk4eUpJbGtJZHRnN3FfRnlHZHBPWTVnMm1LNjJTajk0VWNtVkdHdW5WTXBuMmxXNDhtLU16V29IVmU0bUNfT3NHV042UHdHbFE2d1RfelFERk1vX3RTdWtjWk91enMxTXBuaVVNclQwVGk3Z3NXNzlFSlc2RjR6Um1wYUs0SWt5QWJqdkFvRXA4bUxHb2Vyb2ZxRnNVQUR4dzdJQmNnX2ZfcmI3YldmLVhLY1pEUVF4bWd2bGw",
+      "titulo": "Novo concurso Iprem SP é autorizado para vagas de APDO na área de contabilidade",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMnhjVDFOWXpaQVI4OGNyZThRSmNDOVRPN0EyemZkbHE0d1M3UDN3R0ZlRlZFTGo0OWJSN2dZRUNzWXNERlI2U0FhZ2FSRVZJNkJaZWREcTlyZ3YyakkydERNTFp2WGVDV2dyVVpmaHFCSnlSd2VXdzRYWmFxQ25nenJfQ2ZHQ0JPVmhRRkpSeWRXUnprUGFLUnJxWGY3bXppeGhBRk41Tm1ka0RpUndwUXd0MFJPYVHSAbwBQVVfeXFMTUk4eUpJbGtJZHRnN3FfRnlHZHBPWTVnMm1LNjJTajk0VWNtVkdHdW5WTXBuMmxXNDhtLU16V29IVmU0bUNfT3NHV042UHdHbFE2d1RfelFERk1vX3RTdWtjWk91enMxTXBuaVVNclQwVGk3Z3NXNzlFSlc2RjR6Um1wYUs0SWt5QWJqdkFvRXA4bUxHb2Vyb2ZxRnNVQUR4dzdJQmNnX2ZfcmI3YldmLVhLY1pEUVF4bWd2bGw?oc=5",
+      "dataPublicacao": "2026-09-23T10:26:16.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMi4AFBVV95cUxONGFzRERWVWhQQkhjeTR3V1MxTUMyZDl5M09aT2p4Z1p0Y0lYNFJhcDBvVEdMTVdUeEo1MWNqZWRBbFJtYWZwZ1RQcWVHX2FGWGQwSWJhc2hyTVNYNmVkSV91YmpFSnp2bW5IUkctdTdmdElFNFBLSWlMLWM1aUpqOENpZDY2N2Z0Vmd3dlZnNk9iOGVJSlVRRF9yMGEyYXhQc2l0SDVQdHp6Tjh6b2ZsdV8zVFlCTVNRN1VVM2Z5MWlveGQ1ZWtWVkVEVUk0Z3B4LW1ZT2UxRjZBSF9LWUVqNtIB5gFBVV95cUxOVWNLbmU2Y2t1U24wYkJ5Qzg2YjNVSjc1Um9GbTFDQ21KRHkxdmNPQ2JlR2g4Y2Z5VzQ3MTlTMXRqdnJtLVl3cHNacUJzY3ZuNFFDajZxTHBaREpPT1pFYkJGQ1llS2xIN1BERmhjQ0lfWDQ5SHFCY192bzhscE02cU5qQjhfX05qYld0a1BZdDdhYlktcHlsMWNCbVJLYXVJOWkyTURxbkJ2ZjllXzIyMkZZVkxIM1JUVmo4dUxod2Y0S3NvSDJWdXpCd0Y0Z0pZWTNrS1dYMFVnUkFuNmZZXzl3c3hyQQ",
+      "titulo": "Concurso Prefeitura de São Paulo SP é autorizado para 40 vagas de APDO na área de contabildiade",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxONGFzRERWVWhQQkhjeTR3V1MxTUMyZDl5M09aT2p4Z1p0Y0lYNFJhcDBvVEdMTVdUeEo1MWNqZWRBbFJtYWZwZ1RQcWVHX2FGWGQwSWJhc2hyTVNYNmVkSV91YmpFSnp2bW5IUkctdTdmdElFNFBLSWlMLWM1aUpqOENpZDY2N2Z0Vmd3dlZnNk9iOGVJSlVRRF9yMGEyYXhQc2l0SDVQdHp6Tjh6b2ZsdV8zVFlCTVNRN1VVM2Z5MWlveGQ1ZWtWVkVEVUk0Z3B4LW1ZT2UxRjZBSF9LWUVqNtIB5gFBVV95cUxOVWNLbmU2Y2t1U24wYkJ5Qzg2YjNVSjc1Um9GbTFDQ21KRHkxdmNPQ2JlR2g4Y2Z5VzQ3MTlTMXRqdnJtLVl3cHNacUJzY3ZuNFFDajZxTHBaREpPT1pFYkJGQ1llS2xIN1BERmhjQ0lfWDQ5SHFCY192bzhscE02cU5qQjhfX05qYld0a1BZdDdhYlktcHlsMWNCbVJLYXVJOWkyTURxbkJ2ZjllXzIyMkZZVkxIM1JUVmo4dUxod2Y0S3NvSDJWdXpCd0Y0Z0pZWTNrS1dYMFVnUkFuNmZZXzl3c3hyQQ?oc=5",
+      "dataPublicacao": "2026-09-23T09:57:35.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMigAFBVV95cUxOVDU2TTlHV205Ulp1aXA0Y20tTWt0cm1va3pNajFSbkxlb0o4ZFhCTHdkZ0lKb1JIOUpJT29FajNFVkk2VDBRMmJnNlZ1a0poNHZqdDNfVFV0ZENveUU2bDlldUJkeDEyN1B5M0JBWkVkdmNXMFdUTHZkd2ZHa2FxWg",
+      "titulo": "Concurso IPREM SP: prefeito autoriza 9 vagas para Analista",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVDU2TTlHV205Ulp1aXA0Y20tTWt0cm1va3pNajFSbkxlb0o4ZFhCTHdkZ0lKb1JIOUpJT29FajNFVkk2VDBRMmJnNlZ1a0poNHZqdDNfVFV0ZENveUU2bDlldUJkeDEyN1B5M0JBWkVkdmNXMFdUTHZkd2ZHa2FxWg?oc=5",
+      "dataPublicacao": "2026-09-23T05:01:18.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMi6gFBVV95cUxQeUpYXzZTZDlLQlV5LUlXOHdOSjItV2E0VzQyUm9oMVRkLXFjVG5EaTNIa0ViMFFpN3VSUklSYnpwQnM1WWcwRDREXzl4TDctUzBSemVkQnJLTklwZG1VeFhRaWx6UWZwYU1IbFRBdnN5NThsaUQ0WGNsTDA3RHJxVXBVOWJoQUJyaVk4bDVHNDRtY1FKLVRlWEJDMk1RSExFdkpxTFBnVXFlLVIwOG5VSnI4eENOdTN1aHFTWVh3bVlMRnFFRVlTeC1tTE11aWsxUDNZU3FpNmRMT2J4eS1obmpBVlRCbE81X0HSAe8BQVVfeXFMUHFEbnVIVGRid1lKdjBJSTV0blNDN1FJeFpNRzhJc3FDeFA2VURmZ3REdE94cDlIZm05RGs4S21RaVRoa3JNb0tGTHQ1T1E4eWM5Ry13OHFUVDJsYk01R1pyWTd1V3lQa3YxMlJuYkZRWHZ2ckNHd2drTTJCWjU2TEFYOXcxT2MxUjBoMjVnVDdhSUs0V2JEVXQ3Nlh6ZmFqMGdzelZCOUtQRWlYZE1oZEVvbEVhSjg1T2V4eVh5Zk5zdmlmaWh1ZmZtaTNCZ0RONVl4VW5xQmR1MlFHd2hYQTlWQ1NyYk4ybU1iVWgwREU",
+      "titulo": "Concurso SP Águas: assinado contrato com banca para seleção inédita e edital já pode sair, com 190 vagas",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQeUpYXzZTZDlLQlV5LUlXOHdOSjItV2E0VzQyUm9oMVRkLXFjVG5EaTNIa0ViMFFpN3VSUklSYnpwQnM1WWcwRDREXzl4TDctUzBSemVkQnJLTklwZG1VeFhRaWx6UWZwYU1IbFRBdnN5NThsaUQ0WGNsTDA3RHJxVXBVOWJoQUJyaVk4bDVHNDRtY1FKLVRlWEJDMk1RSExFdkpxTFBnVXFlLVIwOG5VSnI4eENOdTN1aHFTWVh3bVlMRnFFRVlTeC1tTE11aWsxUDNZU3FpNmRMT2J4eS1obmpBVlRCbE81X0HSAe8BQVVfeXFMUHFEbnVIVGRid1lKdjBJSTV0blNDN1FJeFpNRzhJc3FDeFA2VURmZ3REdE94cDlIZm05RGs4S21RaVRoa3JNb0tGTHQ1T1E4eWM5Ry13OHFUVDJsYk01R1pyWTd1V3lQa3YxMlJuYkZRWHZ2ckNHd2drTTJCWjU2TEFYOXcxT2MxUjBoMjVnVDdhSUs0V2JEVXQ3Nlh6ZmFqMGdzelZCOUtQRWlYZE1oZEVvbEVhSjg1T2V4eVh5Zk5zdmlmaWh1ZmZtaTNCZ0RONVl4VW5xQmR1MlFHd2hYQTlWQ1NyYk4ybU1iVWgwREU?oc=5",
+      "dataPublicacao": "2026-09-23T04:16:45.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMiekFVX3lxTE1sQ0cwbW55Vm0wR2luaUEza05YUWhUUEdma3l0SmZfaF9ZM19rTFdObnNIWHhSVnB2UWZuaFc5SXdDci1LZDFjV0FLSE1SV0t2TXRSU3dTMEVPeTlsb2VQNjBjLXFlZlVVd3B3R1doektPZkZTanhMVGdn",
+      "titulo": "Concurso SEDF: 10 MIL vagas NESTE ANO! Confira!",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1sQ0cwbW55Vm0wR2luaUEza05YUWhUUEdma3l0SmZfaF9ZM19rTFdObnNIWHhSVnB2UWZuaFc5SXdDci1LZDFjV0FLSE1SV0t2TXRSU3dTMEVPeTlsb2VQNjBjLXFlZlVVd3B3R1doektPZkZTanhMVGdn?oc=5",
+      "dataPublicacao": "2026-09-23T01:24:44.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiowFBVV95cUxNa2pHT0RPMWRodTZNbXRpZ3UtV2RpVXdqR0ZWVktkYl9IRjBVM0lQWG9yYW5HUFI3ZlR5WFBCRHZQa2JVcXNNT05lbGxWS055RWlpeHFUaWZ6cXI1Um5DeXQyQTZyTG9EZEtOVEt5WVFZWlQ1dFA2QjgwWkw0Y3dBWHFKR0E4WDNDZnJSbWhpZFhnT09ycHktRWVsT0NDcUV3MGZj",
+      "titulo": "Concurso da Educação no DF deve ter edital ainda neste ano",
+      "fonte": "acorda df",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNa2pHT0RPMWRodTZNbXRpZ3UtV2RpVXdqR0ZWVktkYl9IRjBVM0lQWG9yYW5HUFI3ZlR5WFBCRHZQa2JVcXNNT05lbGxWS055RWlpeHFUaWZ6cXI1Um5DeXQyQTZyTG9EZEtOVEt5WVFZWlQ1dFA2QjgwWkw0Y3dBWHFKR0E4WDNDZnJSbWhpZFhnT09ycHktRWVsT0NDcUV3MGZj?oc=5",
+      "dataPublicacao": "2026-09-23T00:27:41.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMirAFBVV95cUxQbFhrUXhNUi0xUHVSYXhMYTBNRG9zUEJLQkhwam1va3kwS3VTSlVwV1pBLU0wdnRHYXBjWkZfTHh5LXZXVlZyejRYMlZJVDRnT3UxOWZ4NGpZSGNLTzktUWg4blNwVkZFbExZVUdGelp6bTNxejJmYkJpX0RwQmNMYjhfaFNlQTViOGdidEJBRUk4RVNfcGFxY0pISkVUVGtFWW5VX3MxdFljZHNx",
+      "titulo": "Prefeitura Municipal de Comodoro MT publica concurso para procurador jurídico",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbFhrUXhNUi0xUHVSYXhMYTBNRG9zUEJLQkhwam1va3kwS3VTSlVwV1pBLU0wdnRHYXBjWkZfTHh5LXZXVlZyejRYMlZJVDRnT3UxOWZ4NGpZSGNLTzktUWg4blNwVkZFbExZVUdGelp6bTNxejJmYkJpX0RwQmNMYjhfaFNlQTViOGdidEJBRUk4RVNfcGFxY0pISkVUVGtFWW5VX3MxdFljZHNx?oc=5",
+      "dataPublicacao": "2026-09-22T23:10:40.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMipgFBVV95cUxQeFRnSUhUdnVqMWxEYTYxSm9hY2JLaXpvZnpPeURSeDlCbVRxcm91ZTJ6b1Atc2xtZURPMGRtbjE1VUxzVjZnOGdiWkJmRXFTalBrd2lhb2NnMm1RSmtZcDlCU0o4SjJuWVpLZVhPbFZJdWhNRmdXUEhSbFBkODhRUWVxR3lJR2ltVDB5Q2dTY2tUQkY2T1B4d1oyM0NsWDJZQnBITTR3",
+      "titulo": "Concurso IFPA 2026: edital abre 65 vagas com salários de até R$ 5,2 mil",
+      "fonte": "Cidade 091",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFRnSUhUdnVqMWxEYTYxSm9hY2JLaXpvZnpPeURSeDlCbVRxcm91ZTJ6b1Atc2xtZURPMGRtbjE1VUxzVjZnOGdiWkJmRXFTalBrd2lhb2NnMm1RSmtZcDlCU0o4SjJuWVpLZVhPbFZJdWhNRmdXUEhSbFBkODhRUWVxR3lJR2ltVDB5Q2dTY2tUQkY2T1B4d1oyM0NsWDJZQnBITTR3?oc=5",
+      "dataPublicacao": "2026-09-22T22:49:47.000Z",
+      "categoriaInferida": "Inscrições Abertas"
+    },
+    {
+      "id": "CBMi5gFBVV95cUxPZWlBZ3JEaTBuMEJvQ1BtblRRb0w0bFhTYTlfYVRwdERtSlRGVjJ0dGM0VDdMdUVZZVZUZktBSkdXYWc5WnJmVWtpbkNPTGxsOEdDYXZWRi0yRnlmM3hVMVhuMUxsal9ZZnNieS1fM29pekxqazVpTVM2clFIN3VNWDlFcjNkUDU2S0NGMWFQRnlPU2ZHVjBZZEZsQWtrUkMtQU50dHR6UVU1bXh5TnRWdzhtdmJKbDh6Sk5uZ1V6dHFFQjFDRzdlVTRhMkkzdEY3SlJoZWRyM0xNVThjUUN0WmJaN3dBZ9IB6wFBVV95cUxPN1MxU1ZpS3ViS0h1U0JtNEhkWk5pWnNYNi1hQVpnU3dnSUppeE5tM2FURnZ4RlgtWmdwdFhlZXFWbzNkdnRra0RxSEh5d25uczhWS0Z4cTBiVkN1NURlOHo2REpPbl9lM3dXTHRhZEJnVV95VUhNQzZmUjJLZkhJVFgzVFR3cEhQcndEeThzdEpqMkY2RF84cHBkdHRndXFKODJnYXgwaktSd3hoS3d3eVRnVDMzdTRfalRhRFA4bWh1WXBqcGdKUkM2S1F0Ymp2bU1kOWEwNVloUDdGc2gwd0c5QThyQzR5X2ZB",
+      "titulo": "CONCURSO Prefeitura de São José (SC): edital publicado com 300 vagas para Auxiliar de Educação Especial",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPZWlBZ3JEaTBuMEJvQ1BtblRRb0w0bFhTYTlfYVRwdERtSlRGVjJ0dGM0VDdMdUVZZVZUZktBSkdXYWc5WnJmVWtpbkNPTGxsOEdDYXZWRi0yRnlmM3hVMVhuMUxsal9ZZnNieS1fM29pekxqazVpTVM2clFIN3VNWDlFcjNkUDU2S0NGMWFQRnlPU2ZHVjBZZEZsQWtrUkMtQU50dHR6UVU1bXh5TnRWdzhtdmJKbDh6Sk5uZ1V6dHFFQjFDRzdlVTRhMkkzdEY3SlJoZWRyM0xNVThjUUN0WmJaN3dBZ9IB6wFBVV95cUxPN1MxU1ZpS3ViS0h1U0JtNEhkWk5pWnNYNi1hQVpnU3dnSUppeE5tM2FURnZ4RlgtWmdwdFhlZXFWbzNkdnRra0RxSEh5d25uczhWS0Z4cTBiVkN1NURlOHo2REpPbl9lM3dXTHRhZEJnVV95VUhNQzZmUjJLZkhJVFgzVFR3cEhQcndEeThzdEpqMkY2RF84cHBkdHRndXFKODJnYXgwaktSd3hoS3d3eVRnVDMzdTRfalRhRFA4bWh1WXBqcGdKUkM2S1F0Ymp2bU1kOWEwNVloUDdGc2gwd0c5QThyQzR5X2ZB?oc=5",
+      "dataPublicacao": "2026-09-22T22:31:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMipgFBVV95cUxQSE9rQnBkT21QNDhIQ2dHN2l2LTdYRGFvQmtwRVA3X2h5eVZ6V0VDZmFZZHRacFdoWkhMbXpkeDBaTmg3RFZOYk1ZS2dGZkZkUE8wTmhBeXVaMUNZTHJxUUEtTTZ5d2FEMGlzTURSOHc0Q3lmTVdpRTJELWV3QWtwOG5CXzFzUVpuVV9BOWVVVE9sSTIzSVAyRlQzTkl6TFB5Z3pDOTBR",
+      "titulo": "Comando da 11ª Região Militar reabre concurso para médicos em Brasília DF",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSE9rQnBkT21QNDhIQ2dHN2l2LTdYRGFvQmtwRVA3X2h5eVZ6V0VDZmFZZHRacFdoWkhMbXpkeDBaTmg3RFZOYk1ZS2dGZkZkUE8wTmhBeXVaMUNZTHJxUUEtTTZ5d2FEMGlzTURSOHc0Q3lmTVdpRTJELWV3QWtwOG5CXzFzUVpuVV9BOWVVVE9sSTIzSVAyRlQzTkl6TFB5Z3pDOTBR?oc=5",
+      "dataPublicacao": "2026-09-22T22:08:57.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiwAFBVV95cUxOSG1UNmU3N3NDM0FjNEhkdDFMWWs3aVYtcWs1X3FGaHlINVhzOVFnWGh3Wmo4YjJRWHY0dHY0dTcxZENjZWlUVUxMQkkxdjJFWW1XX25LVzdfSjlMamtDZ0hCWkJQemxZTHBZNkZycGdfdlU1QUdWbThjYjE3SXJ2bTRDWE1CVC1Za0hzckoxY0NCQlVVWmgzU1hhUFVUOG1OTkZyZk02MEFTcDIwZUtKRE5MOGVodHMxelNVU0cwZW4",
+      "titulo": "Concurso do IPAJM no ES terá edital em outubro; veja vagas",
+      "fonte": "folhavitoria.com.br",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSG1UNmU3N3NDM0FjNEhkdDFMWWs3aVYtcWs1X3FGaHlINVhzOVFnWGh3Wmo4YjJRWHY0dHY0dTcxZENjZWlUVUxMQkkxdjJFWW1XX25LVzdfSjlMamtDZ0hCWkJQemxZTHBZNkZycGdfdlU1QUdWbThjYjE3SXJ2bTRDWE1CVC1Za0hzckoxY0NCQlVVWmgzU1hhUFVUOG1OTkZyZk02MEFTcDIwZUtKRE5MOGVodHMxelNVU0cwZW4?oc=5",
+      "dataPublicacao": "2026-09-22T21:58:23.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiuAFBVV95cUxPbjJ6cFpvMUF5bGR5bWFzcDZMdE9QSjFBekwzaDJOMFc2TkFIOXhKNUFaaGJfU1BZNVZ5Z0IxZE9yV3pQakJYRmJ6OG5zaTlIY3RqZnFIOW94MmFzVEVqd3pNOG1yQUdyb0FfajIzeHQ4ckY1R3RJR2JKaUFtc1ptcElhbDJGVkw0UkhHS0FYSk5BcmVEdXJiT3BheHd2T3pGY3JPRzZrQ2ZydEZBVWdpUHdJMDZjaXBt",
+      "titulo": "Prefeitura de Joaçaba SC publica edital nº 02/2026 para concurso de cadastro de reserva",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbjJ6cFpvMUF5bGR5bWFzcDZMdE9QSjFBekwzaDJOMFc2TkFIOXhKNUFaaGJfU1BZNVZ5Z0IxZE9yV3pQakJYRmJ6OG5zaTlIY3RqZnFIOW94MmFzVEVqd3pNOG1yQUdyb0FfajIzeHQ4ckY1R3RJR2JKaUFtc1ptcElhbDJGVkw0UkhHS0FYSk5BcmVEdXJiT3BheHd2T3pGY3JPRzZrQ2ZydEZBVWdpUHdJMDZjaXBt?oc=5",
+      "dataPublicacao": "2026-09-22T21:43:53.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMikAFBVV95cUxQMTl5MkNOVmZPTHdkaXk4aEhHLW9ndkhhQ0ttM0pYeWlLWm94eWswby01eERpRWo2Q0NlZ21aYVd6V3FTeFVPclVIZjBScFhjMVNzZ3Q0akxBMmhBcEhyMldwMUtyaEtBYm1Xbm9sNDhzcjJGNUxJZ1NmaDRXQkhZU3FMZ2MxaWV4QXdtU0l5TzM",
+      "titulo": "Concurso Volta Redonda RJ tem edital com 400 vagas anunciado",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMTl5MkNOVmZPTHdkaXk4aEhHLW9ndkhhQ0ttM0pYeWlLWm94eWswby01eERpRWo2Q0NlZ21aYVd6V3FTeFVPclVIZjBScFhjMVNzZ3Q0akxBMmhBcEhyMldwMUtyaEtBYm1Xbm9sNDhzcjJGNUxJZ1NmaDRXQkhZU3FMZ2MxaWV4QXdtU0l5TzM?oc=5",
+      "dataPublicacao": "2026-09-22T21:38:37.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiogFBVV95cUxPWGJKdnJYUUFDeTBZU29jNjNjUmF5cEJ4ZzRycVI4SlV4X0RiQWw3eV95VE82M1QtT3YteG1TajYzajMyQ0RxTFR1NUpTMUd6a2NHSGxsVmFoa01tby01TF94ekNUNElyM2pxUGpBdThLc2ZZbDVmZXdBVm9IUnJ1Ny1HbWFDdkxUaGRJa0JVMGM4T205RkdmTV9IRVJCcld0ZHc",
+      "titulo": "Concurso TRT 8: edital está próximo; cronograma ajustado!",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWGJKdnJYUUFDeTBZU29jNjNjUmF5cEJ4ZzRycVI4SlV4X0RiQWw3eV95VE82M1QtT3YteG1TajYzajMyQ0RxTFR1NUpTMUd6a2NHSGxsVmFoa01tby01TF94ekNUNElyM2pxUGpBdThLc2ZZbDVmZXdBVm9IUnJ1Ny1HbWFDdkxUaGRJa0JVMGM4T205RkdmTV9IRVJCcld0ZHc?oc=5",
+      "dataPublicacao": "2026-09-22T21:21:02.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMi3gFBVV95cUxPcHhBRV9DY3NaM3JtY2NUUmRULXdyYkllTml3Z19TREw2NkNnOGNLQ1Z6NXhKWV90QWlqbjlMR3FNTmlvTzEtZU9zemlYcEtwcGpZZW5FV2FPTEdYb0xwUTAxTlpRMXhhQlVnaGJBTnJ3RlM5RjFBd04ycG1ZekdYOGtxZ1d2XzhOQmZEMTlyZ01VX1UzWWpORFJ4LUx4VURmVXF2blMyTWNfcFF4d185bXpWYU1yWThvYzBZNXhpSFBmQ28tc3FRLWtqWno5eVhMTkRITzhUalZvdk9LRHfSAeMBQVVfeXFMTWxVUVZMajdCblJnUjF5X24zbEZTWXhmRUJlTEFZbVhGM2FDQlJOeGU1SDB5bGhhZjQxZFJvTHptVndNcTVyX0VXUHl5bzBGeEh3d1Y2RTdzMF9JUHUtYjJEY1JsclNVelYyOXp0ZTRnR3BrbE1ZbDRYWTgyeGlnRjN5VGpwM0RBR1pzTVN3cWc4V0FKNk9taURnSmdWQmdiTGJyWlRFbDgtOTdQRnQ5Z0JJRUI5dElxRXpLR1RDcXVCSm8xV2NvcTFKTUZZWVdYSEd0djRYNDRXNzV2Q2U0V1EyX1U",
+      "titulo": "CONCURSO Prefeitura de Caiabu (SP): edital publicado para cadastro de reserva em diversos cargos",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPcHhBRV9DY3NaM3JtY2NUUmRULXdyYkllTml3Z19TREw2NkNnOGNLQ1Z6NXhKWV90QWlqbjlMR3FNTmlvTzEtZU9zemlYcEtwcGpZZW5FV2FPTEdYb0xwUTAxTlpRMXhhQlVnaGJBTnJ3RlM5RjFBd04ycG1ZekdYOGtxZ1d2XzhOQmZEMTlyZ01VX1UzWWpORFJ4LUx4VURmVXF2blMyTWNfcFF4d185bXpWYU1yWThvYzBZNXhpSFBmQ28tc3FRLWtqWno5eVhMTkRITzhUalZvdk9LRHfSAeMBQVVfeXFMTWxVUVZMajdCblJnUjF5X24zbEZTWXhmRUJlTEFZbVhGM2FDQlJOeGU1SDB5bGhhZjQxZFJvTHptVndNcTVyX0VXUHl5bzBGeEh3d1Y2RTdzMF9JUHUtYjJEY1JsclNVelYyOXp0ZTRnR3BrbE1ZbDRYWTgyeGlnRjN5VGpwM0RBR1pzTVN3cWc4V0FKNk9taURnSmdWQmdiTGJyWlRFbDgtOTdQRnQ5Z0JJRUI5dElxRXpLR1RDcXVCSm8xV2NvcTFKTUZZWVdYSEd0djRYNDRXNzV2Q2U0V1EyX1U?oc=5",
+      "dataPublicacao": "2026-09-22T20:54:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiwAFBVV95cUxQamxzeVA1bnVQV2E2TzNDdGN4OVU2TThYS3JraW85RGxFM3FUbm9LTXk3YlRIaTNMSlNKRnQzbVREWEY3U3l1TXM3NUhIbk9uMFBLc2kyY3k3WFl0MHNOYlVOMEMzRWVpUnFfdldldjZ6bnhkRFV6dUQ4eUxDcFdfNGc3TFFTQWczUWdadXg0WEc1WUMwbEdTNDdZdW1yT24yeUg4M0J0WXU1VW55NEJpTTEySlVTVm1Ucm1lUDEwTmU",
+      "titulo": "UFRN abre concurso público para professores de ensino básico, técnico e tecnológico",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQamxzeVA1bnVQV2E2TzNDdGN4OVU2TThYS3JraW85RGxFM3FUbm9LTXk3YlRIaTNMSlNKRnQzbVREWEY3U3l1TXM3NUhIbk9uMFBLc2kyY3k3WFl0MHNOYlVOMEMzRWVpUnFfdldldjZ6bnhkRFV6dUQ4eUxDcFdfNGc3TFFTQWczUWdadXg0WEc1WUMwbEdTNDdZdW1yT24yeUg4M0J0WXU1VW55NEJpTTEySlVTVm1Ucm1lUDEwTmU?oc=5",
+      "dataPublicacao": "2026-09-22T20:53:06.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMijAFBVV95cUxPUDFoRmNlUC1mQkxMbnU4OHV6Y0stbWJFVmpsekpMMWZTVGJyVkZLaExQaTNONEo4ZnNhRnhkOW5jRG9CeXdlNEFodlhoQy1LbkFsSEhSb0NfanB1bXdQYW1wUDhlNVhGMUtOZjRITk1nbU9teWhWclJVWU5lNl95SzlLbldtT0ktVmlwcNIBkgFBVV95cUxOWHVnVklVTy05SWtIVGt4UVFJWW96UWhxX2RhVkhZYXVXVHFmQXJUMzRtS3JCczFBTXFvcjdRNXBFSzR4U2VNYU5ZLW0wNWpfZy1UVmpwOXk4enYtSzF5NmttYmNQWVVpSlZmNUo5ZERHbktvX2VodVl1a0F0UHZDcUcwYnVLSm9kMWR1Y3p5TDVVQQ",
+      "titulo": "Concurso Sefaz BA: Fundação Cesgranrio será a banca!",
+      "fonte": "Estratégia Concursos",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUDFoRmNlUC1mQkxMbnU4OHV6Y0stbWJFVmpsekpMMWZTVGJyVkZLaExQaTNONEo4ZnNhRnhkOW5jRG9CeXdlNEFodlhoQy1LbkFsSEhSb0NfanB1bXdQYW1wUDhlNVhGMUtOZjRITk1nbU9teWhWclJVWU5lNl95SzlLbldtT0ktVmlwcNIBkgFBVV95cUxOWHVnVklVTy05SWtIVGt4UVFJWW96UWhxX2RhVkhZYXVXVHFmQXJUMzRtS3JCczFBTXFvcjdRNXBFSzR4U2VNYU5ZLW0wNWpfZy1UVmpwOXk4enYtSzF5NmttYmNQWVVpSlZmNUo5ZERHbktvX2VodVl1a0F0UHZDcUcwYnVLSm9kMWR1Y3p5TDVVQQ?oc=5",
+      "dataPublicacao": "2026-09-22T20:14:00.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMiywFBVV95cUxNd0d0cWZDS2dqRGs0bkc3NG0xc2lMSW9CbDV2SUhWRTNHWFN2cWw3ZkFXOHZTRlplbDJLZ0pzT2VPaW9TSlRualVFQ2wxc3YzU2ZBT3JlYXdydnEwS2NLTDFTM2c0ZkVDVDNMN091RjN6aG95dkVUdkRSaExVRGxON1J6QlV1Z09mOGtNaWc2UEJubkw2dmlSVUFod2RQaF9GdmU0MHZKaE1Xb3pkX3BfWGFzTlhwQ1Q1SHpfbDN6dGVFUkh5V1ZSR0lVb9IB0AFBVV95cUxQQVFjWDZNVmgzazFMUGI1czBHRmVQT3pDTDhNR2Z0Ty1Ya3VnQl9tOW1pTXlQblRuT0szWlFqc1p1SWM0RXpUVC1fakdFaklDUkFPalBYWlotdkR2eXgtcmhyN3dJSGQ1NFpmRTl5X1N5TERvSE9UeFFZUmhGMHlacEtHNVpiZmdBWDY5MThwYWVuWHB4ak9nZXp0dUJjOU5MVHRGMUZhTy1CYmxJSXF3WlJMTVoxdjh4T3VOamNCR2I2MkJkZW41aE9jVmhNTWNr",
+      "titulo": "CONCURSO Câmara de Barão de Antonina (SP): edital publicado com vaga para Advogado",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNd0d0cWZDS2dqRGs0bkc3NG0xc2lMSW9CbDV2SUhWRTNHWFN2cWw3ZkFXOHZTRlplbDJLZ0pzT2VPaW9TSlRualVFQ2wxc3YzU2ZBT3JlYXdydnEwS2NLTDFTM2c0ZkVDVDNMN091RjN6aG95dkVUdkRSaExVRGxON1J6QlV1Z09mOGtNaWc2UEJubkw2dmlSVUFod2RQaF9GdmU0MHZKaE1Xb3pkX3BfWGFzTlhwQ1Q1SHpfbDN6dGVFUkh5V1ZSR0lVb9IB0AFBVV95cUxQQVFjWDZNVmgzazFMUGI1czBHRmVQT3pDTDhNR2Z0Ty1Ya3VnQl9tOW1pTXlQblRuT0szWlFqc1p1SWM0RXpUVC1fakdFaklDUkFPalBYWlotdkR2eXgtcmhyN3dJSGQ1NFpmRTl5X1N5TERvSE9UeFFZUmhGMHlacEtHNVpiZmdBWDY5MThwYWVuWHB4ak9nZXp0dUJjOU5MVHRGMUZhTy1CYmxJSXF3WlJMTVoxdjh4T3VOamNCR2I2MkJkZW41aE9jVmhNTWNr?oc=5",
+      "dataPublicacao": "2026-09-22T19:35:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMifkFVX3lxTE00T2xKWHdsejVTTEtNekY2ZVZ2ME8ta1dyankyTzZJVFQyLUZYTFFQNTRPUlB0S25mOGJkRF8zQlRpbnByRXdKVlJwWjd4U1Y1NmZfVEh1VF9qMWg2ekpBUVNKMFlHa3gxS1gwTzNwZlJZck43SEcweV9SeDlLQQ",
+      "titulo": "Concurso TCU: novo edital para auditor é previsto no PLOA 2027",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00T2xKWHdsejVTTEtNekY2ZVZ2ME8ta1dyankyTzZJVFQyLUZYTFFQNTRPUlB0S25mOGJkRF8zQlRpbnByRXdKVlJwWjd4U1Y1NmZfVEh1VF9qMWg2ekpBUVNKMFlHa3gxS1gwTzNwZlJZck43SEcweV9SeDlLQQ?oc=5",
+      "dataPublicacao": "2026-09-22T19:33:35.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMifEFVX3lxTE1mTUd6N29Vd1hERmR3aDBrb3VpS0ZBTlh5NGxmNVNSVm15UE5BOVlIWmVTNVZQaE9mT1cxdzQ4emxVZTd3MG5yY0d5Z2ozNUtGanF2Y0tVblpPWlhoa3p0ZHdFeUZlM3FXbGRoQTU3eUY1czVDTjYzWmxtbko",
+      "titulo": "Concurso PC AL 2026: como será a prova objetiva do edital?",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1mTUd6N29Vd1hERmR3aDBrb3VpS0ZBTlh5NGxmNVNSVm15UE5BOVlIWmVTNVZQaE9mT1cxdzQ4emxVZTd3MG5yY0d5Z2ozNUtGanF2Y0tVblpPWlhoa3p0ZHdFeUZlM3FXbGRoQTU3eUY1czVDTjYzWmxtbko?oc=5",
+      "dataPublicacao": "2026-09-22T18:34:20.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMid0FVX3lxTE93MFgxX1VfeVdVMkpGQnRtdWxxN2hWdTNwMjVIcllKVEhjOGlyNjdNMW40eXZsQ3BHVGR3TDVlZ1YzTVZHZXk0QWlXWFRQYm1BWEpCSXFieVUtR0pwVWFmdTBPWEtndUNTdXdYc0x3aHBUeV9RYkpz",
+      "titulo": "Concurso Sefaz BA tem banca definida para edital com 200 vagas",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE93MFgxX1VfeVdVMkpGQnRtdWxxN2hWdTNwMjVIcllKVEhjOGlyNjdNMW40eXZsQ3BHVGR3TDVlZ1YzTVZHZXk0QWlXWFRQYm1BWEpCSXFieVUtR0pwVWFmdTBPWEtndUNTdXdYc0x3aHBUeV9RYkpz?oc=5",
+      "dataPublicacao": "2026-09-22T18:27:41.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMiwwFBVV95cUxOMXk5eVd5TVFJRzJfNVNlWkxMWDZTeWtSWm1qT3h2WXNWX1BTU2V2bENrbUY4aEVURnlkc0toeU9HZTZDdElVVlUtM2VHcm1ILXh2QXY4VUZqSWJjdlJKckViWVd2RWQzbGxHRHlac1BWazNKeXhxcW9Ybjlod2x5NTZIdEpkLWlWcnBUbUQ4c21zeWozX2JiaUw2d2Q0bFVoV2FoeW5IdURGN082Z0o4TjZxNXZoZE9ONkk0SzZiVktTemM",
+      "titulo": "Comodoro abre concurso com mais de 270 vagas e salários de até R$ 23,6 mil",
+      "fonte": "Fatos de Mato Grosso",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMXk5eVd5TVFJRzJfNVNlWkxMWDZTeWtSWm1qT3h2WXNWX1BTU2V2bENrbUY4aEVURnlkc0toeU9HZTZDdElVVlUtM2VHcm1ILXh2QXY4VUZqSWJjdlJKckViWVd2RWQzbGxHRHlac1BWazNKeXhxcW9Ybjlod2x5NTZIdEpkLWlWcnBUbUQ4c21zeWozX2JiaUw2d2Q0bFVoV2FoeW5IdURGN082Z0o4TjZxNXZoZE9ONkk0SzZiVktTemM?oc=5",
+      "dataPublicacao": "2026-09-22T17:56:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMipgFBVV95cUxPYmdYYS1mZXdOQnMwOGx1NjJWX0Z6dEZYSURjQ1lFLTdnYWtOSS1yTTU4WmtiLS1abVk1a284eEdldzNtVm1ETVdKbXFaMExmMjVRM2ZYeG1DQVREVjQ4RnBOc1VVaFlsYUZxMlZKNEdQWkZUbzhJUk92enZRUGR6VTFIb1Nab1FNWXpXMmlJS2NGcjRnV0Vkc0JZNnVxb1RERnZRWXFR",
+      "titulo": "Instituto do ES vai abrir concurso com salário de até R$ 8 mil",
+      "fonte": "agazeta.com.br",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYmdYYS1mZXdOQnMwOGx1NjJWX0Z6dEZYSURjQ1lFLTdnYWtOSS1yTTU4WmtiLS1abVk1a284eEdldzNtVm1ETVdKbXFaMExmMjVRM2ZYeG1DQVREVjQ4RnBOc1VVaFlsYUZxMlZKNEdQWkZUbzhJUk92enZRUGR6VTFIb1Nab1FNWXpXMmlJS2NGcjRnV0Vkc0JZNnVxb1RERnZRWXFR?oc=5",
+      "dataPublicacao": "2026-09-22T17:49:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiwwFBVV95cUxPLVlEazNDSExtTVNaOVRWRzU2azk0UUFraVoyRklaM2pOVzRmTzhyVXVCR3NzV1ZManJENi00ZXc3ZHZiSUhiTFlIWUJ5emFsNkVDVnprTU5vRVZxcHRONnBVTllQYW01UmZwU0ZURXJyRzlBcDNFUGFpb1RQUnYzeld1WWxJOTRfdnZzNFQ0Y1d1R2RqODlSeWdRYjMtck1IVUMyV1BVdlhXNzNiNF9UeFlBQTIxOURyZzFCRW52bUcxM0k",
+      "titulo": "Universidade Federal do Ceará abre concurso com 61 vagas",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPLVlEazNDSExtTVNaOVRWRzU2azk0UUFraVoyRklaM2pOVzRmTzhyVXVCR3NzV1ZManJENi00ZXc3ZHZiSUhiTFlIWUJ5emFsNkVDVnprTU5vRVZxcHRONnBVTllQYW01UmZwU0ZURXJyRzlBcDNFUGFpb1RQUnYzeld1WWxJOTRfdnZzNFQ0Y1d1R2RqODlSeWdRYjMtck1IVUMyV1BVdlhXNzNiNF9UeFlBQTIxOURyZzFCRW52bUcxM0k?oc=5",
+      "dataPublicacao": "2026-09-22T16:36:03.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMimAFBVV95cUxNajdYd0JVd1A5NDBhTnA1SFFDbDVDOHIzSk45allTWjNOc1VVb2J0YkRzOFYySzQ2eTdCbWVyakZBUHluYUFFMjZWV2UtWkROaTEtd2t3am50ZlBFaU5SZm1mazB4Q0ltMzQ0VkNCTTJjWXVuaEJmRTdkT01nSU1kRENuWGx6cEM2dFZWTUlfTkpuLW0xd2x4Qg",
+      "titulo": "Concurso ALEAC: exclusivo! Documentos detalham novo edital",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNajdYd0JVd1A5NDBhTnA1SFFDbDVDOHIzSk45allTWjNOc1VVb2J0YkRzOFYySzQ2eTdCbWVyakZBUHluYUFFMjZWV2UtWkROaTEtd2t3am50ZlBFaU5SZm1mazB4Q0ltMzQ0VkNCTTJjWXVuaEJmRTdkT01nSU1kRENuWGx6cEM2dFZWTUlfTkpuLW0xd2x4Qg?oc=5",
+      "dataPublicacao": "2026-09-22T15:59:34.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMijAFBVV95cUxPNmhIekQzR2t4OGowT2VmNVBuQ3RDOHEwR0lVWnRadGd0ck5GTVlEcnZkME1lNEZvVko2d1BSMmVHb2tVNWFISmh1aVVucnQ5aDZTSEJfRWlsQlhHT3R0WVJrTnBpSjJRSWtCUzZoM1k5c1JsU3FUNF9fb3hkVGNNMkRJRk40NzQtT0E0RQ",
+      "titulo": "Edital Prefeitura de Curitiba publicado: 348 vagas + CR; até R$ 38 mil",
+      "fonte": "Direção Concursos",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNmhIekQzR2t4OGowT2VmNVBuQ3RDOHEwR0lVWnRadGd0ck5GTVlEcnZkME1lNEZvVko2d1BSMmVHb2tVNWFISmh1aVVucnQ5aDZTSEJfRWlsQlhHT3R0WVJrTnBpSjJRSWtCUzZoM1k5c1JsU3FUNF9fb3hkVGNNMkRJRk40NzQtT0E0RQ?oc=5",
+      "dataPublicacao": "2026-09-22T15:41:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMibkFVX3lxTE9RWk5SOVN4LTRfX1Nyd21oenVYbFB2Uk5hZDVRbHFiaGNpcHRhV1k2cmxPeWZwSGpJVE9LNktTSmlSTmc5RU41ZDZnaVZtWDYtaGlteHo3TnN3RTZ6ek0yUXcwOGZReTE4Vnpva3VR",
+      "titulo": "Concurso PC AP abre inscrições para 396 vagas; veja passo a passo",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RWk5SOVN4LTRfX1Nyd21oenVYbFB2Uk5hZDVRbHFiaGNpcHRhV1k2cmxPeWZwSGpJVE9LNktTSmlSTmc5RU41ZDZnaVZtWDYtaGlteHo3TnN3RTZ6ek0yUXcwOGZReTE4Vnpva3VR?oc=5",
+      "dataPublicacao": "2026-09-22T15:14:58.000Z",
+      "categoriaInferida": "Inscrições Abertas"
+    },
+    {
+      "id": "CBMiigFBVV95cUxQcVdTVDhQNmVRYXU1blBZZENkOExhTmpHOTQ5R2x3VVdtaXRIbjhHMktmVkQ3MVhRQWxEaTJxal9uOUhPNVIydG5ERm1yZG5HMGhPT0ctUFNkRktGY2thbXhKTm1EcjltTksyYWswR0pxMThFVG1mcWpKX21Eb2VIb1J6MlEtTmhCckE",
+      "titulo": "Concurso Guarda de Resende RJ tem banca organizadora contratada",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcVdTVDhQNmVRYXU1blBZZENkOExhTmpHOTQ5R2x3VVdtaXRIbjhHMktmVkQ3MVhRQWxEaTJxal9uOUhPNVIydG5ERm1yZG5HMGhPT0ctUFNkRktGY2thbXhKTm1EcjltTksyYWswR0pxMThFVG1mcWpKX21Eb2VIb1J6MlEtTmhCckE?oc=5",
+      "dataPublicacao": "2026-09-22T14:57:23.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMieEFVX3lxTE10LS1kd09NSmdZNF9ZQjBGZUFER2R2aXR6UDFIdFA1Ny1CWFJxcTlMRGlhbjlWX2VLUFRMbUF4VlpKX3U4SkNlQldUNUtyZy1KUTBMMTJwc3dVVDBScFIyTXd5Y2VQczVoSkp3anFRMWg4SUl5cEFHbg",
+      "titulo": "Concurso ANPD: o que esperar da prova para Especialista?",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE10LS1kd09NSmdZNF9ZQjBGZUFER2R2aXR6UDFIdFA1Ny1CWFJxcTlMRGlhbjlWX2VLUFRMbUF4VlpKX3U4SkNlQldUNUtyZy1KUTBMMTJwc3dVVDBScFIyTXd5Y2VQczVoSkp3anFRMWg4SUl5cEFHbg?oc=5",
+      "dataPublicacao": "2026-09-22T14:50:56.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiogFBVV95cUxQd2gwOUNxRGpfa2FCZ184eURkTW41aGlKRUtPSlJoUTJRdzJuM1RMTW9LWjh5cndnOXNkV296cDJRbktiejlrcm9kckE3dEVLcTdER1FMZ0UxMmVkcDlsMFczTW5UU0Q1bmFnZ3IzNUp1WDV4amRsZll2RUMtQVJwZnRaSDlCOTdkVVhWR0o4RzNwYjlLOGYwOUk1MEhVQk80RHc",
+      "titulo": "Câmara de Ponta Porã",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQd2gwOUNxRGpfa2FCZ184eURkTW41aGlKRUtPSlJoUTJRdzJuM1RMTW9LWjh5cndnOXNkV296cDJRbktiejlrcm9kckE3dEVLcTdER1FMZ0UxMmVkcDlsMFczTW5UU0Q1bmFnZ3IzNUp1WDV4amRsZll2RUMtQVJwZnRaSDlCOTdkVVhWR0o4RzNwYjlLOGYwOUk1MEhVQk80RHc?oc=5",
+      "dataPublicacao": "2026-09-22T14:13:42.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMijAFBVV95cUxQUDNkTnlwazloZFF3d0FYU0VucDhVYlg2N2E2bjNtU2ZCc2h3TlFvaERndG9ZV3ZHNS0yUUlnNkNtbDl6anhoSWtxTmRnOGVrX3JZNl9SOE1iV0pNQkpUR0NVbXhjSlJtNDVRVnAyVlNtZk1qWG9MdWw2YUowXzc0a0wyTUdMdWtuYU4xaw",
+      "titulo": "Edital PGM Curitiba PR publicado com salário de até R$ 38 mil!",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUDNkTnlwazloZFF3d0FYU0VucDhVYlg2N2E2bjNtU2ZCc2h3TlFvaERndG9ZV3ZHNS0yUUlnNkNtbDl6anhoSWtxTmRnOGVrX3JZNl9SOE1iV0pNQkpUR0NVbXhjSlJtNDVRVnAyVlNtZk1qWG9MdWw2YUowXzc0a0wyTUdMdWtuYU4xaw?oc=5",
+      "dataPublicacao": "2026-09-22T14:12:29.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMixAFBVV95cUxNVk1KNjBmTUxRaUpNSkVSZVdTQmxJcHR3LVNuXzgwVk5TWmVjVV92b3pUekoxanhnVXc2NFZkdkFXYjRsZ2RqemlITm4zbnl2UmdsbTJUcllZQm1PVEp6SldWSndtVnpVb244ZnpZWGJhaGUzUjVFY29KTTZBNkZHQ2ZhdDBJdzIyNUN0NHNyY09HZUdVeC1iX1NCMG5LVkJEa3BQMnl3dWxqTzFtUlNTdS1NM2ZwdHhZdXpTZWhPaFZYVWtv",
+      "titulo": "Prefeitura de Barra Bonita",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVk1KNjBmTUxRaUpNSkVSZVdTQmxJcHR3LVNuXzgwVk5TWmVjVV92b3pUekoxanhnVXc2NFZkdkFXYjRsZ2RqemlITm4zbnl2UmdsbTJUcllZQm1PVEp6SldWSndtVnpVb244ZnpZWGJhaGUzUjVFY29KTTZBNkZHQ2ZhdDBJdzIyNUN0NHNyY09HZUdVeC1iX1NCMG5LVkJEa3BQMnl3dWxqTzFtUlNTdS1NM2ZwdHhZdXpTZWhPaFZYVWtv?oc=5",
+      "dataPublicacao": "2026-09-22T13:20:01.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMirAFBVV95cUxOY2RHUHNZeFI5cGM3QlVpc0ZVUThWOUdNOTlJbFJTNjg0RmN5QVlpeUlqWGw0eEhuR1JCQXVVTzM3aTVzTVE3N1hndHQxUDFNMEdQV3NkQWRYXzNLcFNzTWJ2bFNUQkpTNjEzaW01VklxTzdJanRZMno3Y3RBdmVqN2tRNzEyS2l3QjVKekUxVklRM2ZoYVQwT0FvQ3l3YlJodWpUczdvb1EtWHFv",
+      "titulo": "Concurso MP-AP: Fundação Carlos Chagas será banca de novo edital para Promotor",
+      "fonte": "Ceisc",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOY2RHUHNZeFI5cGM3QlVpc0ZVUThWOUdNOTlJbFJTNjg0RmN5QVlpeUlqWGw0eEhuR1JCQXVVTzM3aTVzTVE3N1hndHQxUDFNMEdQV3NkQWRYXzNLcFNzTWJ2bFNUQkpTNjEzaW01VklxTzdJanRZMno3Y3RBdmVqN2tRNzEyS2l3QjVKekUxVklRM2ZoYVQwT0FvQ3l3YlJodWpUczdvb1EtWHFv?oc=5",
+      "dataPublicacao": "2026-09-22T13:08:48.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMijAFBVV95cUxNSEdlRE5BTU1PdVFEejI4ZWZHRlVMMmJYSGVscmJnOVJKOUZlYXRTRzJ1TmlTbU9iVWZWZHk3ZmhfTTdXcjFWS0dBdm9vRUJhOGFfNlNWV2xIWTVFVTluZnlBTUVic0lGU3F4Z25TVF9UMTlKWVptOVZsRjhfQWt4ODRJV1l3SnBGSHltXw",
+      "titulo": "Edital ISS Curitiba PR SAIU: 10 vagas e até R$ 18,3 mil!",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSEdlRE5BTU1PdVFEejI4ZWZHRlVMMmJYSGVscmJnOVJKOUZlYXRTRzJ1TmlTbU9iVWZWZHk3ZmhfTTdXcjFWS0dBdm9vRUJhOGFfNlNWV2xIWTVFVTluZnlBTUVic0lGU3F4Z25TVF9UMTlKWVptOVZsRjhfQWt4ODRJV1l3SnBGSHltXw?oc=5",
+      "dataPublicacao": "2026-09-22T13:05:59.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMikgFBVV95cUxNSXFaSktWclRLSUdRVWJHNFQ5RXZTajg4aW1tdlFBcW5PTS1Qb0F5V0RTZmFfTnZxbGViRFItUUV4SFgzbjVXcE9lbG5PQ3ZINVhlLXlaSW5pVEhnUVpDMVhNQ04tTHpyMWxndDgtTVlvVURyWm5ZVEtMQ1ZIS0ktcFozR2x1OUFpMS01SkRuclNKUQ",
+      "titulo": "CASAN",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSXFaSktWclRLSUdRVWJHNFQ5RXZTajg4aW1tdlFBcW5PTS1Qb0F5V0RTZmFfTnZxbGViRFItUUV4SFgzbjVXcE9lbG5PQ3ZINVhlLXlaSW5pVEhnUVpDMVhNQ04tTHpyMWxndDgtTVlvVURyWm5ZVEtMQ1ZIS0ktcFozR2x1OUFpMS01SkRuclNKUQ?oc=5",
+      "dataPublicacao": "2026-09-22T12:35:53.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiwgFBVV95cUxOemRJeVdoLUJ0V2htWFNQdEJXRFhfUXFxeGx4RTdhejRPaWVNdlJ0MFlqQUVwdnhnV2UzRWN5dUpDMjZ0NlgwQ19rdDMwblVaOVFNMWw4OXVaVFBtNS16RmQ3MFpHNDVZblJwNGVvMUVQM1U5SUlaQl83SHlmUXdpZWVEQWNhbXVydjFvVmVoUi02UDR5d29LY29XcFloMVRER0NJTmM0aXJOTWpRY1JrcFRacThJNUJtbkhoOXVncG13dw",
+      "titulo": "Governo do Estado do Amapá",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOemRJeVdoLUJ0V2htWFNQdEJXRFhfUXFxeGx4RTdhejRPaWVNdlJ0MFlqQUVwdnhnV2UzRWN5dUpDMjZ0NlgwQ19rdDMwblVaOVFNMWw4OXVaVFBtNS16RmQ3MFpHNDVZblJwNGVvMUVQM1U5SUlaQl83SHlmUXdpZWVEQWNhbXVydjFvVmVoUi02UDR5d29LY29XcFloMVRER0NJTmM0aXJOTWpRY1JrcFRacThJNUJtbkhoOXVncG13dw?oc=5",
+      "dataPublicacao": "2026-09-22T12:22:24.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMivAFBVV95cUxQM01JSU9CWGRhMzVxQTlzQ2dhbTZmNzFqZ0JBV2dCNUVncktmQ0tXU1hNVTNTcVUxY3lwZFBOZGpsQjdKNGRQZENackNwckp6UHRCRlRwYjl2M3hodmN3SGdTLVRXRW94RUtGalhVNjZrc0ZEU2NhdWdXcXRvNE9PdnhfUkNscGZWTTdlWlVUczVXa2RsbVczU3QzTHg1Ny1IMlRqWWxzUkVGcXdoOTJ4UmJtQ3BTN1RWU0FJVQ",
+      "titulo": "Concurso PC-AP: edital para Delegado e Oficial Investigador abre inscrições nesta terça (22)",
+      "fonte": "Ceisc",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQM01JSU9CWGRhMzVxQTlzQ2dhbTZmNzFqZ0JBV2dCNUVncktmQ0tXU1hNVTNTcVUxY3lwZFBOZGpsQjdKNGRQZENackNwckp6UHRCRlRwYjl2M3hodmN3SGdTLVRXRW94RUtGalhVNjZrc0ZEU2NhdWdXcXRvNE9PdnhfUkNscGZWTTdlWlVUczVXa2RsbVczU3QzTHg1Ny1IMlRqWWxzUkVGcXdoOTJ4UmJtQ3BTN1RWU0FJVQ?oc=5",
+      "dataPublicacao": "2026-09-22T12:19:23.000Z",
+      "categoriaInferida": "Inscrições Abertas"
+    },
+    {
+      "id": "CBMisAFBVV95cUxPb240alhhbFVGNjRnS0ViRVhVYkJUaWNnMEJkYld0SVV2SDJhTDBXWmNCLWpUb2lVVHFsUGszQmd6aHRyNEFhVU84cXF0bzlhTWNyTHdvUHpkUDBpSjVKdktHTkF6SlhrajI1OGIxbjR5b3hXN0xvNnNXeUZiRWJMMUZLNTNZbWplWUY4ZE9SVG94Z2ZKSXloS2xFcklKcFhVUmxOeXpERVYtOHZtaVNCcg",
+      "titulo": "Concurso Guarda de Resende RJ tem banca contratada e edital fica iminente",
+      "fonte": "Degrau Cultural",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb240alhhbFVGNjRnS0ViRVhVYkJUaWNnMEJkYld0SVV2SDJhTDBXWmNCLWpUb2lVVHFsUGszQmd6aHRyNEFhVU84cXF0bzlhTWNyTHdvUHpkUDBpSjVKdktHTkF6SlhrajI1OGIxbjR5b3hXN0xvNnNXeUZiRWJMMUZLNTNZbWplWUY4ZE9SVG94Z2ZKSXloS2xFcklKcFhVUmxOeXpERVYtOHZtaVNCcg?oc=5",
+      "dataPublicacao": "2026-09-22T12:00:00.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMiugFBVV95cUxQcUMtbFQ5ZHdwX0hOdi1yX192d3E2NEgyTTlCcVdxWmJrcTRoamhvRk5VeUxfYUV5Vm9nOG1xQl9rWkpQM2Y3UUgtdlBXMjNDeVAxbWFjdnRzT0FrOWU4UjdLTjR6LVdWTVpMZjk2UEI3VmJ6WWlPNGdvR1VEVnBveGI2SnE5YWc2RlB0d1V4S1JYRkxfV1ZzQkRVdjJRaVhYRjNIcUhnUzE0d3E3NkpGZ3NfTGpqazN0Z0HSAcIBQVVfeXFMTmxrYzEtN2VtOWdsLTFkbHMtWUY1LTNEeXBfdGEzcl9rYkM4MjFuMklKRGhMcV9uS2JkUGJjYVFHbzNMUEdHSTRvUXd6R3dOVmJtb0hoclZGeGtnOGlzN21Gc0RkV00tb2xKeWxwMzAwcG5HeUhYS05aR3lkUlFZbG54a1p4Ml9NUkJNVWxYZWg2MjFzUUV0a1NfNUFOQ0VyR05FaHp4N0pOZHBlSlRwakpNS0RJSWx1VEk3QkRQdWVKanc",
+      "titulo": "Concurso IFPA: edital é publicado com 65 vagas e salários de até R$ 5,2 mil",
+      "fonte": "DOL",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcUMtbFQ5ZHdwX0hOdi1yX192d3E2NEgyTTlCcVdxWmJrcTRoamhvRk5VeUxfYUV5Vm9nOG1xQl9rWkpQM2Y3UUgtdlBXMjNDeVAxbWFjdnRzT0FrOWU4UjdLTjR6LVdWTVpMZjk2UEI3VmJ6WWlPNGdvR1VEVnBveGI2SnE5YWc2RlB0d1V4S1JYRkxfV1ZzQkRVdjJRaVhYRjNIcUhnUzE0d3E3NkpGZ3NfTGpqazN0Z0HSAcIBQVVfeXFMTmxrYzEtN2VtOWdsLTFkbHMtWUY1LTNEeXBfdGEzcl9rYkM4MjFuMklKRGhMcV9uS2JkUGJjYVFHbzNMUEdHSTRvUXd6R3dOVmJtb0hoclZGeGtnOGlzN21Gc0RkV00tb2xKeWxwMzAwcG5HeUhYS05aR3lkUlFZbG54a1p4Ml9NUkJNVWxYZWg2MjFzUUV0a1NfNUFOQ0VyR05FaHp4N0pOZHBlSlRwakpNS0RJSWx1VEk3QkRQdWVKanc?oc=5",
+      "dataPublicacao": "2026-09-22T10:53:33.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiwwFBVV95cUxPc3ZzNjNNYkJGQnhVVGJSQWJab3BXUDZOY3NTeC1uX1NoaUdxbDloS2pCYXdUZGduRkhKY3dfS3VHMEE3M1UwaVpiOXJZeDRQU1ViOGdUZlpwRnhLRWVnMlFWNGxldlphVGc0N1Q0ajlwZDJnV21fNGFRRVhWbDJFWGY5dm8wQjBzQ3BiQUFmTVp2LVprMm9TV29IdEQxa01hMVlrTUh3VWlhcWJiYVJMZzVUUHFHT216bEVEcFdBTE9SOVHSAcsBQVVfeXFMTkdwemhuMlBvbnlna0UyNkUwNXYtU21fTGQ3NUcteUd5VzBxeG5ObWxQQXJiTUhHWWlWLWp4SGpEVFNJOXVLbXRLSGdoYXgxUGZxQWZCVkpqUEowM1h3UWhUM2JITzhoS3NzMldvUV9BbXpJTXl5M1pqY1BkLWxrNG5FcGJzRkh0T3BmXzZxalNQUkRENll4aU84b1JKb3NFalZrLUZlOVIwMG16bU5WTVFFM1lRWGJfeU5wV015SG5Dd2RTWmNpMGxhSmM",
+      "titulo": "Concurso UFRA: saiba quando sai o edital para técnicos administrativos e docentes",
+      "fonte": "DOL",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPc3ZzNjNNYkJGQnhVVGJSQWJab3BXUDZOY3NTeC1uX1NoaUdxbDloS2pCYXdUZGduRkhKY3dfS3VHMEE3M1UwaVpiOXJZeDRQU1ViOGdUZlpwRnhLRWVnMlFWNGxldlphVGc0N1Q0ajlwZDJnV21fNGFRRVhWbDJFWGY5dm8wQjBzQ3BiQUFmTVp2LVprMm9TV29IdEQxa01hMVlrTUh3VWlhcWJiYVJMZzVUUHFHT216bEVEcFdBTE9SOVHSAcsBQVVfeXFMTkdwemhuMlBvbnlna0UyNkUwNXYtU21fTGQ3NUcteUd5VzBxeG5ObWxQQXJiTUhHWWlWLWp4SGpEVFNJOXVLbXRLSGdoYXgxUGZxQWZCVkpqUEowM1h3UWhUM2JITzhoS3NzMldvUV9BbXpJTXl5M1pqY1BkLWxrNG5FcGJzRkh0T3BmXzZxalNQUkRENll4aU84b1JKb3NFalZrLUZlOVIwMG16bU5WTVFFM1lRWGJfeU5wV015SG5Dd2RTWmNpMGxhSmM?oc=5",
+      "dataPublicacao": "2026-09-22T02:38:35.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMipwFBVV95cUxQNnJKaHlNdmg1N2F4WmFNU2w4RHBzcWM2bVVqNDkxam1pU0dyazZObDlPdWVnN0xnWTZUTlhSRm1QbEJTZW5RWGNONkExMk9qd193U3djT2ZKVk5Xa0RwN2cxQTdWdXd1bGlNOTVNLXRXU05IM09HdGpGWVNqeE44bExQcHRzRHRTeHFXLXBvNktrSEp1U3BpaWI3V3E3NWhIS25TaFIzVQ",
+      "titulo": "Prefeitura de Três Palmeiras RS publica edital para concurso de psicólogo",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNnJKaHlNdmg1N2F4WmFNU2w4RHBzcWM2bVVqNDkxam1pU0dyazZObDlPdWVnN0xnWTZUTlhSRm1QbEJTZW5RWGNONkExMk9qd193U3djT2ZKVk5Xa0RwN2cxQTdWdXd1bGlNOTVNLXRXU05IM09HdGpGWVNqeE44bExQcHRzRHRTeHFXLXBvNktrSEp1U3BpaWI3V3E3NWhIS25TaFIzVQ?oc=5",
+      "dataPublicacao": "2026-09-22T00:48:05.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMipAFBVV95cUxPX1ItQ3c1ZTk4d0hZc0hJUGU1TlczR2xUMWpCa3RJUkdkUmRoRFJHX1EwN1R2aUl2U1hnTGI0RnpyOFBfdGNnWWtmMDR4M1V5bG5DaEVqSW5EZVFlejdxdE5FTFltN1NxeXBQQXV5M0p3VW5HSzlGZmp2Q1Eybmg5QVc5TEpweDRneVhVNl84YUdNQlc5cnVRNXp1ck83cVI5bXhSTg",
+      "titulo": "Prefeitura de Catu BA publica edital 001/2026 de concurso com 155 vagas",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPX1ItQ3c1ZTk4d0hZc0hJUGU1TlczR2xUMWpCa3RJUkdkUmRoRFJHX1EwN1R2aUl2U1hnTGI0RnpyOFBfdGNnWWtmMDR4M1V5bG5DaEVqSW5EZVFlejdxdE5FTFltN1NxeXBQQXV5M0p3VW5HSzlGZmp2Q1Eybmg5QVc5TEpweDRneVhVNl84YUdNQlc5cnVRNXp1ck83cVI5bXhSTg?oc=5",
+      "dataPublicacao": "2026-09-22T00:27:02.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiqAFBVV95cUxNbHE3TFZPQzhYQXlfeEREM2FTVTFCS3lYbEJpZEd2ME12N3ctdk90QU92dmdva1doNFJ3VE9sS3BpMnNlT2N4NFVtT3VkN0UyMmFrS1lSNFFWaklOdXJTa0xNT1l5cUNVbHEwUGs3dGNHd2dmRjZ0N3JSVUhoUXgtd1kwVVZhWDlseHZxS3RmdUtPSmFVYzRObHlGaUdaa1N3aDlnZjdfUjbSAbcBQVVfeXFMT0g2dmlaQ3NlXzBZTTRLUGFUTDlCbmlPZ25rcHAzVmJaSEl4QTFpTDZPVnhBa1FqbWR6RmI1MjdmV3Q5QVJTXzkxeldZdHNwaVVPcENMMXVNX2NGWUZPVnduZ3VMYWprZnQ0b2ZsNWtjUzVOVUh5R3RBcEZ5NkE1cjQ0dGZlZTBPMU1yS19wYi1TNUZGU0NYS0R6Rk5XZFlxMEotU0ZyMzVOS2JvWHJ2MFpadGd4d1E4",
+      "titulo": "Prefeitura na Bahia abre concurso com 190 vagas com salários de até R$ 3 mil; veja como se inscrever",
+      "fonte": "G1",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbHE3TFZPQzhYQXlfeEREM2FTVTFCS3lYbEJpZEd2ME12N3ctdk90QU92dmdva1doNFJ3VE9sS3BpMnNlT2N4NFVtT3VkN0UyMmFrS1lSNFFWaklOdXJTa0xNT1l5cUNVbHEwUGs3dGNHd2dmRjZ0N3JSVUhoUXgtd1kwVVZhWDlseHZxS3RmdUtPSmFVYzRObHlGaUdaa1N3aDlnZjdfUjbSAbcBQVVfeXFMT0g2dmlaQ3NlXzBZTTRLUGFUTDlCbmlPZ25rcHAzVmJaSEl4QTFpTDZPVnhBa1FqbWR6RmI1MjdmV3Q5QVJTXzkxeldZdHNwaVVPcENMMXVNX2NGWUZPVnduZ3VMYWprZnQ0b2ZsNWtjUzVOVUh5R3RBcEZ5NkE1cjQ0dGZlZTBPMU1yS19wYi1TNUZGU0NYS0R6Rk5XZFlxMEotU0ZyMzVOS2JvWHJ2MFpadGd4d1E4?oc=5",
+      "dataPublicacao": "2026-09-21T23:00:30.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMigAFBVV95cUxPWGVNTVJXOHpTUHhQaWhlTE0yWkZYZFR2M0dxUnVxUWw0YUZONzRmdEVROFV6OS0wcFRTNF8wc1A2VUNOcDZwdHllLVpTMC1EUHZfci1haDRzajQ3Tk8zdFBtVDk2Z1U1elJyWFl0cFVmUzljM2VtQzQ5Q0o4a3NBZQ",
+      "titulo": "Edital PGM Curitiba PR publicado! 5 vagas e R$ 38 mil",
+      "fonte": "Estratégia Carreira Jurídica",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWGVNTVJXOHpTUHhQaWhlTE0yWkZYZFR2M0dxUnVxUWw0YUZONzRmdEVROFV6OS0wcFRTNF8wc1A2VUNOcDZwdHllLVpTMC1EUHZfci1haDRzajQ3Tk8zdFBtVDk2Z1U1elJyWFl0cFVmUzljM2VtQzQ5Q0o4a3NBZQ?oc=5",
+      "dataPublicacao": "2026-09-21T22:27:26.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMia0FVX3lxTE1WVzlKN1dzaS1TYVN1TE5JcnQ3RTFLWEJsRlpxcUxacUZpRndRcDB5QWtFUEV3MU05cldxY3Z4WE9JVnlHQWhZaGJnelZUb2hCQW5tNUlBRmg1NlBBdEpNLVpmMkVUVEVKTTNn",
+      "titulo": "Concursos Nível Médio 2026: editais previstos e oportunidades!",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1WVzlKN1dzaS1TYVN1TE5JcnQ3RTFLWEJsRlpxcUxacUZpRndRcDB5QWtFUEV3MU05cldxY3Z4WE9JVnlHQWhZaGJnelZUb2hCQW5tNUlBRmg1NlBBdEpNLVpmMkVUVEVKTTNn?oc=5",
+      "dataPublicacao": "2026-09-21T22:01:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMisAFBVV95cUxPNVM1WkltaDRNc2wzMFhfWUtieTV0NzJjaUM4X0htZDhaaGlHNnAydzdTZ052MTBtbFdaYzVPZE1ORXZSQmlqMVVhNElGMFctTFFrWmN3WklEZ0VwSWFLQWFjYjlWbGVsZWd4LTNhcU9uSWZScjZRZGIxVnZRWmZLdko4OWhSTHJHSW0tbXE5aGJJUGYyUkdiM1NZSVFTSXh1MVZfdmwzOWctVDdRUDExeA",
+      "titulo": "Prefeitura de Ouro Fino MG abre concurso para vagas temporárias na área da saúde",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNVM1WkltaDRNc2wzMFhfWUtieTV0NzJjaUM4X0htZDhaaGlHNnAydzdTZ052MTBtbFdaYzVPZE1ORXZSQmlqMVVhNElGMFctTFFrWmN3WklEZ0VwSWFLQWFjYjlWbGVsZWd4LTNhcU9uSWZScjZRZGIxVnZRWmZLdko4OWhSTHJHSW0tbXE5aGJJUGYyUkdiM1NZSVFTSXh1MVZfdmwzOWctVDdRUDExeA?oc=5",
+      "dataPublicacao": "2026-09-21T21:59:48.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMi0wFBVV95cUxOcWwxNG5CMEVJOGdZRmJaN3YwczVOY0xYRnNXVGZXbTFFVFYxTWFjbzRId29QaDduOHFjVUlFTHlpMnJfWi1vcE9pZzQxUzVCdXFkSlNrSUlGS1BkM2Rjc091Wm56Z1RGNHJIN21WZHhNUEpkYXBUMmlua0RCaThqMksxTHFUT1NPSWJ5bFU4ZkZOa3FqOXBzUUJ0Y2hWS3RSWXJZb01zNkJvazBHRHZVOEhGcDhCbXlJYkNlaFByLUxueV9wd1lnTDM0dkZRdlNhX2xZ",
+      "titulo": "Câmara Municipal de Rio Fortuna SC publica edital de concurso para agente operacional de serviços diversos",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcWwxNG5CMEVJOGdZRmJaN3YwczVOY0xYRnNXVGZXbTFFVFYxTWFjbzRId29QaDduOHFjVUlFTHlpMnJfWi1vcE9pZzQxUzVCdXFkSlNrSUlGS1BkM2Rjc091Wm56Z1RGNHJIN21WZHhNUEpkYXBUMmlua0RCaThqMksxTHFUT1NPSWJ5bFU4ZkZOa3FqOXBzUUJ0Y2hWS3RSWXJZb01zNkJvazBHRHZVOEhGcDhCbXlJYkNlaFByLUxueV9wd1lnTDM0dkZRdlNhX2xZ?oc=5",
+      "dataPublicacao": "2026-09-21T21:19:09.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiwgFBVV95cUxQYkd1ZkxDU3doVlRXdTBEN2pjaXE1SEt1blJ1MzhDV0hoWWJydDhtYlJzcGFrRWFpOU9CYWUydDkwSnc4OXhvY2o4MHprSlgzbC1KN1hBRl9VTFV2Wk41RWt3V2dDMExSRnMyTHZScGhGOGUwRW01WUoxYmNJSHVUeHZXcm5CY09sWkYwY21hTjJrRTdUWkYzaGM2alNRU1dEQ3pkanRZT0pzQ2pHNzdhUVFQU3VPckgxcTIyN2tvbHVLdw",
+      "titulo": "Prefeitura de Alagoinha",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYkd1ZkxDU3doVlRXdTBEN2pjaXE1SEt1blJ1MzhDV0hoWWJydDhtYlJzcGFrRWFpOU9CYWUydDkwSnc4OXhvY2o4MHprSlgzbC1KN1hBRl9VTFV2Wk41RWt3V2dDMExSRnMyTHZScGhGOGUwRW01WUoxYmNJSHVUeHZXcm5CY09sWkYwY21hTjJrRTdUWkYzaGM2alNRU1dEQ3pkanRZT0pzQ2pHNzdhUVFQU3VPckgxcTIyN2tvbHVLdw?oc=5",
+      "dataPublicacao": "2026-09-21T21:16:55.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiqAFBVV95cUxNaVNDWDh2akhSUGFDMXV3TFJCVjJnVHFWR1l2NDdhWGRBelk1WmxfSVFrSTlNU3JZTGlNSG5WQWFkVU5kRVo0eUc3aXR4NEFQcnllSlU5RmZnbVhfOHZZMFBmeU5BUWN1WUktRHI2SHNraWNKZ2I4Y05DaWpOd3Z6QUE4X3J6aTcxVkFJaU1wY29GVmtUVG9QaHFLaTdYeTdQSThtM0I2VDk",
+      "titulo": "Prefeitura de Porto Calvo",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaVNDWDh2akhSUGFDMXV3TFJCVjJnVHFWR1l2NDdhWGRBelk1WmxfSVFrSTlNU3JZTGlNSG5WQWFkVU5kRVo0eUc3aXR4NEFQcnllSlU5RmZnbVhfOHZZMFBmeU5BUWN1WUktRHI2SHNraWNKZ2I4Y05DaWpOd3Z6QUE4X3J6aTcxVkFJaU1wY29GVmtUVG9QaHFLaTdYeTdQSThtM0I2VDk?oc=5",
+      "dataPublicacao": "2026-09-21T21:14:39.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMivAFBVV95cUxPUDBKbEJkdHhwbVhJRkRsZXNsNFdUcGNteXFKeUR0MUdiSkdmTENkLU1EVmc1RHBBaUJMOGQxZ3d2dTBBWHpaRlNMRDBpbVJ5SFgwSTZZZC1pQXRwa0FCLVR5ZlRjVGRPSjAxaXRoTWpySXhub1dCcmp1Z3d5TFgwLWRfQmd6c0w3TlhQenFmaDJNdDhqRk9KclNCcGk3UEwtNmdyNW9fMW1fVmkzN0h6TGcxbEkzUTEzcmdJOQ",
+      "titulo": "Prefeitura de Cruz do Espírito Santo",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUDBKbEJkdHhwbVhJRkRsZXNsNFdUcGNteXFKeUR0MUdiSkdmTENkLU1EVmc1RHBBaUJMOGQxZ3d2dTBBWHpaRlNMRDBpbVJ5SFgwSTZZZC1pQXRwa0FCLVR5ZlRjVGRPSjAxaXRoTWpySXhub1dCcmp1Z3d5TFgwLWRfQmd6c0w3TlhQenFmaDJNdDhqRk9KclNCcGk3UEwtNmdyNW9fMW1fVmkzN0h6TGcxbEkzUTEzcmdJOQ?oc=5",
+      "dataPublicacao": "2026-09-21T21:02:47.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiZ0FVX3lxTE1hYVl4MEVtaHZxQWwtS2ZWcU42LTlNWWZhUUNMVXNOblZadEhKcVdsRVZqdWZaYXVMS0hMQnE4eXEwX3RPZnlSeHRhUWhHalN2WU1WU2ZJck5QMTlHenFoU19KLXR2MVE",
+      "titulo": "Concurso Ebserh: PLOA 2027 prevê editais anuais e bienais",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hYVl4MEVtaHZxQWwtS2ZWcU42LTlNWWZhUUNMVXNOblZadEhKcVdsRVZqdWZaYXVMS0hMQnE4eXEwX3RPZnlSeHRhUWhHalN2WU1WU2ZJck5QMTlHenFoU19KLXR2MVE?oc=5",
+      "dataPublicacao": "2026-09-21T20:48:21.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiwAFBVV95cUxOQ1VfenFWTUtURGxmbmhzQWZ4NmYzS29QcGV1bEgzUHNwVVRabkZLQUgwY2Jnd0V4RDJWeW1XSnIydF9zMVUwbmpybkswOXdzdzctczROamFqNUg2NDZnYVE0cDB2dG80eFdnVVZPdTZGRVR0UDNEY09LekhvNVVCWlZuWDlGbGszTEhYVElGNnNDWW1FSnBIam5kUkZUMjFpS1ctWV9mdUQ4ekN6Ny1rbUhPemd1TG1laE9lMVZtVFU",
+      "titulo": "IFPA abre concurso público com 65 vagas para técnicos-administrativos em Educação",
+      "fonte": "IFPA",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQ1VfenFWTUtURGxmbmhzQWZ4NmYzS29QcGV1bEgzUHNwVVRabkZLQUgwY2Jnd0V4RDJWeW1XSnIydF9zMVUwbmpybkswOXdzdzctczROamFqNUg2NDZnYVE0cDB2dG80eFdnVVZPdTZGRVR0UDNEY09LekhvNVVCWlZuWDlGbGszTEhYVElGNnNDWW1FSnBIam5kUkZUMjFpS1ctWV9mdUQ4ekN6Ny1rbUhPemd1TG1laE9lMVZtVFU?oc=5",
+      "dataPublicacao": "2026-09-21T20:21:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMi4gFBVV95cUxNNlZYTFVXRGlXMmxEM1Vpc0lKYmkzbHNiOEIwNnF3ZDd2dDZXN3lWOW1OLXJhR1ZVNHJvc2RYcmtLbnpzY25hM2VOc2VtdHhRWnFkbHBxUnhud2VZZUZPN21Ob3N6blhKN2Q0UFVuVW8zbG1SU0NUeVdhS1BHRlVfVDJxQjZSUzAxdmtDOUxJbFhUbmZRNm44NjJEczIyTkxpcDZJVE93UGIxNEtEV0UtdE9jdGtUWWl6MlVlRlBGY2s4M0hyU0ZvV0Z5Q1h0T1pHWURSbk1ybklnMFBnanVCcjlR0gHwAUFVX3lxTE1acDJCa0ZiMXlaaEY4SnkzUkZOaHNYY1pDcnBvcjlFWU9pMWVxMlhVN3lDT3BhRHI5aHFEVnZDZkJSckZDWTcyWjVEc0VaSHNfRVRJWVY1aHJYZUdDRnhRTnhlTVYtdjlhWHJSeGxIV0tHZUhGa1dXUDNTem85N1p6ZC0yNTBLdDdHWFdTRWRzT1pwZ1B2QlRGY2FIVFNzSTJtSmtwaFBUWENaUXBmdWRWSEFMMlU0cHBKcjBCaHNLa25peXlsQ0F3VlJTVmRNcDJnOFJmclBhWEhQbVk1VGZXQkE5WEdMRXpHOG9JZC1Rbg",
+      "titulo": "Cremerj publica edital de concurso com 436 vagas e salários de até R$ 18 mil",
+      "fonte": "Extra online",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNlZYTFVXRGlXMmxEM1Vpc0lKYmkzbHNiOEIwNnF3ZDd2dDZXN3lWOW1OLXJhR1ZVNHJvc2RYcmtLbnpzY25hM2VOc2VtdHhRWnFkbHBxUnhud2VZZUZPN21Ob3N6blhKN2Q0UFVuVW8zbG1SU0NUeVdhS1BHRlVfVDJxQjZSUzAxdmtDOUxJbFhUbmZRNm44NjJEczIyTkxpcDZJVE93UGIxNEtEV0UtdE9jdGtUWWl6MlVlRlBGY2s4M0hyU0ZvV0Z5Q1h0T1pHWURSbk1ybklnMFBnanVCcjlR0gHwAUFVX3lxTE1acDJCa0ZiMXlaaEY4SnkzUkZOaHNYY1pDcnBvcjlFWU9pMWVxMlhVN3lDT3BhRHI5aHFEVnZDZkJSckZDWTcyWjVEc0VaSHNfRVRJWVY1aHJYZUdDRnhRTnhlTVYtdjlhWHJSeGxIV0tHZUhGa1dXUDNTem85N1p6ZC0yNTBLdDdHWFdTRWRzT1pwZ1B2QlRGY2FIVFNzSTJtSmtwaFBUWENaUXBmdWRWSEFMMlU0cHBKcjBCaHNLa25peXlsQ0F3VlJTVmRNcDJnOFJmclBhWEhQbVk1VGZXQkE5WEdMRXpHOG9JZC1Rbg?oc=5",
+      "dataPublicacao": "2026-09-21T19:40:28.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiygFBVV95cUxONEJOT0pOQkNfTE1PNU8xcWhzQkZEV2Fza0ZCMmc1NDV4Q0RmZloyWmlWZjZqQTNFVENiQ0FfMjVUdXRwR1FWUXVfTmFCODVFMm40b3FKSjYtdkg1eXMyekdZcnAzenpkOW5UTjQzQjlzYkp2c3dXbkREVWNmbUFRaGwtbnNWeEstOHFjYktkc3RGUVdRbjV6MEU0d2I1R1k1MDQxdXRSM1UwZTE5ZHd3UDFpeE9FbnBoVG9yQ3dzVGZQaUp5X203R2Vn0gHYAUFVX3lxTFB4LTN0dER0My1kVjFjaV84NndjbzhldGN2LVZIMEZlWDlEM1B5VE04blZrVWhpdXE5MjM4RU9vZWJsemhkRUUyTWpNNXlMUzNtNlJXRVdlNUtCV0F5cmxFY3dNdXFhRGpWZUlGNWJ6U29ZWmZxU1NHbjJ3dE5naHNuOXVwdkM3R1hZWGZ5TEktOVMyOUVjTFVaR3ZSV2hqTjFlN1dPQk16RmtMTERzWVVMd3dDSTkxbktoWmJLZmV6endKNkNOdng4MU1MSkozWTAwY1NsVFRwZQ",
+      "titulo": "Publicado edital de concurso com 183 vagas para hospital de Bocaiuva",
+      "fonte": "G1",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONEJOT0pOQkNfTE1PNU8xcWhzQkZEV2Fza0ZCMmc1NDV4Q0RmZloyWmlWZjZqQTNFVENiQ0FfMjVUdXRwR1FWUXVfTmFCODVFMm40b3FKSjYtdkg1eXMyekdZcnAzenpkOW5UTjQzQjlzYkp2c3dXbkREVWNmbUFRaGwtbnNWeEstOHFjYktkc3RGUVdRbjV6MEU0d2I1R1k1MDQxdXRSM1UwZTE5ZHd3UDFpeE9FbnBoVG9yQ3dzVGZQaUp5X203R2Vn0gHYAUFVX3lxTFB4LTN0dER0My1kVjFjaV84NndjbzhldGN2LVZIMEZlWDlEM1B5VE04blZrVWhpdXE5MjM4RU9vZWJsemhkRUUyTWpNNXlMUzNtNlJXRVdlNUtCV0F5cmxFY3dNdXFhRGpWZUlGNWJ6U29ZWmZxU1NHbjJ3dE5naHNuOXVwdkM3R1hZWGZ5TEktOVMyOUVjTFVaR3ZSV2hqTjFlN1dPQk16RmtMTERzWVVMd3dDSTkxbktoWmJLZmV6endKNkNOdng4MU1MSkozWTAwY1NsVFRwZQ?oc=5",
+      "dataPublicacao": "2026-09-21T19:27:42.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiqwFBVV95cUxPekFBWm9uelZEOENVQ3BfakJqVEhub2FPUTd2MzdEc3hoRURpUGdsTHlHM1hKYm44ZlBJOWNpTWxZM204NEdqQzZELUlGeW8xS0VKMUEzUnVNTldUUmdzblFNY3FPRVdmN1ZtTkZHWktFVXNtRkh6X2l5Nm5iVkRSQW1McGJKbWlKVEZIRVVBa0M3TTNvYklrWlNDLXFHMTJfV0NQeTZUdEVsd3c",
+      "titulo": "Prefeitura de Lindoeste PR publica edital de concurso para professor regente",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPekFBWm9uelZEOENVQ3BfakJqVEhub2FPUTd2MzdEc3hoRURpUGdsTHlHM1hKYm44ZlBJOWNpTWxZM204NEdqQzZELUlGeW8xS0VKMUEzUnVNTldUUmdzblFNY3FPRVdmN1ZtTkZHWktFVXNtRkh6X2l5Nm5iVkRSQW1McGJKbWlKVEZIRVVBa0M3TTNvYklrWlNDLXFHMTJfV0NQeTZUdEVsd3c?oc=5",
+      "dataPublicacao": "2026-09-21T19:10:46.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiwwFBVV95cUxOellwQWVnLUt6OV8xckRJTGhqVElaMHZ5dXVzaVRVTDBPOUR3aFBldHFlMDhFWlk2MEE1bGxYOUo1bkxGYnV1OEtMUWUxcUVtT0s0MlNZLUl1RHB5YnEwa05QcUFpa0ZoeVM2NFlRNlNkeFl0SkNZRVdFR29BbVdsY0FZUmlrQUpzb3htVmhJdnRJY0tuTEpNNWVSYjlhVVNCc1NnN2ZqLUNqOFItbEUxUnpHTzZTVzF6Z000SWROcnMwbUU",
+      "titulo": "UFERSA abre concurso público com 25 vagas para professores efetivos em quatro campi",
+      "fonte": "Portal Ufersa",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOellwQWVnLUt6OV8xckRJTGhqVElaMHZ5dXVzaVRVTDBPOUR3aFBldHFlMDhFWlk2MEE1bGxYOUo1bkxGYnV1OEtMUWUxcUVtT0s0MlNZLUl1RHB5YnEwa05QcUFpa0ZoeVM2NFlRNlNkeFl0SkNZRVdFR29BbVdsY0FZUmlrQUpzb3htVmhJdnRJY0tuTEpNNWVSYjlhVVNCc1NnN2ZqLUNqOFItbEUxUnpHTzZTVzF6Z000SWROcnMwbUU?oc=5",
+      "dataPublicacao": "2026-09-21T18:40:01.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMibkFVX3lxTE0ySkNLZkNLbVRsM0RSVEhRTFVVX1VISklHS28yX1Y0ckw0cTR0bEZTTzhRTlZlOHUwcURnY2ZNS2J0Ti1MaHJVMlduNUMxaTRTVGJ6M2dYUnc4MzRrY1dMX0p0UXE5bVJBUEtiRUpB",
+      "titulo": "Concurso Aracati CE: Edital publicado! 127 vagas + CR. Veja!",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0ySkNLZkNLbVRsM0RSVEhRTFVVX1VISklHS28yX1Y0ckw0cTR0bEZTTzhRTlZlOHUwcURnY2ZNS2J0Ti1MaHJVMlduNUMxaTRTVGJ6M2dYUnc4MzRrY1dMX0p0UXE5bVJBUEtiRUpB?oc=5",
+      "dataPublicacao": "2026-09-21T18:24:21.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMi3wFBVV95cUxPaGRJTjV2aDFzckpfQlpVYkZwRFFWRTZzT2hJci1nX1NuVjB2UE5udkFiRUJoZGF5c0podnNjdmFIWlFtREZIUHFsNE5RLVlCdlFkb0VHWEE3UEZJN1FOTkRaR05jV25wMW82UDExcGVQbFdNSFdadEhkRk1LSDZYYWtUZC1pTXI3RG5hb3didWJUM1FqM0hCNmY5c29ub2NPcUxFcHRDYnd0WmVHRDBFM2dCRXVzSDVJYVJjMWlZcmtmZ0hnZWM3a3J4a0dzaUVyMWVhLWhHMWVncnpKSlE0",
+      "titulo": "Universidade Federal Rural do Semi-Árido abre concurso para cadastro de reserva de professor do magistério superior",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPaGRJTjV2aDFzckpfQlpVYkZwRFFWRTZzT2hJci1nX1NuVjB2UE5udkFiRUJoZGF5c0podnNjdmFIWlFtREZIUHFsNE5RLVlCdlFkb0VHWEE3UEZJN1FOTkRaR05jV25wMW82UDExcGVQbFdNSFdadEhkRk1LSDZYYWtUZC1pTXI3RG5hb3didWJUM1FqM0hCNmY5c29ub2NPcUxFcHRDYnd0WmVHRDBFM2dCRXVzSDVJYVJjMWlZcmtmZ0hnZWM3a3J4a0dzaUVyMWVhLWhHMWVncnpKSlE0?oc=5",
+      "dataPublicacao": "2026-09-21T16:38:41.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMitgFBVV95cUxNX3UwalUtdXYwLVZIOExaSVFNMHI3Nzh6VUtrTlFTZDBWMzV3dXNsbHRlZTJyTlU2ckgtSl9HUDZVQ2o0cWZiUGxwU0NsZDN2TWxJUWgxWmY3ZHVnNzNKSjNKMERUSHZ6WExSUEVHLWFiSHZNbWhyanF1QnI4amVFWG5zOGRocGVxZl9sWF9TTGZVTk5td0hRV1gzXy1udVNKRVpFRlJGRzRQaFpPdy12YkkwTHNOQQ",
+      "titulo": "IFPA abre concurso público para cargos técnico-administrativos em educação",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNX3UwalUtdXYwLVZIOExaSVFNMHI3Nzh6VUtrTlFTZDBWMzV3dXNsbHRlZTJyTlU2ckgtSl9HUDZVQ2o0cWZiUGxwU0NsZDN2TWxJUWgxWmY3ZHVnNzNKSjNKMERUSHZ6WExSUEVHLWFiSHZNbWhyanF1QnI4amVFWG5zOGRocGVxZl9sWF9TTGZVTk5td0hRV1gzXy1udVNKRVpFRlJGRzRQaFpPdy12YkkwTHNOQQ?oc=5",
+      "dataPublicacao": "2026-09-21T16:37:25.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMi2AFBVV95cUxPdzIwcHNjMkVqd3R2VEs5N0w5TTUybUtkYmVBeWRsU0hTV09URnpzSWNkU1pHY2pFd2ZNLTBjZmMtLWYza0plQWN5OWZmbWdkeXYxWVFDdWltY2NQdGtpbDhoNUViZ09kV2gxU2pOTXo2clB5ZHpzd19oZkZkTkZnUWtKMjhzWFM2ZmVqQTd5Zjc0MHNTaUZEcXIzSFpTM2V6LUI1d2FqQkFCSm9IeUNaSHNqOHh0QWRkd3RTb0dHY2Vmc0RRYnVSOVZ1WVFoZjF5bWVRdzBoRlI",
+      "titulo": "Concurso IFPA: sai edital com 65 vagas para a área de Apoio",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdzIwcHNjMkVqd3R2VEs5N0w5TTUybUtkYmVBeWRsU0hTV09URnpzSWNkU1pHY2pFd2ZNLTBjZmMtLWYza0plQWN5OWZmbWdkeXYxWVFDdWltY2NQdGtpbDhoNUViZ09kV2gxU2pOTXo2clB5ZHpzd19oZkZkTkZnUWtKMjhzWFM2ZmVqQTd5Zjc0MHNTaUZEcXIzSFpTM2V6LUI1d2FqQkFCSm9IeUNaSHNqOHh0QWRkd3RTb0dHY2Vmc0RRYnVSOVZ1WVFoZjF5bWVRdzBoRlI?oc=5",
+      "dataPublicacao": "2026-09-21T16:25:29.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMijwFBVV95cUxPLUFsOV9ydHF1cFV3LUY3QXI4dGZXa0Q4Z1p6WnItdFY5VDVJYnVwbkZPb3NZbFZQNUhyU1Bvc2tuQ3QwSmZLUVcwTDNlQUxGTzZKY2pMRGZ3TUhjOGRzWTFXRUhzTzl5cmtZQUllTkFYdThPbjdmUFp2T0tHQTd3SEpDWm4wcC16a2Q3dzJhQdIBlAFBVV95cUxQb3BWOHgwMnJHbW9hWncyandlN1RzVy1HaVg1S21vME81SUxnclVZWEZCMkJQYVNOTF9qQXlBc0lfZ0NOMHJtbWt5VW5WajBpMl84MExGUlNNN0pVcW9ncUtTU0JIUDZJa0U4ZnN4T25MemZSZ1JWM09DYjB4MVpBQS1MMHZBX2QyMlZ5UXg1UG5FNEw4",
+      "titulo": "Concurso Sefaz SP: publicado o contrato com a banca FCC",
+      "fonte": "Estratégia Concursos",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPLUFsOV9ydHF1cFV3LUY3QXI4dGZXa0Q4Z1p6WnItdFY5VDVJYnVwbkZPb3NZbFZQNUhyU1Bvc2tuQ3QwSmZLUVcwTDNlQUxGTzZKY2pMRGZ3TUhjOGRzWTFXRUhzTzl5cmtZQUllTkFYdThPbjdmUFp2T0tHQTd3SEpDWm4wcC16a2Q3dzJhQdIBlAFBVV95cUxQb3BWOHgwMnJHbW9hWncyandlN1RzVy1HaVg1S21vME81SUxnclVZWEZCMkJQYVNOTF9qQXlBc0lfZ0NOMHJtbWt5VW5WajBpMl84MExGUlNNN0pVcW9ncUtTU0JIUDZJa0U4ZnN4T25MemZSZ1JWM09DYjB4MVpBQS1MMHZBX2QyMlZ5UXg1UG5FNEw4?oc=5",
+      "dataPublicacao": "2026-09-21T15:37:00.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMilgFBVV95cUxNTkU0OTlKZW5zTEROQThMWHNzM1J4VzZpRnlfNXpXdXFxTjVCVnRVM3VsS21SWS0waDZEdk12cGxrelA3MGV0bms5WlVGODBINUdaUXpJaWZrcnc1Z2lxb1JXRnkyaU14eEZza0NaR2I0cS1FVEZVQkdrakoxbkxLU3dwU053RXVpalE0OEM5UGVGTE5XRFE",
+      "titulo": "Concurso DPE PB: Primeiro edital publicado; 20 vagas",
+      "fonte": "Nova Concursos",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTkU0OTlKZW5zTEROQThMWHNzM1J4VzZpRnlfNXpXdXFxTjVCVnRVM3VsS21SWS0waDZEdk12cGxrelA3MGV0bms5WlVGODBINUdaUXpJaWZrcnc1Z2lxb1JXRnkyaU14eEZza0NaR2I0cS1FVEZVQkdrakoxbkxLU3dwU053RXVpalE0OEM5UGVGTE5XRFE?oc=5",
+      "dataPublicacao": "2026-09-21T15:11:14.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMisgFBVV95cUxQWEZtOTFUaVFuR1NHWHZGdm1jS2FKdVl3OTc5eWtFU0kzcnJSazhDTUpYZXJQUndTZjUtM0lLRml2WW9tZkR5YW9PSG5kV3R2OHZHRnNSNkVxeThfckhWSEFRLTk4VzV0VGR5QmNRaUNEdTJkNkwwMW1NT2NvUnYxcTNiVndvRjZMeUE3NEFEQkRvb0RrdmVZMnhibmRXRXZFQlF6ME80QTFVYjFubU82dUlB",
+      "titulo": "Prefeitura de Campina Grande",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWEZtOTFUaVFuR1NHWHZGdm1jS2FKdVl3OTc5eWtFU0kzcnJSazhDTUpYZXJQUndTZjUtM0lLRml2WW9tZkR5YW9PSG5kV3R2OHZHRnNSNkVxeThfckhWSEFRLTk4VzV0VGR5QmNRaUNEdTJkNkwwMW1NT2NvUnYxcTNiVndvRjZMeUE3NEFEQkRvb0RrdmVZMnhibmRXRXZFQlF6ME80QTFVYjFubU82dUlB?oc=5",
+      "dataPublicacao": "2026-09-21T14:51:57.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMizwFBVV95cUxNbDFKREFad08zbnZOd0hfdlVPaG9QeGdTU0dSb25LM2I3RzlydEdwdk9MMHNuZ2VJX3hPQmo4RGRFeEFvdjl6UUx6eWJSdllnV1V2THF1MFBvTEttMVE2VVBEYmFRd3FPY3lvRUYydTR5RHdBVDc5MWhudzNtS3NCWWhEMFlhbkNLR3hDVFdhSWMzOHlYVHZGOWpySkhzZVlHUEp0aVNRdVhndXpWWnBtRmdZa1BiNlppdTUtSmdmNjZ5RjJnbnFtSjVZUEVZVlE",
+      "titulo": "Prefeitura de Campina Grande",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbDFKREFad08zbnZOd0hfdlVPaG9QeGdTU0dSb25LM2I3RzlydEdwdk9MMHNuZ2VJX3hPQmo4RGRFeEFvdjl6UUx6eWJSdllnV1V2THF1MFBvTEttMVE2VVBEYmFRd3FPY3lvRUYydTR5RHdBVDc5MWhudzNtS3NCWWhEMFlhbkNLR3hDVFdhSWMzOHlYVHZGOWpySkhzZVlHUEp0aVNRdVhndXpWWnBtRmdZa1BiNlppdTUtSmdmNjZ5RjJnbnFtSjVZUEVZVlE?oc=5",
+      "dataPublicacao": "2026-09-21T14:42:12.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMipAFBVV95cUxQQmNCY1k2SEhaekUybHVfMEV4TG9lSXpDakdUajdPbi1iVTZvRFk3SDBRU1QzNWszaUFuVlltNDg0T2dOQ2JLY25FN3ZpVUxOVnR6X2s0LWV1UFI0cDJaY1pkLUozTndXNFlXdW44OTRwMmpIZ3FJZXNDZFVBRUhCY0JNVGhuY25BZzB2LXhGYzNrU0I1VDQ3MzRZUVh1U1F0by1pNQ",
+      "titulo": "Concurso Volta Redonda RJ: edital em breve para 118 vagas no Saae",
+      "fonte": "Degrau Cultural",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQmNCY1k2SEhaekUybHVfMEV4TG9lSXpDakdUajdPbi1iVTZvRFk3SDBRU1QzNWszaUFuVlltNDg0T2dOQ2JLY25FN3ZpVUxOVnR6X2s0LWV1UFI0cDJaY1pkLUozTndXNFlXdW44OTRwMmpIZ3FJZXNDZFVBRUhCY0JNVGhuY25BZzB2LXhGYzNrU0I1VDQ3MzRZUVh1U1F0by1pNQ?oc=5",
+      "dataPublicacao": "2026-09-21T14:02:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMitwFBVV95cUxQMWc1aVhBN0ZJZjNMMFRHVUo5LU5EMzU3bE9RSmRoaEZtMnRKZkRsZmZmRVl5SFJpRi04djA1clR1dGlsd1lwX0IxaUxhMlUwclVyeVA3VDRYYVZlbWpmdUtPRWU4YzRtaXJycFFxcUxvWFZfaEJpSkdXcVVEcjlickFwVnBHQ3Yyb2QwX3JTNFpZMXdKTjdZTmY0WVNWYV9TeFB0bENmbjN3Y1Y4SFJJM3psSkpvSU0",
+      "titulo": "Prefeitura de Itatiba SP publica edital 03/2026 para concurso de docentes temporários",
+      "fonte": "Qconcursos Folha Dirigida",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMWc1aVhBN0ZJZjNMMFRHVUo5LU5EMzU3bE9RSmRoaEZtMnRKZkRsZmZmRVl5SFJpRi04djA1clR1dGlsd1lwX0IxaUxhMlUwclVyeVA3VDRYYVZlbWpmdUtPRWU4YzRtaXJycFFxcUxvWFZfaEJpSkdXcVVEcjlickFwVnBHQ3Yyb2QwX3JTNFpZMXdKTjdZTmY0WVNWYV9TeFB0bENmbjN3Y1Y4SFJJM3psSkpvSU0?oc=5",
+      "dataPublicacao": "2026-09-21T13:33:41.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiywFBVV95cUxOS1lLZnRZVjVldlVGc2E0SVkwLTB3TU0xRzFMS2tISkpfblhrVkdKei1ibTRmWkF4YXkzbkhHUmJjWGgtUkdVVlJwVkN1a0VvZXpNVlJod3BrUVZMekZEdk5RQmFwTWctQjJxbnFuU1VHaFBlWVRtYkt5S0R4NTNQdTBoWnFDNG5jR0RRZnhXeUZ4TjVPU2lOdjB3TUpBdzRKSUlVc25wekxjTkVzZWNhMlFwdHhCQ1kxaW1LV2M2eThTNUtDc3R5eHcxcw",
+      "titulo": "Concurso da Prefeitura de Campina Grande tem provas remarcadas para janeiro e inscrições são reabertas",
+      "fonte": "Prefeitura de Campina Grande",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOS1lLZnRZVjVldlVGc2E0SVkwLTB3TU0xRzFMS2tISkpfblhrVkdKei1ibTRmWkF4YXkzbkhHUmJjWGgtUkdVVlJwVkN1a0VvZXpNVlJod3BrUVZMekZEdk5RQmFwTWctQjJxbnFuU1VHaFBlWVRtYkt5S0R4NTNQdTBoWnFDNG5jR0RRZnhXeUZ4TjVPU2lOdjB3TUpBdzRKSUlVc25wekxjTkVzZWNhMlFwdHhCQ1kxaW1LV2M2eThTNUtDc3R5eHcxcw?oc=5",
+      "dataPublicacao": "2026-09-21T12:56:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMioAFBVV95cUxPSVpUZTVoZU51YnkwbTJROHozdkZMMkhfRnM4NVpBMEx1NzdwTmhydEdFYXpxQWxPZFhpWTVydTV2c1Y1SXpick1LbVpaLTJzYllINmhDTEdBNGxreEx0a3dPak40MjktdGhmQ0g3TExKMGIyT0lwcXNaOGNtOFJPajRBNmVPcXpSUkZtMTVKQWk4N211N3ZsVXg3ckx0c25J",
+      "titulo": "Concurso PGE-RS: publicado regulamento para novo edital de servidores",
+      "fonte": "Ceisc",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSVpUZTVoZU51YnkwbTJROHozdkZMMkhfRnM4NVpBMEx1NzdwTmhydEdFYXpxQWxPZFhpWTVydTV2c1Y1SXpick1LbVpaLTJzYllINmhDTEdBNGxreEx0a3dPak40MjktdGhmQ0g3TExKMGIyT0lwcXNaOGNtOFJPajRBNmVPcXpSUkZtMTVKQWk4N211N3ZsVXg3ckx0c25J?oc=5",
+      "dataPublicacao": "2026-09-21T12:39:18.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMifkFVX3lxTFB5d21xTFdVdTgxU005dm11dGpVcXZLQndNLWdWVXhGX2tacHZ6aGRhUENGdFZIQkt4akgzcGpLRDZ2a0tiVnhRQTRHZ0Jxd2EzNjZmSmJybk1NSHQyOTRyYlE0cFI0dHVPUFZubHhqVjlCUHplNEUxczZKM05lUQ",
+      "titulo": "Edital IFPA é publicado com 65 vagas e salários até R$ 6,9 mil!",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB5d21xTFdVdTgxU005dm11dGpVcXZLQndNLWdWVXhGX2tacHZ6aGRhUENGdFZIQkt4akgzcGpLRDZ2a0tiVnhRQTRHZ0Jxd2EzNjZmSmJybk1NSHQyOTRyYlE0cFI0dHVPUFZubHhqVjlCUHplNEUxczZKM05lUQ?oc=5",
+      "dataPublicacao": "2026-09-21T12:31:55.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMipgFBVV95cUxPNE1GWDE1dDhWdEpNd1JnTDRfSHZGN0JYZldSV3NMaU4zYUp0NXNqTEkzR05iM1JKX3lPRG04Y0ZvNlIwOEtkM1kyaEYxdGNNRUI1aE1GbVhLbUhxbmNVSnpIX0JKY1dtWUhwV1JYR2Q5b1dGS0s0ekRXX2tsWGszZy1ySnBfNjRmWnRfZzEyWWl0WFdfNkhPQ2FUWUN6eFpWVXo2V3hB",
+      "titulo": "Concurso ABGF: edital de convocação para as provas é publicado",
+      "fonte": "Central de Concursos",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNE1GWDE1dDhWdEpNd1JnTDRfSHZGN0JYZldSV3NMaU4zYUp0NXNqTEkzR05iM1JKX3lPRG04Y0ZvNlIwOEtkM1kyaEYxdGNNRUI1aE1GbVhLbUhxbmNVSnpIX0JKY1dtWUhwV1JYR2Q5b1dGS0s0ekRXX2tsWGszZy1ySnBfNjRmWnRfZzEyWWl0WFdfNkhPQ2FUWUN6eFpWVXo2V3hB?oc=5",
+      "dataPublicacao": "2026-09-21T12:00:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiugFBVV95cUxOdDNVUUt4TWxRdW44a3BpQ096VjI0WHdyTlEzUy1jeW10Y2hNN2prcUtaMDJ4WGw3bUVkcGNsTGtidnhJdF9EUEJ4UmFxTFpZMmJvYnZ6cUY4ZjhqYTNQM2w4a0pOXzZja3RYOTVSUktnYjRpVGNJUjNJZTBMbzd0RDJSQWlwRTN2Rkk3cVdmbE1BZWdZVlVKeHpGOGFNaHNKc2Frb2pLZnV5QTBlSVVVNlpZRW5fR25Iamc",
+      "titulo": "Prefeitura de Alvorada",
+      "fonte": "PCI Concursos",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdDNVUUt4TWxRdW44a3BpQ096VjI0WHdyTlEzUy1jeW10Y2hNN2prcUtaMDJ4WGw3bUVkcGNsTGtidnhJdF9EUEJ4UmFxTFpZMmJvYnZ6cUY4ZjhqYTNQM2w4a0pOXzZja3RYOTVSUktnYjRpVGNJUjNJZTBMbzd0RDJSQWlwRTN2Rkk3cVdmbE1BZWdZVlVKeHpGOGFNaHNKc2Frb2pLZnV5QTBlSVVVNlpZRW5fR25Iamc?oc=5",
+      "dataPublicacao": "2026-09-21T11:54:53.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiiAFBVV95cUxOVkNSQWt1MVY4Ul9qWlpJSVZXRzY4LVJobHRUYThLX1NRXzVRZkhLR3VfeTdzV01SNjQ3TWdkOVpYUEdobGozLVVnZ2xmUXlGeURSRmY5bGNvRUd1aWVvZEQ0eEZWd2NRbFExdkZuUWY3dnJTQnVjdUtremdDVkNaWWxsak1qbDVN0gGOAUFVX3lxTFBuSGlKNDg3Sm0xZjhfZzEzY193QW5rZVFaZzJzQklkVXZMdldNUDZfSUJwenlSR1NxV3FDOFlmZklUdFBRQUdWbHAyRVR0T0lWZnRmdUUzZTJLbXJuOVZlZDlVaEJCSzE1R1NTMUREeWpUV1plR0RKUVNYb3Q5N29CU3hiRFZqa1JGS1VxUXc",
+      "titulo": "Edital Receita Federal – Direito Tributário e Legislação Tributária",
+      "fonte": "Estratégia Concursos",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVkNSQWt1MVY4Ul9qWlpJSVZXRzY4LVJobHRUYThLX1NRXzVRZkhLR3VfeTdzV01SNjQ3TWdkOVpYUEdobGozLVVnZ2xmUXlGeURSRmY5bGNvRUd1aWVvZEQ0eEZWd2NRbFExdkZuUWY3dnJTQnVjdUtremdDVkNaWWxsak1qbDVN0gGOAUFVX3lxTFBuSGlKNDg3Sm0xZjhfZzEzY193QW5rZVFaZzJzQklkVXZMdldNUDZfSUJwenlSR1NxV3FDOFlmZklUdFBRQUdWbHAyRVR0T0lWZnRmdUUzZTJLbXJuOVZlZDlVaEJCSzE1R1NTMUREeWpUV1plR0RKUVNYb3Q5N29CU3hiRFZqa1JGS1VxUXc?oc=5",
+      "dataPublicacao": "2026-09-21T11:38:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMiggFBVV95cUxPbW5PaFk3WGJ4MUZVV09TRVNvREs0ejZNU3ZaOUlubFlfUTRkd0hGUDJJSjRGR0VZZUtSQzBXMnl5V3dpZkVZcXRnU2RNTDdUMTY0Y0cwV1BKQ3g2T1FjYWhxVnlPRUxQLXdwM2ZiT1ZqN2dNRmlOOVBoSkQtVld6X0N3",
+      "titulo": "Concurso CRBio 01: Edital publicado com vagas para níveis médio e superior. Veja!",
+      "fonte": "Blog Gran Cursos Online",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbW5PaFk3WGJ4MUZVV09TRVNvREs0ejZNU3ZaOUlubFlfUTRkd0hGUDJJSjRGR0VZZUtSQzBXMnl5V3dpZkVZcXRnU2RNTDdUMTY0Y0cwV1BKQ3g2T1FjYWhxVnlPRUxQLXdwM2ZiT1ZqN2dNRmlOOVBoSkQtVld6X0N3?oc=5",
+      "dataPublicacao": "2026-09-21T10:39:55.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMi5wFBVV95cUxOU2NlaWJaOHB3b09uMFZYVjRIYk96Vm5GNHVXRU42cEpnUVlpbzN3bDMxUVlsOHNkWHhtZWxxLXI0a1BYQmNhekNZcmFaa0F0YURRRUxTWmtBUFZuVWpaMVFmdzVSODl5MVpxQXlrZGl3d3B2bVVzeUVlMjNrblc3dTloQy03MVpMV0poYk5za3VPUHZWa1Vrc0pSQVh2Q0FOT05nTURoOE5IMHFSRDBzWnoyem9lZGNwOENhb2lab0Y2RU0xNHJaM2F1cFVWN2NvWUdvaW9SUmM5dHJ4ZW55YlJHXzR6bmvSAewBQVVfeXFMTWJHWkFaVjR1dGRPZUFNVkxEZWNIU19wekJYZi14aWNOWGxBSlQ0azlQYU5ORHZfUGwwUGNUdEJwbjFsd3p1b3A4OU5xT3BpS29PUzFtTmF2VDJEZTh1a2RLQ2JNOUlLblVXc3pKRDB1ZHpJVVFvTWxaTkVQWFFvSkh6Sk44b2RWWDdsZk5TaEp6ZzVDalJ3eGROUG0yNGtpWG1uX1ZJOGZYQU5fU2Y4dUtiQVNUeV9zUHQ2U2dPUnFuNlBlcDliZHVkUTN6M3BkbkZMUjdzMXNiM3BoaC1jUlZGU0JEUkpvN1JkUmo",
+      "titulo": "Concurso Polícia Científica SP: edital previsto para sair até dezembro para 397 vagas de ensino médio",
+      "fonte": "jcconcursos.com.br",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOU2NlaWJaOHB3b09uMFZYVjRIYk96Vm5GNHVXRU42cEpnUVlpbzN3bDMxUVlsOHNkWHhtZWxxLXI0a1BYQmNhekNZcmFaa0F0YURRRUxTWmtBUFZuVWpaMVFmdzVSODl5MVpxQXlrZGl3d3B2bVVzeUVlMjNrblc3dTloQy03MVpMV0poYk5za3VPUHZWa1Vrc0pSQVh2Q0FOT05nTURoOE5IMHFSRDBzWnoyem9lZGNwOENhb2lab0Y2RU0xNHJaM2F1cFVWN2NvWUdvaW9SUmM5dHJ4ZW55YlJHXzR6bmvSAewBQVVfeXFMTWJHWkFaVjR1dGRPZUFNVkxEZWNIU19wekJYZi14aWNOWGxBSlQ0azlQYU5ORHZfUGwwUGNUdEJwbjFsd3p1b3A4OU5xT3BpS29PUzFtTmF2VDJEZTh1a2RLQ2JNOUlLblVXc3pKRDB1ZHpJVVFvTWxaTkVQWFFvSkh6Sk44b2RWWDdsZk5TaEp6ZzVDalJ3eGROUG0yNGtpWG1uX1ZJOGZYQU5fU2Y4dUtiQVNUeV9zUHQ2U2dPUnFuNlBlcDliZHVkUTN6M3BkbkZMUjdzMXNiM3BoaC1jUlZGU0JEUkpvN1JkUmo?oc=5",
+      "dataPublicacao": "2026-09-21T10:37:04.000Z",
+      "categoriaInferida": "Autorizado"
+    },
+    {
+      "id": "CBMiyAFBVV95cUxNLVE2X2RHT21yU0ZKamtIV04yVWhLT29YTUtCYUZpZ3pZZGplSmM4cU1WSXN4Zm9vTFNKQnhjdHhLZmMwN1FWZXczclZSQ3hOM0xYUExrOU0xZ24tNDdsNGtfMExVdHNuem1sUHZ1UHhBcGRPTGdXMGdSdVNGZlVhZEdCWWt5a2pNU3ZReFZvVmdKdDJLaGtqNi1JVm1FTmdid29OYTc3bi1RVTRjZjRSVFNWdWZJc3R5OVgxcWlkeXNKdFUyUkVBTtIB1wFBVV95cUxNckRGVkh4OHdsTHQxVjlnZC1sWjlpZHBBSm1YTE56amcxS2RXeG8zVVppQUJ3WkhDbzZSdmN0WEJrUGFOSkJZRk1UeWVXWWhybWkxMzRESnlDbEZqZnhCeUViMi1xRklfOHhoOGlHV2VKU1FpTmhUTmlORkJQajJPNzc2bzFSaEZXb3FkVVlxR0dYVkhSMS0xbzVCVUFUeXJYbHFPNkZtZXVraEtOcUFZdkJPRHlObnhPd0hfZXlYVm1pSGNDUTlJeVVRcnhMWTh6ZWRQTWxlbw",
+      "titulo": "Inscrições para o concurso da prefeitura de Campina Grande com mais de 900 vagas são reabertas nesta segunda-feira (21)",
+      "fonte": "G1",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNLVE2X2RHT21yU0ZKamtIV04yVWhLT29YTUtCYUZpZ3pZZGplSmM4cU1WSXN4Zm9vTFNKQnhjdHhLZmMwN1FWZXczclZSQ3hOM0xYUExrOU0xZ24tNDdsNGtfMExVdHNuem1sUHZ1UHhBcGRPTGdXMGdSdVNGZlVhZEdCWWt5a2pNU3ZReFZvVmdKdDJLaGtqNi1JVm1FTmdid29OYTc3bi1RVTRjZjRSVFNWdWZJc3R5OVgxcWlkeXNKdFUyUkVBTtIB1wFBVV95cUxNckRGVkh4OHdsTHQxVjlnZC1sWjlpZHBBSm1YTE56amcxS2RXeG8zVVppQUJ3WkhDbzZSdmN0WEJrUGFOSkJZRk1UeWVXWWhybWkxMzRESnlDbEZqZnhCeUViMi1xRklfOHhoOGlHV2VKU1FpTmhUTmlORkJQajJPNzc2bzFSaEZXb3FkVVlxR0dYVkhSMS0xbzVCVUFUeXJYbHFPNkZtZXVraEtOcUFZdkJPRHlObnhPd0hfZXlYVm1pSGNDUTlJeVVRcnhMWTh6ZWRQTWxlbw?oc=5",
+      "dataPublicacao": "2026-09-21T09:16:47.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMi3wFBVV95cUxPWGNPT0N3RXNvMmZZRzFxV0JDbzA4M3B0THhhSF83T2RyckZlNTdzRGFiNkNIaFV0dkc3a1pKUkp0Zno0bm1neVJIRmRaVEczMkQ5cWE2WHFsVW9FM2hwYmVOalJJdjlZcDdhdDhtWGc5bEZxdmlVLVpkaHhaRkpoZlc0RkNjdzRVMllkMjNhd1VKZWtaOGU3aHpONUt1Q0FnUExHWFQyNFUxVDFfSDc1ckJCR2hBb2xjdzE3TkdfLXRjcG51RXdCbTlBcG9SdFJBNmo2c3BLSXRXVWM5cUZr0gHuAUFVX3lxTFBJUDYtaS01elZLcWY5Z0kxb3FnRXd6YldFVFFkd2l4RnhnRTdib2VwQ3plRXI0bmxOSUlzMTJ4UDZjRk9kdjJnbjNaQ3U1VUVJeERlMS1ZQ09KNFN6TERiaktwUFVCY0ZHaWFxdWxlZG9mdjR0Mm9XLUNGTGNBWGM0Q015cWtZbm93LTZBZ1lIby1wQWlRMmhqLWFYRThZek82SjhpUDBnb3JfTGVVTnZUR2ZGNjhNWTEtZ3hSY1B4SGV6UzJrbndTTGxiWW5HVFM5Z08yU2xWVE9SaE8waEM1bXljanFaYmlCbWhqOWc",
+      "titulo": "Cidade de Goiás divulga edital de concurso com mais de 160 vagas e salários de até R$ 8,9 mil",
+      "fonte": "G1",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWGNPT0N3RXNvMmZZRzFxV0JDbzA4M3B0THhhSF83T2RyckZlNTdzRGFiNkNIaFV0dkc3a1pKUkp0Zno0bm1neVJIRmRaVEczMkQ5cWE2WHFsVW9FM2hwYmVOalJJdjlZcDdhdDhtWGc5bEZxdmlVLVpkaHhaRkpoZlc0RkNjdzRVMllkMjNhd1VKZWtaOGU3aHpONUt1Q0FnUExHWFQyNFUxVDFfSDc1ckJCR2hBb2xjdzE3TkdfLXRjcG51RXdCbTlBcG9SdFJBNmo2c3BLSXRXVWM5cUZr0gHuAUFVX3lxTFBJUDYtaS01elZLcWY5Z0kxb3FnRXd6YldFVFFkd2l4RnhnRTdib2VwQ3plRXI0bmxOSUlzMTJ4UDZjRk9kdjJnbjNaQ3U1VUVJeERlMS1ZQ09KNFN6TERiaktwUFVCY0ZHaWFxdWxlZG9mdjR0Mm9XLUNGTGNBWGM0Q015cWtZbm93LTZBZ1lIby1wQWlRMmhqLWFYRThZek82SjhpUDBnb3JfTGVVTnZUR2ZGNjhNWTEtZ3hSY1B4SGV6UzJrbndTTGxiWW5HVFM5Z08yU2xWVE9SaE8waEM1bXljanFaYmlCbWhqOWc?oc=5",
+      "dataPublicacao": "2026-09-21T03:00:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    },
+    {
+      "id": "CBMi8wFBVV95cUxQaldwWkw1eHhoNzRJVzFpWm81azVSUl85TWp4OEp1WUwyaEhYWEcxQzFYamM1eld3WDRJZE5seUpBWDBEcXBVWEFJS2szcWdEVU5EOGZlYVZabE1sdk9ydzNyQkpsMzdEOEgwZVJxUl9uLXdGVDMzdFhhVHlmMDdCSUthQ0pxZm9ndzFyRHRzYml4ajgzcEEtWW1FSEVaQ1BHZGRrX0RKdGEwTC1wUmpMMlFReGJfd2ZTX25SV2FrM2JfbjRkUWhaT0tsczVSRHpwT0JXcWxnaHhuXzdpMDJxUUhWSFdrSmNqVVI2T0hMRmRodknSAYICQVVfeXFMTjE4WXdDUWpBYVFyU284VEpfN3ZOREFIUlhFUHVjQUQzNzBOV3RFdUR6WFNwZ1J5Q1U1VjdTeW5fU3FpZXBlaGluRC1lWkdUYi1GTkUybXRYX0tMOHBfaVl1S2g3X29IWDNnRk9fQU1PZVNTbzl0TG9KR3JOZzVNTGw2a3BDdUtpR2YwbkJQNHdtRzFPUlZYQzNDbmxFek5fcHZ4VFZDaE5vajhKTGt4Y3NxbllkWFlFQkVQeHlUUEhKTTMzblRYeVE3ZGJlN1FhMW1EWmFwTHMyTXZVQmtUaU1nN0o2YnpFeTZ5Ni14MW5tMzVzVUprT2toeFBBZE9qX2VR",
+      "titulo": "Transpetro: inscrições para concurso terminam nesta segunda; salários chegam a R$ 15 mil",
+      "fonte": "G1",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQaldwWkw1eHhoNzRJVzFpWm81azVSUl85TWp4OEp1WUwyaEhYWEcxQzFYamM1eld3WDRJZE5seUpBWDBEcXBVWEFJS2szcWdEVU5EOGZlYVZabE1sdk9ydzNyQkpsMzdEOEgwZVJxUl9uLXdGVDMzdFhhVHlmMDdCSUthQ0pxZm9ndzFyRHRzYml4ajgzcEEtWW1FSEVaQ1BHZGRrX0RKdGEwTC1wUmpMMlFReGJfd2ZTX25SV2FrM2JfbjRkUWhaT0tsczVSRHpwT0JXcWxnaHhuXzdpMDJxUUhWSFdrSmNqVVI2T0hMRmRodknSAYICQVVfeXFMTjE4WXdDUWpBYVFyU284VEpfN3ZOREFIUlhFUHVjQUQzNzBOV3RFdUR6WFNwZ1J5Q1U1VjdTeW5fU3FpZXBlaGluRC1lWkdUYi1GTkUybXRYX0tMOHBfaVl1S2g3X29IWDNnRk9fQU1PZVNTbzl0TG9KR3JOZzVNTGw2a3BDdUtpR2YwbkJQNHdtRzFPUlZYQzNDbmxFek5fcHZ4VFZDaE5vajhKTGt4Y3NxbllkWFlFQkVQeHlUUEhKTTMzblRYeVE3ZGJlN1FhMW1EWmFwTHMyTXZVQmtUaU1nN0o2YnpFeTZ5Ni14MW5tMzVzVUprT2toeFBBZE9qX2VR?oc=5",
+      "dataPublicacao": "2026-09-21T03:00:00.000Z",
+      "categoriaInferida": "Edital Publicado"
+    }
+  ]
+}
