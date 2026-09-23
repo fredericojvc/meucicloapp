@@ -93,6 +93,11 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // Suporte a Clean URLs (ex: /concursos -> public/concursos.html)
+  if (!path.extname(filePath) && fs.existsSync(filePath + '.html')) {
+    filePath = filePath + '.html';
+  }
+
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
       // Se não encontrar, tenta servir 404.html

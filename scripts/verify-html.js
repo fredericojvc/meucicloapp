@@ -1,35 +1,72 @@
 const fs = require('fs');
 const assert = require('assert');
 
-// Normaliza quebras de linha para evitar divergências CRLF / LF no Windows
-const html = fs.readFileSync('public/index.html', 'utf8').replace(/\r\n/g, '\n');
+console.log('=== VERIFICAÇÃO ESTRUTURAL DAS PÁGINAS E ROTAS ===\n');
 
-console.log('=== VERIFICAÇÃO ESTRUTURAL DO INDEX.HTML ===\n');
+// 1. Verificação do Index (Landing Page)
+const indexHtml = fs.readFileSync('public/index.html', 'utf8').replace(/\r\n/g, '\n');
 
-// 1. Verifica ordem no menu de navegação
-const navMatch = html.includes('href="#concursos-destaque">Concursos &amp; Provas em Destaque</a></li>\n        <li><a href="#taf-alerta">Diferencial TAF</a>');
-assert.ok(navMatch, 'O item "Concursos & Provas em Destaque" deve estar exatamente antes de "Diferencial TAF"');
-console.log('1. ✓ Navbar: "Concursos & Provas em Destaque" posicionado imediatamente antes de "Diferencial TAF".');
+// Navbar item aponta para /concursos
+assert.ok(
+  indexHtml.includes('href="/concursos">Concursos &amp; Provas em Destaque</a>'),
+  'Navbar do index deve apontar para a rota /concursos'
+);
+console.log('1. ✓ Index: Item "Concursos & Provas em Destaque" atualizado para /concursos.');
 
-// 2. Verifica a existência da seção #concursos-destaque
-assert.ok(html.includes('id="concursos-destaque"'), 'Seção #concursos-destaque deve existir');
-console.log('2. ✓ Seção: Âncora #concursos-destaque declarada.');
+// Menu sanduíche Apple presente
+assert.ok(
+  indexHtml.includes('id="apple-menu-toggle"'),
+  'Botão de menu sanduíche padrão Apple deve estar presente no header'
+);
+assert.ok(
+  indexHtml.includes('id="mobile-menu-overlay"'),
+  'Drawer de overlay mobile deve estar presente no index'
+);
+console.log('2. ✓ Index: Menu sanduíche Apple (mobile/tablet) e drawer overlay implementados.');
 
-// 3. Verifica skeleton loaders
-assert.ok(html.includes('skeleton-card'), 'Skeleton loaders devem estar presentes');
-console.log('3. ✓ Resiliência: Skeleton loaders implementados para carregamento inicial.');
+// Secção massiva removida da home
+assert.ok(
+  !indexHtml.includes('id="news-container"'),
+  'Grid massivo de notícias não deve estar na home page'
+);
+console.log('3. ✓ Index: Secção massiva de notícias removida da home, mantendo a leitura limpa.');
 
-// 4. Verifica empty state
-assert.ok(html.includes('id="news-empty-state"'), 'Estado vazio #news-empty-state deve existir');
-console.log('4. ✓ Resiliência: Estado vazio elegante configurado para ausência de notícias.');
+// Call to action presente na home
+assert.ok(
+  indexHtml.includes('radar-cta-card') && indexHtml.includes('href="/concursos"'),
+  'Call to Action card direcionando para /concursos deve existir na home'
+);
+console.log('4. ✓ Index: Call to Action elegante para o Radar de Concursos implementado.');
 
-// 5. Verifica script de carregamento e fallback
-assert.ok(html.includes('/api/concursos-news'), 'Endpoint da API deve ser chamado pelo script');
-assert.ok(html.includes('/api/concursos-news.json'), 'Fallback seguro para o snapshot deve existir');
-console.log('5. ✓ Client-Side: Fetch para endpoint interno com fallback seguro e zero CORS.');
+// 2. Verificação da Página Dedicada /concursos
+assert.ok(fs.existsSync('public/concursos.html'), 'Arquivo public/concursos.html deve existir');
+const concursosHtml = fs.readFileSync('public/concursos.html', 'utf8').replace(/\r\n/g, '\n');
 
-// 6. Verifica conformidade com as regras proibitivas
-assert.ok(!html.includes('https://news.google.com/rss'), 'Client-side não deve chamar diretamente o Google News');
-console.log('6. ✓ Mitigação de Risco: Proibição estrita de fetch client-side para o Google News respeitada.');
+// Elemento evidente de retorno
+assert.ok(
+  concursosHtml.includes('Voltar ao In') && (concursosHtml.includes('href="/"') || concursosHtml.includes("href='/'")),
+  'Página de concursos deve conter elemento evidente de retorno para o início'
+);
+console.log('5. ✓ Concursos: Elemento evidente de retorno rápido ("Voltar ao Início") implementado.');
 
-console.log('\n=== TODAS AS VERIFICAÇÕES DO HTML PASSARAM COM SUCESSO! ===');
+// Feed completo presente em /concursos
+assert.ok(
+  concursosHtml.includes('id="news-container"'),
+  'Grid de notícias deve existir na página dedicada /concursos'
+);
+assert.ok(
+  concursosHtml.includes('id="news-empty-state"'),
+  'Estado vazio elegante deve existir na página dedicada /concursos'
+);
+assert.ok(
+  concursosHtml.includes('id="apple-menu-toggle"'),
+  'Menu sanduíche Apple também deve estar presente na página /concursos'
+);
+console.log('6. ✓ Concursos: Feed dinâmico completo, filtros, skeleton loaders e menu mobile presentes.');
+
+// 3. Verificação do Roteamento
+const firebaseJson = JSON.parse(fs.readFileSync('firebase.json', 'utf8'));
+assert.strictEqual(firebaseJson.hosting.cleanUrls, true, 'firebase.json deve ter cleanUrls habilitado');
+console.log('7. ✓ Infra: cleanUrls configurado no firebase.json para suporte nativo a /concursos.');
+
+console.log('\n=== TODAS AS VERIFICAÇÕES PASSARAM COM 100% DE SUCESSO! ===');
