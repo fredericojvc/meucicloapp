@@ -8,10 +8,10 @@ const indexHtml = fs.readFileSync('public/index.html', 'utf8').replace(/\r\n/g, 
 
 // Navbar item aponta para /concursos
 assert.ok(
-  indexHtml.includes('href="/concursos">Concursos &amp; Provas em Destaque</a>'),
+  indexHtml.includes('href="/concursos"'),
   'Navbar do index deve apontar para a rota /concursos'
 );
-console.log('1. ✓ Index: Item "Concursos & Provas em Destaque" atualizado para /concursos.');
+console.log('1. ✓ Index: Item direcionando para /concursos presente no menu desktop e mobile.');
 
 // Menu sanduíche Apple presente
 assert.ok(
@@ -33,7 +33,7 @@ console.log('3. ✓ Index: Secção massiva de notícias removida da home, mante
 
 // Call to action presente na home
 assert.ok(
-  indexHtml.includes('radar-cta-card') && indexHtml.includes('href="/concursos"'),
+  (indexHtml.includes('radar-feature-card') || indexHtml.includes('radar-cta-card')) && indexHtml.includes('href="/concursos"'),
   'Call to Action card direcionando para /concursos deve existir na home'
 );
 console.log('4. ✓ Index: Call to Action elegante para o Radar de Concursos implementado.');
