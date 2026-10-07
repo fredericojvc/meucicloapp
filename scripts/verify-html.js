@@ -67,6 +67,29 @@ console.log('6. ✓ Concursos: Feed dinâmico completo, filtros, skeleton loader
 // 3. Verificação do Roteamento
 const firebaseJson = JSON.parse(fs.readFileSync('firebase.json', 'utf8'));
 assert.strictEqual(firebaseJson.hosting.cleanUrls, true, 'firebase.json deve ter cleanUrls habilitado');
-console.log('7. ✓ Infra: cleanUrls configurado no firebase.json para suporte nativo a /concursos.');
+console.log('7. ✓ Infra: cleanUrls configurado no firebase.json para suporte nativo a rotas limpas.');
+
+// 4. Verificação de Privacidade e Metadados do Rodapé (Google Play Compliance)
+assert.ok(fs.existsSync('public/politica-de-privacidade.html'), 'public/politica-de-privacidade.html deve existir');
+const privHtml = fs.readFileSync('public/politica-de-privacidade.html', 'utf8');
+assert.ok(privHtml.includes('Armazenamento Local'), 'Política de privacidade deve conter princípios de armazenamento local');
+assert.ok(privHtml.includes('Google Sign-In'), 'Política de privacidade deve conter integração com Google Sign-In');
+assert.ok(privHtml.includes('Google Drive'), 'Política de privacidade deve conter menção ao Google Drive');
+console.log('8. ✓ Privacidade: Página public/politica-de-privacidade.html completa e em conformidade.');
+
+assert.ok(fs.existsSync('public/termos-de-uso.html'), 'public/termos-de-uso.html deve existir');
+console.log('9. ✓ Termos: Página public/termos-de-uso.html disponível.');
+
+// Links no rodapé do index
+assert.ok(indexHtml.includes('href="/politica-de-privacidade"'), 'index.html deve conter link para /politica-de-privacidade');
+assert.ok(indexHtml.includes('href="/termos-de-uso"'), 'index.html deve conter link para /termos-de-uso');
+assert.ok(indexHtml.includes('Todos os direitos reservados'), 'index.html deve conter menção de direitos reservados');
+assert.ok(indexHtml.includes('Fale Conosco'), 'index.html deve conter Fale Conosco');
+console.log('10. ✓ Rodapé (Index): Linha discreta de metadados com Política, Termos e Fale Conosco validada.');
+
+// Links no rodapé de concursos
+assert.ok(concursosHtml.includes('href="/politica-de-privacidade"'), 'concursos.html deve conter link para /politica-de-privacidade');
+assert.ok(concursosHtml.includes('href="/termos-de-uso"'), 'concursos.html deve conter link para /termos-de-uso');
+console.log('11. ✓ Rodapé (Concursos): Linha de metadados sincronizada.');
 
 console.log('\n=== TODAS AS VERIFICAÇÕES PASSARAM COM 100% DE SUCESSO! ===');
