@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusão de Conta e Dados — Meu Ciclo</title>
+  <meta name="description" content="Instruções para exclusão de conta e remoção de dados associados no aplicativo Meu Ciclo, em total conformidade com as diretrizes do Google Play e normas de privacidade.">
+  <link rel="canonical" href="https://meuciclo.app.br/exclusao-de-dados">
+  
+  <meta property="og:title" content="Exclusão de Conta e Dados — Meu Ciclo">
+  <meta property="og:description" content="Saiba como excluir sua conta, remover dados locais do dispositivo, apagar cópias de segurança no Google Drive ou solicitar a eliminação via e-mail.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://meuciclo.app.br/exclusao-de-dados">
+
+  <!-- Fonte Inter de alta legibilidade -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM & TOKENS (SaaS Premium — Idêntico ao index e privacidade)
+       ========================================================================== */
+    :root {
+      /* Brand Palette */
+      --brand-navy-950: #060D1A;
+      --brand-navy-900: #0A1628;
+      --brand-navy-850: #0E213D;
+      --brand-navy-800: #142E54;
+      --brand-navy-700: #1E3E6D;
+      
+      --gold-primary: #C59B27;
+      --gold-light: #E5C365;
+      --gold-surface: #FEF9EB;
+      --gold-border: #E8D296;
+
+      --blue-accent: #2563EB;
+      --blue-hover: #1D4ED8;
+      --blue-subtle: #EFF6FF;
+
+      --emerald-500: #10B981;
+      --emerald-50: #ECFDF5;
+      --emerald-text: #065F46;
+
+      --amber-500: #F59E0B;
+      --amber-50: #FFFBEB;
+
+      --slate-900: #0F172A;
+      --slate-800: #1E293B;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748B;
+      --slate-400: #94A3B8;
+      --slate-300: #CBD5E1;
+      --slate-200: #E2E8F0;
+      --slate-100: #F1F5F9;
+      --slate-50: #F8FAFC;
+      --white: #FFFFFF;
+
+      /* Semantic tokens */
+      --bg-page: var(--slate-50);
+      --bg-surface: var(--white);
+      --border-subtle: var(--slate-200);
+      --border-strong: var(--slate-300);
+      --text-heading: var(--slate-900);
+      --text-body: var(--slate-600);
+      --text-muted: var(--slate-500);
+
+      /* Typography */
+      --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+      /* Radii */
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+
+      /* Shadows */
+      --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+      --shadow-card: 0 4px 12px -2px rgba(10, 22, 40, 0.05), 0 2px 6px -1px rgba(10, 22, 40, 0.03);
+      --shadow-product: 0 20px 40px -12px rgba(10, 22, 40, 0.12), 0 0 0 1px rgba(10, 22, 40, 0.06);
+
+      --container-max: 1180px;
+      --reading-max: 820px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-page);
+      color: var(--text-body);
+      line-height: 1.65;
+      letter-spacing: -0.01em;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .reading-container {
+      width: 100%;
+      max-width: var(--reading-max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header Nav */
+    .header-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      height: 68px;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--brand-navy-950);
+      font-weight: 900;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-icon-svg {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+
+    .btn-back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-md);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--brand-navy-950);
+      background: var(--slate-100);
+      border: 1px solid var(--border-subtle);
+      transition: all 0.2s ease;
+    }
+
+    .btn-back-home:hover {
+      background: var(--slate-200);
+      border-color: var(--slate-300);
+      transform: translateX(-2px);
+    }
+
+    /* Hero */
+    .policy-hero {
+      padding: 3.5rem 0 2.5rem 0;
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--slate-50) 100%);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.88rem;
+      color: var(--slate-500);
+      margin-bottom: 1.25rem;
+    }
+
+    .breadcrumb a {
+      color: var(--blue-accent);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.15s ease;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--blue-hover);
+      text-decoration: underline;
+    }
+
+    .breadcrumb span.active {
+      color: var(--slate-700);
+      font-weight: 600;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-full);
+      background: var(--gold-surface);
+      color: #8C6D15;
+      border: 1px solid var(--gold-border);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      color: var(--brand-navy-950);
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 900;
+      letter-spacing: -0.035em;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+
+    .update-date-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      color: var(--slate-500);
+      font-weight: 600;
+    }
+
+    /* Document Body */
+    .policy-content-section {
+      padding: 3rem 0 5rem 0;
+    }
+
+    .policy-card {
+      background: var(--white);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    @media (min-width: 768px) {
+      .policy-card {
+        padding: 3.5rem 3rem;
+      }
+    }
+
+    .policy-intro {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--slate-700);
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    .official-declaration-box {
+      background: #F8FAFC;
+      border: 2px solid #E2E8F0;
+      border-left: 5px solid var(--blue-accent);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .declaration-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-sm);
+      background: var(--blue-subtle);
+      color: var(--blue-accent);
+      margin-bottom: 1rem;
+    }
+
+    .official-quote {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--slate-900);
+      font-weight: 500;
+    }
+
+    .official-quote strong {
+      color: var(--brand-navy-950);
+      font-weight: 700;
+    }
+
+    .policy-block {
+      margin-bottom: 2.5rem;
+    }
+
+    .policy-block:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: var(--brand-navy-950);
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--brand-navy-900);
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .policy-block p {
+      color: var(--slate-600);
+      font-size: 1.02rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .policy-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .step-card {
+      background: var(--slate-50);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+      transition: border-color 0.2s ease;
+    }
+
+    .step-card:hover {
+      border-color: var(--slate-300);
+    }
+
+    .step-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .step-card-title {
+      font-weight: 800;
+      color: var(--brand-navy-950);
+      font-size: 1.1rem;
+    }
+
+    .step-tag-immediate {
+      margin-left: auto;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      background: var(--emerald-50);
+      color: var(--emerald-text);
+      border: 1px solid #A7F3D0;
+    }
+
+    .step-tag-timeline {
+      margin-left: auto;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      background: var(--amber-50);
+      color: #92400E;
+      border: 1px solid #FDE68A;
+    }
+
+    .data-table-container {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+    }
+
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      text-align: left;
+    }
+
+    table.data-table th {
+      background: var(--slate-100);
+      color: var(--brand-navy-950);
+      font-weight: 700;
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    table.data-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--slate-600);
+    }
+
+    table.data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    table.data-table tr:nth-child(even) td {
+      background: #FAFAFA;
+    }
+
+    .btn-action-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--blue-accent);
+      color: var(--white);
+      padding: 0.85rem 1.6rem;
+      border-radius: var(--radius-md);
+      font-size: 0.98rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.15s ease, transform 0.15s ease;
+      margin-top: 0.75rem;
+    }
+
+    .btn-action-email:hover {
+      background: var(--blue-hover);
+      transform: translateY(-1px);
+    }
+
+    /* Footer Institucional */
+    .site-footer {
+      background: var(--brand-navy-950);
+      color: var(--slate-400);
+      padding: 3rem 0 2rem 0;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-flex {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+
+    .footer-col h5 {
+      color: var(--white);
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+    }
+
+    .footer-col a {
+      color: var(--slate-300);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .footer-col a:hover {
+      color: var(--white);
+    }
+
+    .footer-meta-bar {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--slate-400);
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer-meta-bar {
+        flex-direction: row;
+        text-align: left;
+      }
+    }
+
+    .footer-meta-links {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-meta-links a {
+      color: var(--slate-300);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .footer-meta-links a:hover {
+      color: var(--gold-light);
+      text-decoration: underline;
+    }
+
+    .meta-sep {
+      color: var(--slate-600);
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. HEADER NAVEGAÇÃO -->
+  <header class="header-nav">
+    <div class="container nav-inner">
+      <a href="/" class="brand-logo" aria-label="Voltar para a página principal Meu Ciclo">
+        <svg class="brand-icon-svg" viewBox="0 0 100 100" fill="none">
+          <rect width="100" height="100" rx="20" fill="#142E54"/>
+          <path d="M 50 16 A 34 34 0 1 1 20 62" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+          <polygon points="50,4 66,22 44,28" fill="#FFFFFF"/>
+          <rect x="42" y="38" width="16" height="24" fill="#FFFFFF"/>
+          <path d="M 42 56 L 50 50 L 58 56 L 58 64 L 50 58 L 42 64 Z" fill="#C59B27"/>
+        </svg>
+        <span>Meu Ciclo</span>
+      </a>
+
+      <a href="/" class="btn-back-home">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Voltar ao Início</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 2. HERO DA PÁGINA -->
+  <section class="policy-hero">
+    <div class="reading-container">
+      <nav class="breadcrumb" aria-label="Navegação estrutural">
+        <a href="/">Início</a>
+        <span>/</span>
+        <span class="active">Exclusão de Conta e Dados</span>
+      </nav>
+
+      <div class="section-tag">
+        Diretrizes do Google Play &amp; LGPD
+      </div>
+
+      <h1>Exclusão de Conta e Dados</h1>
+
+      <div class="update-date-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Diretriz de Transparência e Exclusão Permanente • Atualizado em 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CONTEÚDO PRINCIPAL (LEITURA LIMPA E COMPLIANCE) -->
+  <main class="policy-content-section">
+    <div class="reading-container">
+      <article class="policy-card">
+        
+        <p class="policy-intro">
+          O <strong>Meu Ciclo</strong> respeita integralmente a privacidade, a soberania e o direito de eliminação de dados de cada utilizador. Esta página disponibiliza o procedimento público e transparente para a exclusão definitiva da sua conta e de quaisquer registos associados.
+        </p>
+
+        <!-- CAIXA DE DECLARAÇÃO OFICIAL CONFORME DIRETRIZ GOOGLE PLAY -->
+        <div class="official-declaration-box">
+          <div class="declaration-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Instrução Oficial de Exclusão</span>
+          </div>
+          <div class="official-quote">
+            Para solicitar a exclusão da sua conta e de todos os dados associados no aplicativo Meu Ciclo, o utilizador pode:<br>
+            <strong>(1)</strong> Limpar os dados diretamente nas definições do aplicativo ou desinstalá-lo (eliminando os dados locais do dispositivo);<br>
+            <strong>(2)</strong> Apagar a pasta de cópia de segurança na sua conta Google Drive; ou<br>
+            <strong>(3)</strong> Enviar um pedido por correio eletrónico para <a href="mailto:contato@meuciclo.app.br" style="color: var(--blue-accent); font-weight: 700;">contato@meuciclo.app.br</a>. Os dados locais são removidos imediatamente pelo próprio utilizador e eventuais dados associados ao suporte são eliminados num prazo máximo de 30 dias.
+          </div>
+        </div>
+
+        <!-- DETALHAMENTO DAS OPÇÕES -->
+        <section class="policy-block">
+          <h2>Procedimentos Detalhados de Exclusão</h2>
+          <p>
+            Como o aplicativo foi concebido sob o modelo arquitetural <strong>Local-First</strong>, a grande maioria dos seus registos não reside em servidores externos nossos, mas sim sob seu controlo exclusivo:
+          </p>
+
+          <!-- Card Opção 1 -->
+          <div class="step-card">
+            <div class="step-card-header">
+              <span class="step-badge">1</span>
+              <span class="step-card-title">Limpeza Local e Desinstalação</span>
+              <span class="step-tag-immediate">Remoção Imediata</span>
+            </div>
+            <p>
+              Todos os seus cronogramas, matérias verticalizadas, progresso de horas de estudo, histórico de questões e parâmetros físicos do TAF são armazenados na memória interna protegida (SQLite/Room) do seu dispositivo Android.
+            </p>
+            <p style="margin-bottom: 0.5rem;">
+              <strong>Como realizar:</strong>
+            </p>
+            <ul style="list-style: none; padding-left: 0.5rem; display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.95rem; color: var(--slate-700);">
+              <li>• No menu do aplicativo Meu Ciclo: Aceda a <em>Definições &gt; Dados &gt; Limpar Todos os Dados</em>; ou</li>
+              <li>• No sistema Android: Aceda a <em>Configurações &gt; Aplicativos &gt; Meu Ciclo &gt; Armazenamento &gt; Limpar Dados</em>; ou</li>
+              <li>• Desinstale o aplicativo diretamente do seu dispositivo móvel.</li>
+            </ul>
+          </div>
+
+          <!-- Card Opção 2 -->
+          <div class="step-card">
+            <div class="step-card-header">
+              <span class="step-badge">2</span>
+              <span class="step-card-title">Exclusão da Cópia no Google Drive</span>
+              <span class="step-tag-immediate">Controlo do Usuário</span>
+            </div>
+            <p>
+              Caso tenha ativado voluntariamente a função de cópia de segurança para migração ou salvaguarda, o ficheiro encriptado fica gravado unicamente no diretório restrito do aplicativo (<code>appDataFolder</code>) da sua própria Conta Google.
+            </p>
+            <p style="margin-bottom: 0.5rem;">
+              <strong>Como apagar:</strong>
+            </p>
+            <ul style="list-style: none; padding-left: 0.5rem; display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.95rem; color: var(--slate-700);">
+              <li>• No aplicativo: Aceda a <em>Definições &gt; Cópia de Segurança &gt; Excluir Cópia do Drive</em>;</li>
+              <li>• No navegador Web: Aceda a <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" style="color: var(--blue-accent); font-weight: 600;">Google Drive</a> &gt; <em>Configurações &gt; Gerenciar aplicativos &gt; Meu Ciclo &gt; Opções &gt; Excluir dados ocultos de aplicativos</em>; ou</li>
+              <li>• Revogue o acesso do app a qualquer momento em <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer" style="color: var(--blue-accent); font-weight: 600;">myaccount.google.com/permissions</a>.</li>
+            </ul>
+          </div>
+
+          <!-- Card Opção 3 -->
+          <div class="step-card">
+            <div class="step-card-header">
+              <span class="step-badge">3</span>
+              <span class="step-card-title">Pedido por Correio Eletrónico</span>
+              <span class="step-tag-timeline">Até 30 dias</span>
+            </div>
+            <p>
+              Caso deseje que a nossa equipa confirme a exclusão de eventuais registos de suporte técnico, dados de correspondência ou histórico de e-mail associados, envie uma mensagem para <strong>contato@meuciclo.app.br</strong> com o assunto "Solicitação de Exclusão de Conta e Dados".
+            </p>
+            <div>
+              <a href="mailto:contato@meuciclo.app.br?subject=Solicita%C3%A7%C3%A3o%20de%20Exclus%C3%A3o%20de%20Conta%20e%20Dados" class="btn-action-email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>Solicitar Exclusão por E-mail</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- TABELA DE TIPOS DE DADOS E RETENÇÃO (CONFORME PLAY CONSOLE) -->
+        <section class="policy-block">
+          <h2>Tipos de Dados, Armazenamento e Prazos</h2>
+          <p>
+            A tabela abaixo sintetiza o tratamento, a localização e os prazos aplicáveis de acordo com a política de segurança de dados do Google Play:
+          </p>
+
+          <div class="data-table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Categoria de Dados</th>
+                  <th>Onde Fica Armazenado</th>
+                  <th>Método de Exclusão</th>
+                  <th>Prazo Efetivo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Cronogramas, matérias e estudos</strong></td>
+                  <td>Dispositivo local (SQLite)</td>
+                  <td>Limpeza nas definições ou desinstalação</td>
+                  <td><span style="color: var(--emerald-text); font-weight: 700;">Imediato</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Métricas e treinos do TAF</strong></td>
+                  <td>Dispositivo local (SQLite)</td>
+                  <td>Limpeza nas definições ou desinstalação</td>
+                  <td><span style="color: var(--emerald-text); font-weight: 700;">Imediato</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Cópia de segurança (opcional)</strong></td>
+                  <td>Google Drive do utilizador (appDataFolder)</td>
+                  <td>Exclusão no app ou no Google Drive</td>
+                  <td><span style="color: var(--emerald-text); font-weight: 700;">Imediato</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Identificador de conta (Google Sign-In)</strong></td>
+                  <td>Sessão local do aplicativo</td>
+                  <td>Encerramento de sessão ou desinstalação</td>
+                  <td><span style="color: var(--emerald-text); font-weight: 700;">Imediato</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Registos de atendimento e suporte</strong></td>
+                  <td>Caixa postal de suporte técnico</td>
+                  <td>Pedido formal por correio eletrónico</td>
+                  <td><span style="color: #92400E; font-weight: 700;">Máximo de 30 dias</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- NOTA SOBRE CANCELAMENTO DE ASSINATURA -->
+        <section class="policy-block">
+          <h2>Gestão de Assinatura (Google Play Billing)</h2>
+          <p>
+            Note que a desinstalação do aplicativo ou a limpeza de dados <strong>não cancela automaticamente</strong> uma subscrição ativa contratada na loja de aplicativos. Para gerir ou cancelar a assinatura antes da renovação periódica:
+          </p>
+          <p>
+            Abra o aplicativo <strong>Google Play Store</strong> no seu celular &gt; Toque no ícone do perfil &gt; Selecione <strong>Pagamentos e assinaturas</strong> &gt; Toque em <strong>Assinaturas</strong> &gt; Escolha <strong>Meu Ciclo</strong> &gt; Toque em <strong>Cancelar assinatura</strong>.
+          </p>
+        </section>
+
+        <!-- CONTATO E CANAL DE ATENDIMENTO -->
+        <section class="policy-block">
+          <h2>Dúvidas ou Assistência</h2>
+          <p>
+            Caso necessite de auxílio no processo de exclusão de dados, estamos à disposição:
+          </p>
+
+          <div style="background: var(--slate-50); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+            <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.5rem; font-size: 0.98rem; color: var(--slate-700);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--blue-accent);"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>E-mail oficial: <a href="mailto:contato@meuciclo.app.br" style="color: var(--blue-accent); font-weight: 700;">contato@meuciclo.app.br</a></span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.65rem; font-size: 0.98rem; color: var(--slate-700);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--blue-accent);"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Política de Privacidade: <a href="/politica-de-privacidade" style="color: var(--blue-accent); font-weight: 700;">Acessar Declaração Completa</a></span>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- 4. FOOTER INSTITUCIONAL (COM 4 COLUNAS E LINHA DE METADADOS) -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div class="footer-col" style="max-width: 320px;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg class="brand-icon-svg" style="width: 24px; height: 24px;" viewBox="0 0 100 100" fill="none">
+            <rect width="100" height="100" rx="20" fill="#142E54"/>
+            <path d="M 50 16 A 34 34 0 1 1 20 62" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+            <polygon points="50,4 66,22 44,28" fill="#FFFFFF"/>
+            <rect x="42" y="38" width="16" height="24" fill="#FFFFFF"/>
+            <path d="M 42 56 L 50 50 L 58 56 L 58 64 L 50 58 L 42 64 Z" fill="#C59B27"/>
+          </svg>
+          <span style="font-weight: 800; color: var(--white); font-size: 1.1rem;">Meu Ciclo</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--slate-400); line-height: 1.5;">
+          A engenharia da sua preparação. Desenvolvido para pessoas de alta performance.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Canais &amp; Recursos</h5>
+        <div style="display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.88rem;">
+          <div>Início: <a href="/">Página Principal</a></div>
+          <div>Radar: <a href="/concursos">Concursos &amp; Provas (72h)</a></div>
+          <div>Contato: <a href="mailto:contato@meuciclo.app.br">contato@meuciclo.app.br</a></div>
+          <div>Suporte: <a href="mailto:suporte@meuciclo.app.br">suporte@meuciclo.app.br</a></div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Privacidade &amp; Tecnologia</h5>
+        <p style="font-size: 0.85rem; color: var(--slate-400); line-height: 1.5;">
+          Arquitetura Local-First (SQLite/Room no aparelho).<br>
+          Sem anúncios intrusivos. Google Play Billing.<br>
+          <a href="/politica-de-privacidade" style="color: var(--gold-light); font-weight: 600;">Declaração de Privacidade</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Exclusão de Dados</h5>
+        <p style="font-size: 0.85rem; color: var(--slate-400); line-height: 1.5;">
+          Eliminação total e revogação de conta.<br>
+          Procedimentos e prazos de remoção.<br>
+          <a href="/exclusao-de-dados" style="color: var(--gold-light); font-weight: 600;">Exclusão de Conta &amp; Dados</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Barra Discreta de Metadados e Links Obrigatórios (Google Play Compliance) -->
+    <div class="container footer-meta-bar">
+      <div class="footer-meta-copy">
+        &copy; 2026 Meu Ciclo. Todos os direitos reservados.
+      </div>
+      <div class="footer-meta-links">
+        <a href="/politica-de-privacidade">Política de Privacidade</a>
+        <span class="meta-sep">|</span>
+        <a href="/termos-de-uso">Termos de Uso</a>
+        <span class="meta-sep">|</span>
+        <a href="/exclusao-de-dados">Exclusão de Dados</a>
+        <span class="meta-sep">|</span>
+        <a href="mailto:contato@meuciclo.app.br">Fale Conosco</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -80,16 +80,50 @@ console.log('8. ✓ Privacidade: Página public/politica-de-privacidade.html com
 assert.ok(fs.existsSync('public/termos-de-uso.html'), 'public/termos-de-uso.html deve existir');
 console.log('9. ✓ Termos: Página public/termos-de-uso.html disponível.');
 
+// 5. Verificação da Página de Exclusão de Conta e Dados (Google Play & LGPD Compliance)
+assert.ok(fs.existsSync('public/exclusao-de-dados.html'), 'public/exclusao-de-dados.html deve existir');
+const exclusaoHtml = fs.readFileSync('public/exclusao-de-dados.html', 'utf8');
+
+// Verificação do texto obrigatório estipulado pelo usuário
+assert.ok(
+  exclusaoHtml.includes('Para solicitar a exclusão da sua conta e de todos os dados associados no aplicativo Meu Ciclo, o utilizador pode:'),
+  'exclusao-de-dados.html deve conter a introdução da declaração obrigatória'
+);
+assert.ok(
+  exclusaoHtml.includes('Limpar os dados diretamente nas definições do aplicativo ou desinstalá-lo (eliminando os dados locais do dispositivo)'),
+  'exclusao-de-dados.html deve conter o item (1) de limpeza local'
+);
+assert.ok(
+  exclusaoHtml.includes('Apagar a pasta de cópia de segurança na sua conta Google Drive'),
+  'exclusao-de-dados.html deve conter o item (2) de cópia no Google Drive'
+);
+assert.ok(
+  exclusaoHtml.includes('Enviar um pedido por correio eletrónico para') && exclusaoHtml.includes('contato@meuciclo.app.br'),
+  'exclusao-de-dados.html deve conter o item (3) de contato por e-mail'
+);
+assert.ok(
+  exclusaoHtml.includes('Os dados locais são removidos imediatamente pelo próprio utilizador e eventuais dados associados ao suporte são eliminados num prazo máximo de 30 dias.'),
+  'exclusao-de-dados.html deve conter os prazos de remoção'
+);
+console.log('10. ✓ Exclusão de Dados: Página public/exclusao-de-dados.html completa com texto oficial e diretrizes Google Play.');
+
 // Links no rodapé do index
 assert.ok(indexHtml.includes('href="/politica-de-privacidade"'), 'index.html deve conter link para /politica-de-privacidade');
 assert.ok(indexHtml.includes('href="/termos-de-uso"'), 'index.html deve conter link para /termos-de-uso');
+assert.ok(indexHtml.includes('href="/exclusao-de-dados"'), 'index.html deve conter link para /exclusao-de-dados');
 assert.ok(indexHtml.includes('Todos os direitos reservados'), 'index.html deve conter menção de direitos reservados');
 assert.ok(indexHtml.includes('Fale Conosco'), 'index.html deve conter Fale Conosco');
-console.log('10. ✓ Rodapé (Index): Linha discreta de metadados com Política, Termos e Fale Conosco validada.');
+
+// Verificar que a coluna Exclusão de Dados está posicionada após Privacidade & Tecnologia
+const privColIndex = indexHtml.indexOf('<h5>Privacidade &amp; Tecnologia</h5>');
+const exclColIndex = indexHtml.indexOf('<h5>Exclusão de Dados</h5>');
+assert.ok(privColIndex !== -1 && exclColIndex !== -1 && exclColIndex > privColIndex, 'Coluna Exclusão de Dados deve estar à direita de Privacidade & Tecnologia');
+console.log('11. ✓ Rodapé (Index): Coluna Exclusão de Dados posicionada ao lado direito de Privacidade & Tecnologia e link de metadados validado.');
 
 // Links no rodapé de concursos
 assert.ok(concursosHtml.includes('href="/politica-de-privacidade"'), 'concursos.html deve conter link para /politica-de-privacidade');
 assert.ok(concursosHtml.includes('href="/termos-de-uso"'), 'concursos.html deve conter link para /termos-de-uso');
-console.log('11. ✓ Rodapé (Concursos): Linha de metadados sincronizada.');
+assert.ok(concursosHtml.includes('href="/exclusao-de-dados"'), 'concursos.html deve conter link para /exclusao-de-dados');
+console.log('12. ✓ Rodapé (Concursos): Linha de metadados e coluna Exclusão sincronizadas.');
 
 console.log('\n=== TODAS AS VERIFICAÇÕES PASSARAM COM 100% DE SUCESSO! ===');

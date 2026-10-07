@@ -335,6 +335,7 @@
       .footer-flex {
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
       }
     }
 
@@ -535,10 +536,19 @@
 
       <div class="footer-col">
         <h5>Privacidade &amp; Tecnologia</h5>
-        <p style="font-size: 0.85rem; color: var(--slate-400);">
+        <p style="font-size: 0.85rem; color: var(--slate-400); line-height: 1.5;">
           Arquitetura Local-First (SQLite/Room no aparelho).<br>
           Sem anúncios intrusivos. Google Play Billing.<br>
-          &copy; 2026 Meu Ciclo. Todos os direitos reservados.
+          <a href="/politica-de-privacidade" style="color: var(--gold-light); font-weight: 600;">Declaração de Privacidade</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Exclusão de Dados</h5>
+        <p style="font-size: 0.85rem; color: var(--slate-400); line-height: 1.5;">
+          Eliminação total e revogação de conta.<br>
+          Procedimentos e prazos de remoção.<br>
+          <a href="/exclusao-de-dados" style="color: var(--gold-light); font-weight: 600;">Exclusão de Conta &amp; Dados</a>
         </p>
       </div>
     </div>
@@ -551,6 +561,8 @@
         <a href="/politica-de-privacidade">Política de Privacidade</a>
         <span class="meta-sep">|</span>
         <a href="/termos-de-uso">Termos de Uso</a>
+        <span class="meta-sep">|</span>
+        <a href="/exclusao-de-dados">Exclusão de Dados</a>
         <span class="meta-sep">|</span>
         <a href="mailto:contato@meuciclo.app.br">Fale Conosco</a>
       </div>
