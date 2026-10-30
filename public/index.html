@@ -1044,6 +1044,54 @@
       box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
     }
 
+    /* Pílulas de Áudio / Sons Neurais */
+    .audio-pills-row {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.75rem;
+    }
+
+    .audio-pill {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.3rem 0.65rem;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--slate-300);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      user-select: none;
+    }
+
+    .audio-pill.active {
+      background: var(--blue-accent);
+      border-color: #60A5FA;
+      color: var(--white);
+      box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+    }
+
+    /* Pílulas de Intervalo de Revisão Espaçada */
+    .interval-pills-row {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    .interval-pill {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--radius-sm);
+      background: var(--slate-100);
+      color: var(--brand-navy-950);
+      border: 1px solid var(--border-subtle);
+    }
+
     /* ==========================================================================
        7. TAF (DASHBOARD EM GRADE DE BALDES LÍQUIDOS 2x2 / 2x3)
        ========================================================================== */
@@ -1701,15 +1749,15 @@
       <nav aria-label="Navegação dos Módulos do Aplicativo">
         <ul class="nav-menu">
           <li><a href="#tempo-meta" class="nav-link">Tempo &amp; Meta</a></li>
-          <li><a href="#ciclo" class="nav-link">Estudo livre</a></li>
+          <li><a href="#estudo-livre" class="nav-link">Estudo livre</a></li>
           <li><a href="#edital" class="nav-link">Edital Verticalizado</a></li>
-          <li><a href="#taf" class="nav-link">Treino</a></li>
+          <li><a href="#treino" class="nav-link">Treino</a></li>
           <li><a href="#ciclo" class="nav-link">Ciclo de Estudos</a></li>
-          <li><a href="#revisoes-timer" class="nav-link">Revisões</a></li>
-          <li><a href="#revisoes-timer" class="nav-link">Timer</a></li>
-          <li><a href="#questoes-relatorios" class="nav-link">Questões</a></li>
-          <li><a href="#questoes-relatorios" class="nav-link">Simulados</a></li>
-          <li><a href="#questoes-relatorios" class="nav-link">Relatórios</a></li>
+          <li><a href="#revisoes" class="nav-link">Revisões</a></li>
+          <li><a href="#timer" class="nav-link">Timer</a></li>
+          <li><a href="#questoes" class="nav-link">Questões</a></li>
+          <li><a href="#simulados" class="nav-link">Simulados</a></li>
+          <li><a href="#relatorios" class="nav-link">Relatórios</a></li>
           <li><a href="#planos" class="nav-link">Planos</a></li>
           <li>
             <a href="/concursos" class="nav-link nav-link-hub" title="Hub Radar de Concursos e Provas (72h)">
@@ -1740,15 +1788,15 @@
   <div id="mobile-menu-overlay" class="mobile-menu-overlay" aria-hidden="true">
     <ul class="mobile-nav-list">
       <li><a href="#tempo-meta" class="mobile-menu-link">Tempo &amp; Meta</a></li>
-      <li><a href="#ciclo" class="mobile-menu-link">Estudo livre</a></li>
+      <li><a href="#estudo-livre" class="mobile-menu-link">Estudo livre</a></li>
       <li><a href="#edital" class="mobile-menu-link">Edital Verticalizado</a></li>
-      <li><a href="#taf" class="mobile-menu-link">Treino</a></li>
+      <li><a href="#treino" class="mobile-menu-link">Treino</a></li>
       <li><a href="#ciclo" class="mobile-menu-link">Ciclo de Estudos</a></li>
-      <li><a href="#revisoes-timer" class="mobile-menu-link">Revisões</a></li>
-      <li><a href="#revisoes-timer" class="mobile-menu-link">Timer</a></li>
-      <li><a href="#questoes-relatorios" class="mobile-menu-link">Questões</a></li>
-      <li><a href="#questoes-relatorios" class="mobile-menu-link">Simulados</a></li>
-      <li><a href="#questoes-relatorios" class="mobile-menu-link">Relatórios</a></li>
+      <li><a href="#revisoes" class="mobile-menu-link">Revisões</a></li>
+      <li><a href="#timer" class="mobile-menu-link">Timer</a></li>
+      <li><a href="#questoes" class="mobile-menu-link">Questões</a></li>
+      <li><a href="#simulados" class="mobile-menu-link">Simulados</a></li>
+      <li><a href="#relatorios" class="mobile-menu-link">Relatórios</a></li>
       <li><a href="#planos" class="mobile-menu-link">Planos</a></li>
       <li>
         <a href="/concursos" class="mobile-menu-link highlight-concursos">
@@ -1769,7 +1817,7 @@
   </div>
 
   <!-- ========================================================================
-       1. HERO PRINCIPAL (COM 3 CAPTURAS REAIS: TEMPO & META, CICLO, TAF)
+       1. HERO PRINCIPAL (COM 3 CAPTURAS REAIS: TEMPO & META, CICLO, TREINO)
        ======================================================================== -->
   <section class="hero-section">
     <div class="container">
@@ -1778,10 +1826,10 @@
           A engenharia da sua preparação
         </div>
 
-        <h1>Transforme seu edital em um ciclo de estudo que cabe na sua vida.</h1>
+        <h1>Transforme seu edital ou sua rotina de estudos em um ciclo que cabe na sua vida.</h1>
 
-        <p class="lead-text" style="margin: 0 auto 2rem auto;">
-          O Meu Ciclo organiza o edital, calcula suas horas reais, monta o dia e acompanha revisão, questões e, quando o concurso cobra, a prova física.
+        <p class="lead-text" style="margin: 0 auto 1.5rem auto;">
+          O Meu Ciclo organiza editais de concursos ou disciplinas acadêmicas, calcula suas horas líquidas reais, monta o seu dia e acompanha revisões, questões, relatórios e até sua ficha de treino ou TAF — tudo em um só lugar.
         </p>
 
         <div class="hero-cta-box">
@@ -1789,6 +1837,12 @@
             COMEÇAR 7 DIAS GRÁTIS
           </a>
           <span class="microcopy-safe">Sem compromisso. Cancele quando quiser.</span>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 0.65rem; flex-wrap: wrap; margin-top: 1.5rem;">
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--slate-700); background: var(--white); padding: 0.35rem 0.75rem; border-radius: var(--radius-full); border: 1px solid var(--border-subtle); box-shadow: 0 1px 3px rgba(0,0,0,0.04);">✓ Concursos Públicos</span>
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--slate-700); background: var(--white); padding: 0.35rem 0.75rem; border-radius: var(--radius-full); border: 1px solid var(--border-subtle); box-shadow: 0 1px 3px rgba(0,0,0,0.04);">✓ Vestibulares &amp; ENEM</span>
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--slate-700); background: var(--white); padding: 0.35rem 0.75rem; border-radius: var(--radius-full); border: 1px solid var(--border-subtle); box-shadow: 0 1px 3px rgba(0,0,0,0.04);">✓ Graduação, Residência &amp; Certificações</span>
         </div>
       </div>
 
@@ -1847,13 +1901,14 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--blue-accent)"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
                 Ciclo de Estudos
               </span>
-              <span class="app-screen-pill" style="color: #93C5FD;">Dois Modos</span>
+              <span class="app-screen-pill" style="color: #93C5FD;">Três Modos</span>
             </div>
 
-            <!-- Seletor de Modo Real -->
+            <!-- Seletor de Modo Real (Três Modos) -->
             <div class="ciclo-mode-badge-wrap" style="width: 100%; justify-content: center; margin-bottom: 0.5rem;">
               <span class="ciclo-mode-pill active">Pelo Edital</span>
               <span class="ciclo-mode-pill">Pela Trilha</span>
+              <span class="ciclo-mode-pill">Estudo Livre</span>
             </div>
 
             <div style="background: rgba(255, 255, 255, 0.04); border-radius: var(--radius-md); padding: 0.85rem;">
@@ -1879,28 +1934,28 @@
           </div>
         </div>
 
-        <!-- Captura 3: Treino (TAF) -->
+        <!-- Captura 3: Treino (TAF & Musculação) -->
         <div class="app-screen-card" style="border-left: 4px solid var(--accent-taf);">
           <div>
             <div class="app-screen-header">
               <span class="app-screen-title">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--accent-taf)"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
-                Treino &bull; Índices do TAF
+                Treino &bull; Musculação &amp; TAF
               </span>
-              <span class="taf-tag-eliminatorio" style="font-size: 0.65rem; padding: 0.2rem 0.5rem;">[ ELIMINATÓRIO ⓘ ]</span>
+              <span class="taf-tag-eliminatorio" style="font-size: 0.65rem; padding: 0.2rem 0.5rem;">[ SAÚDE &amp; CORTE ]</span>
             </div>
 
             <div style="font-size: 0.78rem; color: var(--slate-300); margin-bottom: 0.5rem; font-weight: 700;">
-              Polícia Federal &bull; PF-BR 2025
+              PF / Academia &bull; Ficha de Treino A/B/C
             </div>
 
             <div class="screen-micro-row">
-              <span>Barra Fixa</span>
-              <strong style="color: #6EE7B7;">Corte: 5 reps</strong>
+              <span>Barra Fixa / Costas</span>
+              <strong style="color: #6EE7B7;">Corte: 5 reps &bull; 4 séries</strong>
             </div>
             <div class="screen-micro-row">
-              <span>Impulsão Horizontal</span>
-              <strong style="color: #FDBA74;">Corte: 2,05 m</strong>
+              <span>Supino / Peitoral</span>
+              <strong style="color: #93C5FD;">3×12 &bull; 60 kg</strong>
             </div>
             <div class="screen-micro-row">
               <span>Natação 50m</span>
@@ -1913,8 +1968,8 @@
           </div>
 
           <!-- Barra de Ação Full-Width do Rodapé -->
-          <div class="app-screen-actionbar" style="margin-top: 0.85rem; padding: 0.75rem 0.5rem; font-size: 0.78rem; background: #DC2626;">
-            + REGISTRAR SIMULADO TAF
+          <div class="app-screen-actionbar" style="margin-top: 0.85rem; padding: 0.75rem 0.5rem; font-size: 0.78rem; background: var(--accent-taf);">
+            + REGISTRAR TREINO / TAF
           </div>
         </div>
 
@@ -2043,16 +2098,94 @@
   </section>
 
   <!-- ========================================================================
-       3. EDITAL VERTICALIZADO (MARQUE O QUE CAI, ACOMPANHE O QUE FALTA)
+       3. ESTUDO LIVRE (ESTUDE NO SEU RITMO SEM DEPENDER DE EDITAL)
        ======================================================================== -->
-  <section id="edital" class="feature-section bg-white">
+  <section id="estudo-livre" class="feature-section bg-white">
     <div class="container">
       <div class="feature-layout reverse">
+        <div class="feature-text-block">
+          <div class="section-tag section-tag-gold">Estudo Livre</div>
+          <h2>Estude no seu ritmo. Sem depender de um edital publicado.</h2>
+          <p>
+            Nem toda preparação nasce de uma folha de edital. Se você está na faculdade, no ensino médio, se preparando para vestibulares ou simplesmente quer estudar disciplinas avulsas, o Estudo Livre oferece autonomia total.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Cadastre qualquer disciplina da faculdade, colégio, residência ou projeto
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Liberdade de estudo sem quebrar a rotação do seu ciclo principal
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Revisões automáticas integradas: cada registro gera seu cronograma
+            </div>
+          </div>
+
+          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
+            Cadastrar Matérias Livres
+          </a>
+        </div>
+
+        <!-- Captura da Tela: Estudo Livre -->
+        <div class="screen-capture-box dark-theme">
+          <div class="app-screen-header">
+            <span class="app-screen-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-400)"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              Estudo Livre &bull; Sem Edital Fixo
+            </span>
+            <span class="app-screen-pill" style="color: #6EE7B7; border-color: rgba(110, 231, 183, 0.3);">Autonomia</span>
+          </div>
+
+          <div style="font-size: 0.82rem; color: var(--slate-300); margin-bottom: 0.85rem;">
+            Matérias e Módulos Cadastrados Livremente:
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+            <!-- Matéria 1: Faculdade / Medicina -->
+            <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #10B981; border-radius: var(--radius-md); padding: 0.75rem 1rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: #6EE7B7; font-weight: 800;">Graduação &bull; Módulo III</span>
+                <span style="font-size: 0.72rem; color: var(--slate-400);">Revisão: 7 dias</span>
+              </div>
+              <div style="font-weight: 800; font-size: 0.95rem; color: var(--white); margin: 0.2rem 0;">Clínica Médica: Cardiologia</div>
+              <div style="font-size: 0.78rem; color: var(--slate-300);">Insuficiência Cardíaca e Farmacologia Básica</div>
+            </div>
+
+            <!-- Matéria 2: Tópico Avulso -->
+            <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid var(--blue-accent); border-radius: var(--radius-md); padding: 0.75rem 1rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 0.72rem; text-transform: uppercase; color: #93C5FD; font-weight: 800;">Tópico Avulso &bull; Foco Específico</span>
+                <span style="font-size: 0.72rem; color: var(--slate-400);">Timer: 52 min</span>
+              </div>
+              <div style="font-weight: 800; font-size: 0.95rem; color: var(--white); margin: 0.2rem 0;">Direito Tributário: ICMS</div>
+              <div style="font-size: 0.78rem; color: var(--slate-300);">Fato Gerador, Imunidades e Jurisprudência STF</div>
+            </div>
+          </div>
+
+          <!-- Barra de Ação Full-Width -->
+          <div class="app-screen-actionbar" style="background: #059669;">
+            + ADICIONAR NOVA DISCIPLINA LIVRE
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. EDITAL VERTICALIZADO (MARQUE O QUE CAI, ACOMPANHE O QUE FALTA)
+       ======================================================================== -->
+  <section id="edital" class="feature-section">
+    <div class="container">
+      <div class="feature-layout">
         <div class="feature-text-block">
           <div class="section-tag">Edital Verticalizado</div>
           <h2>Marque o que cai. Acompanhe o que falta.</h2>
           <p>
-            Tópicos, busca, estudados e restantes. A ordem do dia não precisa ser a do edital. Você pesquisa qualquer termo com agilidade e acompanha exatamente as pendências de cada matéria.
+            Tópicos, busca instantânea, estudados e restantes. A ordem do dia não precisa ser a do edital. Você pesquisa qualquer termo com agilidade e acompanha exatamente as pendências de cada matéria.
           </p>
 
           <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
@@ -2140,273 +2273,30 @@
   </section>
 
   <!-- ========================================================================
-       4. CICLO DE ESTUDOS (DOIS MODOS COM O NOME DA TELA)
+       5. TREINO (MUSCULAÇÃO, ACADEMIA & ÍNDICES OFICIAIS DO TAF)
        ======================================================================== -->
-  <section id="ciclo" class="feature-section">
-    <div class="container">
-      <div class="feature-layout">
-        <div class="feature-text-block">
-          <div class="section-tag section-tag-gold">Ciclo de Estudos</div>
-          <h2>Dois modos de estudo. O controle da sessão é seu.</h2>
-          <p>
-            Na tela do Ciclo, você alterna entre duas maneiras comprovadas de estudar:
-          </p>
-
-          <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
-            <div style="background: var(--white); border: 1px solid var(--border-subtle); border-left: 4px solid var(--blue-accent); padding: 1rem 1.25rem; border-radius: var(--radius-md);">
-              <strong style="color: var(--brand-navy-950); display: block; margin-bottom: 0.25rem;">"Pelo Edital"</strong>
-              <span style="color: var(--slate-600); font-size: 0.95rem;">A matéria da vez segue a árvore e estrutura oficial do edital.</span>
-            </div>
-
-            <div style="background: var(--white); border: 1px solid var(--border-subtle); border-left: 4px solid var(--gold-primary); padding: 1rem 1.25rem; border-radius: var(--radius-md);">
-              <strong style="color: var(--brand-navy-950); display: block; margin-bottom: 0.25rem;">"Pela Trilha"</strong>
-              <span style="color: var(--slate-600); font-size: 0.95rem;">Você estuda na ordem do cursinho. O app só aponta a matéria. Você abre o material, liga o timer e registra.</span>
-            </div>
-
-            <div style="background: var(--white); border: 1px solid var(--border-subtle); border-left: 4px solid var(--emerald-500); padding: 1rem 1.25rem; border-radius: var(--radius-md);">
-              <strong style="color: var(--brand-navy-950); display: block; margin-bottom: 0.25rem;">"Estudo Livre"</strong>
-              <span style="color: var(--slate-600); font-size: 0.95rem;">Estude qualquer disciplina avulsa ou adiante tópicos no seu ritmo sem quebrar o algoritmo da sua fila.</span>
-            </div>
-          </div>
-
-          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Iniciar Meu Ciclo
-          </a>
-        </div>
-
-        <!-- Captura da Tela: Card com os Dois Botões Reais -->
-        <div class="screen-capture-box dark-theme">
-          <div class="app-screen-header">
-            <span class="app-screen-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--gold-light)"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              Ciclo de Estudos • Tela Ativa
-            </span>
-            <span class="app-screen-pill">Local-First</span>
-          </div>
-
-          <div style="text-align: center; margin-bottom: 1.5rem;">
-            <div class="ciclo-mode-badge-wrap">
-              <span class="ciclo-mode-pill active">Pelo Edital</span>
-              <span class="ciclo-mode-pill">Pela Trilha</span>
-              <span class="ciclo-mode-pill">Estudo Livre</span>
-            </div>
-            <div style="font-size: 0.8rem; color: var(--slate-400); margin-top: 0.35rem;">
-              Modo selecionado: <em>Pela Trilha (siga o seu cursinho ou PDF)</em>
-            </div>
-          </div>
-
-          <div class="ciclo-action-card">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--gold-light); font-weight: 800; letter-spacing: 0.05em;">
-              Matéria Apontada pelo Ciclo
-            </div>
-            <div style="font-size: 1.35rem; font-weight: 900; color: var(--white); margin: 0.35rem 0;">
-              Direito Administrativo
-            </div>
-            <div style="font-size: 0.88rem; color: var(--slate-300);">
-              Atos Administrativos: Requisitos, Atributos e Espécies
-            </div>
-          </div>
-
-          <!-- Captura dos Dois Botões Reais da Tela -->
-          <div class="ciclo-btn-dual">
-            <div class="btn-ciclo-timer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              <span>Iniciar timer</span>
-            </div>
-            <div class="btn-ciclo-record">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-              <span>Registrar estudo</span>
-            </div>
-          </div>
-
-          <!-- Barra de Ação Full-Width do Rodapé -->
-          <div class="app-screen-actionbar">
-            🔄 SINCRONIZAR CICLO DE ESTUDOS
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       5. REVISÕES E TIMER (REPETIÇÃO ESPAÇADA & TIMER COM FOCO LÍQUIDO)
-       ======================================================================== -->
-  <section id="revisoes-timer" class="feature-section bg-white">
+  <section id="treino" class="feature-section bg-white">
     <div class="container">
       <div class="feature-layout reverse">
         <div class="feature-text-block">
-          <div class="section-tag">Revisões &amp; Timer</div>
-          <h2>A repetição espaçada nasce do registro. Sem cronogramas engessados.</h2>
+          <div class="section-tag section-tag-taf">Treino &bull; Musculação &amp; TAF</div>
+          <h2>Do TAF eliminatório à ficha de academia. Sua saúde física no mesmo aplicativo.</h2>
           <p>
-            Você não perde horas cadastrando cronogramas fixos antes de estudar. Ao concluir sua sessão líquida e registrar o avanço, o ciclo agenda automaticamente os intervalos espaçados ideais.
-          </p>
-
-          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Repetição espaçada com botões diretos "Concluir" e "Antecipar"
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Fontes completas de revisão incluindo Flash Cards
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Timer com Regra 52/17, Pomodoro e frequências neurais (40Hz binaural)
-            </div>
-          </div>
-
-          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Testar Timer e Revisões
-          </a>
-        </div>
-
-        <!-- Captura da Tela: Timer e Tela de Revisões -->
-        <div class="screen-capture-box">
-          <!-- Timer Modo Foco -->
-          <div class="timer-focus-box">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
-              <span style="font-size: 0.75rem; font-weight: 700; color: var(--gold-light); text-transform: uppercase; letter-spacing: 0.05em;">
-                Timer &bull; Foco e contagem líquida
-              </span>
-              <span style="font-size: 0.72rem; color: #93C5FD; font-weight: 700;">Regra 52/17</span>
-            </div>
-            <div class="timer-focus-display">00:52:00</div>
-            <div style="font-size: 0.8rem; color: var(--slate-300);">
-              Som ativo: <strong>40 Hz binaural</strong> &bull; Modo Foco Ligado
-            </div>
-          </div>
-
-          <!-- Revisões Nascidas do Registro -->
-          <div class="review-flow-track">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem; margin-bottom: 0.5rem;">
-              <span style="font-size: 0.8rem; font-weight: 800; color: var(--brand-navy-950); text-transform: uppercase;">
-                Revisões &bull; Repetição espaçada
-              </span>
-              <span class="app-screen-pill" style="font-size: 0.7rem;">Hoje: 0 atrasadas</span>
-            </div>
-
-            <div class="review-item-card">
-              <div>
-                <strong style="color: var(--brand-navy-950);">Direito Constitucional</strong>
-                <div style="font-size: 0.78rem; color: var(--slate-500);">Direitos Fundamentais &bull; Flash Cards</div>
-              </div>
-              <span class="tag-review-badge">Concluir</span>
-            </div>
-
-            <div class="review-item-card">
-              <div>
-                <strong style="color: var(--brand-navy-950);">Língua Portuguesa</strong>
-                <div style="font-size: 0.78rem; color: var(--slate-500);">Concordância Verbal &bull; Resolução de Questões</div>
-              </div>
-              <span class="tag-review-badge" style="background: var(--blue-subtle); color: var(--blue-accent); border-color: #BFDBFE;">Antecipar</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       6. QUESTÕES, SIMULADOS E RELATÓRIOS (DO DIA 1 AO DIA 30)
-       ======================================================================== -->
-  <section id="questoes-relatorios" class="feature-section">
-    <div class="container">
-      <div class="feature-layout">
-        <div class="feature-text-block">
-          <div class="section-tag section-tag-gold">Questões, Simulados &amp; Relatórios</div>
-          <h2>Registro de bateria, nota, tempo e histórico.</h2>
-          <p>
-            Relatórios mostram cobertura do edital, horas líquidas, constância e revisões. No dia 1 está em zero. No dia 30, preenchido.
-          </p>
-          <p style="font-size: 0.98rem; color: var(--slate-600); margin-top: -0.5rem;">
-            O Meu Ciclo não fabrica números inventados nem simula taxas irreais. Ele reflete com rigor cirúrgico a disciplina que você colocar no aplicativo dia após dia.
-          </p>
-
-          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0 2rem 0;">
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Baterias com acertos, erros, taxa de êxito e tempo médio por questão
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Simulados completos com raio-x da prova e histórico sem truncamento
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Painel de diagnóstico com cobertura, constância e horas reais
-            </div>
-          </div>
-
-          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Começar Meu Histórico Real
-          </a>
-        </div>
-
-        <!-- Captura da Tela: Comparativo Honestidade Dia 1 vs Dia 30 & Barras de Ação -->
-        <div class="screen-capture-box">
-          <div class="reports-timeline-compare">
-            <!-- Dia 1: Em zero -->
-            <div class="report-state-box">
-              <span class="report-state-badge" style="background: var(--slate-200); color: var(--slate-700);">No Dia 1</span>
-              <div class="report-metric-zero">0h 00m</div>
-              <div style="font-size: 0.85rem; font-weight: 700; color: var(--slate-700);">Horas Registradas</div>
-              <div style="font-size: 0.78rem; color: var(--slate-500); margin-top: 0.35rem;">
-                Tudo limpo, sem métricas falsas. Pronto para o primeiro registro.
-              </div>
-            </div>
-
-            <!-- Dia 30: Preenchido -->
-            <div class="report-state-box" style="border-color: #A7F3D0; background: #F0FDF4;">
-              <span class="report-state-badge" style="background: var(--emerald-50); color: var(--emerald-text); border: 1px solid #A7F3D0;">No Dia 30</span>
-              <div class="report-metric-filled">84h 30m</div>
-              <div style="font-size: 0.85rem; font-weight: 700; color: var(--brand-navy-950);">Horas Preenchidas</div>
-              <div style="font-size: 0.78rem; color: var(--slate-600); margin-top: 0.35rem;">
-                Diagnóstico autêntico de cobertura, constância e simulados.
-              </div>
-            </div>
-          </div>
-
-          <!-- Barras de Ação Full-Width do Rodapé -->
-          <div class="app-screen-actionbar" style="margin-top: 1.25rem;">
-            + REGISTRAR NOVAS QUESTÕES
-          </div>
-          <div class="app-screen-actionbar" style="margin-top: 0.65rem; background: var(--brand-navy-850);">
-            + REGISTRAR NOVO SIMULADO
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       7. TAF (DASHBOARD EM GRADE DE BALDES LÍQUIDOS 2x2 / 2x3)
-       ======================================================================== -->
-  <section id="taf" class="feature-section bg-white">
-    <div class="container">
-      <div class="feature-layout reverse">
-        <div class="feature-text-block">
-          <div class="section-tag section-tag-taf">Treino &bull; Índices do TAF &amp; Musculação</div>
-          <h2>Se o seu concurso cobra prova física.</h2>
-          <p>
-            Dashboard de baterias com preenchimento líquido, índices oficiais por cargo e sexo, linha de corte eliminatória e ficha de musculação. Se não tem teste físico, o app marca “Não se aplica”.
-          </p>
-          <p style="font-size: 0.98rem; color: var(--slate-600); margin-top: -0.5rem;">
-            Você não é obrigado a conviver com telas de treino físico caso esteja focado em carreiras fiscais, administrativas ou vestibulares. Mas se o seu edital cobra corrida, barra fixa ou natação, a preparação física é acompanhada com o mesmo rigor cirúrgico das matérias teóricas.
+            Sustentar horas diárias de estudo exige preparo físico. Seja para bater o índice oficial de um concurso policial ou para manter a rotina de musculação que previne o cansaço mental, o Meu Ciclo centraliza seus treinos sem a necessidade de apps extras de academia.
           </p>
 
           <div style="display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0 2rem 0;">
             <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--accent-taf)"><polyline points="20 6 9 17 4 12"/></svg>
-              Baldes com preenchimento líquido ascendente e linha de corte oficial
+              Ficha de Musculação Completa: monte divisões (A, B, C), exercícios, repetições e cargas
             </div>
             <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--accent-taf)"><polyline points="20 6 9 17 4 12"/></svg>
-              Módulo de Musculação integrado com grupos musculares e exercícios
+              Baldes com preenchimento líquido ascendente e linha de corte oficial para TAF
             </div>
             <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--accent-taf)"><polyline points="20 6 9 17 4 12"/></svg>
-              Concurso sem prova física? Opção direta de desativação: "Não se aplica"
+              Foco 100% Teórico? Se o seu concurso ou curso não tem teste físico, marque "Não se aplica"
             </div>
           </div>
 
@@ -2415,15 +2305,15 @@
           </a>
         </div>
 
-        <!-- Captura da Tela: Dashboard de Baldes Líquidos 2x2 / 2x3 -->
+        <!-- Captura da Tela: Dashboard de Baldes Líquidos & Ficha de Musculação -->
         <div class="taf-dashboard-preview">
           <!-- Cabeçalho Compacto Oficial -->
           <div class="taf-compact-header">
             <div class="taf-header-info">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="#60A5FA"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               <div>
-                <div>Polícia Federal – cargos policiais 2025</div>
-                <div style="font-size: 0.72rem; color: var(--slate-400); font-weight: normal;">(Índices: Masculino)</div>
+                <div>Polícia Federal &bull; PF-BR 2025 / Academia</div>
+                <div style="font-size: 0.72rem; color: var(--slate-400); font-weight: normal;">(Índices Oficiais &bull; Ficha Integrada)</div>
               </div>
             </div>
             <div style="display: flex; align-items: center; gap: 0.5rem;">
@@ -2431,12 +2321,12 @@
                 649
                 <small>dias</small>
               </div>
-              <span class="taf-tag-eliminatorio">[ ELIMINATÓRIO ⓘ ]</span>
+              <span class="taf-tag-eliminatorio">[ CORTE &amp; SAÚDE ]</span>
             </div>
           </div>
 
           <div style="font-size: 0.8rem; color: var(--slate-300); font-weight: 700; margin-bottom: 0.25rem;">
-            Provas do Edital (Preenchimento Líquido vs Linha de Corte):
+            Provas do Edital &bull; Preenchimento Líquido vs Linha de Corte:
           </div>
 
           <!-- Grade de Baldes Líquidos 2x2 -->
@@ -2495,8 +2385,8 @@
           </div>
 
           <!-- Barra de Ação Full-Width do Rodapé da Tela -->
-          <div class="app-screen-actionbar" style="background: #DC2626;">
-            + REGISTRAR SIMULADO TAF
+          <div class="app-screen-actionbar" style="background: var(--accent-taf);">
+            + REGISTRAR SIMULADO TAF / MUSCULAÇÃO
           </div>
 
           <div class="taf-toggle-bar">
@@ -2504,6 +2394,474 @@
             <span style="background: rgba(255, 255, 255, 0.1); padding: 0.25rem 0.65rem; border-radius: var(--radius-sm); font-weight: 700; color: var(--white);">
               Marcar "Não se aplica"
             </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. CICLO DE ESTUDOS (TRÊS MODOS COM O NOME DA TELA)
+       ======================================================================== -->
+  <section id="ciclo" class="feature-section">
+    <div class="container">
+      <div class="feature-layout">
+        <div class="feature-text-block">
+          <div class="section-tag section-tag-gold">Ciclo de Estudos</div>
+          <h2>Três modos de estudo: Edital, Trilha ou Estudo Livre. O controle da sessão é seu.</h2>
+          <p>
+            Na tela do Ciclo, você alterna entre três maneiras comprovadas de estudar, adequadas ao seu momento de preparação:
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem;">
+            <div style="background: var(--white); border: 1px solid var(--border-subtle); border-left: 4px solid var(--blue-accent); padding: 0.85rem 1.15rem; border-radius: var(--radius-md);">
+              <strong style="color: var(--brand-navy-950); display: block; margin-bottom: 0.2rem;">"Pelo Edital"</strong>
+              <span style="color: var(--slate-600); font-size: 0.92rem;">A matéria da vez segue a árvore e estrutura oficial da banca organizadora.</span>
+            </div>
+
+            <div style="background: var(--white); border: 1px solid var(--border-subtle); border-left: 4px solid var(--gold-primary); padding: 0.85rem 1.15rem; border-radius: var(--radius-md);">
+              <strong style="color: var(--brand-navy-950); display: block; margin-bottom: 0.2rem;">"Pela Trilha"</strong>
+              <span style="color: var(--slate-600); font-size: 0.92rem;">Você estuda na ordem didática do cursinho (PDFs e videoaulas). O app aponta a matéria, você abre o material, liga o timer e registra.</span>
+            </div>
+
+            <div style="background: var(--white); border: 1px solid var(--border-subtle); border-left: 4px solid var(--emerald-500); padding: 0.85rem 1.15rem; border-radius: var(--radius-md);">
+              <strong style="color: var(--brand-navy-950); display: block; margin-bottom: 0.2rem;">"Estudo Livre"</strong>
+              <span style="color: var(--slate-600); font-size: 0.92rem;">Cadastre e estude qualquer disciplina da faculdade, colégio ou tópicos livres, com revisões agendadas automaticamente em torno de cada registro.</span>
+            </div>
+          </div>
+
+          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
+            Iniciar Meu Ciclo
+          </a>
+        </div>
+
+        <!-- Captura da Tela: Card com os Três Botões Reais -->
+        <div class="screen-capture-box dark-theme">
+          <div class="app-screen-header">
+            <span class="app-screen-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--gold-light)"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Ciclo de Estudos &bull; Tela Ativa
+            </span>
+            <span class="app-screen-pill">Local-First</span>
+          </div>
+
+          <div style="text-align: center; margin-bottom: 1.5rem;">
+            <div class="ciclo-mode-badge-wrap">
+              <span class="ciclo-mode-pill active">Pelo Edital</span>
+              <span class="ciclo-mode-pill">Pela Trilha</span>
+              <span class="ciclo-mode-pill">Estudo Livre</span>
+            </div>
+            <div style="font-size: 0.8rem; color: var(--slate-400); margin-top: 0.35rem;">
+              Modo selecionado: <em>Pela Trilha (siga o seu cursinho ou PDF)</em>
+            </div>
+          </div>
+
+          <div class="ciclo-action-card">
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--gold-light); font-weight: 800; letter-spacing: 0.05em;">
+              Matéria Apontada pelo Ciclo
+            </div>
+            <div style="font-size: 1.35rem; font-weight: 900; color: var(--white); margin: 0.35rem 0;">
+              Direito Administrativo
+            </div>
+            <div style="font-size: 0.88rem; color: var(--slate-300);">
+              Atos Administrativos: Requisitos, Atributos e Espécies
+            </div>
+          </div>
+
+          <!-- Captura dos Dois Botões Reais da Tela -->
+          <div class="ciclo-btn-dual">
+            <div class="btn-ciclo-timer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Iniciar timer</span>
+            </div>
+            <div class="btn-ciclo-record">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              <span>Registrar estudo</span>
+            </div>
+          </div>
+
+          <!-- Barra de Ação Full-Width do Rodapé -->
+          <div class="app-screen-actionbar">
+            🔄 SINCRONIZAR CICLO DE ESTUDOS
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. REVISÕES (REPETIÇÃO ESPAÇADA CIENTÍFICA & CICLOS FLEXÍVEIS)
+       ======================================================================== -->
+  <section id="revisoes" class="feature-section bg-white">
+    <div class="container">
+      <div class="feature-layout reverse">
+        <div class="feature-text-block">
+          <div class="section-tag">Revisões &bull; Repetição Espaçada</div>
+          <h2>A repetição espaçada nasce do registro. Sem cronogramas engessados.</h2>
+          <p>
+            Você não perde horas cadastrando cronogramas fixos antes de estudar. Ao concluir sua sessão líquida e registrar o avanço, o ciclo agenda automaticamente os intervalos espaçados ideais para vencer a curva do esquecimento.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Sugestão inteligente com base na data da prova para chegar no ápice da retenção
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Liberdade total: ciclos científicos de 24h, 7d, 15d, 30d, 60d, 120d, 240d e 360d
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Ações diretas "Concluir" e "Antecipar" para manter o ritmo sem engessamento
+            </div>
+          </div>
+
+          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
+            Testar Repetição Espaçada
+          </a>
+        </div>
+
+        <!-- Captura da Tela: Revisões e Intervalos -->
+        <div class="screen-capture-box">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
+            <span style="font-size: 0.82rem; font-weight: 800; color: var(--brand-navy-950); text-transform: uppercase;">
+              Fila de Revisões Espaçadas
+            </span>
+            <span class="app-screen-pill" style="font-size: 0.7rem;">Hoje: 0 atrasadas</span>
+          </div>
+
+          <div style="font-size: 0.75rem; color: var(--slate-500); margin-bottom: 0.5rem; font-weight: 700;">
+            Intervalos Científicos Disponíveis:
+          </div>
+          <div class="interval-pills-row">
+            <span class="interval-pill">24 horas</span>
+            <span class="interval-pill">7 dias</span>
+            <span class="interval-pill">15 dias</span>
+            <span class="interval-pill">30 dias</span>
+            <span class="interval-pill">60 dias</span>
+            <span class="interval-pill">120 dias</span>
+            <span class="interval-pill">240 dias</span>
+            <span class="interval-pill">360 dias</span>
+          </div>
+
+          <!-- Revisões Nascidas do Registro -->
+          <div class="review-flow-track" style="margin-top: 1rem;">
+            <div class="review-item-card">
+              <div>
+                <strong style="color: var(--brand-navy-950);">Direito Constitucional</strong>
+                <div style="font-size: 0.78rem; color: var(--slate-500);">Direitos Fundamentais &bull; Flash Cards (Ciclo: 7d)</div>
+              </div>
+              <span class="tag-review-badge">Concluir</span>
+            </div>
+
+            <div class="review-item-card">
+              <div>
+                <strong style="color: var(--brand-navy-950);">Língua Portuguesa</strong>
+                <div style="font-size: 0.78rem; color: var(--slate-500);">Concordância Verbal &bull; Resolução de Questões (Ciclo: 24h)</div>
+              </div>
+              <span class="tag-review-badge" style="background: var(--blue-subtle); color: var(--blue-accent); border-color: #BFDBFE;">Antecipar</span>
+            </div>
+          </div>
+
+          <div class="app-screen-actionbar" style="margin-top: 1rem;">
+            ✓ REGISTRAR REVISÃO CONCLUÍDA
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. TIMER & FOCO (POMODORO, REGRA 52/17 & 3 SONS NEURAIS ANTI-DISTRAÇÃO)
+       ======================================================================== -->
+  <section id="timer" class="feature-section">
+    <div class="container">
+      <div class="feature-layout">
+        <div class="feature-text-block">
+          <div class="section-tag section-tag-gold">Timer &bull; Foco &amp; Contagem Líquida</div>
+          <h2>Timer de Alta Performance com Sons Neurais. Foco total sem sair do app.</h2>
+          <p>
+            Esqueça a tentação de abrir o Spotify ou YouTube para buscar músicas de estudo e acabar se perdendo em notificações e recomendações. O Meu Ciclo integra os métodos de foco mais conceituados e sons nativos anti-distração.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Técnica Pomodoro (25/5): blocos ágeis de 25 min com 5 min de pausa para vencer a procrastinação
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Regra Moderna 52/17: padrão avançado da neurociência (52 min de imersão e 17 min de descanso)
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Cronômetro Progressivo e Regressivo com contagem rigorosa de horas líquidas
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              3 Sons Neurais Nativos: Frequência Binaural (40 Hz), Ruído Branco e Ruído Marrom
+            </div>
+          </div>
+
+          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
+            Testar Timer com Sons Neurais
+          </a>
+        </div>
+
+        <!-- Captura da Tela: Timer com Modos e Sons -->
+        <div class="screen-capture-box">
+          <div class="timer-focus-box">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--gold-light); text-transform: uppercase; letter-spacing: 0.05em;">
+                Timer &bull; Modo Foco Ativo
+              </span>
+              <span style="font-size: 0.72rem; color: #93C5FD; font-weight: 700;">Regra 52/17</span>
+            </div>
+
+            <div class="timer-focus-display">00:52:00</div>
+
+            <div style="font-size: 0.8rem; color: var(--slate-300); margin-bottom: 1rem;">
+              Método: <strong>Regra 52/17</strong> &bull; Pomodoro &bull; Progressivo / Regressivo
+            </div>
+
+            <!-- Seletor de Sons Neurais Embutidos -->
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 0.85rem;">
+              <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--gold-light); font-weight: 800; margin-bottom: 0.35rem;">
+                Sons Neurais Nativos (Sem sair do app):
+              </div>
+              <div class="audio-pills-row">
+                <span class="audio-pill active">🎧 40 Hz Binaural</span>
+                <span class="audio-pill">🌊 Ruído Branco</span>
+                <span class="audio-pill">🪵 Ruído Marrom</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="app-screen-actionbar" style="margin-top: 1rem;">
+            ▶ INICIAR SESSÃO DE FOCO
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. QUESTÕES (ANÁLISE DE PERFORMANCE & RITMO DE RESOLUÇÃO)
+       ======================================================================== -->
+  <section id="questoes" class="feature-section bg-white">
+    <div class="container">
+      <div class="feature-layout reverse">
+        <div class="feature-text-block">
+          <div class="section-tag">Questões &bull; Diagnóstico de Performance</div>
+          <h2>Você resolve onde preferir. O Meu Ciclo analisa onde você erra.</h2>
+          <p>
+            O Meu Ciclo não traz um banco próprio de questões — e isso é uma decisão deliberada. Você continua praticando nas suas plataformas preferidas (QConcursos, Tec Concursos, simulados do cursinho, PDFs ou livros). Nossa proposta é ser a sua <strong>ferramenta de inteligência analítica</strong>.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Ritmo de Resolução: monitore o tempo médio gasto por questão para não faltar tempo na prova
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Geração Automática de Revisões: erros alimentam diretamente o motor de repetição espaçada
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Registro de baterias com acertos, erros e taxa de êxito real sem truncamento
+            </div>
+          </div>
+
+          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
+            Registrar Minhas Baterias
+          </a>
+        </div>
+
+        <!-- Captura da Tela: Bateria de Questões -->
+        <div class="screen-capture-box">
+          <div style="background: var(--slate-50); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.25rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--blue-accent); font-weight: 800;">
+                Bateria Finalizada &bull; Plataforma Externa
+              </span>
+              <span class="app-screen-pill" style="font-size: 0.7rem; background: var(--emerald-50); color: var(--emerald-text); border-color: #A7F3D0;">
+                86,7% Êxito
+              </span>
+            </div>
+            <div style="font-size: 1.15rem; font-weight: 900; color: var(--brand-navy-950);">
+              Direito Administrativo &bull; 30 Questões
+            </div>
+            <div style="font-size: 0.8rem; color: var(--slate-500); margin-top: 0.2rem;">
+              Origem: Tec / QConcursos / Cursinho
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin-top: 1rem; text-align: center;">
+              <div style="background: var(--white); padding: 0.65rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                <div style="font-size: 1.1rem; font-weight: 900; color: var(--emerald-text);">26</div>
+                <div style="font-size: 0.7rem; color: var(--slate-500); font-weight: 700;">Acertos</div>
+              </div>
+              <div style="background: var(--white); padding: 0.65rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                <div style="font-size: 1.1rem; font-weight: 900; color: #DC2626;">4</div>
+                <div style="font-size: 0.7rem; color: var(--slate-500); font-weight: 700;">Erros</div>
+              </div>
+              <div style="background: var(--white); padding: 0.65rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                <div style="font-size: 1.1rem; font-weight: 900; color: var(--brand-navy-950);">1m 45s</div>
+                <div style="font-size: 0.7rem; color: var(--slate-500); font-weight: 700;">Ritmo / Q.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="app-screen-actionbar" style="margin-top: 1rem;">
+            + GERAR REVISÃO AUTOMÁTICA DOS ERROS
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. SIMULADOS (RAIO-X COMPLETO DA PROVA & HISTÓRICO PERSISTENTE)
+       ======================================================================== -->
+  <section id="simulados" class="feature-section">
+    <div class="container">
+      <div class="feature-layout">
+        <div class="feature-text-block">
+          <div class="section-tag section-tag-gold">Simulados Completos</div>
+          <h2>Diagnóstico real de prova. Sem truncamento.</h2>
+          <p>
+            Registre seus simulados com nota líquida, peso por disciplina, penalidade de erros e tempo total de prova. Acompanhe a evolução histórica prova a prova para antecipar sua nota no concurso, vestibular ou residência.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Raio-X completo com acertos e erros distribuídos por matéria
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Cálculo de nota líquida (estilo Cebraspe com fator de correção ou múltipla escolha)
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Histórico persistente para comparar sua evolução ao longo dos meses
+            </div>
+          </div>
+
+          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
+            Acompanhar Meus Simulados
+          </a>
+        </div>
+
+        <!-- Captura da Tela: Raio-X do Simulado -->
+        <div class="screen-capture-box">
+          <div style="background: var(--slate-50); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.25rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--brand-navy-950); font-weight: 800;">
+                Simulado 04 &bull; Cebraspe (120 Itens)
+              </span>
+              <span class="app-screen-pill" style="font-size: 0.7rem; background: var(--gold-surface); color: #8C6D15; border-color: var(--gold-border);">
+                88,0 pts Líquidos
+              </span>
+            </div>
+            <div style="font-size: 1.15rem; font-weight: 900; color: var(--brand-navy-950);">
+              Tempo Total: 3h 42m &bull; 92 C / 16 E / 12 B
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.45rem; margin-top: 1rem; font-size: 0.82rem;">
+              <div style="display: flex; justify-content: space-between; padding: 0.4rem 0.6rem; background: var(--white); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span>Língua Portuguesa (20 itens)</span>
+                <strong style="color: var(--emerald-text);">+16,0 pts</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding: 0.4rem 0.6rem; background: var(--white); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span>Direito Constitucional (15 itens)</span>
+                <strong style="color: var(--emerald-text);">+13,0 pts</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding: 0.4rem 0.6rem; background: var(--white); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span>Raciocínio Lógico (10 itens)</span>
+                <strong style="color: #D97706;">+5,0 pts</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="app-screen-actionbar" style="margin-top: 1rem; background: var(--brand-navy-850);">
+            + REGISTRAR NOVO SIMULADO
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. RELATÓRIOS (HONESTIDADE DO DIA 1 AO DIA 30 & TOP 10 ERROS)
+       ======================================================================== -->
+  <section id="relatorios" class="feature-section bg-white">
+    <div class="container">
+      <div class="feature-layout reverse">
+        <div class="feature-text-block">
+          <div class="section-tag section-tag-gold">Relatórios &bull; Constância &amp; Métricas</div>
+          <h2>Métricas que não mentem. Do zero absoluto no Dia 1 à aprovação.</h2>
+          <p>
+            O Meu Ciclo não fabrica números inventados nem simula taxas irreais. No Dia 1, tudo limpo em zero. No Dia 30, preenchido com a verdade do seu esforço e disciplina.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0 2rem 0;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Top 10 Erros: mapeamento imediato dos pontos cegos que mais derrubam a sua pontuação
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Desempenho em Função do Tempo: retenção e velocidade conforme as horas líquidas se acumulam
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
+              Painel de diagnóstico com cobertura real do conteúdo e métrica inabalável de constância
+            </div>
+          </div>
+
+          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
+            Começar Meu Histórico Real
+          </a>
+        </div>
+
+        <!-- Captura da Tela: Comparativo Honestidade Dia 1 vs Dia 30 & Top Erros -->
+        <div class="screen-capture-box">
+          <div class="reports-timeline-compare">
+            <!-- Dia 1: Em zero -->
+            <div class="report-state-box">
+              <span class="report-state-badge" style="background: var(--slate-200); color: var(--slate-700);">No Dia 1</span>
+              <div class="report-metric-zero">0h 00m</div>
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--slate-700);">Horas Registradas</div>
+              <div style="font-size: 0.78rem; color: var(--slate-500); margin-top: 0.35rem;">
+                Tudo limpo, sem métricas falsas. Pronto para o primeiro registro.
+              </div>
+            </div>
+
+            <!-- Dia 30: Preenchido -->
+            <div class="report-state-box" style="border-color: #A7F3D0; background: #F0FDF4;">
+              <span class="report-state-badge" style="background: var(--emerald-50); color: var(--emerald-text); border: 1px solid #A7F3D0;">No Dia 30</span>
+              <div class="report-metric-filled">84h 30m</div>
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--brand-navy-950);">Horas Preenchidas</div>
+              <div style="font-size: 0.78rem; color: var(--slate-600); margin-top: 0.35rem;">
+                Diagnóstico autêntico de cobertura, constância e simulados.
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapeamento Top Erros -->
+          <div style="background: var(--slate-50); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 0.75rem 1rem; margin-top: 1rem; font-size: 0.82rem;">
+            <div style="font-weight: 800; color: var(--brand-navy-950); margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.35rem;">
+              <span>🎯 Top 3 Assuntos a Blindar:</span>
+            </div>
+            <div style="color: var(--slate-700); line-height: 1.4;">
+              1. Atos Administrativos (6 erros) &bull; 2. Crase e Regência (5 erros) &bull; 3. Equivalências Lógicas (4 erros)
+            </div>
+          </div>
+
+          <div class="app-screen-actionbar" style="margin-top: 1rem;">
+            📊 EXPORTAR DIAGNÓSTICO COMPLETO
           </div>
         </div>
       </div>
@@ -2728,9 +3086,9 @@
   </section>
 
   <!-- ========================================================================
-       11. CONCURSOS (BLOCO CURTO: "ISSO FICA NO SITE. NO APP, VOCÊ ESTUDA.")
+       15. CONCURSOS (BLOCO CURTO: "ISSO FICA NO SITE. NO APP, VOCÊ ESTUDA.")
        ======================================================================== -->
-  <section class="feature-section bg-white">
+  <section id="concursos" class="feature-section bg-white">
     <div class="container">
       <div class="radar-feature-card">
         <div class="radar-short-content">
