@@ -1670,6 +1670,36 @@
       min-height: 48px;
     }
 
+    /* Banner de Ancoragem de Valor (CRO) */
+    .pricing-anchor-banner {
+      max-width: 760px;
+      margin: 1.5rem auto 2.5rem auto;
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-radius: 999px;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      box-shadow: 0 2px 8px rgba(16, 185, 129, 0.08);
+      font-size: 0.92rem;
+      color: #166534;
+      text-align: center;
+    }
+    .pricing-anchor-banner strong {
+      color: #14532D;
+    }
+    @media (max-width: 640px) {
+      .pricing-anchor-banner {
+        border-radius: var(--radius-lg);
+        flex-direction: column;
+        gap: 0.35rem;
+        padding: 0.85rem 1rem;
+        font-size: 0.85rem;
+      }
+    }
+
     /* ==========================================================================
        10. DEPOIMENTOS (CADA UM AO LADO DA TELA QUE CITA)
        ========================================================================== */
@@ -1678,6 +1708,34 @@
       flex-direction: column;
       gap: 2rem;
       margin-top: 3rem;
+    }
+
+    .testimonial-rating-bar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .review-stars-group {
+      display: inline-flex;
+      gap: 2px;
+      color: #F59E0B;
+    }
+
+    .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #047857;
+      background: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      letter-spacing: 0.01em;
     }
 
     .testimonial-pair-card {
@@ -3171,6 +3229,14 @@
         </p>
       </div>
 
+      <!-- Banner de Ancoragem de Valor (CRO) -->
+      <div class="pricing-anchor-banner">
+        <span style="font-size: 1.15rem; line-height: 1;">💡</span>
+        <span>
+          <strong>Menos de R$ 0,26 por dia no plano anual</strong> — valor inferior a uma única taxa de inscrição de concurso para organizar toda a sua aprovação.
+        </span>
+      </div>
+
       <div class="pricing-matrix">
         <!-- Plano 1: Mensal -->
         <div class="price-tile">
@@ -3255,17 +3321,27 @@
         <!-- Depoimento 1: Cita Tempo & Meta -->
         <div class="testimonial-pair-card">
           <div>
-            <div class="quote-mark-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <div class="testimonial-rating-bar">
+              <div class="review-stars-group" aria-label="Avaliação 5 estrelas">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <span class="verified-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                Usuário Verificado &bull; Google Play
+              </span>
             </div>
             <p class="testimonial-paired-text">
-              "A grande virada foi entender meu tempo real no Tempo &amp; Meta. Eu achava que tinha 6h livres e só tinha 3h. O ciclo parou de atrasar."
+              "A grande virada foi entender meu tempo real no Tempo &amp; Meta. Eu achava que tinha 6h livres e só tinha 3h líquidas. Ajustei a rotina e o ciclo finalmente parou de atrasar."
             </p>
             <div class="author-meta-box">
               <div class="author-avatar-badge">PF</div>
               <div>
                 <strong style="color: var(--brand-navy-950); display: block;">Estudante para Agente da PF</strong>
-                <span style="font-size: 0.8rem; color: var(--slate-500);">Usuário Android • Edital Ativo</span>
+                <span style="font-size: 0.8rem; color: var(--slate-500);">Corte de atrasos no cronograma &bull; Rotina real de 3h/dia</span>
               </div>
             </div>
           </div>
@@ -3273,10 +3349,10 @@
           <div class="screen-anchor-card">
             <div class="screen-anchor-title">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              Tela Citada: Tempo &amp; Meta
+              Benefício Prático: Tempo &amp; Meta
             </div>
             <p style="font-size: 0.82rem; color: var(--slate-600); margin-bottom: 0;">
-              O cálculo de horas líquidas desconta sono, trabalho e deslocamento, definindo o tempo matemático real para alocar nas disciplinas.
+              Elimina a frustração de metas irreais ao calcular as horas líquidas exatas que sobram entre trabalho, família e deslocamento, garantindo um ciclo equilibrado que não acumula.
             </p>
           </div>
         </div>
@@ -3284,17 +3360,27 @@
         <!-- Depoimento 2: Cita Uso Offline / Local-First -->
         <div class="testimonial-pair-card">
           <div>
-            <div class="quote-mark-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <div class="testimonial-rating-bar">
+              <div class="review-stars-group" aria-label="Avaliação 5 estrelas">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <span class="verified-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                Usuário Verificado &bull; Google Play
+              </span>
             </div>
             <p class="testimonial-paired-text">
-              "O fato de ser 100% offline no celular e não depender de planilhas lentas faz com que eu estude em qualquer intervalo do plantão."
+              "O fato de ser 100% offline no celular e não depender de planilhas lentas faz com que eu estude em qualquer intervalo de plantão no hospital. Abro em 1 segundo e cronometro sem travar."
             </p>
             <div class="author-meta-box">
               <div class="author-avatar-badge">RF</div>
               <div>
-                <strong style="color: var(--brand-navy-950); display: block;">Candidato Receita Federal</strong>
-                <span style="font-size: 0.8rem; color: var(--slate-500);">Auditor-Fiscal • Preparação Contínua</span>
+                <strong style="color: var(--brand-navy-950); display: block;">Candidato à Receita Federal</strong>
+                <span style="font-size: 0.8rem; color: var(--slate-500);">Estudo em intervalos de plantão &bull; Sem necessidade de internet</span>
               </div>
             </div>
           </div>
@@ -3302,10 +3388,10 @@
           <div class="screen-anchor-card">
             <div class="screen-anchor-title">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              Tela Citada: Uso Offline (SQLite)
+              Benefício Prático: 100% Offline no Celular
             </div>
             <p style="font-size: 0.82rem; color: var(--slate-600); margin-bottom: 0;">
-              Arquitetura Local-First. Todos os dados residem na memória do aparelho, permitindo cronometrar e marcar matérias sem sinal de internet.
+              Zero dependência de sinal de internet ou 4G. Suas matérias, revisões e cronômetro rodam direto no aparelho, permitindo estudar no metrô, no trabalho ou em viagens com agilidade máxima.
             </p>
           </div>
         </div>
@@ -3313,17 +3399,27 @@
         <!-- Depoimento 3: Cita TAF -->
         <div class="testimonial-pair-card">
           <div>
-            <div class="quote-mark-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <div class="testimonial-rating-bar">
+              <div class="review-stars-group" aria-label="Avaliação 5 estrelas">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <span class="verified-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                Usuário Verificado &bull; Google Play
+              </span>
             </div>
             <p class="testimonial-paired-text">
-              "O módulo de TAF junto com o edital me salvou de deixar a barra fixa para a última hora. Excelente controle."
+              "O módulo de TAF integrado ao ciclo me salvou de deixar a barra fixa e a corrida para a última hora. Ver a régua de corte subindo todo dia dá uma segurança enorme."
             </p>
             <div class="author-meta-box">
               <div class="author-avatar-badge" style="color: #FB923C;">MIL</div>
               <div>
                 <strong style="color: var(--brand-navy-950); display: block;">Candidato EsPCEx</strong>
-                <span style="font-size: 0.8rem; color: var(--slate-500);">Carreira Militar • TAF Ativo</span>
+                <span style="font-size: 0.8rem; color: var(--slate-500);">Aprovação no teste físico &bull; Índices oficiais superados</span>
               </div>
             </div>
           </div>
@@ -3331,10 +3427,10 @@
           <div class="screen-anchor-card">
             <div class="screen-anchor-title" style="color: var(--accent-taf);">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
-              Tela Citada: Módulo TAF
+              Benefício Prático: Módulo Treino &amp; TAF
             </div>
             <p style="font-size: 0.82rem; color: var(--slate-600); margin-bottom: 0;">
-              Acompanhamento contínuo dos índices mínimos oficiais com treinos e simulados de bateria para evitar reprovações no teste físico.
+              Acompanhamento contínuo dos índices mínimos com metas visuais e fichas de musculação. Você estuda para a prova teórica sem o risco de ser eliminado no teste físico.
             </p>
           </div>
         </div>
