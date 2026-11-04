@@ -285,7 +285,7 @@
     .nav-menu {
       display: none;
       list-style: none;
-      gap: 0.2rem;
+      gap: 1.25rem;
       align-items: center;
       margin: 0;
       padding: 0;
@@ -302,14 +302,14 @@
     .nav-link {
       text-decoration: none;
       color: var(--slate-600);
-      font-size: 0.82rem;
+      font-size: 0.92rem;
       font-weight: 600;
-      padding: 0.35rem 0.45rem;
+      padding: 0.4rem 0.65rem;
       border-radius: var(--radius-sm);
       transition: all 0.15s ease;
       display: inline-flex;
       align-items: center;
-      gap: 0.25rem;
+      gap: 0.35rem;
       white-space: nowrap;
       line-height: 1.2;
     }
@@ -1662,7 +1662,7 @@
       }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1024px) {
       .nav-menu {
         display: flex;
       }
@@ -1686,26 +1686,7 @@
       }
     }
 
-    @media (min-width: 1200px) and (max-width: 1360px) {
-      .nav-menu {
-        gap: 0.12rem;
-      }
-      .nav-link {
-        font-size: 0.76rem;
-        padding: 0.3rem 0.35rem;
-      }
-      .nav-link-hub {
-        padding: 0.3rem 0.5rem;
-        font-size: 0.76rem;
-      }
-      .nav-actions .btn {
-        padding: 0 1rem;
-        font-size: 0.85rem;
-        height: 42px;
-      }
-    }
-
-    @media (max-width: 1199px) {
+    @media (max-width: 1023px) {
       .nav-menu, .nav-divider {
         display: none !important;
       }
@@ -1745,24 +1726,17 @@
         <span>Meu Ciclo</span>
       </a>
 
-      <!-- Menu Desktop (>= 1200px) estritamente espelhado da Gaveta do App -->
+      <!-- Menu Desktop (>= 1024px) - Âncoras Essenciais -->
       <nav aria-label="Navegação dos Módulos do Aplicativo">
         <ul class="nav-menu">
           <li><a href="#tempo-meta" class="nav-link">Tempo &amp; Meta</a></li>
-          <li><a href="#estudo-livre" class="nav-link">Estudo livre</a></li>
-          <li><a href="#edital" class="nav-link">Edital Verticalizado</a></li>
-          <li><a href="#treino" class="nav-link">Treino</a></li>
-          <li><a href="#ciclo" class="nav-link">Ciclo de Estudos</a></li>
-          <li><a href="#revisoes" class="nav-link">Revisões</a></li>
-          <li><a href="#timer" class="nav-link">Timer</a></li>
-          <li><a href="#questoes" class="nav-link">Questões</a></li>
-          <li><a href="#simulados" class="nav-link">Simulados</a></li>
-          <li><a href="#relatorios" class="nav-link">Relatórios</a></li>
+          <li><a href="#ciclo" class="nav-link">Ciclo &amp; Revisões</a></li>
+          <li><a href="#treino" class="nav-link">Módulo TAF</a></li>
           <li><a href="#planos" class="nav-link">Planos</a></li>
           <li>
             <a href="/concursos" class="nav-link nav-link-hub" title="Hub Radar de Concursos e Provas (72h)">
-              <span>Concursos &amp; Provas</span>
-              <span class="nav-pill-radar">72H</span>
+              <span>Radar 72h</span>
+              <span class="nav-pill-radar">NOVO</span>
             </a>
           </li>
         </ul>
@@ -1772,10 +1746,10 @@
 
       <div class="nav-actions">
         <a href="#play" class="btn btn-gold btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-          Começar Grátis
+          Começar 7 Dias Grátis
         </a>
 
-        <!-- Botão Sanduíche Minimalista Padrão Apple (< 1200px) -->
+        <!-- Botão Sanduíche Minimalista Padrão Apple (< 1024px) -->
         <button id="apple-menu-toggle" class="apple-menu-btn" aria-label="Abrir Menu de Navegação" aria-expanded="false">
           <span></span>
           <span></span>
@@ -1784,23 +1758,16 @@
     </div>
   </header>
 
-  <!-- GAVETA MOBILE APPLE-STYLE (< 1200px) -->
+  <!-- GAVETA MOBILE APPLE-STYLE (< 1024px) -->
   <div id="mobile-menu-overlay" class="mobile-menu-overlay" aria-hidden="true">
     <ul class="mobile-nav-list">
       <li><a href="#tempo-meta" class="mobile-menu-link">Tempo &amp; Meta</a></li>
-      <li><a href="#estudo-livre" class="mobile-menu-link">Estudo livre</a></li>
-      <li><a href="#edital" class="mobile-menu-link">Edital Verticalizado</a></li>
-      <li><a href="#treino" class="mobile-menu-link">Treino</a></li>
-      <li><a href="#ciclo" class="mobile-menu-link">Ciclo de Estudos</a></li>
-      <li><a href="#revisoes" class="mobile-menu-link">Revisões</a></li>
-      <li><a href="#timer" class="mobile-menu-link">Timer</a></li>
-      <li><a href="#questoes" class="mobile-menu-link">Questões</a></li>
-      <li><a href="#simulados" class="mobile-menu-link">Simulados</a></li>
-      <li><a href="#relatorios" class="mobile-menu-link">Relatórios</a></li>
+      <li><a href="#ciclo" class="mobile-menu-link">Ciclo &amp; Revisões</a></li>
+      <li><a href="#treino" class="mobile-menu-link">Módulo TAF</a></li>
       <li><a href="#planos" class="mobile-menu-link">Planos</a></li>
       <li>
         <a href="/concursos" class="mobile-menu-link highlight-concursos">
-          <span>Concursos &amp; Provas</span>
+          <span>Radar de Concursos e Provas</span>
           <span class="nav-pill-radar">RADAR 72H ➔</span>
         </a>
       </li>
@@ -1811,7 +1778,7 @@
         COMEÇAR 7 DIAS GRÁTIS
       </a>
       <div style="text-align: center; font-size: 0.8rem; color: var(--slate-500); margin-top: 0.65rem;">
-        Sem compromisso. Cancele quando quiser.
+        Cancelamento em 1 clique direto na Google Play. Sem fidelidade ou cobrança surpresa.
       </div>
     </div>
   </div>
@@ -1836,7 +1803,7 @@
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt" style="min-width: 270px; height: 52px; font-size: 1rem;">
             COMEÇAR 7 DIAS GRÁTIS
           </a>
-          <span class="microcopy-safe">Sem compromisso. Cancele quando quiser.</span>
+          <span class="microcopy-safe">Cancelamento em 1 clique direto na Google Play. Sem fidelidade ou cobrança surpresa.</span>
         </div>
 
         <div style="display: flex; justify-content: center; gap: 0.65rem; flex-wrap: wrap; margin-top: 1.5rem;">
@@ -2006,7 +1973,7 @@
           </div>
 
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Calcular Meu Tempo Real
+            Testar 7 Dias Grátis na Google Play
           </a>
         </div>
 
@@ -2126,7 +2093,7 @@
           </div>
 
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Cadastrar Matérias Livres
+            Testar Estudo Livre na Google Play
           </a>
         </div>
 
@@ -2204,7 +2171,7 @@
           </div>
 
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Ver Edital no Aplicativo
+            Baixar na Google Play e Testar Grátis
           </a>
         </div>
 
@@ -2301,7 +2268,7 @@
           </div>
 
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Acessar Módulo Treino &amp; TAF
+            Testar Treino &amp; TAF na Google Play
           </a>
         </div>
 
@@ -2431,7 +2398,7 @@
           </div>
 
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Iniciar Meu Ciclo
+            Começar 7 Dias Grátis na Google Play
           </a>
         </div>
 
@@ -2518,7 +2485,7 @@
           </div>
 
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Testar Repetição Espaçada
+            Testar 7 Dias Grátis na Google Play
           </a>
         </div>
 
@@ -2605,7 +2572,7 @@
           </div>
 
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Testar Timer com Sons Neurais
+            Experimentar Grátis na Google Play
           </a>
         </div>
 
@@ -2675,7 +2642,7 @@
           </div>
 
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Registrar Minhas Baterias
+            Começar 7 Dias Grátis na Google Play
           </a>
         </div>
 
@@ -2750,7 +2717,7 @@
           </div>
 
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Acompanhar Meus Simulados
+            Começar 7 Dias Grátis na Google Play
           </a>
         </div>
 
@@ -2822,7 +2789,7 @@
           </div>
 
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Começar Meu Histórico Real
+            Começar 7 Dias Grátis na Google Play
           </a>
         </div>
 
@@ -2869,44 +2836,7 @@
   </section>
 
   <!-- ========================================================================
-       8. COMECE POR AQUI (TOUR GUIADO EM 13 PASSOS REAIS)
-       ======================================================================== -->
-  <section id="comece-aqui" class="feature-section">
-    <div class="container">
-      <div class="comece-aqui-box">
-        <div class="section-tag section-tag-gold" style="margin-bottom: 1.25rem;">
-          Comece por Aqui &bull; Tour guiado e primeiros passos
-        </div>
-
-        <div class="comece-aqui-quote">
-          “Na primeira abertura, um tour guiado de <strong>13 passos</strong> apresenta cada tela. Depois, o app abre diretamente no seu Ciclo.”
-        </div>
-
-        <p class="comece-aqui-sub">
-          Não é obstáculo. É o mapa para você dominar sua rotina de estudos em menos de 3 minutos.
-        </p>
-
-        <div class="comece-aqui-steps-row">
-          <span class="step-micro-pill">1. Tempo &amp; Meta</span>
-          <span class="step-micro-pill">2. Estudo livre</span>
-          <span class="step-micro-pill">3. Edital Verticalizado</span>
-          <span class="step-micro-pill">4. Treino</span>
-          <span class="step-micro-pill">5. Ciclo de Estudos</span>
-          <span class="step-micro-pill">6. Revisões</span>
-          <span class="step-micro-pill">7. Timer</span>
-          <span class="step-micro-pill">8. Questões</span>
-          <span class="step-micro-pill">9. Simulados</span>
-          <span class="step-micro-pill">10. Relatórios</span>
-          <span class="step-micro-pill">11. Fale Conosco</span>
-          <span class="step-micro-pill">12. Sobre o App</span>
-          <span class="step-micro-pill">13. Entrar / Ajustes</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       9. PREÇOS (TABELA COMERCIAL UNIFICADA: 3 PLANOS)
+       PREÇOS (TABELA COMERCIAL UNIFICADA: 3 PLANOS)
        ======================================================================== -->
   <section id="planos" class="feature-section bg-white">
     <div class="container">
@@ -2924,14 +2854,14 @@
           <div>
             <div class="price-plan-name">Mensal</div>
             <div class="price-value-box">
-              <span class="price-val-big">R$ 19,90</span>
+              <span class="price-val-big">R$ 10,90</span>
               <span class="price-val-period">/mês</span>
             </div>
             <div class="price-val-total" style="visibility: hidden;">-</div>
             <div class="plan-desc">Liberdade para estudar mês a mês e cancelar quando quiser.</div>
           </div>
           <a href="#play" class="btn btn-secondary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Começar Grátis
+            Testar 7 Dias Grátis na Google Play
           </a>
         </div>
 
@@ -2942,11 +2872,11 @@
             <div class="price-plan-name" style="color: var(--brand-navy-950);">Anual</div>
             <div style="font-size: 0.8rem; font-weight: 800; color: var(--gold-primary);">12× DE</div>
             <div class="price-value-box">
-              <span class="price-val-big">R$ 12,40</span>
+              <span class="price-val-big">R$ 7,90</span>
               <span class="price-val-period">/mês</span>
             </div>
-            <div class="price-val-total">ou <strong>R$ 148,80/ano</strong> à vista</div>
-            <span class="savings-badge">Economize 38%</span>
+            <div class="price-val-total">ou <strong>R$ 94,80/ano</strong> à vista</div>
+            <span class="savings-badge">Economize 27%</span>
             <div class="plan-desc" style="font-weight: 600; color: var(--brand-navy-950);">
               O plano favorito dos aprovados. 7 dias grátis para testar sem compromisso.
             </div>
@@ -2977,6 +2907,10 @@
             Garantir Acesso Vitalício
           </a>
         </div>
+      </div>
+
+      <div class="microcopy-safe" style="text-align: center; margin-top: 1.25rem; font-size: 0.85rem; color: var(--slate-600);">
+        Cancelamento em 1 clique direto na Google Play. Sem fidelidade ou cobrança surpresa.
       </div>
     </div>
   </section>
