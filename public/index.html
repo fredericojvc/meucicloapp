@@ -659,140 +659,299 @@
     }
 
     /* ==========================================================================
-       2. TEMPO & META (SLIDER & TIMELINE)
+       2. TEMPO & META (SIMULADOR INTERATIVO FIEL AO APLICATIVO REAL)
        ========================================================================== */
-    .timeline-stat-banner {
+    .sim-phone-wrapper {
+      background: #F1F5F9;
+      border: 1px solid #CBD5E1;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 12px 36px -8px rgba(10, 22, 40, 0.12), 0 0 0 1px rgba(10, 22, 40, 0.04);
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sim-phone-topbar {
+      background: #1976D2;
+      color: #FFFFFF;
+      padding: 0.85rem 1.15rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: var(--blue-subtle);
-      border: 1px solid #BFDBFE;
-      padding: 1rem 1.25rem;
-      border-radius: var(--radius-md);
-      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .timeline-stat-title {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--blue-accent);
-    }
-
-    .timeline-stat-val {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: var(--brand-navy-950);
-    }
-
-    .day-timeline-track {
+    .sim-phone-body {
+      padding: 0.85rem;
       display: flex;
       flex-direction: column;
-      gap: 1.1rem;
+      gap: 0.85rem;
     }
 
-    .routine-slider-row {
-      display: flex;
-      flex-direction: column;
-      gap: 0.45rem;
+    .sim-card {
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 1.15rem;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+      border: 1px solid #E2E8F0;
     }
 
-    .routine-slider-meta {
+    .sim-card-header {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      font-size: 0.88rem;
+      align-items: flex-start;
+      margin-bottom: 0.85rem;
     }
 
-    .routine-slider-title {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-weight: 600;
-      color: #334155;
-    }
-
-    .routine-slider-val {
+    .sim-card-title {
+      font-size: 0.98rem;
       font-weight: 800;
-      font-size: 0.95rem;
-      color: var(--brand-navy-950);
+      color: #0F172A;
+      letter-spacing: -0.01em;
+    }
+
+    .sim-card-sub {
+      font-size: 0.78rem;
+      color: #64748B;
+      margin-top: 0.15rem;
+      line-height: 1.35;
+    }
+
+    .sim-pill-badge {
+      border: 1.5px solid #1976D2;
+      color: #1976D2;
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      white-space: nowrap;
+      background: #EFF6FF;
       font-variant-numeric: tabular-nums;
     }
 
-    .routine-slider-track {
-      position: relative;
-      height: 10px;
-      background: var(--slate-100);
-      border-radius: var(--radius-full);
+    .sim-slider-container {
+      margin-bottom: 1.15rem;
     }
 
-    .routine-slider-fill {
-      height: 100%;
-      border-radius: var(--radius-full);
-      position: relative;
-      transition: width 0.3s ease;
-    }
-
-    .routine-slider-fill::after {
-      content: '';
-      position: absolute;
-      right: -5px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      background: var(--white);
-      border: 3px solid currentColor;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-    }
-
-    .fill-sono { background: #475569; color: #475569; width: 29.2%; }
-    .fill-trabalho { background: #1E293B; color: #1E293B; width: 33.3%; }
-    .fill-deslocamento { background: #0F766E; color: #0F766E; width: 12.5%; }
-    .fill-familia { background: #D97706; color: #D97706; width: 12.5%; }
-    .fill-estudo {
-      background: var(--blue-accent);
-      color: var(--blue-accent);
-      width: 18.8%;
-      box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
-    }
-
-    .routine-slider-row.highlight-estudo {
-      background: rgba(37, 99, 235, 0.04);
-      padding: 0.75rem 0.85rem;
-      border-radius: var(--radius-md);
-      border: 1px solid rgba(37, 99, 235, 0.15);
-      margin-top: 0.25rem;
-    }
-
-    .weekday-selector-row {
+    .sim-scale-labels {
       display: flex;
-      gap: 0.4rem;
-      margin-top: 1.5rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--border-subtle);
-      align-items: center;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 0.7rem;
+      color: #94A3B8;
+      font-weight: 600;
+      margin-top: 0.35rem;
+      padding: 0 2px;
     }
 
-    .day-chip {
-      padding: 0.35rem 0.65rem;
-      border-radius: var(--radius-sm);
-      font-size: 0.8rem;
+    .sim-scale-labels span.active-mark {
+      color: #1976D2;
+      font-weight: 800;
+      background: #DBEAFE;
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+    }
+
+    .sim-section-label {
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 0.5rem;
+    }
+
+    .sim-days-row {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 0.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .sim-day-btn {
+      height: 38px;
+      border-radius: 8px;
       font-weight: 700;
-      background: var(--slate-100);
-      color: var(--slate-600);
+      font-size: 0.82rem;
+      cursor: pointer;
+      border: 1px solid #CBD5E1;
+      background: #FFFFFF;
+      color: #64748B;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      user-select: none;
     }
 
-    .day-chip.active {
-      background: var(--brand-navy-850);
-      color: var(--white);
+    .sim-day-btn:hover {
+      border-color: #1976D2;
+      color: #1976D2;
     }
 
-    .day-chip.rest {
-      background: var(--gold-surface);
-      color: #8C6D15;
-      border: 1px solid var(--gold-border);
+    .sim-day-btn.active {
+      background: #1976D2;
+      color: #FFFFFF;
+      border-color: #1976D2;
+      box-shadow: 0 2px 4px rgba(25, 118, 210, 0.25);
+    }
+
+    .sim-calc-result-box {
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-radius: 12px;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sim-calc-result-val {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: #166534;
+      margin-top: 0.1rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .sim-calc-check {
+      color: #16A34A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sim-occupation-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .sim-occ-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .sim-occ-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+    }
+
+    .sim-occ-label {
+      font-weight: 700;
+      color: #1E293B;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .sim-emoji {
+      font-size: 1.05rem;
+      line-height: 1;
+    }
+
+    .sim-occ-val {
+      font-weight: 800;
+      font-size: 0.92rem;
+      color: #0F172A;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .calc-range {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 999px;
+      background: #E2E8F0;
+      outline: none;
+      cursor: pointer;
+      margin: 0.25rem 0;
+    }
+
+    .calc-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      transition: transform 0.12s ease;
+    }
+
+    .calc-range::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+
+    .calc-range:active::-webkit-slider-thumb {
+      transform: scale(1.18);
+    }
+
+    .calc-range.range-blue::-webkit-slider-thumb { border: 3px solid #1976D2; }
+    .calc-range.range-blue::-moz-range-thumb { border: 3px solid #1976D2; }
+    .calc-range.range-purple::-webkit-slider-thumb { border: 3px solid #7E57C2; }
+    .calc-range.range-purple::-moz-range-thumb { border: 3px solid #7E57C2; }
+    .calc-range.range-orange::-webkit-slider-thumb { border: 3px solid #FB8C00; }
+    .calc-range.range-orange::-moz-range-thumb { border: 3px solid #FB8C00; }
+    .calc-range.range-green::-webkit-slider-thumb { border: 3px solid #43A047; }
+    .calc-range.range-green::-moz-range-thumb { border: 3px solid #43A047; }
+
+    .sim-budget-box {
+      margin-top: 1rem;
+      padding: 0.65rem 0.85rem;
+      border-radius: 10px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      line-height: 1.4;
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      color: #475569;
+      transition: all 0.2s ease;
+    }
+
+    .sim-budget-box.ok {
+      background: #F0FDF4;
+      border-color: #BBF7D0;
+      color: #166534;
+    }
+
+    .sim-budget-box.warning {
+      background: #FFFBEB;
+      border-color: #FDE68A;
+      color: #92400E;
+    }
+
+    .sim-phone-actionbar {
+      background: #1976D2;
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-align: center;
+      padding: 0.95rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      letter-spacing: 0.03em;
+    }
+
+    .sim-phone-actionbar:hover {
+      background: #1565C0;
+      color: #FFFFFF;
     }
 
     /* ==========================================================================
@@ -1991,7 +2150,7 @@
   </section>
 
   <!-- ========================================================================
-       2. TEMPO & META (SLIDER & TIMELINE DA VIDA REAL)
+       2. TEMPO & META (SIMULADOR INTERATIVO FIEL AO APLICATIVO REAL)
        ======================================================================== -->
   <section id="tempo-meta" class="feature-section">
     <div class="container">
@@ -2018,93 +2177,133 @@
             </div>
           </div>
 
-          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Testar 7 Dias Grátis na Google Play
+          <a href="#play" id="tempo-meta-cta" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
+            Começar Grátis com meu Ciclo de 20,0h Semanais
           </a>
         </div>
 
-        <!-- Captura da Tela: Slider e Timeline 24h -->
-        <div class="screen-capture-box">
-          <div class="timeline-stat-banner">
-            <div>
-              <div class="timeline-stat-title">Horas Líquidas Apuradas</div>
-              <div style="font-size: 0.8rem; color: var(--slate-600);">Meta diária sustentável de 4,5h / dia</div>
+        <!-- Simulador Interativo Real: Interface Oficial do App -->
+        <div class="sim-phone-wrapper">
+          <!-- Top App Bar Oficial -->
+          <div class="sim-phone-topbar">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+              <div>
+                <div style="font-weight: 800; font-size: 1.05rem; line-height: 1.2;">Tempo &amp; Meta</div>
+                <div style="font-size: 0.75rem; opacity: 0.92;">Horas líquidas e rotina real</div>
+              </div>
             </div>
-            <div class="timeline-stat-val">27,0h / semana</div>
+            <div style="font-size: 1.25rem; font-weight: 800; line-height: 1; cursor: default;">&#8942;</div>
           </div>
 
-          <div class="day-timeline-track">
-            <div class="routine-slider-row">
-              <div class="routine-slider-meta">
-                <span class="routine-slider-title"><span>🛏️</span> Sono e Descanso</span>
-                <span class="routine-slider-val">7,0h</span>
+          <div class="sim-phone-body">
+            <!-- Card 1: Meta de Estudos Líquida -->
+            <div class="sim-card">
+              <div class="sim-card-header">
+                <div>
+                  <div class="sim-card-title">Meta de Estudos Líquida</div>
+                  <div class="sim-card-sub">Defina seu ritmo de estudo diário</div>
+                </div>
+                <div class="sim-pill-badge" id="sim-badge-meta">4,0h / dia</div>
               </div>
-              <div class="routine-slider-track">
-                <div class="routine-slider-fill fill-sono"></div>
+
+              <!-- Slider Meta de Estudos Líquida -->
+              <div class="sim-slider-container">
+                <input type="range" id="sim-input-meta" class="calc-range range-blue" min="1" max="10" step="0.5" value="4" aria-label="Meta de Estudos Diária">
+                <div class="sim-scale-labels">
+                  <span>1h/dia</span>
+                  <span>2h</span>
+                  <span>3h</span>
+                  <span id="sim-mark-4" class="active-mark">4h</span>
+                  <span>5h</span>
+                  <span>6h</span>
+                  <span>10h/dia</span>
+                </div>
+              </div>
+
+              <!-- Dias de Estudo na Semana -->
+              <div class="sim-section-label">
+                Dias de Estudo na Semana (<span id="sim-days-count">5</span> dias):
+              </div>
+              <div class="sim-days-row">
+                <button type="button" class="sim-day-btn active" data-day="seg">Seg</button>
+                <button type="button" class="sim-day-btn active" data-day="ter">Ter</button>
+                <button type="button" class="sim-day-btn active" data-day="qua">Qua</button>
+                <button type="button" class="sim-day-btn active" data-day="qui">Qui</button>
+                <button type="button" class="sim-day-btn active" data-day="sex">Sex</button>
+                <button type="button" class="sim-day-btn" data-day="sab">Sáb</button>
+                <button type="button" class="sim-day-btn" data-day="dom">Dom</button>
+              </div>
+
+              <!-- Meta Semanal Calculada -->
+              <div class="sim-calc-result-box">
+                <div>
+                  <div style="font-size: 0.75rem; color: #15803D; font-weight: 700;">Meta Semanal Calculada</div>
+                  <div class="sim-calc-result-val" id="sim-weekly-display">20,0 horas líquidas / semana</div>
+                </div>
+                <div class="sim-calc-check">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
               </div>
             </div>
 
-            <div class="routine-slider-row">
-              <div class="routine-slider-meta">
-                <span class="routine-slider-title"><span>💼</span> Trabalho Formal</span>
-                <span class="routine-slider-val">8,0h</span>
+            <!-- Card 2: Ocupação e Rotina Diária (24h) -->
+            <div class="sim-card">
+              <div class="sim-card-title">Ocupação e Rotina Diária (24h)</div>
+              <div class="sim-card-sub" style="margin-bottom: 1rem;">
+                Calibre seu tempo para garantir que sua meta seja realista e sustentável.
               </div>
-              <div class="routine-slider-track">
-                <div class="routine-slider-fill fill-trabalho"></div>
-              </div>
-            </div>
 
-            <div class="routine-slider-row">
-              <div class="routine-slider-meta">
-                <span class="routine-slider-title"><span>🚗</span> Deslocamento</span>
-                <span class="routine-slider-val">3,0h</span>
-              </div>
-              <div class="routine-slider-track">
-                <div class="routine-slider-fill fill-deslocamento"></div>
-              </div>
-            </div>
+              <div class="sim-occupation-list">
+                <!-- 1. Sono -->
+                <div class="sim-occ-item">
+                  <div class="sim-occ-meta">
+                    <span class="sim-occ-label"><span class="sim-emoji">🌙</span> Sono e Descanso</span>
+                    <span class="sim-occ-val" id="sim-val-sono">7,0h</span>
+                  </div>
+                  <input type="range" id="sim-input-sono" class="calc-range range-purple" min="4" max="10" step="0.5" value="7" aria-label="Horas de Sono e Descanso">
+                </div>
 
-            <div class="routine-slider-row">
-              <div class="routine-slider-meta">
-                <span class="routine-slider-title"><span>🍽️</span> Refeições &amp; Família</span>
-                <span class="routine-slider-val">3,0h</span>
-              </div>
-              <div class="routine-slider-track">
-                <div class="routine-slider-fill fill-familia"></div>
-              </div>
-            </div>
+                <!-- 2. Trabalho -->
+                <div class="sim-occ-item">
+                  <div class="sim-occ-meta">
+                    <span class="sim-occ-label"><span class="sim-emoji">💼</span> Trabalho / Emprego Formal</span>
+                    <span class="sim-occ-val" id="sim-val-trabalho">8,0h</span>
+                  </div>
+                  <input type="range" id="sim-input-trabalho" class="calc-range range-blue" min="0" max="12" step="0.5" value="8" aria-label="Horas de Trabalho Formal">
+                </div>
 
-            <div class="routine-slider-row highlight-estudo">
-              <div class="routine-slider-meta">
-                <span class="routine-slider-title" style="color: var(--blue-accent); font-weight: 800;">
-                  <span>📚</span> Estudo Líquido Apurado
-                </span>
-                <span class="routine-slider-val" style="color: var(--blue-accent); font-weight: 800; font-size: 1.05rem;">
-                  4,5h / dia
-                </span>
+                <!-- 3. Deslocamento -->
+                <div class="sim-occ-item">
+                  <div class="sim-occ-meta">
+                    <span class="sim-occ-label"><span class="sim-emoji">🚌</span> Deslocamento / Transporte</span>
+                    <span class="sim-occ-val" id="sim-val-transporte">3,0h</span>
+                  </div>
+                  <input type="range" id="sim-input-transporte" class="calc-range range-orange" min="0" max="5" step="0.5" value="3" aria-label="Horas de Deslocamento">
+                </div>
+
+                <!-- 4. Refeições e Família -->
+                <div class="sim-occ-item">
+                  <div class="sim-occ-meta">
+                    <span class="sim-occ-label"><span class="sim-emoji">🏠</span> Refeições, Higiene &amp; Família</span>
+                    <span class="sim-occ-val" id="sim-val-familia">3,0h</span>
+                  </div>
+                  <input type="range" id="sim-input-familia" class="calc-range range-green" min="0" max="6" step="0.5" value="3" aria-label="Horas de Refeições e Família">
+                </div>
               </div>
-              <div class="routine-slider-track">
-                <div class="routine-slider-fill fill-estudo"></div>
+
+              <!-- Feedback visual dinâmico do orçamento de 24h -->
+              <div id="sim-budget-feedback" class="sim-budget-box ok">
+                <span id="sim-budget-text">✓ Rotina Equilibrada: 21,0h ocupadas &bull; 3,0h úteis para cumprir sua meta.</span>
               </div>
             </div>
           </div>
 
-          <!-- Distribuição dos Dias da Semana -->
-          <div class="weekday-selector-row">
-            <span style="font-size: 0.8rem; font-weight: 700; color: var(--slate-600); margin-right: 0.25rem;">Dias ativos:</span>
-            <span class="day-chip active">SEG</span>
-            <span class="day-chip active">TER</span>
-            <span class="day-chip active">QUA</span>
-            <span class="day-chip active">QUI</span>
-            <span class="day-chip active">SEX</span>
-            <span class="day-chip active">SÁB</span>
-            <span class="day-chip rest">DOM (Repouso)</span>
-          </div>
-
-          <!-- Barra de Ação Full-Width do Rodapé -->
-          <div class="app-screen-actionbar">
-            ✓ SALVAR ROTINA
-          </div>
+          <!-- Barra de Ação Inferior (Salvar Rotina) -->
+          <a href="#play" class="sim-phone-actionbar btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>SALVAR ROTINA</span>
+          </a>
         </div>
       </div>
     </div>
@@ -3210,6 +3409,118 @@
             document.body.style.overflow = '';
           });
         });
+      }
+
+      // ========================================================================
+      // SIMULADOR INTERATIVO TEMPO & META (FIEL AO APLICATIVO REAL)
+      // ========================================================================
+      const inputMeta = document.getElementById('sim-input-meta');
+      const badgeMeta = document.getElementById('sim-badge-meta');
+      const daysCountDisplay = document.getElementById('sim-days-count');
+      const weeklyDisplay = document.getElementById('sim-weekly-display');
+      const ctaBtn = document.getElementById('tempo-meta-cta');
+      const dayButtons = document.querySelectorAll('.sim-day-btn');
+
+      const inputSono = document.getElementById('sim-input-sono');
+      const valSono = document.getElementById('sim-val-sono');
+      const inputTrabalho = document.getElementById('sim-input-trabalho');
+      const valTrabalho = document.getElementById('sim-val-trabalho');
+      const inputTransporte = document.getElementById('sim-input-transporte');
+      const valTransporte = document.getElementById('sim-val-transporte');
+      const inputFamilia = document.getElementById('sim-input-familia');
+      const valFamilia = document.getElementById('sim-val-familia');
+      const budgetFeedback = document.getElementById('sim-budget-feedback');
+      const budgetText = document.getElementById('sim-budget-text');
+
+      function updateSliderTrack(input, color) {
+        if (!input) return;
+        const min = parseFloat(input.min) || 0;
+        const max = parseFloat(input.max) || 100;
+        const val = parseFloat(input.value) || 0;
+        const percentage = ((val - min) / (max - min)) * 100;
+        input.style.background = `linear-gradient(to right, ${color} 0%, ${color} ${percentage}%, #E2E8F0 ${percentage}%, #E2E8F0 100%)`;
+      }
+
+      function formatHours(h) {
+        return h.toFixed(1).replace('.', ',') + 'h';
+      }
+
+      function calculateSimulator() {
+        if (!inputMeta) return;
+
+        // Meta diária
+        const dailyGoal = parseFloat(inputMeta.value) || 4;
+        badgeMeta.textContent = formatHours(dailyGoal) + ' / dia';
+        updateSliderTrack(inputMeta, '#1976D2');
+
+        // Dias ativos
+        let activeDays = 0;
+        dayButtons.forEach(btn => {
+          if (btn.classList.contains('active')) activeDays++;
+        });
+        daysCountDisplay.textContent = activeDays;
+
+        // Meta semanal
+        const weeklyHours = (dailyGoal * activeDays).toFixed(1).replace('.', ',');
+        weeklyDisplay.textContent = `${weeklyHours} horas líquidas / semana`;
+
+        // Atualizar CTA principal da seção
+        if (ctaBtn) {
+          ctaBtn.textContent = `Começar Grátis com meu Ciclo de ${weeklyHours}h Semanais`;
+        }
+
+        // Ocupações
+        const sono = parseFloat(inputSono.value) || 7;
+        const trabalho = parseFloat(inputTrabalho.value) || 8;
+        const transporte = parseFloat(inputTransporte.value) || 3;
+        const familia = parseFloat(inputFamilia.value) || 3;
+
+        valSono.textContent = formatHours(sono);
+        valTrabalho.textContent = formatHours(trabalho);
+        valTransporte.textContent = formatHours(transporte);
+        valFamilia.textContent = formatHours(familia);
+
+        updateSliderTrack(inputSono, '#7E57C2');
+        updateSliderTrack(inputTrabalho, '#1976D2');
+        updateSliderTrack(inputTransporte, '#FB8C00');
+        updateSliderTrack(inputFamilia, '#43A047');
+
+        const totalOccupied = sono + trabalho + transporte + familia;
+        const freeHours = 24 - totalOccupied;
+
+        if (budgetFeedback && budgetText) {
+          const occStr = totalOccupied.toFixed(1).replace('.', ',') + 'h';
+          const freeStr = freeHours.toFixed(1).replace('.', ',') + 'h';
+
+          if (freeHours >= dailyGoal) {
+            budgetFeedback.className = 'sim-budget-box ok';
+            budgetText.innerHTML = `✓ <strong>Rotina Equilibrada:</strong> ${occStr} ocupadas &bull; <strong>${freeStr} livres</strong> para absorver sua meta diária de ${formatHours(dailyGoal)}.`;
+          } else if (freeHours > 0) {
+            budgetFeedback.className = 'sim-budget-box warning';
+            budgetText.innerHTML = `⚠️ <strong>Atenção:</strong> Sobram apenas ${freeStr} livres no dia para uma meta de ${formatHours(dailyGoal)}. Ajuste sua rotina ou estude aos fins de semana.`;
+          } else {
+            budgetFeedback.className = 'sim-budget-box warning';
+            budgetText.innerHTML = `⚠️ <strong>Rotina Saturada:</strong> 24h esgotadas. Reduza o sono ou trabalho para encontrar tempo útil de estudo.`;
+          }
+        }
+      }
+
+      if (inputMeta) {
+        inputMeta.addEventListener('input', calculateSimulator);
+        inputSono.addEventListener('input', calculateSimulator);
+        inputTrabalho.addEventListener('input', calculateSimulator);
+        inputTransporte.addEventListener('input', calculateSimulator);
+        inputFamilia.addEventListener('input', calculateSimulator);
+
+        dayButtons.forEach(btn => {
+          btn.addEventListener('click', function () {
+            this.classList.toggle('active');
+            calculateSimulator();
+          });
+        });
+
+        // Inicialização imediata
+        calculateSimulator();
       }
     });
   </script>
