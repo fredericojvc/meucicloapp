@@ -42,36 +42,50 @@
     "offers": {
       "@type": "AggregateOffer",
       "lowPrice": "7.90",
-      "highPrice": "10.90",
+      "highPrice": "297.00",
       "priceCurrency": "BRL",
       "offerCount": "3",
       "offers": [
         {
           "@type": "Offer",
           "name": "Plano Anual",
-          "price": "7.90",
+          "price": "94.80",
           "priceCurrency": "BRL",
           "priceSpecification": {
             "@type": "UnitPriceSpecification",
             "price": "7.90",
             "priceCurrency": "BRL",
-            "unitText": "mês (12x de R$ 7,90 ou R$ 94,80/ano)"
+            "unitText": "mês (equivalente a pagamento único anual de R$ 94,80 à vista)"
           },
-          "description": "7 dias grátis para testar. Acesso completo a todos os módulos.",
+          "description": "7 dias grátis para testar sem compromisso. Cobrança única de R$ 94,80/ano com renovação automática anual iniciada após o período de teste.",
           "url": "https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt"
         },
         {
           "@type": "Offer",
           "name": "Plano Mensal",
-          "price": "10.90",
+          "price": "14.90",
           "priceCurrency": "BRL",
           "priceSpecification": {
             "@type": "UnitPriceSpecification",
-            "price": "10.90",
+            "price": "14.90",
             "priceCurrency": "BRL",
             "unitText": "mês"
           },
-          "description": "7 dias grátis para testar. Cancele quando quiser.",
+          "description": "7 dias grátis para testar. Assinatura mensal com renovação automática de R$ 14,90/mês iniciada apenas após os 7 dias de teste grátis. Cancele quando quiser.",
+          "url": "https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt"
+        },
+        {
+          "@type": "Offer",
+          "name": "Plano Vitalício",
+          "price": "297.00",
+          "priceCurrency": "BRL",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "297.00",
+            "priceCurrency": "BRL",
+            "unitText": "pagamento único de R$ 297,00 à vista ou 12x de R$ 29,90 (total a prazo: R$ 358,80)"
+          },
+          "description": "Acesso definitivo sem mensalidades ou renovações. Garantia incondicional de reembolso de 7 dias (Art. 49 do CDC).",
           "url": "https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt"
         }
       ]
@@ -3599,11 +3613,11 @@
        ======================================================================== -->
   <section id="planos" class="feature-section bg-white">
     <div class="container">
-      <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+      <div style="text-align: center; max-width: 760px; margin: 0 auto;">
         <div class="section-tag section-tag-gold">Assinatura Transparente</div>
         <h2>Escolha como você quer estudar.</h2>
         <p class="lead-text" style="margin: 0.5rem auto 0 auto;">
-          Acesso completo a todas as ferramentas com teste grátis de 7 dias processado com segurança pela Google Play.
+          Acesso completo a todas as ferramentas. Teste grátis de 7 dias nos planos Mensal e Anual (via Google Play) ou garantia legal de 7 dias no plano Vitalício.
         </p>
       </div>
 
@@ -3620,15 +3634,21 @@
         <div class="price-tile">
           <div>
             <div class="price-plan-name">Mensal</div>
+            <div style="font-size: 0.8rem; font-weight: 800; color: transparent; user-select: none;">MENSAL</div>
             <div class="price-value-box">
-              <span class="price-val-big">R$ 10,90</span>
+              <span class="price-val-big">R$ 14,90</span>
               <span class="price-val-period">/mês</span>
             </div>
-            <div class="price-val-total" style="visibility: hidden;">-</div>
-            <div class="plan-desc">Liberdade para estudar mês a mês e cancelar quando quiser.</div>
+            <div class="price-val-total" style="font-size: 0.82rem; font-weight: 600; color: var(--slate-600); min-height: 2.6rem; display: flex; align-items: center;">
+              Assinatura mensal com renovação automática.
+            </div>
+            <div style="height: 28px; margin: 0.5rem 0 1rem 0;"></div>
+            <div class="plan-desc">
+              Liberdade para estudar mês a mês e cancelar quando quiser. Cobrança de R$ 14,90/mês iniciada apenas após os 7 dias de teste grátis.
+            </div>
           </div>
           <a href="#play" class="btn btn-secondary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Testar 7 Dias Grátis na Google Play
+            TESTAR 7 DIAS GRÁTIS NA GOOGLE PLAY
           </a>
         </div>
 
@@ -3637,15 +3657,17 @@
           <span class="plan-top-badge plan-top-badge-popular">MAIS POPULAR</span>
           <div>
             <div class="price-plan-name" style="color: var(--brand-navy-950);">Anual</div>
-            <div style="font-size: 0.8rem; font-weight: 800; color: var(--gold-primary);">12× DE</div>
+            <div style="font-size: 0.8rem; font-weight: 800; color: var(--gold-primary); letter-spacing: 0.04em;">EQUIVALENTE A</div>
             <div class="price-value-box">
               <span class="price-val-big">R$ 7,90</span>
               <span class="price-val-period">/mês</span>
             </div>
-            <div class="price-val-total">ou <strong>R$ 94,80/ano</strong> à vista</div>
-            <span class="savings-badge">Economize 27%</span>
+            <div class="price-val-total" style="font-size: 0.84rem; font-weight: 800; color: var(--brand-navy-950); min-height: 2.6rem; display: flex; align-items: center;">
+              Cobrado em pagamento único anual de R$ 94,80 à vista
+            </div>
+            <span class="savings-badge">Economize 47% (R$ 84,00/ano)</span>
             <div class="plan-desc" style="font-weight: 600; color: var(--brand-navy-950);">
-              O plano favorito dos aprovados. 7 dias grátis para testar sem compromisso.
+              O plano favorito dos aprovados. 7 dias grátis para testar sem compromisso (cobrança única de R$ 94,80/ano com renovação automática anual iniciada apenas após o período de teste).
             </div>
           </div>
           <a href="#play" class="btn btn-gold btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
@@ -3658,26 +3680,35 @@
           <span class="plan-top-badge plan-top-badge-special">BLACK FRIDAY &bull; VITALÍCIO</span>
           <div>
             <div class="price-plan-name" style="color: var(--brand-navy-950);">Vitalício</div>
-            <div style="font-size: 0.8rem; font-weight: 800; color: var(--slate-600);">12× DE</div>
+            <div style="font-size: 0.8rem; font-weight: 800; color: var(--slate-600); letter-spacing: 0.04em;">12× DE</div>
             <div class="price-value-box">
-              <span class="price-val-big">R$ 29,70</span>
+              <span class="price-val-big">R$ 29,90</span>
             </div>
-            <div class="price-val-total">ou <strong>R$ 297,00</strong> à vista (Pagamento Único)</div>
+            <div class="price-val-total" style="font-size: 0.82rem; font-weight: 700; color: var(--brand-navy-950); min-height: 2.6rem; display: flex; align-items: center;">
+              ou <strong>R$ 297,00</strong> à vista (Total a prazo: R$ 358,80 em 12x de R$ 29,90)
+            </div>
             <span class="savings-badge" style="background: var(--amber-50); color: #B45309; border-color: rgba(245, 158, 11, 0.3);">
-              Menos de R$ 0,82/dia no 1º ano
+              Pague 1x, use até a posse
             </span>
             <div class="plan-desc">
-              Disponível exclusivamente de <strong>01/11 a 31/12</strong> (até 23h59). Acesso definitivo sem renovações até a posse.
+              Disponível exclusivamente de <strong>01/11 a 31/12</strong> (até 23h59). Acesso definitivo sem mensalidades ou renovações. Garantia incondicional de reembolso de 7 dias (Art. 49 do CDC).
             </div>
           </div>
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Garantir Acesso Vitalício
+            GARANTIR ACESSO VITALÍCIO
           </a>
         </div>
       </div>
 
-      <div class="microcopy-safe" style="text-align: center; margin-top: 1.25rem; font-size: 0.85rem; color: var(--slate-600);">
-        Cancelamento em 1 clique direto na Google Play. Sem fidelidade ou cobrança surpresa.
+      <!-- Bloco de Transparência e Conformidade Regulatória (CDC & Google Play) -->
+      <div class="pricing-compliance-block" style="max-width: 980px; margin: 2.25rem auto 0 auto; padding: 1.15rem 1.5rem; background: var(--slate-50); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); font-size: 0.82rem; line-height: 1.6; color: var(--slate-600); text-align: left; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);">
+        <p style="margin: 0;">
+          <strong style="color: var(--brand-navy-950); display: inline-flex; align-items: center; gap: 0.35rem; margin-bottom: 0.25rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--emerald-600);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Transparência e Conformidade:
+          </strong>
+          Nos planos Mensal (R$ 14,90/mês) e Anual (pagamento único de R$ 94,80/ano), você não será cobrado se cancelar antes do término dos 7 dias de avaliação gratuita; após o teste, a assinatura renova-se automaticamente pelo valor do plano escolhido, podendo ser cancelada a qualquer momento em 1 clique na seção &ldquo;Pagamentos e assinaturas&rdquo; da Google Play, sem fidelidade ou multa. No plano Vitalício (compra única de R$ 297,00 à vista ou 12x de R$ 29,90, totalizando R$ 358,80 a prazo), não há cobranças recorrentes e é assegurado o direito de arrependimento com reembolso integral em até 7 dias corridos após a contratação (Art. 49 do CDC).
+        </p>
       </div>
     </div>
   </section>
