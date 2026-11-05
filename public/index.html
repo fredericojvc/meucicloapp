@@ -2238,8 +2238,29 @@
       flex-direction: column;
       justify-content: space-between;
       position: relative;
-      transition: all 0.2s ease;
+      transition: all 0.25s ease;
       box-shadow: var(--shadow-card);
+      min-width: 0;
+      width: 100%;
+      max-width: 440px;
+      margin: 0 auto;
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    .price-tile .btn {
+      width: 100%;
+      font-size: 0.82rem;
+      letter-spacing: 0.02em;
+      padding: 0.5rem 0.75rem;
+      height: 52px;
+      white-space: normal;
+      text-align: center;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
     }
 
     .price-tile:hover {
@@ -2684,8 +2705,11 @@
         grid-template-columns: 1.3fr 1fr 1.05fr 1.05fr;
       }
       .pricing-matrix {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         align-items: stretch;
+      }
+      .price-tile {
+        max-width: 100%;
       }
       .price-tile-featured {
         transform: none;
