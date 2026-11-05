@@ -2243,13 +2243,14 @@
     }
 
     .price-tile:hover {
-      transform: translateY(-2px);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px -4px rgba(15, 23, 42, 0.12);
     }
 
     .price-tile-featured {
       border: 2px solid var(--gold-primary);
       background: linear-gradient(180deg, #FFFFFF 0%, #FFFDF8 100%);
-      box-shadow: var(--shadow-featured);
+      box-shadow: 0 10px 25px -4px rgba(217, 119, 6, 0.16);
     }
 
     .price-tile-special {
@@ -2358,6 +2359,12 @@
       color: #14532D;
     }
     @media (max-width: 640px) {
+      .pricing-matrix {
+        gap: 1.25rem;
+      }
+      .price-tile {
+        padding: 1.85rem 1.35rem;
+      }
       .pricing-anchor-banner {
         border-radius: var(--radius-lg);
         flex-direction: column;
@@ -2678,12 +2685,13 @@
       }
       .pricing-matrix {
         grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
       }
       .price-tile-featured {
-        transform: scale(1.05);
+        transform: none;
       }
       .price-tile-featured:hover {
-        transform: scale(1.07) translateY(-3px);
+        transform: translateY(-4px);
       }
     }
 
@@ -4330,10 +4338,10 @@
               <span class="price-val-big">R$ 14,90</span>
               <span class="price-val-period">/mês</span>
             </div>
-            <div class="price-val-total" style="font-size: 0.82rem; font-weight: 600; color: var(--slate-600); min-height: 2.6rem; display: flex; align-items: center;">
+            <div class="price-val-total" style="font-size: 0.82rem; font-weight: 600; color: var(--slate-600); min-height: 2.85rem; line-height: 1.4; display: block;">
               Assinatura mensal com renovação automática.
             </div>
-            <div style="height: 28px; margin: 0.5rem 0 1rem 0;"></div>
+            <div style="height: 28px; margin: 0.65rem 0 0.85rem 0;"></div>
             <div class="plan-desc">
               Liberdade para estudar mês a mês e cancelar quando quiser. Cobrança de R$ 14,90/mês iniciada apenas após os 7 dias de teste grátis.
             </div>
@@ -4353,10 +4361,10 @@
               <span class="price-val-big">R$ 7,90</span>
               <span class="price-val-period">/mês</span>
             </div>
-            <div class="price-val-total" style="font-size: 0.84rem; font-weight: 800; color: var(--brand-navy-950); min-height: 2.6rem; display: flex; align-items: center;">
+            <div class="price-val-total" style="font-size: 0.84rem; font-weight: 800; color: var(--brand-navy-950); min-height: 2.85rem; line-height: 1.4; display: block;">
               Cobrado em pagamento único anual de R$ 94,80 à vista
             </div>
-            <span class="savings-badge">Economize 47% (R$ 84,00/ano)</span>
+            <span class="savings-badge" style="display: inline-block; min-height: 28px; line-height: 24px; box-sizing: border-box; margin: 0.65rem 0 0.85rem 0;">Economize 47% (R$ 84,00/ano)</span>
             <div class="plan-desc" style="font-weight: 600; color: var(--brand-navy-950);">
               O plano favorito dos aprovados. 7 dias grátis para testar sem compromisso (cobrança única de R$ 94,80/ano com renovação automática anual iniciada apenas após o período de teste).
             </div>
@@ -4375,10 +4383,10 @@
             <div class="price-value-box">
               <span class="price-val-big">R$ 29,90</span>
             </div>
-            <div class="price-val-total" style="font-size: 0.82rem; font-weight: 700; color: var(--brand-navy-950); min-height: 2.6rem; display: flex; align-items: center;">
-              ou <strong>R$ 297,00</strong> à vista (Total a prazo: R$ 358,80 em 12x de R$ 29,90)
+            <div class="price-val-total" style="font-size: 0.82rem; font-weight: 700; color: var(--brand-navy-950); min-height: 2.85rem; line-height: 1.4; display: block;">
+              ou <strong>R$ 297,00 à vista</strong><span style="display: block; font-size: 0.76rem; font-weight: 600; color: var(--slate-600); margin-top: 0.2rem;">(Total a prazo: R$ 358,80 em 12x de R$ 29,90)</span>
             </div>
-            <span class="savings-badge" style="background: var(--amber-50); color: #B45309; border-color: rgba(245, 158, 11, 0.3);">
+            <span class="savings-badge" style="background: var(--amber-50); color: #B45309; border-color: rgba(245, 158, 11, 0.3); display: inline-block; min-height: 28px; line-height: 24px; box-sizing: border-box; margin: 0.65rem 0 0.85rem 0;">
               Pague 1x, use até a posse
             </span>
             <div class="plan-desc">
