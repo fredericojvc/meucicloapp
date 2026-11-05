@@ -2043,6 +2043,89 @@
         scroll-behavior: auto !important;
       }
     }
+
+    /* ==========================================================================
+       MODAL DE CONVERSÃO DESKTOP-PARA-MOBILE (QR CODE)
+       ========================================================================== */
+    .qr-modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(11, 25, 44, 0.72);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+
+    .qr-modal-backdrop.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .qr-modal-card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      max-width: 440px;
+      width: 100%;
+      padding: 2.25rem 2rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+      position: relative;
+      text-align: center;
+      transform: scale(0.95) translateY(10px);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-sizing: border-box;
+    }
+
+    .qr-modal-backdrop.active .qr-modal-card {
+      transform: scale(1) translateY(0);
+    }
+
+    .qr-modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1.25rem;
+      background: transparent;
+      border: none;
+      font-size: 1.6rem;
+      line-height: 1;
+      color: var(--slate-400);
+      cursor: pointer;
+      padding: 0.25rem;
+      transition: color 0.15s ease;
+    }
+
+    .qr-modal-close:hover {
+      color: var(--brand-navy-950);
+    }
+
+    .qr-modal-frame {
+      background: #F8FAFC;
+      border: 2px dashed #CBD5E1;
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      margin: 1.25rem auto;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr-modal-frame img {
+      display: block;
+      width: 180px;
+      height: 180px;
+      border-radius: var(--radius-sm);
+    }
   </style>
 </head>
 <body>
@@ -3534,18 +3617,107 @@
   </footer>
 
   <!-- ========================================================================
+       MODAL DE CONVERSÃO DESKTOP-PARA-MOBILE (QR CODE)
+       ======================================================================== -->
+  <div id="qr-modal" class="qr-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title">
+    <div class="qr-modal-card">
+      <button id="qr-modal-close-btn" class="qr-modal-close" aria-label="Fechar modal">&times;</button>
+      
+      <div class="section-tag section-tag-gold" style="margin-bottom: 0.5rem; display: inline-block;">
+        Instale no Smartphone
+      </div>
+      
+      <h3 id="qr-modal-title" style="font-size: 1.35rem; color: var(--brand-navy-950); margin-bottom: 0.4rem; font-weight: 800;">
+        Abra o Meu Ciclo no seu celular
+      </h3>
+      
+      <p style="font-size: 0.88rem; color: var(--slate-600); margin: 0 auto; line-height: 1.45; max-width: 340px;">
+        Aponte a câmera do seu smartphone Android para o QR Code abaixo e inicie seus <strong>7 dias grátis</strong> na Google Play.
+      </p>
+
+      <div class="qr-modal-frame">
+        <img src="/qrcode-play.svg" alt="QR Code Google Play Meu Ciclo" width="180" height="180">
+        <div style="font-size: 0.76rem; font-weight: 700; color: #166534; margin-top: 0.65rem; display: flex; align-items: center; gap: 0.35rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Compatível com qualquer Android
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.65rem; margin-top: 0.25rem;">
+        <a id="qr-browser-direct-link" href="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="height: 44px; font-size: 0.85rem; width: 100%; box-sizing: border-box;">
+          Ou abrir Google Play no navegador do PC &rarr;
+        </a>
+        <span style="font-size: 0.75rem; color: var(--slate-500); line-height: 1.3;">
+          Cancelamento em 1 clique direto na Google Play. Sem fidelidade.
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
        JAVASCRIPT LEVE DE INTERATIVIDADE, MENU APPLE & CONVERSÃO
        ======================================================================== -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt";
 
+      // Modal Desktop QR Code
+      const qrModal = document.getElementById('qr-modal');
+      const qrModalClose = document.getElementById('qr-modal-close-btn');
+      const qrDirectLink = document.getElementById('qr-browser-direct-link');
+
+      function isDesktopScreen() {
+        return window.innerWidth > 992;
+      }
+
+      function openQrModal(targetUrl) {
+        if (!qrModal) return;
+        if (qrDirectLink) {
+          qrDirectLink.href = targetUrl || PLAY_STORE_URL;
+        }
+        qrModal.classList.add('active');
+        qrModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeQrModal() {
+        if (!qrModal) return;
+        qrModal.classList.remove('active');
+        qrModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      if (qrModalClose) {
+        qrModalClose.addEventListener('click', closeQrModal);
+      }
+
+      if (qrModal) {
+        qrModal.addEventListener('click', function (e) {
+          if (e.target === qrModal) {
+            closeQrModal();
+          }
+        });
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && qrModal && qrModal.classList.contains('active')) {
+          closeQrModal();
+        }
+      });
+
       // Disparo de Play Store CTAs
       document.querySelectorAll('.btn-play').forEach(btn => {
         btn.addEventListener('click', function (e) {
           e.preventDefault();
           const target = this.getAttribute('data-play-url') || PLAY_STORE_URL;
-          window.open(target, '_blank', 'noopener,noreferrer');
+
+          // Se estiver em Desktop (> 992px), exibe modal com QR Code
+          if (isDesktopScreen()) {
+            openQrModal(target);
+          } else {
+            // Em mobile/tablet, abre direto na Google Play Store
+            window.open(target, '_blank', 'noopener,noreferrer');
+          }
         });
       });
 
