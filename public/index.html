@@ -1369,25 +1369,468 @@
     }
 
     /* ==========================================================================
-       5. REVISÕES E TIMER (MODO FOCO & ESPAÇAMENTO NASCIDO DO REGISTRO)
+       5. TIMER • FOCO & CONTAGEM LÍQUIDA (TELAS REAIS DO APP & SONS NEURAIS)
        ========================================================================== */
-    .timer-focus-box {
-      background: #030712;
-      border: 1px solid #1F2937;
-      border-radius: var(--radius-lg);
-      padding: 2rem 1.5rem;
-      text-align: center;
-      color: var(--white);
+    .timer-phone-wrapper {
+      width: 100%;
+      max-width: 440px;
+      margin: 0 auto;
+      box-sizing: border-box;
     }
 
-    .timer-focus-display {
-      font-size: 3.5rem;
-      font-weight: 900;
-      font-variant-numeric: tabular-nums;
-      letter-spacing: -0.03em;
+    .timer-screens-nav {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .timer-screen-tab {
+      background: var(--white);
+      border: 1.5px solid #CBD5E1;
+      color: #334155;
+      padding: 0.45rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .timer-screen-tab:hover {
+      border-color: #1976D2;
+      color: #1976D2;
+    }
+
+    .timer-screen-tab.active {
+      background: #1976D2;
+      border-color: #1976D2;
       color: var(--white);
+      box-shadow: 0 4px 12px rgba(25, 118, 210, 0.25);
+    }
+
+    .timer-phone-frame {
+      background: #F4F6F8;
+      border: 1px solid #CBD5E1;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px -10px rgba(15, 23, 42, 0.15), 0 0 0 1px rgba(15, 23, 42, 0.05);
+    }
+
+    .timer-main-card {
+      background: var(--white);
+      border: 1px solid #E2E8F0;
+      border-radius: 22px;
+      padding: 1.6rem 1.25rem 1.4rem;
+      box-shadow: 0 4px 14px -2px rgba(15, 23, 42, 0.05);
+      text-align: center;
+    }
+
+    .timer-digits-display {
+      font-size: 3.35rem;
+      font-weight: 500;
+      color: #1E293B;
+      letter-spacing: -0.02em;
       line-height: 1;
-      margin: 1rem 0;
+      margin-bottom: 1.35rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .timer-actions-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+    }
+
+    .timer-subtle-btn {
+      width: 68px;
+      height: 60px;
+      border-radius: 16px;
+      background: #E3F2FD;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      color: #1976D2;
+      cursor: pointer;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      transition: all 0.15s ease;
+    }
+
+    .timer-subtle-btn:hover {
+      background: #BBDEFB;
+      transform: translateY(-1px);
+    }
+
+    .timer-subtle-btn:active {
+      transform: translateY(0);
+    }
+
+    .timer-primary-play-btn {
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: #1976D2;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.15rem;
+      color: #FFFFFF;
+      cursor: pointer;
+      box-shadow: 0 8px 18px -2px rgba(25, 118, 210, 0.42);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      transition: all 0.2s ease;
+    }
+
+    .timer-primary-play-btn:hover {
+      background: #1565C0;
+      transform: scale(1.04);
+      box-shadow: 0 10px 22px -2px rgba(25, 118, 210, 0.5);
+    }
+
+    .timer-primary-play-btn:active {
+      transform: scale(0.98);
+    }
+
+    .timer-primary-play-btn.playing {
+      background: #059669;
+      box-shadow: 0 8px 18px -2px rgba(5, 150, 105, 0.42);
+    }
+
+    .timer-link-focus {
+      background: none;
+      border: none;
+      color: #1976D2;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: underline;
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      transition: opacity 0.15s ease;
+    }
+
+    .timer-link-focus:hover {
+      opacity: 0.8;
+    }
+
+    .modo-foco-toast {
+      margin-top: 0.4rem;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: #065F46;
+      background: #D1FAE5;
+      border: 1px solid #A7F3D0;
+      border-radius: 8px;
+      padding: 0.35rem 0.65rem;
+      animation: fadeIn 0.2s ease;
+    }
+
+    .timer-accordion-card {
+      background: var(--white);
+      border: 1px solid #E2E8F0;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .timer-accordion-card.open {
+      border-color: #93C5FD;
+      box-shadow: 0 4px 12px -2px rgba(25, 118, 210, 0.08);
+    }
+
+    .timer-accordion-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.95rem 1.15rem;
+      cursor: pointer;
+      user-select: none;
+      background: var(--white);
+      transition: background 0.15s ease;
+    }
+
+    .timer-accordion-header:hover {
+      background: #F8FAFC;
+    }
+
+    .accordion-chevron {
+      transition: transform 0.25s ease;
+    }
+
+    .timer-accordion-card.open .accordion-chevron {
+      transform: rotate(180deg);
+    }
+
+    .timer-accordion-content {
+      padding: 0 1.15rem 1.15rem;
+      display: none;
+    }
+
+    .timer-accordion-card.open .timer-accordion-content {
+      display: block;
+    }
+
+    .timer-method-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 0.85rem;
+      border-radius: 12px;
+      margin-bottom: 0.4rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+    }
+
+    .timer-method-item:hover {
+      background: #F1F5F9;
+    }
+
+    .timer-method-item.active {
+      background: #EFF6FF;
+      border-color: #BFDBFE;
+    }
+
+    .timer-radio-circle {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid #94A3B8;
+      position: relative;
+      flex-shrink: 0;
+      transition: all 0.15s ease;
+    }
+
+    .timer-radio-circle.selected {
+      border-color: #1976D2;
+    }
+
+    .timer-radio-circle.selected::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #1976D2;
+    }
+
+    .timer-method-title {
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: #0F172A;
+      line-height: 1.2;
+    }
+
+    .timer-method-subtitle {
+      font-size: 0.76rem;
+      color: #64748B;
+      margin-top: 0.15rem;
+      line-height: 1.2;
+    }
+
+    .timer-pause-pill {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--white);
+      border: 1.5px solid #CBD5E1;
+      border-radius: 10px;
+      padding: 0.55rem 0.85rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #0F172A;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .timer-pause-pill:hover {
+      border-color: #1976D2;
+    }
+
+    .timer-pause-pill.active {
+      background: #EFF6FF;
+      border-color: #1976D2;
+      color: #1976D2;
+    }
+
+    .timer-toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.35rem 0.25rem 0.85rem;
+      border-bottom: 1px solid #E2E8F0;
+      margin-bottom: 0.85rem;
+    }
+
+    .timer-toggle-btn {
+      width: 44px;
+      height: 26px;
+      border-radius: 999px;
+      background: #CBD5E1;
+      border: none;
+      position: relative;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      padding: 0;
+    }
+
+    .timer-toggle-btn.active {
+      background: #1976D2;
+    }
+
+    .timer-toggle-knob {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--white);
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .timer-toggle-btn.active .timer-toggle-knob {
+      transform: translateX(18px);
+    }
+
+    .timer-sound-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 0.85rem;
+      border-radius: 12px;
+      margin-bottom: 0.45rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+    }
+
+    .timer-sound-item:hover {
+      background: #F1F5F9;
+    }
+
+    .timer-sound-item.active {
+      background: #EFF6FF;
+      border-color: #BFDBFE;
+    }
+
+    .timer-sound-title {
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: #0F172A;
+      line-height: 1.2;
+    }
+
+    .timer-sound-badge {
+      font-size: 0.72rem;
+      color: #64748B;
+      margin-top: 0.15rem;
+    }
+
+    .btn-play-sample {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: #1976D2;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      flex-shrink: 0;
+    }
+
+    .btn-play-sample:hover {
+      background: #1565C0;
+      transform: translateY(-1px);
+    }
+
+    .btn-play-sample.playing {
+      background: #059669;
+      box-shadow: 0 0 10px rgba(5, 150, 105, 0.4);
+    }
+
+    .audio-playback-status {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-radius: 10px;
+      padding: 0.5rem 0.85rem;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: #166534;
+      margin: 0.65rem 0;
+      animation: fadeIn 0.2s ease;
+    }
+
+    .audio-wave-bars {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      height: 14px;
+    }
+
+    .audio-wave-bars .bar {
+      width: 3px;
+      background: #16A34A;
+      border-radius: 2px;
+      animation: waveBar 0.8s ease-in-out infinite alternate;
+    }
+
+    .audio-wave-bars .bar:nth-child(1) { height: 6px; animation-delay: 0s; }
+    .audio-wave-bars .bar:nth-child(2) { height: 14px; animation-delay: 0.2s; }
+    .audio-wave-bars .bar:nth-child(3) { height: 9px; animation-delay: 0.4s; }
+    .audio-wave-bars .bar:nth-child(4) { height: 12px; animation-delay: 0.1s; }
+
+    @keyframes waveBar {
+      from { height: 4px; }
+      to { height: 14px; }
+    }
+
+    .timer-link-explanation {
+      background: none;
+      border: none;
+      color: #1976D2;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      padding: 0;
+      text-decoration: underline;
+    }
+
+    .sound-explanation-box {
+      margin-top: 0.65rem;
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      padding: 0.85rem 0.95rem;
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: #334155;
     }
 
     .review-flow-track {
@@ -3339,39 +3782,281 @@
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
             Experimentar Grátis na Google Play
           </a>
+
+          <div style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; color: var(--slate-600);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1976D2" stroke-width="2.5"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            <span>Teste os 3 sons neurais de 4 segundos direto no smartphone interativo ao lado.</span>
+          </div>
         </div>
 
-        <!-- Captura da Tela: Timer com Modos e Sons -->
-        <div class="screen-capture-box">
-          <div class="timer-focus-box">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
-              <span style="font-size: 0.75rem; font-weight: 700; color: var(--gold-light); text-transform: uppercase; letter-spacing: 0.05em;">
-                Timer &bull; Modo Foco Ativo
-              </span>
-              <span style="font-size: 0.72rem; color: #93C5FD; font-weight: 700;">Regra 52/17</span>
-            </div>
-
-            <div class="timer-focus-display">00:52:00</div>
-
-            <div style="font-size: 0.8rem; color: var(--slate-300); margin-bottom: 1rem;">
-              Método: <strong>Regra 52/17</strong> &bull; Pomodoro &bull; Progressivo / Regressivo
-            </div>
-
-            <!-- Seletor de Sons Neurais Embutidos -->
-            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 0.85rem;">
-              <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--gold-light); font-weight: 800; margin-bottom: 0.35rem;">
-                Sons Neurais Nativos (Sem sair do app):
-              </div>
-              <div class="audio-pills-row">
-                <span class="audio-pill active">🎧 40 Hz Binaural</span>
-                <span class="audio-pill">🌊 Ruído Branco</span>
-                <span class="audio-pill">🪵 Ruído Marrom</span>
-              </div>
-            </div>
+        <!-- Interface Real do Aplicativo: Timer, Configurar Método & Sons Neurais -->
+        <div class="timer-phone-wrapper">
+          <!-- Seletor de Telas do Mockup (Alternar entre as duas telas reais do app) -->
+          <div class="timer-screens-nav" role="tablist" aria-label="Telas do Timer">
+            <button type="button" class="timer-screen-tab active" id="btn-timer-screen1" role="tab" aria-selected="true" aria-controls="accordion-metodo">
+              📖 Tela 1: Configurar Método
+            </button>
+            <button type="button" class="timer-screen-tab" id="btn-timer-screen2" role="tab" aria-selected="false" aria-controls="accordion-som">
+              🎧 Tela 2: Sons para Foco
+            </button>
           </div>
 
-          <div class="app-screen-actionbar" style="margin-top: 1rem;">
-            ▶ INICIAR SESSÃO DE FOCO
+          <!-- Smartphone Frame Oficial -->
+          <div class="timer-phone-frame">
+            <!-- Barra de Status Android Oficial (8:40, Shield, Câmera Central, Wifi, Sinal, Bateria) -->
+            <div class="sim-phone-statusbar" style="background: #1976D2; color: #FFFFFF; padding: 0.5rem 1.15rem 0.25rem 1.15rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.02em;">
+              <div style="display: flex; align-items: center; gap: 0.35rem;">
+                <span>8:40</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <!-- Câmera Frontal Punch-hole -->
+              <div style="width: 11px; height: 11px; border-radius: 50%; background: #0A0F1D; box-shadow: inset 0 0 2px rgba(255,255,255,0.2);"></div>
+              <!-- Ícones de Conectividade e Energia -->
+              <div style="display: flex; align-items: center; gap: 0.4rem;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20" stroke-width="3"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 20h20L22 4z"/></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="10" x2="23" y2="14"/><rect x="3" y="8" width="12" height="8" fill="currentColor"/></svg>
+              </div>
+            </div>
+
+            <!-- Top App Bar Oficial (Padrão Android do App) -->
+            <div class="sim-phone-topbar" style="background: #1976D2; color: #FFFFFF; padding: 0.75rem 1.15rem 0.95rem 1.15rem; display: flex; align-items: center; justify-content: space-between;">
+              <div style="display: flex; align-items: center; gap: 0.85rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                <div>
+                  <div style="font-weight: 800; font-size: 1.05rem; line-height: 1.2;">Timer</div>
+                  <div style="font-size: 0.74rem; opacity: 0.92;">Foco e contagem líquida</div>
+                </div>
+              </div>
+              <div style="font-size: 1.25rem; font-weight: 800; line-height: 1; cursor: default;">&#8942;</div>
+            </div>
+
+            <!-- Corpo do Smartphone -->
+            <div class="sim-phone-body" style="background: #F4F6F8; padding: 1rem;">
+              
+              <!-- Card Superior: Display Digital e Controles Principais -->
+              <div class="timer-main-card">
+                <div class="timer-digits-display" id="timer-digits">00:52:00</div>
+
+                <!-- Linha dos 3 Botões de Ação do App: RESETAR, PLAY, PULAR -->
+                <div class="timer-actions-row">
+                  <!-- Botão RESETAR -->
+                  <button type="button" class="timer-subtle-btn" id="btn-timer-reset" title="Resetar Timer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                    <span>RESETAR</span>
+                  </button>
+
+                  <!-- Botão Central PLAY (Primário Circular) -->
+                  <button type="button" class="timer-primary-play-btn" id="btn-timer-play" title="Iniciar Sessão">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" id="timer-play-icon"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <span id="timer-play-label">PLAY</span>
+                  </button>
+
+                  <!-- Botão PULAR -->
+                  <button type="button" class="timer-subtle-btn" id="btn-timer-skip" title="Pular para Pausa">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2.5"/></svg>
+                    <span>PULAR</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Link Ativar Modo Foco -->
+              <div style="text-align: center; margin: 1.15rem 0 1rem;">
+                <button type="button" class="timer-link-focus" id="btn-toggle-modo-foco">
+                  Ativar Modo Foco
+                </button>
+                <div id="modo-foco-toast" class="modo-foco-toast" style="display: none;">
+                  ✓ Modo Foco ativado: notificações bloqueadas e tela imersiva
+                </div>
+              </div>
+
+              <!-- =============================================================
+                   ACCORDION 1: Configurar Método (Aberto na Tela 1)
+                   ============================================================= -->
+              <div class="timer-accordion-card open" id="accordion-metodo">
+                <div class="timer-accordion-header" id="header-metodo">
+                  <div style="display: flex; align-items: center; gap: 0.65rem;">
+                    <span style="font-size: 1.15rem; line-height: 1;">📖</span>
+                    <span style="font-weight: 800; font-size: 0.95rem; color: #1E293B;">Configurar Método</span>
+                  </div>
+                  <svg class="accordion-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+
+                <div class="timer-accordion-content" id="body-metodo">
+                  <div style="font-weight: 800; font-size: 0.95rem; color: #0F172A; margin: 0.5rem 0 0.65rem;">
+                    Tipo de cronômetro
+                  </div>
+
+                  <!-- Opção 1: Regra 52/17 (Ativa por padrão) -->
+                  <div class="timer-method-item active" data-method="52-17" data-time="00:52:00">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                      <div class="timer-radio-circle selected"></div>
+                      <div>
+                        <div class="timer-method-title">Regra 52/17</div>
+                        <div class="timer-method-subtitle">52 min, pausa de 17 min</div>
+                      </div>
+                    </div>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  </div>
+
+                  <!-- Opção 2: Pomodoro -->
+                  <div class="timer-method-item" data-method="pomodoro" data-time="00:25:00">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                      <div class="timer-radio-circle"></div>
+                      <div>
+                        <div class="timer-method-title">Pomodoro</div>
+                        <div class="timer-method-subtitle">25 min, pausa de 5 min</div>
+                      </div>
+                    </div>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  </div>
+
+                  <!-- Opção 3: Cronômetro progressivo -->
+                  <div class="timer-method-item" data-method="progressivo" data-time="00:00:00">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                      <div class="timer-radio-circle"></div>
+                      <div>
+                        <div class="timer-method-title">Cronômetro progressivo</div>
+                        <div class="timer-method-subtitle">Conta a partir de zero</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Opção 4: Cronômetro regressivo -->
+                  <div class="timer-method-item" data-method="regressivo" data-time="01:00:00">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                      <div class="timer-radio-circle"></div>
+                      <div>
+                        <div class="timer-method-title">Cronômetro regressivo</div>
+                        <div class="timer-method-subtitle">01:00:00</div>
+                      </div>
+                    </div>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  </div>
+
+                  <!-- Seção Pausas -->
+                  <div style="font-weight: 800; font-size: 0.95rem; color: #0F172A; margin: 1rem 0 0.5rem;">
+                    Pausas
+                  </div>
+                  <div style="display: flex; gap: 0.65rem;">
+                    <div class="timer-pause-pill" id="pause-5min">
+                      <span>5 min</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    </div>
+                    <div class="timer-pause-pill active" id="pause-17min">
+                      <span>17 min</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1976D2" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- =============================================================
+                   ACCORDION 2: Configurar Som para Foco (Aberto na Tela 2)
+                   ============================================================= -->
+              <div class="timer-accordion-card" id="accordion-som">
+                <div class="timer-accordion-header" id="header-som">
+                  <div style="display: flex; align-items: center; gap: 0.65rem;">
+                    <span style="font-size: 1.15rem; line-height: 1;">🎧</span>
+                    <span style="font-weight: 800; font-size: 0.95rem; color: #1E293B;">Configurar Som para Foco</span>
+                  </div>
+                  <svg class="accordion-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+
+                <div class="timer-accordion-content" id="body-som">
+                  <div style="font-weight: 800; font-size: 0.95rem; color: #0F172A; margin: 0.5rem 0 0.75rem;">
+                    Som para foco
+                  </div>
+
+                  <!-- Toggle Som Ligado -->
+                  <div class="timer-toggle-row">
+                    <span style="font-size: 0.9rem; color: #334155; font-weight: 600;">Som ligado</span>
+                    <button type="button" class="timer-toggle-btn active" id="btn-toggle-sound" aria-pressed="true" title="Ligar / Desligar som">
+                      <span class="timer-toggle-knob"></span>
+                    </button>
+                  </div>
+
+                  <div id="sound-options-group">
+                    <!-- Opção 1: 40 Hz binaural -->
+                    <div class="timer-sound-item active" data-sound="40hz" data-audio="/audio/40hz-binaural.mp3">
+                      <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div class="timer-radio-circle selected"></div>
+                        <div>
+                          <div class="timer-sound-title">40 Hz binaural</div>
+                          <div class="timer-sound-badge">Ondas Gama &bull; Hiperfoco</div>
+                        </div>
+                      </div>
+                      <button type="button" class="btn-play-sample" data-audio="/audio/40hz-binaural.mp3" data-name="40 Hz Binaural">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <span>Ouvir 4s</span>
+                      </button>
+                    </div>
+
+                    <!-- Opção 2: Ruído branco -->
+                    <div class="timer-sound-item" data-sound="branco" data-audio="/audio/ruido-branco.mp3">
+                      <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div class="timer-radio-circle"></div>
+                        <div>
+                          <div class="timer-sound-title">Ruído branco</div>
+                          <div class="timer-sound-badge">Anti-distração ambiental</div>
+                        </div>
+                      </div>
+                      <button type="button" class="btn-play-sample" data-audio="/audio/ruido-branco.mp3" data-name="Ruído Branco">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <span>Ouvir 4s</span>
+                      </button>
+                    </div>
+
+                    <!-- Opção 3: Ruído marrom -->
+                    <div class="timer-sound-item" data-sound="marrom" data-audio="/audio/ruido-marrom.mp3">
+                      <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div class="timer-radio-circle"></div>
+                        <div>
+                          <div class="timer-sound-title">Ruído marrom</div>
+                          <div class="timer-sound-badge">Graves densos anti-ansiedade</div>
+                        </div>
+                      </div>
+                      <button type="button" class="btn-play-sample" data-audio="/audio/ruido-marrom.mp3" data-name="Ruído Marrom">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <span>Ouvir 4s</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Status de Reprodução Atual -->
+                  <div id="audio-playback-status" class="audio-playback-status" style="display: none;">
+                    <div class="audio-wave-bars">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </div>
+                    <span id="audio-status-text">Reproduzindo demonstração de 4 segundos...</span>
+                  </div>
+
+                  <!-- Link Ver Explicação -->
+                  <div style="margin-top: 0.85rem;">
+                    <button type="button" class="timer-link-explanation" id="btn-toggle-sound-explanation">
+                      Ver explicação
+                    </button>
+                    <div id="sound-explanation-card" class="sound-explanation-box" style="display: none;">
+                      <div style="margin-bottom: 0.5rem;">
+                        <strong style="color: #1976D2;">40 Hz Binaural:</strong> Estimula a sincronização gama no cérebro, facilitando resolução de problemas analíticos e alta concentração. (Use fones estéreo).
+                      </div>
+                      <div style="margin-bottom: 0.5rem;">
+                        <strong style="color: #1976D2;">Ruído Branco:</strong> Distribui frequências uniformes para mascarar conversas e barulhos repentinos no ambiente de estudo.
+                      </div>
+                      <div>
+                        <strong style="color: #1976D2;">Ruído Marrom:</strong> Enfatiza frequências graves mais profundas, proporcionando sensação de aconchego, relaxamento e blindagem mental.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Barra Inferior de Navegação Android Oficial -->
+              <div style="width: 100px; height: 4px; background: #94A3B8; border-radius: 999px; margin: 1rem auto 0.25rem;"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -4226,6 +4911,327 @@
           }, 450);
         });
       });
+
+      // ========================================================================
+      // INTERATIVIDADE DO TIMER REAL (TELAS, DISPLAY DIGITAL & PLAYER DE ÁUDIO 4S)
+      // ========================================================================
+      (function initTimerInteractive() {
+        // --- 1. Alternador entre Tela 1 (Configurar Método) e Tela 2 (Sons) ---
+        const tabScreen1 = document.getElementById('btn-timer-screen1');
+        const tabScreen2 = document.getElementById('btn-timer-screen2');
+        const accMetodo = document.getElementById('accordion-metodo');
+        const accSom = document.getElementById('accordion-som');
+        const headerMetodo = document.getElementById('header-metodo');
+        const headerSom = document.getElementById('header-som');
+
+        function showScreen1() {
+          if (accMetodo) accMetodo.classList.add('open');
+          if (accSom) accSom.classList.remove('open');
+          if (tabScreen1) { tabScreen1.classList.add('active'); tabScreen1.setAttribute('aria-selected', 'true'); }
+          if (tabScreen2) { tabScreen2.classList.remove('active'); tabScreen2.setAttribute('aria-selected', 'false'); }
+        }
+
+        function showScreen2() {
+          if (accSom) accSom.classList.add('open');
+          if (accMetodo) accMetodo.classList.remove('open');
+          if (tabScreen2) { tabScreen2.classList.add('active'); tabScreen2.setAttribute('aria-selected', 'true'); }
+          if (tabScreen1) { tabScreen1.classList.remove('active'); tabScreen1.setAttribute('aria-selected', 'false'); }
+        }
+
+        if (tabScreen1) tabScreen1.addEventListener('click', showScreen1);
+        if (tabScreen2) tabScreen2.addEventListener('click', showScreen2);
+        if (headerMetodo) headerMetodo.addEventListener('click', () => {
+          if (accMetodo.classList.contains('open')) {
+            accMetodo.classList.remove('open');
+          } else {
+            showScreen1();
+          }
+        });
+        if (headerSom) headerSom.addEventListener('click', () => {
+          if (accSom.classList.contains('open')) {
+            accSom.classList.remove('open');
+          } else {
+            showScreen2();
+          }
+        });
+
+        // --- 2. Timer Digital e Controles (PLAY, RESETAR, PULAR) ---
+        const digitsEl = document.getElementById('timer-digits');
+        const playBtn = document.getElementById('btn-timer-play');
+        const playIcon = document.getElementById('timer-play-icon');
+        const playLabel = document.getElementById('timer-play-label');
+        const resetBtn = document.getElementById('btn-timer-reset');
+        const skipBtn = document.getElementById('btn-timer-skip');
+        const focusLink = document.getElementById('btn-toggle-modo-foco');
+        const focusToast = document.getElementById('modo-foco-toast');
+
+        let isRunning = false;
+        let timerInterval = null;
+        let baseSeconds = 52 * 60; // Padrão 52 min
+        let currentSeconds = baseSeconds;
+        let isCountUp = false;
+
+        function formatDisplay(sec) {
+          const h = Math.floor(sec / 3600);
+          const m = Math.floor((sec % 3600) / 60);
+          const s = sec % 60;
+          return [h, m, s].map(v => String(v).padStart(2, '0')).join(':');
+        }
+
+        function updateDigits() {
+          if (digitsEl) digitsEl.textContent = formatDisplay(currentSeconds);
+        }
+
+        function setPlayState(playing) {
+          isRunning = playing;
+          if (playing) {
+            playBtn.classList.add('playing');
+            playIcon.innerHTML = '<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>';
+            playLabel.textContent = 'PAUSAR';
+          } else {
+            playBtn.classList.remove('playing');
+            playIcon.innerHTML = '<polygon points="5 3 19 12 5 21 5 3"/>';
+            playLabel.textContent = currentSeconds < baseSeconds ? 'CONTINUAR' : 'PLAY';
+          }
+        }
+
+        function startTimer() {
+          if (isRunning) {
+            clearInterval(timerInterval);
+            setPlayState(false);
+            return;
+          }
+
+          setPlayState(true);
+          timerInterval = setInterval(() => {
+            if (isCountUp) {
+              currentSeconds++;
+              updateDigits();
+            } else {
+              if (currentSeconds > 0) {
+                currentSeconds--;
+                updateDigits();
+              } else {
+                clearInterval(timerInterval);
+                setPlayState(false);
+              }
+            }
+          }, 1000);
+        }
+
+        function resetTimer() {
+          clearInterval(timerInterval);
+          setPlayState(false);
+          currentSeconds = baseSeconds;
+          updateDigits();
+        }
+
+        if (playBtn) playBtn.addEventListener('click', startTimer);
+        if (resetBtn) resetBtn.addEventListener('click', resetTimer);
+        if (skipBtn) skipBtn.addEventListener('click', () => {
+          clearInterval(timerInterval);
+          setPlayState(false);
+          // Pular para o descanso de 17 min
+          currentSeconds = 17 * 60;
+          updateDigits();
+        });
+
+        // Alternar Modo Foco
+        if (focusLink) {
+          focusLink.addEventListener('click', () => {
+            if (focusToast) {
+              const isShown = focusToast.style.display !== 'none';
+              focusToast.style.display = isShown ? 'none' : 'block';
+              if (!isShown) {
+                setTimeout(() => {
+                  focusToast.style.display = 'none';
+                }, 4000);
+              }
+            }
+          });
+        }
+
+        // --- 3. Seleção de Métodos (52/17, Pomodoro, Progressivo, Regressivo) ---
+        const methodItems = document.querySelectorAll('.timer-method-item');
+        methodItems.forEach(item => {
+          item.addEventListener('click', function () {
+            methodItems.forEach(m => {
+              m.classList.remove('active');
+              const radio = m.querySelector('.timer-radio-circle');
+              if (radio) radio.classList.remove('selected');
+            });
+            this.classList.add('active');
+            const radio = this.querySelector('.timer-radio-circle');
+            if (radio) radio.classList.add('selected');
+
+            const mType = this.getAttribute('data-method');
+            clearInterval(timerInterval);
+            setPlayState(false);
+
+            if (mType === '52-17') {
+              baseSeconds = 52 * 60;
+              isCountUp = false;
+            } else if (mType === 'pomodoro') {
+              baseSeconds = 25 * 60;
+              isCountUp = false;
+            } else if (mType === 'progressivo') {
+              baseSeconds = 0;
+              isCountUp = true;
+            } else if (mType === 'regressivo') {
+              baseSeconds = 60 * 60;
+              isCountUp = false;
+            }
+            currentSeconds = baseSeconds;
+            updateDigits();
+          });
+        });
+
+        // Pausas
+        const pause5 = document.getElementById('pause-5min');
+        const pause17 = document.getElementById('pause-17min');
+        if (pause5 && pause17) {
+          pause5.addEventListener('click', () => {
+            pause5.classList.add('active');
+            pause17.classList.remove('active');
+          });
+          pause17.addEventListener('click', () => {
+            pause17.classList.add('active');
+            pause5.classList.remove('active');
+          });
+        }
+
+        // --- 4. Áudio Nativos (40 Hz Binaural, Ruído Branco, Ruído Marrom) com Amostra de 4s ---
+        let currentAudio = null;
+        let audioTimer = null;
+        let countdownTimer = null;
+        let activePlayBtn = null;
+        let isSoundOn = true;
+
+        const toggleSoundBtn = document.getElementById('btn-toggle-sound');
+        const soundGroup = document.getElementById('sound-options-group');
+        const statusBox = document.getElementById('audio-playback-status');
+        const statusText = document.getElementById('audio-status-text');
+        const soundItems = document.querySelectorAll('.timer-sound-item');
+        const playSampleBtns = document.querySelectorAll('.btn-play-sample');
+        const explanationBtn = document.getElementById('btn-toggle-sound-explanation');
+        const explanationCard = document.getElementById('sound-explanation-card');
+
+        function stopAudio() {
+          if (currentAudio) {
+            try { currentAudio.pause(); currentAudio.currentTime = 0; } catch (e) {}
+            currentAudio = null;
+          }
+          if (audioTimer) { clearTimeout(audioTimer); audioTimer = null; }
+          if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; }
+          if (activePlayBtn) {
+            activePlayBtn.classList.remove('playing');
+            activePlayBtn.innerHTML = '<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg><span>Ouvir 4s</span>';
+            activePlayBtn = null;
+          }
+          if (statusBox) statusBox.style.display = 'none';
+        }
+
+        function playSoundSample(audioSrc, soundName, btn) {
+          if (!isSoundOn) return;
+
+          // Se clicar no botão que já está tocando, para
+          if (activePlayBtn === btn) {
+            stopAudio();
+            return;
+          }
+
+          stopAudio();
+
+          currentAudio = new Audio(audioSrc);
+          activePlayBtn = btn;
+          btn.classList.add('playing');
+
+          let remainingSeconds = 4;
+          btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg><span>${remainingSeconds}s</span>`;
+
+          if (statusBox && statusText) {
+            statusBox.style.display = 'flex';
+            statusText.textContent = `Reproduzindo amostra de ${soundName} (4s)...`;
+          }
+
+          currentAudio.play().catch(err => {
+            console.log('Audio playback prevented or unsupported:', err);
+          });
+
+          // Countdown regressivo de 4 segundos
+          countdownTimer = setInterval(() => {
+            remainingSeconds--;
+            if (remainingSeconds > 0 && activePlayBtn) {
+              activePlayBtn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg><span>${remainingSeconds}s</span>`;
+              if (statusText) statusText.textContent = `Reproduzindo amostra de ${soundName} (${remainingSeconds}s)...`;
+            }
+          }, 1000);
+
+          // Limite estrito de 4 segundos
+          audioTimer = setTimeout(() => {
+            stopAudio();
+          }, 4000);
+        }
+
+        playSampleBtns.forEach(btn => {
+          btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            const src = this.getAttribute('data-audio');
+            const name = this.getAttribute('data-name');
+            playSoundSample(src, name, this);
+          });
+        });
+
+        soundItems.forEach(item => {
+          item.addEventListener('click', function () {
+            soundItems.forEach(s => {
+              s.classList.remove('active');
+              const radio = s.querySelector('.timer-radio-circle');
+              if (radio) radio.classList.remove('selected');
+            });
+            this.classList.add('active');
+            const radio = this.querySelector('.timer-radio-circle');
+            if (radio) radio.classList.add('selected');
+
+            // Ao clicar na linha, dispara a amostra de 4s daquele som
+            const btn = this.querySelector('.btn-play-sample');
+            const src = this.getAttribute('data-audio');
+            const name = (this.querySelector('.timer-sound-title') || {}).textContent || 'Som';
+            if (btn && src) {
+              playSoundSample(src, name, btn);
+            }
+          });
+        });
+
+        // Alternar "Som ligado"
+        if (toggleSoundBtn) {
+          toggleSoundBtn.addEventListener('click', function () {
+            isSoundOn = !isSoundOn;
+            this.classList.toggle('active', isSoundOn);
+            this.setAttribute('aria-pressed', isSoundOn ? 'true' : 'false');
+            if (!isSoundOn) {
+              stopAudio();
+              if (soundGroup) {
+                soundGroup.style.opacity = '0.4';
+                soundGroup.style.pointerEvents = 'none';
+              }
+            } else {
+              if (soundGroup) {
+                soundGroup.style.opacity = '1';
+                soundGroup.style.pointerEvents = 'auto';
+              }
+            }
+          });
+        }
+
+        // Alternar card de explicação científica
+        if (explanationBtn && explanationCard) {
+          explanationBtn.addEventListener('click', function () {
+            const isShown = explanationCard.style.display !== 'none';
+            explanationCard.style.display = isShown ? 'none' : 'block';
+          });
+        }
+      })();
     });
   </script>
 </body>
