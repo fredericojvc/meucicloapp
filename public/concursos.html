@@ -236,37 +236,46 @@
     }
 
     /* ==========================================================================
-       HEADER & STICKY NAV (PADRÃO PRINCIPAL APPLE UX)
+       HEADER & STICKY NAV (APPLE UX RESPONSIVE - REFLETE A GAVETA DO APP)
        ========================================================================== */
     .header-nav {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255, 255, 255, 0.94);
+      background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border-subtle);
       height: 68px;
       display: flex;
       align-items: center;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
-    .nav-inner {
+    .nav-container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 100%;
+      gap: 0.75rem;
+      box-sizing: border-box;
     }
 
     .brand-logo {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.65rem;
       text-decoration: none;
       color: var(--brand-navy-950);
       font-weight: 900;
       font-size: 1.15rem;
       letter-spacing: -0.02em;
+      flex-shrink: 0;
     }
 
     .brand-icon-svg {
@@ -278,50 +287,88 @@
     .nav-menu {
       display: none;
       list-style: none;
-      gap: 1.5rem;
+      gap: 0.65rem;
       align-items: center;
+      margin: 0;
+      padding: 0;
+      flex-wrap: nowrap;
+    }
+
+    .nav-menu li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
 
     .nav-link {
       text-decoration: none;
       color: var(--slate-600);
-      font-size: 0.92rem;
+      font-size: 0.88rem;
       font-weight: 600;
-      transition: color 0.15s ease;
+      padding: 0.35rem 0.5rem;
+      border-radius: var(--radius-sm);
+      transition: all 0.15s ease;
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.25rem;
+      white-space: nowrap;
+      line-height: 1.2;
     }
 
     .nav-link:hover {
       color: var(--brand-navy-950);
-    }
-
-    .btn-back-home {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.45rem 1rem;
-      border-radius: var(--radius-md);
-      font-size: 0.88rem;
-      font-weight: 700;
-      text-decoration: none;
-      color: var(--brand-navy-950);
       background: var(--slate-100);
-      border: 1px solid var(--border-subtle);
-      transition: all 0.2s ease;
     }
 
-    .btn-back-home:hover {
-      background: var(--slate-200);
-      border-color: var(--slate-300);
-      transform: translateX(-2px);
+    .nav-link-hub {
+      background: var(--gold-surface);
+      color: #8C6D15 !important;
+      border: 1px solid var(--gold-border);
+      font-weight: 700;
+      padding: 0.3rem 0.55rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 1px 3px rgba(197, 155, 39, 0.15);
+      margin-left: 0.2rem;
+    }
+
+    .nav-link-hub:hover {
+      background: #FEF08A;
+      border-color: #CA8A04;
+      transform: translateY(-1px);
+    }
+
+    .nav-pill-radar {
+      background: var(--gold-primary);
+      color: var(--brand-navy-950);
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 0.1rem 0.35rem;
+      border-radius: var(--radius-full);
+      letter-spacing: 0.04em;
+    }
+
+    .nav-divider {
+      width: 1px;
+      height: 24px;
+      background: var(--border-subtle);
+      margin: 0 0.25rem;
+      flex-shrink: 0;
     }
 
     .nav-actions {
       display: flex;
       align-items: center;
       gap: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    .nav-actions .btn {
+      height: 40px;
+      padding: 0 1.15rem;
+      font-size: 0.84rem;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
     }
 
     /* Apple-style Hamburger Button (< 1024px) */
@@ -852,7 +899,7 @@
       }
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1080px) {
       .apple-menu-btn {
         display: none !important;
       }
@@ -867,8 +914,8 @@
       }
     }
 
-    @media (max-width: 1023px) {
-      .nav-menu {
+    @media (max-width: 1079px) {
+      .nav-menu, .nav-divider {
         display: none !important;
       }
       .nav-actions .btn-play {
@@ -877,15 +924,103 @@
       .apple-menu-btn {
         display: flex;
       }
+      .nav-container {
+        padding: 0 1rem;
+      }
+    }
+
+    /* ==========================================================================
+       MODAL DE CONVERSÃO DESKTOP-PARA-MOBILE (QR CODE)
+       ========================================================================== */
+    .qr-modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(11, 25, 44, 0.72);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+
+    .qr-modal-backdrop.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .qr-modal-card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      max-width: 440px;
+      width: 100%;
+      padding: 2.25rem 2rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+      position: relative;
+      text-align: center;
+      transform: scale(0.95) translateY(10px);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-sizing: border-box;
+    }
+
+    .qr-modal-backdrop.active .qr-modal-card {
+      transform: scale(1) translateY(0);
+    }
+
+    .qr-modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1.25rem;
+      background: transparent;
+      border: none;
+      font-size: 1.6rem;
+      line-height: 1;
+      color: var(--slate-400);
+      cursor: pointer;
+      padding: 0.25rem;
+      transition: color 0.15s ease;
+    }
+
+    .qr-modal-close:hover {
+      color: var(--brand-navy-950);
+    }
+
+    .qr-modal-frame {
+      background: #F8FAFC;
+      border: 2px dashed #CBD5E1;
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      margin: 1.25rem auto;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr-modal-frame img {
+      display: block;
+      width: 180px;
+      height: 180px;
+      border-radius: var(--radius-sm);
     }
   </style>
 </head>
 <body>
 
-  <!-- 1. NAVIGATION STICKY (SAAS HEADER APPLE STYLE) -->
+  <!-- ========================================================================
+       BARRA DE NAVEGAÇÃO STICKY (REFLETE OS MÓDULOS DA GAVETA DO APLICATIVO)
+       ======================================================================== -->
   <header class="header-nav">
-    <div class="container nav-inner">
-      <a href="/" class="brand-logo" aria-label="Meu Ciclo Página Inicial">
+    <div class="nav-container">
+      <a href="/" class="brand-logo" aria-label="Página inicial Meu Ciclo">
         <!-- SVG Oficial da Marca -->
         <svg class="brand-icon-svg" viewBox="0 0 100 100" fill="none">
           <rect width="100" height="100" rx="20" fill="#0E213D"/>
@@ -897,32 +1032,33 @@
         <span>Meu Ciclo</span>
       </a>
 
-      <!-- Desktop Nav Links -->
-      <nav aria-label="Navegação Concursos">
+      <!-- Menu Desktop (>= 1080px) - Âncoras Essenciais Integradas -->
+      <nav aria-label="Navegação dos Módulos do Aplicativo">
         <ul class="nav-menu">
-          <li>
-            <a href="/" class="btn-back-home">
-              &larr; Voltar ao In&iacute;cio
-            </a>
-          </li>
           <li><a href="/#tempo-meta" class="nav-link">Tempo &amp; Meta</a></li>
           <li><a href="/#edital" class="nav-link">Edital</a></li>
-          <li><a href="/#ciclo" class="nav-link">Ciclo de Estudos</a></li>
-          <li><a href="/#revisoes-timer" class="nav-link">Revisões &amp; Timer</a></li>
-          <li><a href="/#questoes-relatorios" class="nav-link">Questões &amp; Relatórios</a></li>
-          <li><a href="/#taf" class="nav-link">TAF</a></li>
+          <li><a href="/#ciclo" class="nav-link">Ciclo &amp; Revisões</a></li>
+          <li><a href="/#treino" class="nav-link">Treino &amp; TAF</a></li>
+          <li><a href="/#questoes" class="nav-link">Questões &amp; Simulados</a></li>
           <li><a href="/#planos" class="nav-link">Planos</a></li>
+          <li>
+            <a href="/concursos" class="nav-link nav-link-hub" title="Hub Radar de Concursos e Provas (72h)">
+              <span>Radar 72h</span>
+              <span class="nav-pill-radar">NOVO</span>
+            </a>
+          </li>
         </ul>
       </nav>
 
-      <!-- Desktop Right Action -->
+      <div class="nav-divider"></div>
+
       <div class="nav-actions">
         <a href="#play" class="btn btn-gold btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-          Abrir no app
+          Começar 7 Dias Grátis
         </a>
 
-        <!-- Mobile/Tablet Apple-style Hamburger (< 1024px) -->
-        <button id="apple-menu-toggle" class="apple-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false">
+        <!-- Botão Sanduíche Minimalista Padrão Apple (< 1080px) -->
+        <button id="apple-menu-toggle" class="apple-menu-btn" aria-label="Abrir Menu de Navegação" aria-expanded="false">
           <span></span>
           <span></span>
         </button>
@@ -933,28 +1069,26 @@
   <!-- Mobile Menu Drawer (Apple Style) -->
   <div id="mobile-menu-overlay" class="mobile-menu-overlay" aria-hidden="true">
     <ul class="mobile-nav-list">
+      <li><a href="/#tempo-meta" class="mobile-menu-link">Tempo &amp; Meta</a></li>
+      <li><a href="/#edital" class="mobile-menu-link">Edital</a></li>
+      <li><a href="/#ciclo" class="mobile-menu-link">Ciclo &amp; Revisões</a></li>
+      <li><a href="/#treino" class="mobile-menu-link">Treino &amp; TAF</a></li>
+      <li><a href="/#questoes" class="mobile-menu-link">Questões &amp; Simulados</a></li>
+      <li><a href="/#planos" class="mobile-menu-link">Planos</a></li>
       <li>
-        <a href="/" class="mobile-return-link">
-          <span>&larr; Voltar ao In&iacute;cio (Home)</span>
+        <a href="/concursos" class="mobile-menu-link highlight-concursos" style="color: #8C6D15; font-weight: 800; background: var(--gold-surface); border-radius: var(--radius-md); padding-left: 0.5rem; padding-right: 0.5rem;">
+          <span>Radar de Concursos e Provas</span>
+          <span class="nav-pill-radar">RADAR 72H</span>
         </a>
       </li>
-      <li><a href="/concursos" class="mobile-menu-link" style="color: #8C6D15; font-weight: 800;">Concursos &amp; Provas em Destaque</a></li>
-      <li><a href="/#tempo-meta" class="mobile-menu-link">Tempo &amp; Meta</a></li>
-      <li><a href="/#edital" class="mobile-menu-link">Edital Verticalizado</a></li>
-      <li><a href="/#ciclo" class="mobile-menu-link">Ciclo de Estudos</a></li>
-      <li><a href="/#revisoes-timer" class="mobile-menu-link">Revisões &amp; Timer</a></li>
-      <li><a href="/#questoes-relatorios" class="mobile-menu-link">Questões &amp; Relatórios</a></li>
-      <li><a href="/#taf" class="mobile-menu-link">TAF (Prova Física)</a></li>
-      <li><a href="/#comece-aqui" class="mobile-menu-link">Comece por Aqui</a></li>
-      <li><a href="/#planos" class="mobile-menu-link">Planos &amp; Pre&ccedil;os</a></li>
     </ul>
 
-    <div style="margin-top: auto; padding-top: 1.5rem;">
-      <a href="#play" class="btn btn-gold btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt" style="width: 100%; height: 50px; font-size: 1rem;">
-        ABRIR NO APP
+    <div style="margin-top: auto; padding-top: 1.25rem; width: 100%; box-sizing: border-box; text-align: center;">
+      <a href="#play" class="btn btn-gold btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt" style="width: 100%; max-width: 100%; height: 50px; font-size: 0.95rem; box-sizing: border-box;">
+        COMEÇAR 7 DIAS GRÁTIS
       </a>
-      <div style="text-align: center; font-size: 0.8rem; color: var(--slate-500); margin-top: 0.65rem;">
-        Disponível para Android na Google Play.
+      <div style="text-align: center; font-size: 0.78rem; color: var(--slate-500); margin-top: 0.65rem; line-height: 1.4; padding: 0 0.5rem; box-sizing: border-box;">
+        Cancelamento em 1 clique direto na Google Play. Sem fidelidade.
       </div>
     </div>
   </div>
@@ -1052,7 +1186,7 @@
         </p>
         <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
           <a href="#play" class="btn btn-gold btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Abrir no app
+            Começar 7 Dias Grátis
           </a>
           <a href="/" class="btn btn-secondary" style="font-size: 0.92rem; height: 48px; padding: 0 1.5rem;">
             &larr; Conhecer Todas as Funcionalidades
@@ -1127,15 +1261,100 @@
     </div>
   </footer>
 
+  <!-- Modal de Conversão Desktop-para-Mobile (QR Code) -->
+  <div id="qr-modal" class="qr-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title">
+    <div class="qr-modal-card">
+      <button id="qr-modal-close-btn" class="qr-modal-close" aria-label="Fechar modal">&times;</button>
+      
+      <div class="section-tag section-tag-gold" style="margin-bottom: 0.5rem; display: inline-block;">
+        Instale no Smartphone
+      </div>
+      
+      <h3 id="qr-modal-title" style="font-size: 1.35rem; color: var(--brand-navy-950); margin-bottom: 0.4rem; font-weight: 800;">
+        Abra o Meu Ciclo no seu celular
+      </h3>
+      
+      <p style="font-size: 0.88rem; color: var(--slate-600); margin: 0 auto; line-height: 1.45; max-width: 340px;">
+        Aponte a câmera do seu smartphone Android para o QR Code abaixo e inicie seus <strong>7 dias grátis</strong> na Google Play.
+      </p>
+
+      <div class="qr-modal-frame">
+        <img src="/qrcode-play.svg" alt="QR Code para download do app Meu Ciclo na Google Play Store - Ciclo de estudos e TAF" width="180" height="180">
+        <div style="font-size: 0.76rem; font-weight: 700; color: #166534; margin-top: 0.65rem; display: flex; align-items: center; gap: 0.35rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Compatível com qualquer Android
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.65rem; margin-top: 0.25rem;">
+        <a id="qr-browser-direct-link" href="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="height: 44px; font-size: 0.85rem; width: 100%; box-sizing: border-box;">
+          Ou abrir Google Play no navegador do PC &rarr;
+        </a>
+        <span style="font-size: 0.75rem; color: var(--slate-500); line-height: 1.3;">
+          Cancelamento em 1 clique direto na Google Play. Sem fidelidade.
+        </span>
+      </div>
+    </div>
+  </div>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // 1. Google Play buttons
+      // 1. Google Play buttons & Modal Desktop QR Code
       const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt";
+
+      const qrModal = document.getElementById('qr-modal');
+      const qrModalClose = document.getElementById('qr-modal-close-btn');
+      const qrDirectLink = document.getElementById('qr-browser-direct-link');
+
+      function isDesktopScreen() {
+        return window.innerWidth > 992;
+      }
+
+      function openQrModal(targetUrl) {
+        if (!qrModal) return;
+        if (qrDirectLink) {
+          qrDirectLink.href = targetUrl || PLAY_STORE_URL;
+        }
+        qrModal.classList.add('active');
+        qrModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeQrModal() {
+        if (!qrModal) return;
+        qrModal.classList.remove('active');
+        qrModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      if (qrModalClose) {
+        qrModalClose.addEventListener('click', closeQrModal);
+      }
+
+      if (qrModal) {
+        qrModal.addEventListener('click', function (e) {
+          if (e.target === qrModal) {
+            closeQrModal();
+          }
+        });
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && qrModal && qrModal.classList.contains('active')) {
+          closeQrModal();
+        }
+      });
+
       document.querySelectorAll('.btn-play').forEach(function(button) {
         button.addEventListener('click', function(e) {
           e.preventDefault();
           const targetUrl = this.getAttribute('data-play-url') || PLAY_STORE_URL;
-          window.open(targetUrl, '_blank', 'noopener,noreferrer');
+
+          if (isDesktopScreen()) {
+            openQrModal(targetUrl);
+          } else {
+            window.open(targetUrl, '_blank', 'noopener,noreferrer');
+          }
         });
       });
 
