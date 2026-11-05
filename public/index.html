@@ -1062,105 +1062,219 @@
     }
 
     /* ==========================================================================
-       3. EDITAL VERTICALIZADO (BUSCA, TÓPICOS, ESTUDADOS E RESTANTES)
+       3. EDITAL VERTICALIZADO (SIMULAÇÃO FIEL AO APLICATIVO REAL)
        ========================================================================== */
-    .edital-search-bar {
+    .edital-phone-wrapper {
+      background: #F8FAFC;
+      border: 1px solid #CBD5E1;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 12px 36px -8px rgba(10, 22, 40, 0.12), 0 0 0 1px rgba(10, 22, 40, 0.04);
+      width: 100%;
+      max-width: 480px;
+      min-width: 0;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+
+    .edital-panorama-card {
+      background: var(--white);
+      border: 1px solid #E2E8F0;
+      border-radius: 16px;
+      padding: 1.15rem;
+      box-shadow: 0 2px 8px -1px rgba(15, 23, 42, 0.05);
+    }
+
+    .edital-circle-progress {
+      width: 54px;
+      height: 54px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+    }
+
+    .edital-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-top: 0.85rem;
+    }
+
+    .edital-metric-box {
+      border-radius: 10px;
+      padding: 0.55rem 0.6rem;
+      text-align: left;
+    }
+
+    .edital-metric-box.metric-estudados {
+      background: #EDF7ED;
+      border: 1px solid #C8E6C9;
+    }
+
+    .edital-metric-box.metric-estudados .edital-metric-label {
+      color: #2E7D32;
+    }
+
+    .edital-metric-box.metric-estudados .edital-metric-val {
+      color: #1B5E20;
+    }
+
+    .edital-metric-box.metric-restantes {
+      background: #FFF8E1;
+      border: 1px solid #FFE082;
+    }
+
+    .edital-metric-box.metric-restantes .edital-metric-label {
+      color: #B45309;
+    }
+
+    .edital-metric-box.metric-restantes .edital-metric-val {
+      color: #B45309;
+    }
+
+    .edital-metric-box.metric-total {
+      background: #F1F5F9;
+      border: 1px solid #E2E8F0;
+    }
+
+    .edital-metric-box.metric-total .edital-metric-label {
+      color: #475569;
+    }
+
+    .edital-metric-box.metric-total .edital-metric-val {
+      color: #0F172A;
+    }
+
+    .edital-metric-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .edital-metric-val {
+      font-size: 0.84rem;
+      font-weight: 800;
+      margin-top: 0.15rem;
+      line-height: 1.2;
+    }
+
+    .edital-search-capsule {
+      background: var(--white);
+      border: 1.5px solid #CBD5E1;
+      border-radius: 999px;
+      padding: 0.55rem 1rem;
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      background: var(--slate-100);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 0.65rem 1rem;
-      margin-bottom: 1.25rem;
+      gap: 0.65rem;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    }
+
+    .edital-search-capsule input {
+      border: none;
+      outline: none;
+      background: transparent;
+      width: 100%;
+      font-family: inherit;
       font-size: 0.9rem;
-      color: var(--slate-600);
+      color: var(--brand-navy-950);
     }
 
-    .edital-tabs-bar {
+    .edital-search-capsule input::placeholder {
+      color: #64748B;
+    }
+
+    .edital-pills-row {
       display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1.25rem;
+      gap: 0.45rem;
+      margin-bottom: 0.85rem;
+      overflow-x: auto;
+      padding-bottom: 2px;
     }
 
-    .edital-tab-btn {
-      padding: 0.45rem 0.9rem;
-      border-radius: var(--radius-full);
-      font-size: 0.82rem;
+    .edital-filter-pill {
+      border: none;
+      outline: none;
+      background: #F1F5F9;
+      color: #64748B;
+      font-family: inherit;
+      font-size: 0.78rem;
       font-weight: 700;
-      background: var(--slate-100);
-      color: var(--slate-700);
-      border: 1px solid var(--border-subtle);
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
     }
 
-    .edital-tab-btn.active {
-      background: var(--brand-navy-850);
+    .edital-filter-pill:hover {
+      background: #E2E8F0;
+      color: #0F172A;
+    }
+
+    .edital-filter-pill.active {
+      background: #1E293B;
       color: var(--white);
-      border-color: var(--brand-navy-850);
     }
 
-    .topic-checklist-box {
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 1.25rem;
-      background: var(--slate-50);
+    .edital-materias-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
     }
 
-    .interactive-check {
+    .edital-materia-card {
+      background: var(--white);
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      padding: 0.85rem 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.75rem 0.65rem;
-      background: var(--white);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      margin-bottom: 0.5rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      cursor: pointer;
     }
 
-    .check-left {
+    .edital-materia-card:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 3px 8px rgba(15, 23, 42, 0.07);
+    }
+
+    .edital-materia-name {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: #0F172A;
+      line-height: 1.25;
+    }
+
+    .edital-materia-sub {
+      font-size: 0.76rem;
+      color: #64748B;
+      margin-top: 0.2rem;
+    }
+
+    .edital-materia-right {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      font-size: 0.92rem;
-      font-weight: 600;
-      color: var(--text-heading);
+      gap: 0.35rem;
     }
 
-    .custom-checkbox {
-      width: 18px;
-      height: 18px;
-      border-radius: 4px;
-      border: 2px solid var(--blue-accent);
-      background: var(--blue-accent);
-      color: white;
-      display: grid;
-      place-items: center;
-      font-size: 0.7rem;
-      flex-shrink: 0;
-    }
-
-    .custom-checkbox.empty {
-      background: var(--white);
-      border-color: var(--slate-400);
-    }
-
-    .tag-review-badge {
-      font-size: 0.75rem;
+    .edital-materia-ratio {
+      font-size: 0.88rem;
       font-weight: 800;
-      padding: 0.2rem 0.55rem;
-      border-radius: var(--radius-sm);
-      background: var(--emerald-50);
-      color: var(--emerald-text);
-      border: 1px solid rgba(16, 185, 129, 0.2);
+      color: #1976D2;
     }
 
-    .tag-pending-badge {
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 0.2rem 0.55rem;
-      border-radius: var(--radius-sm);
-      background: var(--slate-200);
-      color: var(--slate-700);
+    .edital-materia-track {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: #FEE2E2;
     }
 
     /* ==========================================================================
@@ -2721,63 +2835,162 @@
           </a>
         </div>
 
-        <!-- Captura da Tela: Progresso e Lista de Matérias com Busca -->
-        <div class="screen-capture-box">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-            <span style="font-weight: 800; font-size: 0.95rem; color: var(--brand-navy-950);">10 matérias &bull; 281 tópicos</span>
-            <span class="app-screen-pill">Agente PF</span>
+        <!-- Interface Real do Aplicativo: Edital Verticalizado -->
+        <div class="edital-phone-wrapper">
+          <!-- Barra de Status Android Oficial (5:10, Câmera Central, Wifi, Sinal, Bateria) -->
+          <div class="sim-phone-statusbar" style="background: #1976D2; color: #FFFFFF; padding: 0.5rem 1.15rem 0.25rem 1.15rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.02em;">
+            <div style="display: flex; align-items: center; gap: 0.35rem;">
+              <span>5:10</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <!-- Câmera Frontal Punch-hole -->
+            <div style="width: 11px; height: 11px; border-radius: 50%; background: #0A0F1D; box-shadow: inset 0 0 2px rgba(255,255,255,0.2);"></div>
+            <!-- Ícones de Conectividade e Energia -->
+            <div style="display: flex; align-items: center; gap: 0.4rem;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20" stroke-width="3"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 20h20L22 4z"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="10" x2="23" y2="14"/><rect x="3" y="8" width="12" height="8" fill="currentColor"/></svg>
+            </div>
           </div>
 
-          <div class="edital-search-bar">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            <span>Buscar tópico...</span>
+          <!-- Top App Bar Oficial (Padrão Android do App) -->
+          <div class="sim-phone-topbar" style="background: #1976D2; color: #FFFFFF; padding: 0.75rem 1.15rem 0.95rem 1.15rem; display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 0.85rem;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+              <div>
+                <div style="font-weight: 800; font-size: 1.05rem; line-height: 1.2;">Edital Verticalizado</div>
+                <div style="font-size: 0.74rem; opacity: 0.92;">Conteúdo programático e avanço</div>
+              </div>
+            </div>
+            <div style="font-size: 1.25rem; font-weight: 800; line-height: 1; cursor: default;">&#8942;</div>
           </div>
 
-          <div class="edital-tabs-bar">
-            <button class="edital-tab-btn active" type="button">Todos</button>
-            <button class="edital-tab-btn" type="button">Não estudados</button>
-            <button class="edital-tab-btn" type="button">Concluídos</button>
-            <button class="edital-tab-btn" type="button">Revisados</button>
-          </div>
+          <!-- Corpo do Smartphone -->
+          <div class="sim-phone-body" style="background: #F8FAFC; padding: 1rem;">
+            <!-- Card 1: Panorama do Edital -->
+            <div class="edital-panorama-card">
+              <div style="font-weight: 800; font-size: 1.05rem; color: #0F172A; line-height: 1.2;">Panorama do Edital</div>
+              <div style="font-size: 0.76rem; color: #64748B; margin-top: 0.2rem; margin-bottom: 0.85rem;">
+                Exame de Ordem (OAB) - 48ª exame de ordem unificado FGV
+              </div>
 
-          <div class="topic-checklist-box">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-              <span style="font-size: 0.85rem; font-weight: 800; color: var(--brand-navy-950); text-transform: uppercase;">
-                Contabilidade Geral
-              </span>
-              <span style="font-size: 0.75rem; font-weight: 700; color: var(--slate-500);">0 / 12 tópicos</span>
+              <div style="display: flex; align-items: center; gap: 0.85rem; padding-bottom: 0.25rem;">
+                <!-- Circular Progress 0% -->
+                <div class="edital-circle-progress">
+                  <svg width="54" height="54" viewBox="0 0 44 44">
+                    <circle cx="22" cy="22" r="18" fill="none" stroke="#DBEAFE" stroke-width="3.5" />
+                    <circle cx="22" cy="22" r="18" fill="none" stroke="#1976D2" stroke-width="3.5" stroke-dasharray="113.097" stroke-dashoffset="113.097" stroke-linecap="round" transform="rotate(-90 22 22)" />
+                    <text x="22" y="24" text-anchor="middle" dominant-baseline="middle" font-size="9" font-weight="800" fill="#1976D2" font-family="'Inter', sans-serif">0%</text>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-weight: 800; font-size: 0.95rem; color: #0F172A;">0 de 1154 tópicos concluídos</div>
+                  <div style="font-size: 0.76rem; color: #64748B; margin-top: 0.2rem;">185 dias até a prova &bull; 0,0h de 528h estudadas</div>
+                </div>
+              </div>
+
+              <!-- 3 Métricas em Grid -->
+              <div class="edital-metrics-grid">
+                <div class="edital-metric-box metric-estudados">
+                  <div class="edital-metric-label">Estudados</div>
+                  <div class="edital-metric-val">0 tópicos</div>
+                </div>
+                <div class="edital-metric-box metric-restantes">
+                  <div class="edital-metric-label">Restantes</div>
+                  <div class="edital-metric-val">1154 tópicos</div>
+                </div>
+                <div class="edital-metric-box metric-total">
+                  <div class="edital-metric-label">Total Geral</div>
+                  <div class="edital-metric-val">1154 tópicos</div>
+                </div>
+              </div>
             </div>
 
-            <div class="interactive-check">
-              <div class="check-left">
-                <span class="custom-checkbox empty"></span>
-                <span>1 Conceitos, objetivos e finalidades da contabilidade</span>
-              </div>
-              <span class="tag-pending-badge">Pendente</span>
+            <!-- Contagem de Matérias e Tópicos -->
+            <div style="font-weight: 800; font-size: 0.92rem; color: #1E293B; margin: 1rem 0 0.65rem 0.25rem;">
+              20 matérias &bull; 1154 tópicos
             </div>
 
-            <div class="interactive-check">
-              <div class="check-left">
-                <span class="custom-checkbox empty"></span>
-                <span>2 Patrimônio: componentes, equação fundamental e situação líquida</span>
-              </div>
-              <span class="tag-pending-badge">Pendente</span>
+            <!-- Barra de Busca Cápsula -->
+            <div class="edital-search-capsule">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" id="edital-search-input" placeholder="Buscar tópico" aria-label="Buscar tópico">
             </div>
 
-            <div class="interactive-check">
-              <div class="check-left">
-                <span class="custom-checkbox empty"></span>
-                <span>3 Atos e fatos administrativos: conceitos, permutativos e modificativos</span>
-              </div>
-              <span class="tag-pending-badge">Pendente</span>
+            <!-- Filtros em Pílulas -->
+            <div class="edital-pills-row">
+              <button type="button" class="edital-filter-pill active" data-filter="todos">Todos</button>
+              <button type="button" class="edital-filter-pill" data-filter="nao-estudados">Não estudados</button>
+              <button type="button" class="edital-filter-pill" data-filter="concluidos">Concluídos</button>
+              <button type="button" class="edital-filter-pill" data-filter="revisados">Revisados</button>
             </div>
 
-            <div class="interactive-check">
-              <div class="check-left">
-                <span class="custom-checkbox empty"></span>
-                <span>4 Contas: conceitos, contas de débitos, créditos e saldos</span>
+            <!-- Lista de Matérias Reais Extraídas do App -->
+            <div class="edital-materias-list" id="edital-materias-container">
+              <div class="edital-materia-card" data-name="Direito Administrativo">
+                <div>
+                  <div class="edital-materia-name">Direito Administrativo</div>
+                  <div class="edital-materia-sub">75 tópicos</div>
+                </div>
+                <div class="edital-materia-right">
+                  <span class="edital-materia-ratio">0/75</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1976D2" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+                <div class="edital-materia-track"></div>
               </div>
-              <span class="tag-pending-badge">Pendente</span>
+
+              <div class="edital-materia-card" data-name="Direito Ambiental">
+                <div>
+                  <div class="edital-materia-name">Direito Ambiental</div>
+                  <div class="edital-materia-sub">32 tópicos</div>
+                </div>
+                <div class="edital-materia-right">
+                  <span class="edital-materia-ratio">0/32</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1976D2" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+                <div class="edital-materia-track"></div>
+              </div>
+
+              <div class="edital-materia-card" data-name="Direito Civil">
+                <div>
+                  <div class="edital-materia-name">Direito Civil</div>
+                  <div class="edital-materia-sub">123 tópicos</div>
+                </div>
+                <div class="edital-materia-right">
+                  <span class="edital-materia-ratio">0/123</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1976D2" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+                <div class="edital-materia-track"></div>
+              </div>
+
+              <div class="edital-materia-card" data-name="Direito Constitucional">
+                <div>
+                  <div class="edital-materia-name">Direito Constitucional</div>
+                  <div class="edital-materia-sub">63 tópicos</div>
+                </div>
+                <div class="edital-materia-right">
+                  <span class="edital-materia-ratio">0/63</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1976D2" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+                <div class="edital-materia-track"></div>
+              </div>
+
+              <div class="edital-materia-card" data-name="Direito Eleitoral">
+                <div>
+                  <div class="edital-materia-name">Direito Eleitoral</div>
+                  <div class="edital-materia-sub">36 tópicos</div>
+                </div>
+                <div class="edital-materia-right">
+                  <span class="edital-materia-ratio">0/36</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1976D2" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+                <div class="edital-materia-track"></div>
+              </div>
+            </div>
+
+            <!-- Barra inferior do celular Android -->
+            <div style="padding-top: 0.65rem; text-align: center;">
+              <div style="width: 100px; height: 4px; background: #94A3B8; border-radius: 999px; margin: 0 auto; opacity: 0.6;"></div>
             </div>
           </div>
         </div>
@@ -3950,6 +4163,46 @@
         // Inicialização imediata
         calculateSimulator();
       }
+
+      // ========================================================================
+      // INTERATIVIDADE DO EDITAL VERTICALIZADO (BUSCA & FILTROS)
+      // ========================================================================
+      const editalSearch = document.getElementById('edital-search-input');
+      const editalPills = document.querySelectorAll('.edital-filter-pill');
+      const editalCards = document.querySelectorAll('#edital-materias-container .edital-materia-card');
+
+      if (editalSearch) {
+        editalSearch.addEventListener('input', function () {
+          const query = this.value.trim().toLowerCase();
+          editalCards.forEach(card => {
+            const name = (card.getAttribute('data-name') || '').toLowerCase();
+            if (!query || name.includes(query)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      if (editalPills.length > 0) {
+        editalPills.forEach(pill => {
+          pill.addEventListener('click', function () {
+            editalPills.forEach(p => p.classList.remove('active'));
+            this.classList.add('active');
+          });
+        });
+      }
+
+      editalCards.forEach(card => {
+        card.addEventListener('click', function () {
+          this.style.transition = 'all 0.2s ease';
+          this.style.borderColor = '#1976D2';
+          setTimeout(() => {
+            this.style.borderColor = '#E2E8F0';
+          }, 450);
+        });
+      });
     });
   </script>
 </body>
