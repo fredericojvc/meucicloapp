@@ -23,10 +23,10 @@ assert.ok(
   indexHtml.includes('Cancelamento em 1 clique direto na Google Play') || indexHtml.includes('Sem compromisso'),
   'Hero deve conter o texto de segurança/microcopy'
 );
-// Hero 3 capturas reais (Tempo & Meta, Ciclo de Estudos, TAF)
+// Hero institucional limpo e focado na conversão
 assert.ok(
-  indexHtml.includes('app-screen-card') && indexHtml.includes('Tempo &amp; Meta') && indexHtml.includes('Ciclo de Estudos') && (indexHtml.includes('TAF') || indexHtml.includes('Treino')),
-  'Hero deve apresentar as três capturas reais'
+  indexHtml.includes('hero-section') && indexHtml.includes('hero-header') && indexHtml.includes('A engenharia da sua preparação'),
+  'Hero deve conter estrutura de alta conversão e posicionamento institucional'
 );
 // Garantir que números forjados foram removidos da home
 assert.ok(
@@ -41,7 +41,7 @@ assert.ok(
   !indexHtml.includes('83%'),
   'Domínio inventado de 83% deve ter sido removido'
 );
-console.log('1. ✓ Hero: Título, subtítulo, botão, microcopy e as 3 capturas reais validadas sem métricas fictícias.');
+console.log('1. ✓ Hero: Título, subtítulo, botão, microcopy e badges validados com sucesso.');
 
 // 1.2 Módulos da Gaveta do App na ordem exata
 assert.ok(
