@@ -876,15 +876,22 @@
       color: #94A3B8;
       font-weight: 600;
       margin-top: 0.35rem;
-      padding: 0 2px;
+      padding: 0 4px;
+    }
+
+    .sim-scale-labels span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      transition: all 0.15s ease;
     }
 
     .sim-scale-labels span.active-mark {
       color: #1976D2;
       font-weight: 800;
       background: #DBEAFE;
-      padding: 0.1rem 0.35rem;
-      border-radius: 4px;
     }
 
     .sim-section-label {
@@ -3087,15 +3094,14 @@
 
               <!-- Slider Meta de Estudos Líquida -->
               <div class="sim-slider-container">
-                <input type="range" id="sim-input-meta" class="calc-range range-blue" min="1" max="10" step="0.5" value="3" aria-label="Meta de Estudos Diária">
+                <input type="range" id="sim-input-meta" class="calc-range range-blue" min="1" max="6" step="0.5" value="3" aria-label="Meta de Estudos Diária" style="background: linear-gradient(to right, #1976D2 0%, #1976D2 40%, #E2E8F0 40%, #E2E8F0 100%);">
                 <div class="sim-scale-labels">
-                  <span>1h/dia</span>
-                  <span>2h</span>
-                  <span id="sim-mark-3" class="active-mark">3h</span>
-                  <span id="sim-mark-4">4h</span>
-                  <span>5h</span>
-                  <span>6h</span>
-                  <span>10h/dia</span>
+                  <span data-hours="1">1h/dia</span>
+                  <span data-hours="2">2h</span>
+                  <span data-hours="3" id="sim-mark-3" class="active-mark">3h</span>
+                  <span data-hours="4" id="sim-mark-4">4h</span>
+                  <span data-hours="5">5h</span>
+                  <span data-hours="6">6h/dia</span>
                 </div>
               </div>
 
@@ -4672,6 +4678,17 @@
         const dailyGoal = parseFloat(inputMeta.value) || 3;
         badgeMeta.textContent = formatHours(dailyGoal) + ' / dia';
         updateSliderTrack(inputMeta, '#1976D2');
+
+        // Atualizar destaque na régua de escala do card
+        const scaleMarks = document.querySelectorAll('.sim-scale-labels span');
+        scaleMarks.forEach(span => {
+          const h = parseFloat(span.getAttribute('data-hours'));
+          if (Math.round(dailyGoal) === h) {
+            span.classList.add('active-mark');
+          } else {
+            span.classList.remove('active-mark');
+          }
+        });
 
         // Dias ativos
         let activeDays = 0;
