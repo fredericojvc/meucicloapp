@@ -715,6 +715,7 @@
     .feature-section {
       padding: 5.5rem 0;
       border-bottom: 1px solid var(--border-subtle);
+      scroll-margin-top: 72px;
     }
 
     .bg-white {
@@ -1866,52 +1867,114 @@
     }
 
     /* ==========================================================================
-       6. QUESTÕES, SIMULADOS E RELATÓRIOS (HONESTIDADE DO DIA 1 AO DIA 30)
+       6. QUESTÕES & SIMULADOS (SHOWCASE DUAL COM TELAS REAIS DO APP)
        ========================================================================== */
-    .reports-timeline-compare {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
+    .questoes-simulados-showcase {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
     }
 
-    @media (min-width: 640px) {
-      .reports-timeline-compare {
-        grid-template-columns: 1fr 1fr;
+    .questoes-tabs-nav {
+      display: flex;
+      justify-content: center;
+      gap: 0.4rem;
+      margin-bottom: 0.75rem;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .questoes-tab-pill {
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--slate-700);
+      background: var(--slate-100);
+      padding: 0.32rem 0.75rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-family: inherit;
+    }
+
+    .questoes-tab-pill:hover {
+      background: var(--slate-200);
+      color: var(--brand-navy-950);
+    }
+
+    .questoes-tab-pill.active {
+      background: var(--brand-navy-950);
+      color: var(--white);
+      border-color: var(--brand-navy-950);
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
+    }
+
+    .questoes-phones-grid {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.75rem;
+      width: 100%;
+    }
+
+    .questoes-phone-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    .questoes-phone-mockup {
+      width: 195px;
+      max-width: 100%;
+      background: #0A0F1D;
+      border: 5px solid #1E293B;
+      border-radius: 26px;
+      box-shadow: 0 14px 30px -8px rgba(15, 23, 42, 0.22), 0 0 0 1px rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .questoes-phone-mockup img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+    }
+
+    .questoes-phone-badge {
+      margin-top: 0.5rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--slate-700);
+      background: var(--slate-100);
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-subtle);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    @media (max-width: 960px) {
+      .questoes-desktop-both {
+        display: none !important;
+      }
+      .questoes-phone-mockup {
+        width: 260px;
       }
     }
 
-    .report-state-box {
-      background: var(--slate-50);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-    }
-
-    .report-state-badge {
-      font-size: 0.75rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 0.25rem 0.6rem;
-      border-radius: var(--radius-full);
-      display: inline-block;
-      margin-bottom: 0.75rem;
-    }
-
-    .report-metric-zero {
-      font-size: 2rem;
-      font-weight: 900;
-      color: var(--slate-400);
-      line-height: 1;
-      margin-bottom: 0.25rem;
-    }
-
-    .report-metric-filled {
-      font-size: 2rem;
-      font-weight: 900;
-      color: var(--emerald-text);
-      line-height: 1;
-      margin-bottom: 0.25rem;
+    @media (min-width: 768px) {
+      .feature-layout.reverse .questoes-simulados-showcase {
+        order: 1;
+      }
     }
 
     /* Barras de Ação de Rodapé Full-Width das Telas do App (Nomenclatura Unificada) */
@@ -3908,31 +3971,36 @@
   </section>
 
   <!-- ========================================================================
-       9. QUESTÕES (ANÁLISE DE PERFORMANCE & RITMO DE RESOLUÇÃO)
+       9. QUESTÕES & SIMULADOS (SHOWCASE DUAL & SEM BANCO PRÓPRIO)
        ======================================================================== -->
-  <section id="questoes" class="feature-section bg-white">
+  <section id="questoes" class="feature-section bg-white" style="padding: 3rem 0;">
     <div class="container">
       <div class="feature-layout reverse">
         <div class="feature-text-block">
-          <div class="section-tag">Questões &bull; Diagnóstico de Performance</div>
+          <div class="section-tag section-tag-gold">Questões &amp; Simulados &bull; Inteligência Analítica</div>
           <h2>Você resolve onde preferir. O Meu Ciclo analisa onde você erra.</h2>
           <p>
-            O Meu Ciclo não traz um banco próprio de questões — e isso é uma decisão deliberada. Você continua praticando nas suas plataformas preferidas (QConcursos, Tec Concursos, simulados do cursinho, PDFs ou livros). Nossa proposta é ser a sua <strong>ferramenta de inteligência analítica</strong>.
+            <strong>O Meu Ciclo não tem banco próprio de questões e simulados</strong> — e isso é uma decisão deliberada para lhe dar total autonomia. Você continua praticando onde quiser (QConcursos, Tec Concursos, simulados do cursinho, PDFs ou livros impressos). O Meu Ciclo atua como a sua <strong>central de inteligência analítica</strong> para auditar a sua preparação real.
           </p>
 
-          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Ritmo de Resolução: monitore o tempo médio gasto por questão para não faltar tempo na prova
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin: 1.25rem 0 1.5rem 0;">
+            <div style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--slate-800); line-height: 1.45; font-size: 0.95rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <div><strong>Baterias de Questões &amp; Zona de Corte:</strong> registre resoluções com acertos e erros sem truncamento, comparando seu aproveitamento com o balde líquido da nota de corte e classificação.</div>
             </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Geração Automática de Revisões: erros alimentam diretamente o motor de repetição espaçada
+            <div style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--slate-800); line-height: 1.45; font-size: 0.95rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <div><strong>Ritmo de Resolução (Minutos por Questão):</strong> acompanhe no gráfico de dispersão a sua velocidade real separada entre a <em>Zona Eficiente (meta de 2 min)</em> e a <em>Zona Lenta</em> para nunca faltar tempo na prova.</div>
             </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Registro de baterias com acertos, erros e taxa de êxito real sem truncamento
+            <div style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--slate-800); line-height: 1.45; font-size: 0.95rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"/></svg>
+              <div><strong>Raio-X de Prova &amp; Revisão Automática:</strong> monitore o histórico persistente dos seus simulados com notas líquidas e deixe o app alimentar automaticamente o cronograma de repetição espaçada a partir de cada erro.</div>
             </div>
+          </div>
+
+          <div style="background: rgba(37, 99, 235, 0.06); border: 1px solid rgba(37, 99, 235, 0.2); border-radius: var(--radius-md); padding: 0.65rem 0.85rem; font-size: 0.82rem; color: var(--brand-navy-950); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>💡</span>
+            <span><strong>Aviso importante:</strong> O Meu Ciclo não possui banco de questões ou simulados. Você estuda no Tec, QConcursos ou cursinho e nós cuidamos da análise do seu ritmo, corte e revisões.</span>
           </div>
 
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
@@ -3940,42 +4008,40 @@
           </a>
         </div>
 
-        <!-- Captura da Tela: Bateria de Questões -->
-        <div class="screen-capture-box">
-          <div style="background: var(--slate-50); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.25rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-              <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--blue-accent); font-weight: 800;">
-                Bateria Finalizada &bull; Plataforma Externa
-              </span>
-              <span class="app-screen-pill" style="font-size: 0.7rem; background: var(--emerald-50); color: var(--emerald-text); border-color: #A7F3D0;">
-                86,7% Êxito
-              </span>
-            </div>
-            <div style="font-size: 1.15rem; font-weight: 900; color: var(--brand-navy-950);">
-              Direito Administrativo &bull; 30 Questões
-            </div>
-            <div style="font-size: 0.8rem; color: var(--slate-500); margin-top: 0.2rem;">
-              Origem: Tec / QConcursos / Cursinho
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin-top: 1rem; text-align: center;">
-              <div style="background: var(--white); padding: 0.65rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-                <div style="font-size: 1.1rem; font-weight: 900; color: var(--emerald-text);">26</div>
-                <div style="font-size: 0.7rem; color: var(--slate-500); font-weight: 700;">Acertos</div>
-              </div>
-              <div style="background: var(--white); padding: 0.65rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-                <div style="font-size: 1.1rem; font-weight: 900; color: #DC2626;">4</div>
-                <div style="font-size: 0.7rem; color: var(--slate-500); font-weight: 700;">Erros</div>
-              </div>
-              <div style="background: var(--white); padding: 0.65rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-                <div style="font-size: 1.1rem; font-weight: 900; color: var(--brand-navy-950);">1m 45s</div>
-                <div style="font-size: 0.7rem; color: var(--slate-500); font-weight: 700;">Ritmo / Q.</div>
-              </div>
-            </div>
+        <!-- Apresentação Oficial: Telas Reais de Questões & Simulados -->
+        <div class="questoes-simulados-showcase">
+          <div class="questoes-tabs-nav" role="tablist" aria-label="Telas de Questões e Simulados">
+            <button type="button" class="questoes-tab-pill questoes-desktop-both active" id="tab-btn-both" onclick="switchQuestoesTab('both')">
+              ⚡ Ver Ambas Lado a Lado
+            </button>
+            <button type="button" class="questoes-tab-pill" id="tab-btn-questoes" onclick="switchQuestoesTab('questoes')">
+              📊 Baterias de Questões
+            </button>
+            <button type="button" class="questoes-tab-pill" id="tab-btn-simulados" onclick="switchQuestoesTab('simulados')">
+              🎯 Raio-X de Simulados
+            </button>
           </div>
 
-          <div class="app-screen-actionbar" style="margin-top: 1rem;">
-            + GERAR REVISÃO AUTOMÁTICA DOS ERROS
+          <div class="questoes-phones-grid">
+            <!-- Telefone 1: Questões -->
+            <div class="questoes-phone-col" id="col-phone-questoes">
+              <div class="questoes-phone-mockup">
+                <img src="/images/questoes-app-real.png" alt="Tela real de Questões no aplicativo Meu Ciclo - Acertos, erros e ritmo" loading="lazy">
+              </div>
+              <div class="questoes-phone-badge">
+                <span>✓</span> Baterias &amp; Ritmo
+              </div>
+            </div>
+
+            <!-- Telefone 2: Simulados -->
+            <div class="questoes-phone-col" id="col-phone-simulados">
+              <div class="questoes-phone-mockup">
+                <img src="/images/simulados-app-real.png" alt="Tela real de Simulados no aplicativo Meu Ciclo - Raio-x de provas e evolução" loading="lazy">
+              </div>
+              <div class="questoes-phone-badge">
+                <span>✓</span> Raio-X de Prova
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -3983,81 +4049,9 @@
   </section>
 
   <!-- ========================================================================
-       10. SIMULADOS (RAIO-X COMPLETO DA PROVA & HISTÓRICO PERSISTENTE)
+       10. RELATÓRIOS (GRÁFICO DE ANEL, COLUNAS EMPILHADAS & PARETO 80/20)
        ======================================================================== -->
-  <section id="simulados" class="feature-section">
-    <div class="container">
-      <div class="feature-layout">
-        <div class="feature-text-block">
-          <div class="section-tag section-tag-gold">Simulados Completos</div>
-          <h2>Diagnóstico real de prova. Sem truncamento.</h2>
-          <p>
-            Registre seus simulados com nota líquida, peso por disciplina, penalidade de erros e tempo total de prova. Acompanhe a evolução histórica prova a prova para antecipar sua nota no concurso, vestibular ou residência.
-          </p>
-
-          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Raio-X completo com acertos e erros distribuídos por matéria
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Cálculo de nota líquida (estilo Cebraspe com fator de correção ou múltipla escolha)
-            </div>
-            <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600; color: var(--slate-800);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--emerald-500)"><polyline points="20 6 9 17 4 12"/></svg>
-              Histórico persistente para comparar sua evolução ao longo dos meses
-            </div>
-          </div>
-
-          <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Começar 7 Dias Grátis na Google Play
-          </a>
-        </div>
-
-        <!-- Captura da Tela: Raio-X do Simulado -->
-        <div class="screen-capture-box">
-          <div style="background: var(--slate-50); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.25rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-              <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--brand-navy-950); font-weight: 800;">
-                Simulado 04 &bull; Cebraspe (120 Itens)
-              </span>
-              <span class="app-screen-pill" style="font-size: 0.7rem; background: var(--gold-surface); color: #8C6D15; border-color: var(--gold-border);">
-                88,0 pts Líquidos
-              </span>
-            </div>
-            <div style="font-size: 1.15rem; font-weight: 900; color: var(--brand-navy-950);">
-              Tempo Total: 3h 42m &bull; 92 C / 16 E / 12 B
-            </div>
-
-            <div style="display: flex; flex-direction: column; gap: 0.45rem; margin-top: 1rem; font-size: 0.82rem;">
-              <div style="display: flex; justify-content: space-between; padding: 0.4rem 0.6rem; background: var(--white); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-                <span>Língua Portuguesa (20 itens)</span>
-                <strong style="color: var(--emerald-text);">+16,0 pts</strong>
-              </div>
-              <div style="display: flex; justify-content: space-between; padding: 0.4rem 0.6rem; background: var(--white); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-                <span>Direito Constitucional (15 itens)</span>
-                <strong style="color: var(--emerald-text);">+13,0 pts</strong>
-              </div>
-              <div style="display: flex; justify-content: space-between; padding: 0.4rem 0.6rem; background: var(--white); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-                <span>Raciocínio Lógico (10 itens)</span>
-                <strong style="color: #D97706;">+5,0 pts</strong>
-              </div>
-            </div>
-          </div>
-
-          <div class="app-screen-actionbar" style="margin-top: 1rem; background: var(--brand-navy-850);">
-            + REGISTRAR NOVO SIMULADO
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       11. RELATÓRIOS (GRÁFICO DE ANEL, COLUNAS EMPILHADAS & PARETO 80/20)
-       ======================================================================== -->
-  <section id="relatorios" class="feature-section bg-white">
+  <section id="relatorios" class="feature-section">
     <div class="container">
       <div class="feature-layout reverse">
         <div class="feature-text-block">
@@ -5088,6 +5082,49 @@
             explanationCard.style.display = isShown ? 'none' : 'block';
           });
         }
+
+        // --- 5. Tabs de Alternância Questões & Simulados (Showcase Dual) ---
+        window.switchQuestoesTab = function(mode) {
+          const colQuestoes = document.getElementById('col-phone-questoes');
+          const colSimulados = document.getElementById('col-phone-simulados');
+          const btnBoth = document.getElementById('tab-btn-both');
+          const btnQuestoes = document.getElementById('tab-btn-questoes');
+          const btnSimulados = document.getElementById('tab-btn-simulados');
+
+          if (!colQuestoes || !colSimulados) return;
+
+          [btnBoth, btnQuestoes, btnSimulados].forEach(b => { if (b) b.classList.remove('active'); });
+
+          if (mode === 'both') {
+            colQuestoes.style.display = 'flex';
+            colSimulados.style.display = 'flex';
+            if (btnBoth) btnBoth.classList.add('active');
+          } else if (mode === 'questoes') {
+            colQuestoes.style.display = 'flex';
+            colSimulados.style.display = 'none';
+            if (btnQuestoes) btnQuestoes.classList.add('active');
+          } else if (mode === 'simulados') {
+            colQuestoes.style.display = 'none';
+            colSimulados.style.display = 'flex';
+            if (btnSimulados) btnSimulados.classList.add('active');
+          }
+        };
+
+        function initQuestoesView() {
+          if (window.innerWidth <= 960) {
+            window.switchQuestoesTab('questoes');
+          } else {
+            window.switchQuestoesTab('both');
+          }
+        }
+        initQuestoesView();
+
+        window.addEventListener('resize', function () {
+          const btnBoth = document.getElementById('tab-btn-both');
+          if (window.innerWidth <= 960 && btnBoth && btnBoth.classList.contains('active')) {
+            window.switchQuestoesTab('questoes');
+          }
+        });
       })();
     });
   </script>
