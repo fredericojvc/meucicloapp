@@ -206,6 +206,7 @@
       max-width: 100%;
       overflow-x: hidden;
       position: relative;
+      padding-top: 68px;
     }
 
     .container {
@@ -339,11 +340,13 @@
     }
 
     /* ==========================================================================
-       HEADER & STICKY NAV (APPLE UX RESPONSIVE — REFLETE A GAVETA DO APP)
+       HEADER FIXO SEMPRE VISÍVEL NO TOPO (NAVEGAÇÃO INSTANTÂNEA NO PC & MOBILE)
        ========================================================================== */
     .header-nav {
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
+      right: 0;
       z-index: 1000;
       background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(12px);
@@ -353,7 +356,6 @@
       display: flex;
       align-items: center;
       width: 100%;
-      max-width: 100%;
       box-sizing: border-box;
     }
 
@@ -715,7 +717,31 @@
     .feature-section {
       padding: 5.5rem 0;
       border-bottom: 1px solid var(--border-subtle);
-      scroll-margin-top: 72px;
+      scroll-margin-top: 68px;
+    }
+
+    /* Otimização de Viewport Exclusiva por Menu no PC (Zoom 100%) */
+    @media (min-width: 1080px) {
+      #tempo-meta,
+      #edital,
+      #ciclo,
+      #treino,
+      #questoes,
+      #planos {
+        min-height: calc(100vh - 68px);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding: 2.25rem 0;
+      }
+      #tempo-meta .container,
+      #edital .container,
+      #ciclo .container,
+      #treino .container,
+      #questoes .container,
+      #planos .container {
+        width: 100%;
+      }
     }
 
     .bg-white {
@@ -3030,7 +3056,7 @@
           </div>
 
           <a href="#play" id="tempo-meta-cta" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.aistudio.meuciclodeestudos.apxqwt">
-            Começar Grátis com meu Ciclo de 20,0h Semanais
+            Começar Grátis com meu Ciclo de 15,0h Semanais
           </a>
         </div>
 
@@ -3056,17 +3082,17 @@
                   <div class="sim-card-title">Meta de Estudos Líquida</div>
                   <div class="sim-card-sub">Defina seu ritmo de estudo diário</div>
                 </div>
-                <div class="sim-pill-badge" id="sim-badge-meta">4,0h / dia</div>
+                <div class="sim-pill-badge" id="sim-badge-meta">3,0h / dia</div>
               </div>
 
               <!-- Slider Meta de Estudos Líquida -->
               <div class="sim-slider-container">
-                <input type="range" id="sim-input-meta" class="calc-range range-blue" min="1" max="10" step="0.5" value="4" aria-label="Meta de Estudos Diária">
+                <input type="range" id="sim-input-meta" class="calc-range range-blue" min="1" max="10" step="0.5" value="3" aria-label="Meta de Estudos Diária">
                 <div class="sim-scale-labels">
                   <span>1h/dia</span>
                   <span>2h</span>
-                  <span>3h</span>
-                  <span id="sim-mark-4" class="active-mark">4h</span>
+                  <span id="sim-mark-3" class="active-mark">3h</span>
+                  <span id="sim-mark-4">4h</span>
                   <span>5h</span>
                   <span>6h</span>
                   <span>10h/dia</span>
@@ -3091,7 +3117,7 @@
               <div class="sim-calc-result-box">
                 <div>
                   <div style="font-size: 0.75rem; color: #15803D; font-weight: 700;">Meta Semanal Calculada</div>
-                  <div class="sim-calc-result-val" id="sim-weekly-display">20,0 horas líquidas / semana</div>
+                  <div class="sim-calc-result-val" id="sim-weekly-display">15,0 horas líquidas / semana (Seg a Sex)</div>
                 </div>
                 <div class="sim-calc-check">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
@@ -3146,7 +3172,7 @@
 
               <!-- Feedback visual dinâmico do orçamento de 24h -->
               <div id="sim-budget-feedback" class="sim-budget-box ok">
-                <span id="sim-budget-text">✓ Rotina Equilibrada: 21,0h ocupadas &bull; 3,0h úteis para cumprir sua meta.</span>
+                <span id="sim-budget-text">✓ <strong>Rotina Equilibrada:</strong> 21,0h ocupadas &bull; <strong>3,0h livres</strong> para absorver sua meta diária de 3,0h (Seg a Sex).</span>
               </div>
             </div>
           </div>
@@ -3690,7 +3716,14 @@
             Experimentar Grátis na Google Play
           </a>
 
-          <div style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; color: var(--slate-600);">
+          <div style="margin-top: 0.85rem;">
+            <a href="#planos" style="font-size: 0.82rem; font-weight: 700; color: var(--slate-500); text-decoration: underline; text-underline-offset: 3px; display: inline-flex; align-items: center; gap: 0.35rem; transition: color 0.2s ease;">
+              <span>Ver planos e acesso vitalício Black Friday</span>
+              <span>&darr;</span>
+            </a>
+          </div>
+
+          <div style="margin-top: 0.85rem; display: flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; color: var(--slate-600);">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1976D2" stroke-width="2.5"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
             <span>Teste os 3 sons neurais de 4 segundos direto no smartphone interativo ao lado.</span>
           </div>
@@ -4124,9 +4157,143 @@
   </section>
 
   <!-- ========================================================================
-       PREÇOS (TABELA COMERCIAL UNIFICADA: 3 PLANOS)
+       11. EXPERIÊNCIA REAL (DEPOIMENTOS DE QUEM ESTUDA COM O MEU CICLO)
        ======================================================================== -->
-  <section id="planos" class="feature-section bg-white">
+  <section id="depoimentos" class="feature-section bg-white">
+    <div class="container">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+        <div class="section-tag">Experiência Real</div>
+        <h2>Depoimentos de quem estuda com o Meu Ciclo</h2>
+        <p class="lead-text" style="margin: 0.5rem auto 0 auto;">
+          Relatos reais de concurseiros ao lado dos módulos que transformaram sua rotina.
+        </p>
+      </div>
+
+      <div class="testimonials-paired-group">
+        <!-- Depoimento 1: Cita Tempo & Meta -->
+        <div class="testimonial-pair-card">
+          <div>
+            <div class="testimonial-rating-bar">
+              <div class="review-stars-group" aria-label="Avaliação 5 estrelas">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <span class="verified-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                Usuário Verificado &bull; Google Play
+              </span>
+            </div>
+            <p class="testimonial-paired-text">
+              "A grande virada foi entender meu tempo real no Tempo &amp; Meta. Eu achava que tinha 6h livres e só tinha 3h líquidas. Ajustei a rotina e o ciclo finalmente parou de atrasar."
+            </p>
+            <div class="author-meta-box">
+              <div class="author-avatar-badge">PF</div>
+              <div>
+                <strong style="color: var(--brand-navy-950); display: block;">Lucas M. &bull; Estudante para Agente da PF</strong>
+                <span style="font-size: 0.8rem; color: var(--slate-500);">Corte de atrasos no cronograma &bull; Rotina real de 3h/dia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen-anchor-card">
+            <div class="screen-anchor-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Benefício Prático: Tempo &amp; Meta
+            </div>
+            <p style="font-size: 0.82rem; color: var(--slate-600); margin-bottom: 0;">
+              Elimina a frustração de metas irreais ao calcular as horas líquidas exatas que sobram entre trabalho, família e deslocamento, garantindo um ciclo equilibrado que não acumula.
+            </p>
+          </div>
+        </div>
+
+        <!-- Depoimento 2: Cita Uso Offline / Local-First -->
+        <div class="testimonial-pair-card">
+          <div>
+            <div class="testimonial-rating-bar">
+              <div class="review-stars-group" aria-label="Avaliação 5 estrelas">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <span class="verified-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                Usuário Verificado &bull; Google Play
+              </span>
+            </div>
+            <p class="testimonial-paired-text">
+              "O fato de ser 100% offline no celular e não depender de planilhas lentas faz com que eu estude em qualquer intervalo de plantão no hospital. Abro em 1 segundo e cronometro sem travar."
+            </p>
+            <div class="author-meta-box">
+              <div class="author-avatar-badge">RF</div>
+              <div>
+                <strong style="color: var(--brand-navy-950); display: block;">Renata V. &bull; Candidata à Receita Federal</strong>
+                <span style="font-size: 0.8rem; color: var(--slate-500);">Estudo em intervalos de plantão &bull; Sem necessidade de internet</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen-anchor-card">
+            <div class="screen-anchor-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              Benefício Prático: 100% Offline no Celular
+            </div>
+            <p style="font-size: 0.82rem; color: var(--slate-600); margin-bottom: 0;">
+              Zero dependência de sinal de internet ou 4G. Suas matérias, revisões e cronômetro rodam direto no aparelho, permitindo estudar no metrô, no trabalho ou em viagens com agilidade máxima.
+            </p>
+          </div>
+        </div>
+
+        <!-- Depoimento 3: Cita TAF -->
+        <div class="testimonial-pair-card">
+          <div>
+            <div class="testimonial-rating-bar">
+              <div class="review-stars-group" aria-label="Avaliação 5 estrelas">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <span class="verified-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                Usuário Verificado &bull; Google Play
+              </span>
+            </div>
+            <p class="testimonial-paired-text">
+              "O módulo de TAF integrado ao ciclo me salvou de deixar a barra fixa e a corrida para a última hora. Ver a régua de corte subindo todo dia dá uma segurança enorme."
+            </p>
+            <div class="author-meta-box">
+              <div class="author-avatar-badge" style="color: #FB923C;">MIL</div>
+              <div>
+                <strong style="color: var(--brand-navy-950); display: block;">Gabriel F. &bull; Candidato EsPCEx</strong>
+                <span style="font-size: 0.8rem; color: var(--slate-500);">Aprovação no teste físico &bull; Índices oficiais superados</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen-anchor-card">
+            <div class="screen-anchor-title" style="color: var(--accent-taf);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+              Benefício Prático: Módulo Treino &amp; TAF
+            </div>
+            <p style="font-size: 0.82rem; color: var(--slate-600); margin-bottom: 0;">
+              Acompanhamento contínuo dos índices mínimos com metas visuais e fichas de musculação. Você estuda para a prova teórica sem o risco de ser eliminado no teste físico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       12. PREÇOS (TABELA COMERCIAL UNIFICADA: 3 PLANOS)
+       ======================================================================== -->
+  <section id="planos" class="feature-section">
     <div class="container">
       <div style="text-align: center; max-width: 760px; margin: 0 auto;">
         <div class="section-tag section-tag-gold">Assinatura Transparente</div>
@@ -4224,140 +4391,6 @@
           </strong>
           Nos planos Mensal (R$ 14,90/mês) e Anual (pagamento único de R$ 94,80/ano), você não será cobrado se cancelar antes do término dos 7 dias de avaliação gratuita; após o teste, a assinatura renova-se automaticamente pelo valor do plano escolhido, podendo ser cancelada a qualquer momento em 1 clique na seção &ldquo;Pagamentos e assinaturas&rdquo; da Google Play, sem fidelidade ou multa. No plano Vitalício (compra única de R$ 297,00 à vista ou 12x de R$ 29,90, totalizando R$ 358,80 a prazo), não há cobranças recorrentes e é assegurado o direito de arrependimento com reembolso integral em até 7 dias corridos após a contratação (Art. 49 do CDC).
         </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       10. DEPOIMENTOS (CADA UM AO LADO DA TELA QUE CITA)
-       ======================================================================== -->
-  <section id="depoimentos" class="feature-section">
-    <div class="container">
-      <div style="text-align: center; max-width: 720px; margin: 0 auto;">
-        <div class="section-tag">Experiência Real</div>
-        <h2>Depoimentos de quem estuda com o Meu Ciclo</h2>
-        <p class="lead-text" style="margin: 0.5rem auto 0 auto;">
-          Relatos reais de concurseiros ao lado dos módulos que transformaram sua rotina.
-        </p>
-      </div>
-
-      <div class="testimonials-paired-group">
-        <!-- Depoimento 1: Cita Tempo & Meta -->
-        <div class="testimonial-pair-card">
-          <div>
-            <div class="testimonial-rating-bar">
-              <div class="review-stars-group" aria-label="Avaliação 5 estrelas">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              </div>
-              <span class="verified-badge">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Usuário Verificado &bull; Google Play
-              </span>
-            </div>
-            <p class="testimonial-paired-text">
-              "A grande virada foi entender meu tempo real no Tempo &amp; Meta. Eu achava que tinha 6h livres e só tinha 3h líquidas. Ajustei a rotina e o ciclo finalmente parou de atrasar."
-            </p>
-            <div class="author-meta-box">
-              <div class="author-avatar-badge">PF</div>
-              <div>
-                <strong style="color: var(--brand-navy-950); display: block;">Estudante para Agente da PF</strong>
-                <span style="font-size: 0.8rem; color: var(--slate-500);">Corte de atrasos no cronograma &bull; Rotina real de 3h/dia</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="screen-anchor-card">
-            <div class="screen-anchor-title">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              Benefício Prático: Tempo &amp; Meta
-            </div>
-            <p style="font-size: 0.82rem; color: var(--slate-600); margin-bottom: 0;">
-              Elimina a frustração de metas irreais ao calcular as horas líquidas exatas que sobram entre trabalho, família e deslocamento, garantindo um ciclo equilibrado que não acumula.
-            </p>
-          </div>
-        </div>
-
-        <!-- Depoimento 2: Cita Uso Offline / Local-First -->
-        <div class="testimonial-pair-card">
-          <div>
-            <div class="testimonial-rating-bar">
-              <div class="review-stars-group" aria-label="Avaliação 5 estrelas">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              </div>
-              <span class="verified-badge">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Usuário Verificado &bull; Google Play
-              </span>
-            </div>
-            <p class="testimonial-paired-text">
-              "O fato de ser 100% offline no celular e não depender de planilhas lentas faz com que eu estude em qualquer intervalo de plantão no hospital. Abro em 1 segundo e cronometro sem travar."
-            </p>
-            <div class="author-meta-box">
-              <div class="author-avatar-badge">RF</div>
-              <div>
-                <strong style="color: var(--brand-navy-950); display: block;">Candidato à Receita Federal</strong>
-                <span style="font-size: 0.8rem; color: var(--slate-500);">Estudo em intervalos de plantão &bull; Sem necessidade de internet</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="screen-anchor-card">
-            <div class="screen-anchor-title">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              Benefício Prático: 100% Offline no Celular
-            </div>
-            <p style="font-size: 0.82rem; color: var(--slate-600); margin-bottom: 0;">
-              Zero dependência de sinal de internet ou 4G. Suas matérias, revisões e cronômetro rodam direto no aparelho, permitindo estudar no metrô, no trabalho ou em viagens com agilidade máxima.
-            </p>
-          </div>
-        </div>
-
-        <!-- Depoimento 3: Cita TAF -->
-        <div class="testimonial-pair-card">
-          <div>
-            <div class="testimonial-rating-bar">
-              <div class="review-stars-group" aria-label="Avaliação 5 estrelas">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              </div>
-              <span class="verified-badge">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Usuário Verificado &bull; Google Play
-              </span>
-            </div>
-            <p class="testimonial-paired-text">
-              "O módulo de TAF integrado ao ciclo me salvou de deixar a barra fixa e a corrida para a última hora. Ver a régua de corte subindo todo dia dá uma segurança enorme."
-            </p>
-            <div class="author-meta-box">
-              <div class="author-avatar-badge" style="color: #FB923C;">MIL</div>
-              <div>
-                <strong style="color: var(--brand-navy-950); display: block;">Candidato EsPCEx</strong>
-                <span style="font-size: 0.8rem; color: var(--slate-500);">Aprovação no teste físico &bull; Índices oficiais superados</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="screen-anchor-card">
-            <div class="screen-anchor-title" style="color: var(--accent-taf);">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
-              Benefício Prático: Módulo Treino &amp; TAF
-            </div>
-            <p style="font-size: 0.82rem; color: var(--slate-600); margin-bottom: 0;">
-              Acompanhamento contínuo dos índices mínimos com metas visuais e fichas de musculação. Você estuda para a prova teórica sem o risco de ser eliminado no teste físico.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -4636,7 +4669,7 @@
         if (!inputMeta) return;
 
         // Meta diária
-        const dailyGoal = parseFloat(inputMeta.value) || 4;
+        const dailyGoal = parseFloat(inputMeta.value) || 3;
         badgeMeta.textContent = formatHours(dailyGoal) + ' / dia';
         updateSliderTrack(inputMeta, '#1976D2');
 
@@ -4649,7 +4682,7 @@
 
         // Meta semanal
         const weeklyHours = (dailyGoal * activeDays).toFixed(1).replace('.', ',');
-        weeklyDisplay.textContent = `${weeklyHours} horas líquidas / semana`;
+        weeklyDisplay.textContent = activeDays === 5 ? `${weeklyHours} horas líquidas / semana (Seg a Sex)` : `${weeklyHours} horas líquidas / semana (${activeDays} dias)`;
 
         // Atualizar CTA principal da seção
         if (ctaBtn) {
