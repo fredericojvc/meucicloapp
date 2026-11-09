@@ -83,9 +83,9 @@
             "@type": "UnitPriceSpecification",
             "price": "297.00",
             "priceCurrency": "BRL",
-            "unitText": "pagamento único de R$ 297,00 à vista ou 12x de R$ 29,90 (total a prazo: R$ 358,80)"
+            "unitText": "pagamento único de R$ 297,00 à vista"
           },
-          "description": "Acesso definitivo sem mensalidades ou renovações. Garantia incondicional de reembolso de 7 dias (Art. 49 do CDC).",
+          "description": "Acesso definitivo de 10/11/2026 a 31/12/2026 sem mensalidades ou renovações. Garantia incondicional de reembolso de 7 dias (Art. 49 do CDC).",
           "url": "https://play.google.com/store/apps/details?id=com.meuciclo.app"
         }
       ]
@@ -2404,6 +2404,99 @@
       border: 1px solid var(--gold-primary);
     }
 
+    /* ==========================================================================
+       CONTADOR REGRESSIVO DA OFERTA VITALÍCIA (BLACK FRIDAY 10/11 A 31/12)
+       ========================================================================== */
+    .vitalicio-countdown-box {
+      background: linear-gradient(135deg, #0A1120 0%, #1E293B 100%);
+      border: 1.5px solid rgba(245, 158, 11, 0.45);
+      border-radius: 14px;
+      padding: 0.75rem 0.85rem;
+      margin: 0.75rem 0 1rem 0;
+      color: #FFFFFF;
+      text-align: center;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2);
+    }
+
+    .vitalicio-countdown-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: #FDE68A;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .countdown-pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #EF4444;
+      box-shadow: 0 0 8px #EF4444;
+      animation: pulse-dot 1.5s infinite;
+      display: inline-block;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .vitalicio-countdown-counter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+    }
+
+    .countdown-seg-box {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      padding: 0.35rem 0.4rem;
+      min-width: 44px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .countdown-seg-val {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1.1;
+      font-variant-numeric: tabular-nums;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .countdown-seg-lbl {
+      font-size: 0.58rem;
+      font-weight: 800;
+      color: #94A3B8;
+      letter-spacing: 0.04em;
+      margin-top: 0.15rem;
+    }
+
+    .countdown-seg-colon {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #FBBF24;
+      line-height: 1;
+      margin-bottom: 0.65rem;
+    }
+
+    .vitalicio-countdown-foot {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #FCD34D;
+      margin-top: 0.45rem;
+      letter-spacing: 0.01em;
+    }
+
     .price-plan-name {
       font-size: 1.25rem;
       font-weight: 800;
@@ -3724,7 +3817,7 @@
 
           <div style="margin-top: 0.85rem;">
             <a href="#planos" style="font-size: 0.82rem; font-weight: 700; color: var(--slate-500); text-decoration: underline; text-underline-offset: 3px; display: inline-flex; align-items: center; gap: 0.35rem; transition: color 0.2s ease;">
-              <span>Ver planos e acesso vitalício Black Friday</span>
+              <span>Ver planos e oferta vitalícia Black Friday (10/11 a 31/12)</span>
               <span>&darr;</span>
             </a>
           </div>
@@ -4368,18 +4461,52 @@
           <span class="plan-top-badge plan-top-badge-special">BLACK FRIDAY &bull; VITALÍCIO</span>
           <div>
             <div class="price-plan-name" style="color: var(--brand-navy-950);">Vitalício</div>
-            <div style="font-size: 0.8rem; font-weight: 800; color: var(--slate-600); letter-spacing: 0.04em;">12× DE</div>
+            <div style="font-size: 0.8rem; font-weight: 800; color: var(--gold-primary); letter-spacing: 0.04em;">PAGAMENTO ÚNICO</div>
             <div class="price-value-box">
-              <span class="price-val-big">R$ 29,90</span>
+              <span class="price-val-big">R$ 297,00</span>
+              <span class="price-val-period" style="font-size: 0.85rem; font-weight: 700; color: var(--slate-500);">à vista</span>
             </div>
-            <div class="price-val-total" style="font-size: 0.82rem; font-weight: 700; color: var(--brand-navy-950); min-height: 2.85rem; line-height: 1.4; display: block;">
-              ou <strong>R$ 297,00 à vista</strong><span style="display: block; font-size: 0.76rem; font-weight: 600; color: var(--slate-600); margin-top: 0.2rem;">(Total a prazo: R$ 358,80 em 12x de R$ 29,90)</span>
+            <div class="price-val-total" style="font-size: 0.84rem; font-weight: 800; color: var(--brand-navy-950); min-height: 2.85rem; line-height: 1.4; display: block;">
+              Sem mensalidades, sem renovação e sem prazo de validade.
             </div>
             <span class="savings-badge" style="background: var(--amber-50); color: #B45309; border-color: rgba(245, 158, 11, 0.3); display: inline-block; min-height: 28px; line-height: 24px; box-sizing: border-box; margin: 0.65rem 0 0.85rem 0;">
               Pague 1x, use até a posse
             </span>
+
+            <!-- Contador Regressivo de Dias (Oferta Vitalícia 10/11 a 31/12) -->
+            <div class="vitalicio-countdown-box">
+              <div class="vitalicio-countdown-header">
+                <span class="countdown-pulse-dot"></span>
+                <span>OFERTA VITALÍCIA &bull; 10/11 A 31/12</span>
+              </div>
+              <div class="vitalicio-countdown-counter">
+                <div class="countdown-seg-box">
+                  <span class="countdown-seg-val" id="vitalicio-cd-days">52</span>
+                  <span class="countdown-seg-lbl">DIAS</span>
+                </div>
+                <span class="countdown-seg-colon">:</span>
+                <div class="countdown-seg-box">
+                  <span class="countdown-seg-val" id="vitalicio-cd-hours">07</span>
+                  <span class="countdown-seg-lbl">HORAS</span>
+                </div>
+                <span class="countdown-seg-colon">:</span>
+                <div class="countdown-seg-box">
+                  <span class="countdown-seg-val" id="vitalicio-cd-mins">32</span>
+                  <span class="countdown-seg-lbl">MIN</span>
+                </div>
+                <span class="countdown-seg-colon">:</span>
+                <div class="countdown-seg-box">
+                  <span class="countdown-seg-val" id="vitalicio-cd-secs">00</span>
+                  <span class="countdown-seg-lbl">SEG</span>
+                </div>
+              </div>
+              <div class="vitalicio-countdown-foot" id="vitalicio-cd-urgent-text">
+                Restam 52 dias para o encerramento da oferta
+              </div>
+            </div>
+
             <div class="plan-desc">
-              Disponível exclusivamente de <strong>01/11 a 31/12</strong> (até 23h59). Acesso definitivo sem mensalidades ou renovações. Garantia incondicional de reembolso de 7 dias (Art. 49 do CDC).
+              Disponível exclusivamente de <strong>10/11/2026 a 31/12/2026</strong> (até 23h59). Acesso definitivo sem mensalidades ou renovações. Garantia incondicional de reembolso de 7 dias (Art. 49 do CDC).
             </div>
           </div>
           <a href="#play" class="btn btn-primary btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.meuciclo.app">
@@ -4395,7 +4522,7 @@
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--emerald-600);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             Transparência e Conformidade:
           </strong>
-          Nos planos Mensal (R$ 14,99/mês) e Anual (pagamento único de R$ 94,99/ano), você não será cobrado se cancelar antes do término dos 7 dias de avaliação gratuita; após o teste, a assinatura renova-se automaticamente pelo valor do plano escolhido, podendo ser cancelada a qualquer momento em 1 clique na seção &ldquo;Pagamentos e assinaturas&rdquo; da Google Play, sem fidelidade ou multa. No plano Vitalício (compra única de R$ 297,00 à vista ou 12x de R$ 29,90, totalizando R$ 358,80 a prazo), não há cobranças recorrentes e é assegurado o direito de arrependimento com reembolso integral em até 7 dias corridos após a contratação (Art. 49 do CDC).
+          Nos planos Mensal (R$ 14,99/mês) e Anual (pagamento único de R$ 94,99/ano), você não será cobrado se cancelar antes do término dos 7 dias de avaliação gratuita; após o teste, a assinatura renova-se automaticamente pelo valor do plano escolhido, podendo ser cancelada a qualquer momento em 1 clique na seção &ldquo;Pagamentos e assinaturas&rdquo; da Google Play, sem fidelidade ou multa. No plano Vitalício (pagamento único de R$ 297,00 à vista), não há cobranças recorrentes e é assegurado o direito de arrependimento com reembolso integral em até 7 dias corridos após a contratação (Art. 49 do CDC).
         </p>
       </div>
     </div>
@@ -5175,6 +5302,55 @@
             window.switchQuestoesTab('questoes');
           }
         });
+      })();
+
+      // ========================================================================
+      // CONTADOR REGRESSIVO DA OFERTA VITALÍCIA (BLACK FRIDAY 10/11 A 31/12)
+      // ========================================================================
+      (function initVitalicioCountdown() {
+        // Encerramento: 31 de dezembro de 2026 às 23:59:59 (GMT-3)
+        const targetDate = new Date(2026, 11, 31, 23, 59, 59).getTime();
+
+        const daysEl = document.getElementById('vitalicio-cd-days');
+        const hoursEl = document.getElementById('vitalicio-cd-hours');
+        const minsEl = document.getElementById('vitalicio-cd-mins');
+        const secsEl = document.getElementById('vitalicio-cd-secs');
+        const urgentTextEl = document.getElementById('vitalicio-cd-urgent-text');
+
+        if (!daysEl || !hoursEl || !minsEl || !secsEl) return;
+
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const diff = targetDate - now;
+
+          if (diff <= 0) {
+            daysEl.textContent = '00';
+            hoursEl.textContent = '00';
+            minsEl.textContent = '00';
+            secsEl.textContent = '00';
+            if (urgentTextEl) urgentTextEl.textContent = 'Oferta de Black Friday encerrada';
+            return;
+          }
+
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+          daysEl.textContent = String(days).padStart(2, '0');
+          hoursEl.textContent = String(hours).padStart(2, '0');
+          minsEl.textContent = String(minutes).padStart(2, '0');
+          secsEl.textContent = String(seconds).padStart(2, '0');
+
+          if (urgentTextEl) {
+            urgentTextEl.textContent = days === 1 
+              ? 'Último dia para garantir o acesso vitalício!'
+              : `Restam ${days} dias para o encerramento da oferta`;
+          }
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
       })();
     });
   </script>

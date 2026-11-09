@@ -69,8 +69,16 @@ assert.ok(
   'Seção 7 (TAF) deve conter treino/TAF'
 );
 assert.ok(
-  indexHtml.includes('id="planos"') && indexHtml.includes('R$ 14,99') && indexHtml.includes('R$ 7,92') && indexHtml.includes('R$ 94,99') && indexHtml.includes('R$ 29,90'),
-  'Seção 9 (Preço) deve conter os planos com o teste de 7 dias e novos valores'
+  indexHtml.includes('id="planos"') && indexHtml.includes('R$ 14,99') && indexHtml.includes('R$ 7,92') && indexHtml.includes('R$ 94,99') && indexHtml.includes('R$ 297,00'),
+  'Seção 9 (Preço) deve conter os planos com o teste de 7 dias, novos valores e plano vitalício à vista'
+);
+assert.ok(
+  !indexHtml.includes('358,80') && !indexHtml.includes('12x de R$ 29,90') && !indexHtml.includes('12× DE'),
+  'Opção de parcelamento do vitalício deve ter sido completamente removida'
+);
+assert.ok(
+  indexHtml.includes('vitalicio-countdown-box') && indexHtml.includes('10/11/2026 a 31/12/2026'),
+  'Oferta vitalícia deve conter o período 10/11/2026 a 31/12/2026 e o contador regressivo'
 );
 assert.ok(
   indexHtml.includes('id="depoimentos"') &&
