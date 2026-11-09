@@ -69,7 +69,7 @@ assert.ok(
   'Seção 7 (TAF) deve conter treino/TAF'
 );
 assert.ok(
-  indexHtml.includes('id="planos"') && indexHtml.includes('R$ 14,90') && indexHtml.includes('R$ 7,90') && indexHtml.includes('R$ 29,90'),
+  indexHtml.includes('id="planos"') && indexHtml.includes('R$ 14,99') && indexHtml.includes('R$ 7,92') && indexHtml.includes('R$ 94,99') && indexHtml.includes('R$ 29,90'),
   'Seção 9 (Preço) deve conter os planos com o teste de 7 dias e novos valores'
 );
 assert.ok(
