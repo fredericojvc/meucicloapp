@@ -1131,7 +1131,7 @@
 
         <div class="live-indicator">
           <span class="live-dot"></span>
-          Feed atualizado continuamente a cada 6h
+          <span id="sync-timestamp">Sincronizado em 16/11/2026 às 18:50</span>
         </div>
       </div>
 
@@ -1496,6 +1496,20 @@
         `).join('');
       }
 
+      function updateSyncTimestamp(cachedAt) {
+        if (!cachedAt) return;
+        try {
+          const syncDate = new Date(cachedAt);
+          if (isNaN(syncDate.getTime())) return;
+          const dateStr = syncDate.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo', day: '2-digit', month: '2-digit', year: 'numeric' });
+          const timeStr = syncDate.toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' });
+          const syncEl = document.getElementById('sync-timestamp');
+          if (syncEl) {
+            syncEl.textContent = `Sincronizado em ${dateStr} às ${timeStr}`;
+          }
+        } catch (e) {}
+      }
+
       async function fetchConcursosNews() {
         showSkeletons();
         try {
@@ -1509,6 +1523,7 @@
           const items = Array.isArray(data) ? data : (data.dados || []);
           allNewsItems = items;
           renderNews(allNewsItems);
+          updateSyncTimestamp(data.cachedAt);
         } catch (error) {
           console.warn('Erro ao carregar notícias:', error);
           try {
@@ -1517,6 +1532,7 @@
               const fallbackData = await fallbackRes.json();
               allNewsItems = fallbackData.dados || [];
               renderNews(allNewsItems);
+              updateSyncTimestamp(fallbackData.cachedAt);
               return;
             }
           } catch (e) {}
