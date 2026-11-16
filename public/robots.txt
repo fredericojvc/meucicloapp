@@ -1,0 +1,5 @@
+# robots.txt para meuciclo.app.br
+User-agent: *
+Allow: /
+
+Sitemap: https://meuciclo.app.br/sitemap.xml

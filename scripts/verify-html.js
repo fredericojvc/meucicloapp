@@ -172,4 +172,43 @@ assert.ok(concursosHtml.includes('href="/termos-de-uso"'), 'concursos.html deve 
 assert.ok(concursosHtml.includes('href="/exclusao-de-dados"'), 'concursos.html deve conter link para /exclusao-de-dados');
 console.log('9. ✓ Rodapé (Concursos): Linha de metadados e coluna Exclusão sincronizadas.');
 
+// 6. Verificação de SEO: sitemap.xml e robots.txt
+const { XMLValidator } = require('fast-xml-parser');
+assert.ok(fs.existsSync('public/sitemap.xml'), 'public/sitemap.xml deve existir na raiz pública do Firebase');
+const sitemapXml = fs.readFileSync('public/sitemap.xml', 'utf8');
+
+const xmlValidation = XMLValidator.validate(sitemapXml);
+assert.strictEqual(xmlValidation, true, 'Sintaxe XML do sitemap.xml deve ser 100% válida');
+assert.ok(sitemapXml.includes('http://www.sitemaps.org/schemas/sitemap/0.9'), 'sitemap.xml deve usar o namespace padrão sitemaps.org 0.9');
+
+const expectedRoutes = [
+  'https://meuciclo.app.br/',
+  'https://meuciclo.app.br/concursos',
+  'https://meuciclo.app.br/politica-de-privacidade',
+  'https://meuciclo.app.br/termos-de-uso',
+  'https://meuciclo.app.br/exclusao-de-dados'
+];
+
+expectedRoutes.forEach(route => {
+  assert.ok(sitemapXml.includes(`<loc>${route}</loc>`), `sitemap.xml deve conter a rota pública ${route}`);
+});
+
+// Validar que todas as entradas possuem a tag lastmod 2026-11-16
+const lastmodCount = (sitemapXml.match(/<lastmod>2026-11-16<\/lastmod>/g) || []).length;
+assert.strictEqual(lastmodCount, expectedRoutes.length, 'Todas as rotas devem ter <lastmod>2026-11-16</lastmod>');
+
+assert.ok(fs.existsSync('public/robots.txt'), 'public/robots.txt deve existir na raiz pública do Firebase');
+const robotsTxt = fs.readFileSync('public/robots.txt', 'utf8');
+assert.ok(robotsTxt.includes('User-agent: *'), 'robots.txt deve conter User-agent: *');
+assert.ok(robotsTxt.includes('Allow: /'), 'robots.txt deve conter Allow: /');
+assert.ok(robotsTxt.includes('Sitemap: https://meuciclo.app.br/sitemap.xml'), 'robots.txt deve declarar Sitemap: https://meuciclo.app.br/sitemap.xml');
+
+// Garantir que as regras de rewrite do firebase.json não interceptam sitemap.xml nem robots.txt
+const hostingConfig = firebaseJson.hosting;
+assert.strictEqual(hostingConfig.public, 'public', 'Firebase hosting deve servir pasta public');
+const hasCatchAllRewrite = (hostingConfig.rewrites || []).some(r => r.source === '**' || r.source === '/*' || r.source === '/sitemap.xml' || r.source === '/robots.txt');
+assert.strictEqual(hasCatchAllRewrite, false, 'Firebase hosting não deve ter regras catch-all ou interceptação de arquivos estáticos da raiz');
+
+console.log('10. ✓ SEO & Crawling: sitemap.xml e robots.txt validados com protocolo sitemaps.org, rotas oficiais, lastmod 2026-11-16 e conformidade Firebase.');
+
 console.log('\n=== TODAS AS VERIFICAÇÕES PASSARAM COM 100% DE SUCESSO! ===');
