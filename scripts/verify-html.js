@@ -238,4 +238,32 @@ assert.strictEqual(hasCatchAllRewrite, false, 'Firebase hosting não deve ter re
 
 console.log('11. ✓ SEO & Crawling: sitemap.xml e robots.txt validados com 7 rotas canônicas e conformidade Firebase.');
 
+// 8. Verificação de Telemetria: Google Tag (GTM-WHLK3Q8M) e Rastreamento de Cliques
+const publicHtmlFiles = [
+  'public/index.html',
+  'public/concursos.html',
+  'public/artigos/index.html',
+  'public/artigos/terceirizar-mente-inteligencia-artificial.html',
+  'public/politica-de-privacidade.html',
+  'public/termos-de-uso.html',
+  'public/exclusao-de-dados.html',
+  'public/404.html'
+];
+
+publicHtmlFiles.forEach(file => {
+  const fileContent = fs.readFileSync(file, 'utf8');
+  
+  // Tag GTM única no <head>
+  const gtmMatches = (fileContent.match(/GTM-WHLK3Q8M/g) || []).length;
+  assert.ok(gtmMatches >= 2, `${file} deve conter a tag GTM-WHLK3Q8M`);
+  assert.ok(fileContent.includes('googletagmanager.com/gtm.js?id=GTM-WHLK3Q8M'), `${file} deve carregar o script do GTM`);
+  assert.ok(fileContent.includes("gtag('config', 'GTM-WHLK3Q8M')"), `${file} deve inicializar o gtag com GTM-WHLK3Q8M`);
+  
+  // Ouvinte de rastreamento de cliques no <body>
+  assert.ok(fileContent.includes('clique_cta_meuciclo'), `${file} deve conter o rastreamento do evento clique_cta_meuciclo`);
+  assert.ok(fileContent.includes("play.google.com") && fileContent.includes("SALVAR ROTINA"), `${file} deve conter as regras de captura de botões`);
+});
+
+console.log('12. ✓ Telemetria & Analytics: Google Tag (GTM-WHLK3Q8M) e rastreamento de cliques validados em todas as 8 páginas.');
+
 console.log('\n=== TODAS AS VERIFICAÇÕES PASSARAM COM 100% DE SUCESSO! ===');
