@@ -81,7 +81,7 @@ async function sync() {
       const todayIso = `${yyyy}-${mm}-${dd}`;
 
       let sitemap = fs.readFileSync(sitemapPath, 'utf8');
-      const concursosSitemapRegex = /(<loc>https:\/\/meuciclo\.app\.br\/concursos<\/loc>[\s\S]*?<lastmod>)[^<]+(<\/lastmod>)/;
+      const concursosSitemapRegex = /(<loc>https:\/\/meuciclo\.app\.br\/concursos<\/loc>\s*<lastmod>)[^<]+(<\/lastmod>)/;
 
       if (concursosSitemapRegex.test(sitemap)) {
         sitemap = sitemap.replace(concursosSitemapRegex, `$1${todayIso}$2`);

@@ -453,6 +453,77 @@
       letter-spacing: 0.04em;
     }
 
+    /* Menu Suspenso Funcionalidades (Desktop) */
+    .nav-dropdown {
+      position: relative;
+    }
+
+    .nav-dropdown-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .dropdown-chevron {
+      transition: transform 0.2s ease;
+      stroke: currentColor;
+      margin-left: 0.15rem;
+    }
+
+    .nav-dropdown:hover .dropdown-chevron,
+    .nav-dropdown.active .dropdown-chevron {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 0.5rem;
+      background: var(--white);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 25px -5px rgba(10, 22, 40, 0.12), 0 0 0 1px rgba(10, 22, 40, 0.05);
+      padding: 0.45rem 0;
+      min-width: 210px;
+      list-style: none;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-6px);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1050;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Suporte a hover e clique/foco no desktop */
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu,
+    .nav-dropdown.active .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-item {
+      display: block;
+      padding: 0.6rem 1.1rem;
+      color: var(--slate-700);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+      background: var(--slate-100);
+      color: var(--brand-navy-950);
+      padding-left: 1.35rem;
+    }
+
     .nav-divider {
       width: 1px;
       height: 24px;
@@ -579,6 +650,74 @@
     .mobile-nav-list li a:active {
       color: var(--blue-accent);
       padding-left: 0.35rem;
+    }
+
+    /* Acordeão Funcionalidades (Mobile) */
+    .mobile-accordion-item {
+      width: 100%;
+      box-sizing: border-box;
+      border-bottom: 1px solid var(--slate-100);
+    }
+
+    .mobile-accordion-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background: transparent;
+      border: none;
+      color: var(--slate-800);
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 0.75rem 0.25rem;
+      cursor: pointer;
+      text-align: left;
+      transition: color 0.15s ease;
+      box-sizing: border-box;
+    }
+
+    .mobile-accordion-btn:hover,
+    .mobile-accordion-btn:active {
+      color: var(--blue-accent);
+    }
+
+    .mobile-accordion-chevron {
+      transition: transform 0.25s ease;
+      stroke: currentColor;
+    }
+
+    .mobile-accordion-item.open .mobile-accordion-chevron {
+      transform: rotate(180deg);
+    }
+
+    .mobile-submenu {
+      list-style: none;
+      margin: 0;
+      padding: 0 0 0.5rem 0.75rem;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+      box-sizing: border-box;
+    }
+
+    .mobile-accordion-item.open .mobile-submenu {
+      max-height: 300px;
+      opacity: 1;
+    }
+
+    .mobile-sublink {
+      font-size: 0.95rem !important;
+      font-weight: 600 !important;
+      color: var(--slate-600) !important;
+      padding: 0.55rem 0.25rem !important;
+      border-bottom: 1px dashed var(--slate-100) !important;
+    }
+
+    .mobile-sublink:hover {
+      color: var(--blue-accent) !important;
+      padding-left: 0.5rem !important;
     }
 
     .mobile-nav-list li a.highlight-concursos {
@@ -2732,6 +2871,130 @@
     }
 
     /* ==========================================================================
+       VITRINE EDITORIAL (ARTIGOS & GUIAS PRÁTICOS)
+       ========================================================================== */
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+
+    .editorial-featured-card {
+      background: var(--white);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      display: grid;
+      grid-template-columns: 1fr;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    @media (min-width: 860px) {
+      .editorial-featured-card {
+        grid-template-columns: 1.1fr 1fr;
+        align-items: stretch;
+      }
+    }
+
+    .editorial-featured-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-product);
+      border-color: var(--gold-border);
+    }
+
+    .editorial-card-thumb {
+      position: relative;
+      background: var(--brand-navy-950);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 240px;
+    }
+
+    .editorial-card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .editorial-featured-card:hover .editorial-card-thumb img {
+      transform: scale(1.03);
+    }
+
+    .editorial-card-body {
+      padding: 2.25rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .editorial-card-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #8C6D15;
+      background: var(--gold-surface);
+      border: 1px solid var(--gold-border);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      display: inline-block;
+      margin-bottom: 1rem;
+      letter-spacing: 0.04em;
+      align-self: flex-start;
+    }
+
+    .editorial-card-title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 0.85rem;
+      color: var(--brand-navy-950);
+      letter-spacing: -0.01em;
+    }
+
+    .editorial-card-title a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .editorial-card-title a:hover {
+      color: var(--blue-accent);
+    }
+
+    .editorial-card-excerpt {
+      font-size: 0.96rem;
+      color: var(--slate-600);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .editorial-card-footer {
+      margin-top: auto;
+    }
+
+    .editorial-read-btn {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--blue-accent);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: gap 0.2s ease, color 0.15s ease;
+    }
+
+    .editorial-read-btn:hover {
+      color: var(--blue-hover);
+      gap: 0.6rem;
+    }
+
+    /* ==========================================================================
        12. RODAPÉ INSTITUCIONAL (GRADE DE 4 COLUNAS EM FUNDO #0B132B)
        ========================================================================== */
     .site-footer {
@@ -3037,12 +3300,23 @@
       <!-- Menu Desktop (>= 1080px) - Âncoras Essenciais Integradas -->
       <nav aria-label="Navegação dos Módulos do Aplicativo">
         <ul class="nav-menu">
-          <li><a href="#tempo-meta" class="nav-link">Tempo &amp; Meta</a></li>
-          <li><a href="#edital" class="nav-link">Edital</a></li>
-          <li><a href="#ciclo" class="nav-link">Ciclo &amp; Revisões</a></li>
-          <li><a href="#treino" class="nav-link">Treino &amp; TAF</a></li>
-          <li><a href="#questoes" class="nav-link">Questões &amp; Simulados</a></li>
+          <!-- Dropdown Funcionalidades -->
+          <li class="nav-dropdown" id="nav-dropdown-func">
+            <button type="button" class="nav-link nav-dropdown-btn" id="btn-dropdown-func" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-func-menu">
+              <span>Funcionalidades</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <ul class="dropdown-menu" id="dropdown-func-menu" role="menu" aria-labelledby="btn-dropdown-func">
+              <li role="none"><a href="#tempo-meta" class="dropdown-item" role="menuitem">Tempo &amp; Meta</a></li>
+              <li role="none"><a href="#edital" class="dropdown-item" role="menuitem">Edital</a></li>
+              <li role="none"><a href="#ciclo" class="dropdown-item" role="menuitem">Ciclo &amp; Revisões</a></li>
+              <li role="none"><a href="#treino" class="dropdown-item" role="menuitem">Treino &amp; TAF</a></li>
+              <li role="none"><a href="#questoes" class="dropdown-item" role="menuitem">Questões &amp; Simulados</a></li>
+            </ul>
+          </li>
+
           <li><a href="#planos" class="nav-link">Planos</a></li>
+          <li><a href="/artigos/" class="nav-link">Artigos</a></li>
           <li>
             <a href="/concursos" class="nav-link nav-link-hub" title="Hub Radar de Concursos e Provas (72h)">
               <span>Radar 72h</span>
@@ -3071,12 +3345,22 @@
   <!-- GAVETA MOBILE APPLE-STYLE (< 1080px) -->
   <div id="mobile-menu-overlay" class="mobile-menu-overlay" aria-hidden="true">
     <ul class="mobile-nav-list">
-      <li><a href="#tempo-meta" class="mobile-menu-link">Tempo &amp; Meta</a></li>
-      <li><a href="#edital" class="mobile-menu-link">Edital Verticalizado</a></li>
-      <li><a href="#ciclo" class="mobile-menu-link">Ciclo &amp; Revisões</a></li>
-      <li><a href="#treino" class="mobile-menu-link">Treino &amp; TAF</a></li>
-      <li><a href="#questoes" class="mobile-menu-link">Questões &amp; Simulados</a></li>
+      <!-- Acordeão Funcionalidades (Mobile) -->
+      <li class="mobile-accordion-item">
+        <button type="button" class="mobile-accordion-btn" id="mobile-accordion-func" aria-expanded="false" aria-controls="mobile-func-submenu">
+          <span>Funcionalidades</span>
+          <svg class="mobile-accordion-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <ul class="mobile-submenu" id="mobile-func-submenu">
+          <li><a href="#tempo-meta" class="mobile-menu-link mobile-sublink">Tempo &amp; Meta</a></li>
+          <li><a href="#edital" class="mobile-menu-link mobile-sublink">Edital</a></li>
+          <li><a href="#ciclo" class="mobile-menu-link mobile-sublink">Ciclo &amp; Revisões</a></li>
+          <li><a href="#treino" class="mobile-menu-link mobile-sublink">Treino &amp; TAF</a></li>
+          <li><a href="#questoes" class="mobile-menu-link mobile-sublink">Questões &amp; Simulados</a></li>
+        </ul>
+      </li>
       <li><a href="#planos" class="mobile-menu-link">Planos</a></li>
+      <li><a href="/artigos/" class="mobile-menu-link">Artigos</a></li>
       <li>
         <a href="/concursos" class="mobile-menu-link highlight-concursos">
           <span>Radar Concursos &amp; Provas</span>
@@ -4529,6 +4813,58 @@
   </section>
 
   <!-- ========================================================================
+       14B. ARTIGOS & GUIAS PRÁTICOS (VITRINE EDITORIAL)
+       ======================================================================== -->
+  <section id="artigos" class="feature-section bg-subtle" style="padding: 5rem 0 4.5rem 0;">
+    <div class="container">
+      <div class="section-header-center" style="text-align: center; max-width: 760px; margin: 0 auto 3rem auto;">
+        <div class="section-tag section-tag-gold" style="margin-bottom: 0.75rem;">
+          ENGENHARIA DO ESTUDO
+        </div>
+        <h2 style="font-size: 2.25rem; font-weight: 900; color: var(--brand-navy-950); letter-spacing: -0.02em; margin-bottom: 0.75rem;">
+          Artigos &amp; Guias Práticos
+        </h2>
+        <p style="font-size: 1.1rem; color: var(--slate-600); line-height: 1.6; margin: 0;">
+          Reflexões técnicas sobre ciência da aprendizagem, memória ativa e preparação de longo prazo.
+        </p>
+      </div>
+
+      <!-- Grid Editorial (Preparo para 3 colunas, Card Horizontal de Destaque no lançamento) -->
+      <div class="editorial-grid">
+        <article class="editorial-featured-card">
+          <div class="editorial-card-thumb">
+            <img src="/images/artigo-terceirizar-mente-ia.jpg" alt="Ilustração do artigo: Piloto Matt Brown em cabine noturna com representação do cérebro e livros" loading="lazy" width="600" height="340">
+          </div>
+          <div class="editorial-card-body">
+            <div class="editorial-card-tag">
+              CIÊNCIA DA APRENDIZAGEM &bull; 5 MIN DE LEITURA
+            </div>
+            <h3 class="editorial-card-title">
+              <a href="/artigos/terceirizar-mente-inteligencia-artificial.html">
+                O perigo silencioso de terceirizar a mente do seu filho para a inteligência artificial
+              </a>
+            </h3>
+            <p class="editorial-card-excerpt">
+              Ao receber a informação mastigada por um chat, o estudante perde o hábito da leitura, a retenção na memória e o julgamento crítico. Entenda por que o verdadeiro improviso exige repertório.
+            </p>
+            <div class="editorial-card-footer">
+              <a href="/artigos/terceirizar-mente-inteligencia-artificial.html" class="editorial-read-btn">
+                Ler artigo completo &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="/artigos/" class="btn btn-secondary" style="height: 46px; padding: 0 1.75rem; font-size: 0.92rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+          Ver central de artigos &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
        15. CONCURSOS (BLOCO CURTO: "ISSO FICA NO SITE. NO APP, VOCÊ ESTUDA.")
        ======================================================================== -->
   <section id="concursos" class="feature-section bg-white">
@@ -4582,6 +4918,7 @@
         <h5>Canais &amp; Recursos</h5>
         <div style="display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.88rem;">
           <div>Radar: <a href="/concursos" style="color: var(--gold-light); font-weight: 600;">Concursos &amp; Provas (72h)</a></div>
+          <div>Artigos: <a href="/artigos/" style="color: var(--gold-light); font-weight: 600;">Artigos &amp; Guias</a></div>
           <div>Contato: <a href="mailto:contato@meuciclo.app.br">contato@meuciclo.app.br</a></div>
           <div>Suporte: <a href="mailto:suporte@meuciclo.app.br">suporte@meuciclo.app.br</a></div>
         </div>
@@ -4761,6 +5098,42 @@
             mobileOverlay.setAttribute('aria-hidden', 'true');
             document.body.style.overflow = '';
           });
+        });
+      }
+
+      // Dropdown Desktop Funcionalidades (suporte a clique e acessibilidade)
+      const navDropdown = document.getElementById('nav-dropdown-func');
+      const navDropdownBtn = document.getElementById('btn-dropdown-func');
+      if (navDropdown && navDropdownBtn) {
+        navDropdownBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const isOpen = navDropdown.classList.toggle('active');
+          navDropdownBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        document.addEventListener('click', function(e) {
+          if (!navDropdown.contains(e.target)) {
+            navDropdown.classList.remove('active');
+            navDropdownBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        navDropdown.querySelectorAll('.dropdown-item').forEach(item => {
+          item.addEventListener('click', () => {
+            navDropdown.classList.remove('active');
+            navDropdownBtn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // Acordeão Mobile Funcionalidades
+      const mobileAccordionBtn = document.getElementById('mobile-accordion-func');
+      const mobileAccordionItem = mobileAccordionBtn ? mobileAccordionBtn.closest('.mobile-accordion-item') : null;
+      if (mobileAccordionBtn && mobileAccordionItem) {
+        mobileAccordionBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isOpen = mobileAccordionItem.classList.toggle('open');
+          mobileAccordionBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
       }
 

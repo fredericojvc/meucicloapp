@@ -172,7 +172,32 @@ assert.ok(concursosHtml.includes('href="/termos-de-uso"'), 'concursos.html deve 
 assert.ok(concursosHtml.includes('href="/exclusao-de-dados"'), 'concursos.html deve conter link para /exclusao-de-dados');
 console.log('9. ✓ Rodapé (Concursos): Linha de metadados e coluna Exclusão sincronizadas.');
 
-// 6. Verificação de SEO: sitemap.xml e robots.txt
+// 6. Verificação da Seção Editorial e Artigos
+assert.ok(indexHtml.includes('id="artigos"'), 'index.html deve conter a seção #artigos');
+assert.ok(indexHtml.includes('ENGENHARIA DO ESTUDO'), 'index.html deve conter a badge ENGENHARIA DO ESTUDO');
+assert.ok(indexHtml.includes('Artigos &amp; Guias Práticos'), 'index.html deve conter o título Artigos & Guias Práticos');
+assert.ok(indexHtml.includes('/artigos/terceirizar-mente-inteligencia-artificial.html'), 'index.html deve linkar para o primeiro artigo');
+assert.ok(indexHtml.includes('Ver central de artigos'), 'index.html deve conter botão para a central de artigos');
+assert.ok(indexHtml.includes('href="/artigos/"'), 'index.html deve conter links para /artigos/');
+
+// 6.1 Página Índice /artigos/index.html
+assert.ok(fs.existsSync('public/artigos/index.html'), 'public/artigos/index.html deve existir');
+const artigosIndexHtml = fs.readFileSync('public/artigos/index.html', 'utf8');
+assert.ok(artigosIndexHtml.includes('Artigos &amp; Guias Práticos'), '/artigos/index.html deve conter o cabeçalho editorial');
+assert.ok(artigosIndexHtml.includes('https://meuciclo.app.br/artigos/'), '/artigos/index.html deve ter canonical correto');
+
+// 6.2 Página do Artigo 01 Completo
+assert.ok(fs.existsSync('public/artigos/terceirizar-mente-inteligencia-artificial.html'), 'Arquivo do artigo 01 deve existir');
+const artigo01Html = fs.readFileSync('public/artigos/terceirizar-mente-inteligencia-artificial.html', 'utf8');
+assert.ok(artigo01Html.includes('O perigo silencioso de terceirizar a mente do seu filho para a inteligência artificial'), 'Artigo deve conter título H1 exato');
+assert.ok(artigo01Html.includes('Frederico Juliano'), 'Artigo deve conter autor Frederico Juliano');
+assert.ok(artigo01Html.includes('"@type": "Article"') || artigo01Html.includes('"@type":"Article"'), 'Artigo deve conter Schema.org Article');
+assert.ok(artigo01Html.includes('O improviso com conteúdo é a fórmula do sucesso. O improviso sem conteúdo é o fracasso garantido.'), 'Artigo deve conter a citação de destaque');
+assert.ok(artigo01Html.includes('Como você vai testar o que o seu filho realmente aprendeu hoje?'), 'Artigo deve conter a pergunta final');
+assert.ok(artigo01Html.includes('Construa repertório real, sem atalhos ilusórios.'), 'Artigo deve conter o card de conversão');
+console.log('10. ✓ Área Editorial: Vitrine na home, índice /artigos/ e Artigo 01 completos e validados.');
+
+// 7. Verificação de SEO: sitemap.xml e robots.txt
 const { XMLValidator } = require('fast-xml-parser');
 assert.ok(fs.existsSync('public/sitemap.xml'), 'public/sitemap.xml deve existir na raiz pública do Firebase');
 const sitemapXml = fs.readFileSync('public/sitemap.xml', 'utf8');
@@ -184,6 +209,8 @@ assert.ok(sitemapXml.includes('http://www.sitemaps.org/schemas/sitemap/0.9'), 's
 const expectedRoutes = [
   'https://meuciclo.app.br/',
   'https://meuciclo.app.br/concursos',
+  'https://meuciclo.app.br/artigos/',
+  'https://meuciclo.app.br/artigos/terceirizar-mente-inteligencia-artificial',
   'https://meuciclo.app.br/politica-de-privacidade',
   'https://meuciclo.app.br/termos-de-uso',
   'https://meuciclo.app.br/exclusao-de-dados'
@@ -193,9 +220,9 @@ expectedRoutes.forEach(route => {
   assert.ok(sitemapXml.includes(`<loc>${route}</loc>`), `sitemap.xml deve conter a rota pública ${route}`);
 });
 
-// Validar que todas as entradas possuem a tag lastmod 2026-11-16
-const lastmodCount = (sitemapXml.match(/<lastmod>2026-11-16<\/lastmod>/g) || []).length;
-assert.strictEqual(lastmodCount, expectedRoutes.length, 'Todas as rotas devem ter <lastmod>2026-11-16</lastmod>');
+// Validar que todas as entradas possuem a tag lastmod válida
+const lastmodCount = (sitemapXml.match(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/g) || []).length;
+assert.strictEqual(lastmodCount, expectedRoutes.length, 'Todas as rotas devem ter <lastmod>YYYY-MM-DD</lastmod>');
 
 assert.ok(fs.existsSync('public/robots.txt'), 'public/robots.txt deve existir na raiz pública do Firebase');
 const robotsTxt = fs.readFileSync('public/robots.txt', 'utf8');
@@ -209,6 +236,6 @@ assert.strictEqual(hostingConfig.public, 'public', 'Firebase hosting deve servir
 const hasCatchAllRewrite = (hostingConfig.rewrites || []).some(r => r.source === '**' || r.source === '/*' || r.source === '/sitemap.xml' || r.source === '/robots.txt');
 assert.strictEqual(hasCatchAllRewrite, false, 'Firebase hosting não deve ter regras catch-all ou interceptação de arquivos estáticos da raiz');
 
-console.log('10. ✓ SEO & Crawling: sitemap.xml e robots.txt validados com protocolo sitemaps.org, rotas oficiais, lastmod 2026-11-16 e conformidade Firebase.');
+console.log('11. ✓ SEO & Crawling: sitemap.xml e robots.txt validados com 7 rotas canônicas e conformidade Firebase.');
 
 console.log('\n=== TODAS AS VERIFICAÇÕES PASSARAM COM 100% DE SUCESSO! ===');

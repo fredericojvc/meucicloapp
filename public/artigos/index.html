@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artigos &amp; Guias Práticos • Ciência da Aprendizagem e Preparação | Meu Ciclo</title>
+  <meta name="description" content="Artigos técnicos, ensaios e reflexões sobre ciência da aprendizagem, memória ativa, repetição espaçada e preparação de alta performance para vestibulares e concursos.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://meuciclo.app.br/artigos/">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://meuciclo.app.br/artigos/">
+  <meta property="og:title" content="Artigos &amp; Guias Práticos • Meu Ciclo">
+  <meta property="og:description" content="Reflexões técnicas sobre ciência da aprendizagem, memória ativa e preparação de longo prazo.">
+  <meta property="og:image" content="https://meuciclo.app.br/images/artigo-terceirizar-mente-ia.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+
+  <!-- Favicon Oficial -->
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --brand-navy-950: #060D1A;
+      --brand-navy-900: #0A1628;
+      --brand-navy-850: #0E213D;
+      --brand-navy-800: #142E54;
+      --brand-navy-700: #1E3E6D;
+      
+      --gold-primary: #C59B27;
+      --gold-light: #E5C365;
+      --gold-surface: #FEF9EB;
+      --gold-border: #E8D296;
+
+      --blue-accent: #2563EB;
+      --blue-hover: #1D4ED8;
+      --blue-subtle: #EFF6FF;
+
+      --emerald-500: #10B981;
+      --emerald-50: #ECFDF5;
+      --emerald-text: #065F46;
+
+      --slate-900: #0F172A;
+      --slate-800: #1E293B;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748B;
+      --slate-400: #94A3B8;
+      --slate-300: #CBD5E1;
+      --slate-200: #E2E8F0;
+      --slate-100: #F1F5F9;
+      --slate-50: #F8FAFC;
+      --white: #FFFFFF;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+
+      --shadow-card: 0 4px 12px -2px rgba(10, 22, 40, 0.05), 0 2px 6px -1px rgba(10, 22, 40, 0.03);
+      --shadow-product: 0 20px 40px -12px rgba(10, 22, 40, 0.12), 0 0 0 1px rgba(10, 22, 40, 0.06);
+
+      --container-max: 1180px;
+      --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--slate-50);
+      color: var(--slate-800);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Header Nav */
+    .header-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      height: 68px;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+      color: var(--brand-navy-950);
+      font-weight: 900;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+      flex-shrink: 0;
+    }
+
+    .brand-icon-svg {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+
+    .nav-menu {
+      display: none;
+      list-style: none;
+      gap: 0.65rem;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--slate-600);
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 0.35rem 0.5rem;
+      border-radius: var(--radius-sm);
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      white-space: nowrap;
+      line-height: 1.2;
+    }
+
+    .nav-link:hover {
+      color: var(--brand-navy-950);
+      background: var(--slate-100);
+    }
+
+    .nav-link.active {
+      color: var(--blue-accent);
+      background: var(--blue-subtle);
+    }
+
+    .nav-link-hub {
+      background: var(--gold-surface);
+      color: #8C6D15 !important;
+      border: 1px solid var(--gold-border);
+      font-weight: 700;
+      padding: 0.3rem 0.55rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 1px 3px rgba(197, 155, 39, 0.15);
+      margin-left: 0.2rem;
+    }
+
+    .nav-link-hub:hover {
+      background: #FEF08A;
+      border-color: #CA8A04;
+      transform: translateY(-1px);
+    }
+
+    .nav-pill-radar {
+      background: var(--gold-primary);
+      color: var(--brand-navy-950);
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 0.1rem 0.35rem;
+      border-radius: var(--radius-full);
+      letter-spacing: 0.04em;
+    }
+
+    /* Dropdown Desktop */
+    .nav-dropdown {
+      position: relative;
+    }
+
+    .nav-dropdown-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .dropdown-chevron {
+      transition: transform 0.2s ease;
+      stroke: currentColor;
+      margin-left: 0.15rem;
+    }
+
+    .nav-dropdown:hover .dropdown-chevron,
+    .nav-dropdown.active .dropdown-chevron {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 0.5rem;
+      background: var(--white);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 25px -5px rgba(10, 22, 40, 0.12), 0 0 0 1px rgba(10, 22, 40, 0.05);
+      padding: 0.45rem 0;
+      min-width: 210px;
+      list-style: none;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-6px);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1050;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu,
+    .nav-dropdown.active .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-item {
+      display: block;
+      padding: 0.6rem 1.1rem;
+      color: var(--slate-700);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+      background: var(--slate-100);
+      color: var(--brand-navy-950);
+      padding-left: 1.35rem;
+    }
+
+    .nav-divider {
+      width: 1px;
+      height: 24px;
+      background: var(--border-subtle);
+      margin: 0 0.2rem 0 0.35rem;
+      flex-shrink: 0;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      flex-shrink: 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-family: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid transparent;
+      padding: 0.65rem 1.25rem;
+      font-size: 0.92rem;
+    }
+
+    .btn-gold {
+      background: linear-gradient(180deg, #F0D58C 0%, #C59B27 100%);
+      color: #060D1A;
+      box-shadow: 0 2px 8px rgba(197, 155, 39, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+      border: 1px solid #A88118;
+    }
+
+    .btn-gold:hover {
+      background: linear-gradient(180deg, #FDE68A 0%, #D4A82F 100%);
+      box-shadow: 0 4px 14px rgba(197, 155, 39, 0.45);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--brand-navy-850);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--brand-navy-950);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--slate-800);
+      border-color: var(--border-strong);
+    }
+
+    .btn-secondary:hover {
+      background: var(--slate-100);
+      border-color: var(--slate-400);
+    }
+
+    .apple-menu-btn {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      width: 44px;
+      height: 44px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      z-index: 1100;
+      border-radius: var(--radius-sm);
+    }
+
+    .apple-menu-btn span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background-color: var(--brand-navy-950);
+      border-radius: 2px;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+    }
+
+    .apple-menu-btn.active span:first-child {
+      transform: translateY(4px) rotate(45deg);
+    }
+
+    .apple-menu-btn.active span:last-child {
+      transform: translateY(-4px) rotate(-45deg);
+    }
+
+    .mobile-menu-overlay {
+      position: fixed;
+      top: 68px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: calc(100dvh - 68px);
+      background-color: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(20px);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.25rem 1.25rem 2rem 1.25rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow-y: auto;
+    }
+
+    .mobile-menu-overlay.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .mobile-nav-list li a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--slate-800);
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 0.7rem 0.25rem;
+      border-bottom: 1px solid var(--slate-100);
+    }
+
+    .mobile-accordion-item {
+      width: 100%;
+      border-bottom: 1px solid var(--slate-100);
+    }
+
+    .mobile-accordion-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background: transparent;
+      border: none;
+      color: var(--slate-800);
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 0.75rem 0.25rem;
+      cursor: pointer;
+    }
+
+    .mobile-accordion-chevron {
+      transition: transform 0.25s ease;
+      stroke: currentColor;
+    }
+
+    .mobile-accordion-item.open .mobile-accordion-chevron {
+      transform: rotate(180deg);
+    }
+
+    .mobile-submenu {
+      list-style: none;
+      margin: 0;
+      padding: 0 0 0.5rem 0.75rem;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+    }
+
+    .mobile-accordion-item.open .mobile-submenu {
+      max-height: 300px;
+      opacity: 1;
+    }
+
+    .mobile-sublink {
+      font-size: 0.95rem !important;
+      font-weight: 600 !important;
+      color: var(--slate-600) !important;
+      padding: 0.55rem 0.25rem !important;
+      border-bottom: 1px dashed var(--slate-100) !important;
+    }
+
+    .mobile-nav-list li a.highlight-concursos {
+      color: #8C6D15;
+      background: var(--gold-surface);
+      border-radius: var(--radius-md);
+      padding: 0.75rem 0.85rem;
+      border-bottom: none;
+      margin: 0.35rem 0;
+    }
+
+    @media (min-width: 1080px) {
+      .nav-menu { display: flex; }
+      .apple-menu-btn, .mobile-menu-overlay { display: none !important; }
+    }
+
+    @media (max-width: 1079px) {
+      .nav-menu, .nav-divider { display: none !important; }
+      .nav-actions .btn-play { display: none; }
+      .apple-menu-btn { display: flex; }
+    }
+
+    /* Page Header */
+    .page-header {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+      padding: 3.5rem 0 3rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--slate-500);
+      margin-bottom: 1.25rem;
+    }
+
+    .breadcrumb a {
+      color: var(--slate-600);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--blue-accent);
+    }
+
+    .section-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.35rem 0.8rem;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-tag-gold {
+      background: var(--gold-surface);
+      color: #8C6D15;
+      border: 1px solid var(--gold-border);
+    }
+
+    .page-header h1 {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      font-weight: 900;
+      color: var(--brand-navy-950);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .lead-text {
+      font-size: 1.15rem;
+      color: var(--slate-600);
+      line-height: 1.6;
+      max-width: 760px;
+    }
+
+    /* Main Section */
+    .main-section {
+      padding: 3.5rem 0 5rem 0;
+    }
+
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.25rem;
+    }
+
+    .editorial-featured-card {
+      background: var(--white);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      display: grid;
+      grid-template-columns: 1fr;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    @media (min-width: 860px) {
+      .editorial-featured-card {
+        grid-template-columns: 1.1fr 1fr;
+        align-items: stretch;
+      }
+    }
+
+    .editorial-featured-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-product);
+      border-color: var(--gold-border);
+    }
+
+    .editorial-card-thumb {
+      background: var(--brand-navy-950);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 260px;
+    }
+
+    .editorial-card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .editorial-featured-card:hover .editorial-card-thumb img {
+      transform: scale(1.03);
+    }
+
+    .editorial-card-body {
+      padding: 2.5rem 2.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .editorial-card-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #8C6D15;
+      background: var(--gold-surface);
+      border: 1px solid var(--gold-border);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      display: inline-block;
+      margin-bottom: 1rem;
+      letter-spacing: 0.04em;
+      align-self: flex-start;
+    }
+
+    .editorial-card-title {
+      font-size: 1.55rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 0.95rem;
+      color: var(--brand-navy-950);
+      letter-spacing: -0.01em;
+    }
+
+    .editorial-card-title a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .editorial-card-title a:hover {
+      color: var(--blue-accent);
+    }
+
+    .editorial-card-excerpt {
+      font-size: 0.98rem;
+      color: var(--slate-600);
+      line-height: 1.65;
+      margin-bottom: 1.75rem;
+    }
+
+    .editorial-card-footer {
+      margin-top: auto;
+    }
+
+    .editorial-read-btn {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--blue-accent);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: gap 0.2s ease, color 0.15s ease;
+    }
+
+    .editorial-read-btn:hover {
+      color: var(--blue-hover);
+      gap: 0.6rem;
+    }
+
+    /* Bottom CTA Banner */
+    .bottom-cta-banner {
+      background: linear-gradient(135deg, var(--brand-navy-950) 0%, #112442 100%);
+      border-radius: var(--radius-xl);
+      padding: 3rem 2rem;
+      text-align: center;
+      color: var(--white);
+      margin-top: 4rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 40px -10px rgba(6, 13, 26, 0.4);
+    }
+
+    .bottom-cta-banner h3 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+
+    .bottom-cta-banner p {
+      color: var(--slate-300);
+      max-width: 620px;
+      margin: 0 auto 2rem auto;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #0B132B;
+      color: var(--slate-400);
+      padding: 4rem 0 2.5rem 0;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-flex {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.25rem;
+    }
+
+    @media (min-width: 1080px) {
+      .footer-flex {
+        grid-template-columns: 1.3fr 1fr 1.05fr 1.05fr;
+      }
+    }
+
+    .footer-col h5 {
+      color: var(--white);
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      font-weight: 800;
+    }
+
+    .footer-col a {
+      color: var(--slate-300);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .footer-col a:hover {
+      color: var(--white);
+    }
+
+    .footer-meta-bar {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-size: 0.82rem;
+      color: var(--slate-500);
+    }
+
+    @media (min-width: 768px) {
+      .footer-meta-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .footer-meta-links {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-meta-links a {
+      color: var(--slate-400);
+      text-decoration: none;
+    }
+
+    .footer-meta-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .meta-sep {
+      color: var(--slate-600);
+    }
+
+    /* QR Modal */
+    .qr-modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(6, 13, 26, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .qr-modal-backdrop.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .qr-modal-card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      padding: 2.25rem 2rem;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    .qr-modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: transparent;
+      border: none;
+      font-size: 1.75rem;
+      color: var(--slate-400);
+      cursor: pointer;
+      line-height: 1;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+
+    .qr-modal-close:hover {
+      color: var(--brand-navy-950);
+      background: var(--slate-100);
+    }
+
+    .qr-modal-frame {
+      background: var(--slate-50);
+      border: 2px dashed var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      margin: 1.5rem auto 1.25rem auto;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Nav -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <a href="/" class="brand-logo" aria-label="Página inicial Meu Ciclo">
+        <svg class="brand-icon-svg" viewBox="0 0 100 100" fill="none">
+          <rect width="100" height="100" rx="20" fill="#0E213D"/>
+          <path d="M 50 16 A 34 34 0 1 1 20 62" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+          <polygon points="50,4 66,22 44,28" fill="#FFFFFF"/>
+          <rect x="42" y="38" width="16" height="24" fill="#FFFFFF"/>
+          <path d="M 42 56 L 50 50 L 58 56 L 58 64 L 50 58 L 42 64 Z" fill="#C59B27"/>
+        </svg>
+        <span>Meu Ciclo</span>
+      </a>
+
+      <!-- Menu Desktop (>= 1080px) -->
+      <nav aria-label="Navegação dos Módulos do Aplicativo">
+        <ul class="nav-menu">
+          <!-- Dropdown Funcionalidades -->
+          <li class="nav-dropdown" id="nav-dropdown-func">
+            <button type="button" class="nav-link nav-dropdown-btn" id="btn-dropdown-func" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-func-menu">
+              <span>Funcionalidades</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <ul class="dropdown-menu" id="dropdown-func-menu" role="menu" aria-labelledby="btn-dropdown-func">
+              <li role="none"><a href="/#tempo-meta" class="dropdown-item" role="menuitem">Tempo &amp; Meta</a></li>
+              <li role="none"><a href="/#edital" class="dropdown-item" role="menuitem">Edital</a></li>
+              <li role="none"><a href="/#ciclo" class="dropdown-item" role="menuitem">Ciclo &amp; Revisões</a></li>
+              <li role="none"><a href="/#treino" class="dropdown-item" role="menuitem">Treino &amp; TAF</a></li>
+              <li role="none"><a href="/#questoes" class="dropdown-item" role="menuitem">Questões &amp; Simulados</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/#planos" class="nav-link">Planos</a></li>
+          <li><a href="/artigos/" class="nav-link active">Artigos</a></li>
+          <li>
+            <a href="/concursos" class="nav-link nav-link-hub" title="Hub Radar de Concursos e Provas (72h)">
+              <span>Radar 72h</span>
+              <span class="nav-pill-radar">NOVO</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-divider"></div>
+
+      <div class="nav-actions">
+        <a href="#play" class="btn btn-gold btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.meuciclo.app">
+          Começar 7 Dias Grátis
+        </a>
+
+        <!-- Botão Sanduíche Minimalista Padrão Apple (< 1080px) -->
+        <button id="apple-menu-toggle" class="apple-menu-btn" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gaveta Mobile (< 1080px) -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li class="mobile-accordion-item">
+        <button type="button" class="mobile-accordion-btn" id="mobile-accordion-func" aria-expanded="false" aria-controls="mobile-func-submenu">
+          <span>Funcionalidades</span>
+          <svg class="mobile-accordion-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <ul class="mobile-submenu" id="mobile-func-submenu">
+          <li><a href="/#tempo-meta" class="mobile-menu-link mobile-sublink">Tempo &amp; Meta</a></li>
+          <li><a href="/#edital" class="mobile-menu-link mobile-sublink">Edital</a></li>
+          <li><a href="/#ciclo" class="mobile-menu-link mobile-sublink">Ciclo &amp; Revisões</a></li>
+          <li><a href="/#treino" class="mobile-menu-link mobile-sublink">Treino &amp; TAF</a></li>
+          <li><a href="/#questoes" class="mobile-menu-link mobile-sublink">Questões &amp; Simulados</a></li>
+        </ul>
+      </li>
+      <li><a href="/#planos" class="mobile-menu-link">Planos</a></li>
+      <li><a href="/artigos/" class="mobile-menu-link" style="color: var(--blue-accent); font-weight: 800;">Artigos</a></li>
+      <li>
+        <a href="/concursos" class="mobile-menu-link highlight-concursos">
+          <span>Radar Concursos &amp; Provas</span>
+          <span class="nav-pill-radar">72H ➔</span>
+        </a>
+      </li>
+    </ul>
+
+    <div style="margin-top: auto; padding-top: 1.25rem; width: 100%; box-sizing: border-box; text-align: center;">
+      <a href="#play" class="btn btn-gold btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.meuciclo.app" style="width: 100%; max-width: 100%; height: 50px; font-size: 0.95rem; box-sizing: border-box;">
+        COMEÇAR 7 DIAS GRÁTIS
+      </a>
+      <div style="text-align: center; font-size: 0.78rem; color: var(--slate-500); margin-top: 0.65rem; line-height: 1.4; padding: 0 0.5rem; box-sizing: border-box;">
+        Cancelamento em 1 clique direto na Google Play.<br>Sem fidelidade ou cobrança surpresa.
+      </div>
+    </div>
+  </div>
+
+  <!-- Cabeçalho da Página -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">&larr; Início</a>
+        <span>/</span>
+        <span class="active">Artigos &amp; Guias Práticos</span>
+      </div>
+
+      <div class="section-tag section-tag-gold">
+        ENGENHARIA DO ESTUDO
+      </div>
+
+      <h1>Artigos &amp; Guias Práticos</h1>
+      <p class="lead-text">
+        Reflexões técnicas sobre ciência da aprendizagem, memória ativa e preparação de longo prazo. Metodologias aplicadas para quem busca alta performance intelectual e autonomia.
+      </p>
+    </div>
+  </section>
+
+  <!-- Seção Principal de Artigos -->
+  <main class="main-section">
+    <div class="container">
+      <div class="editorial-grid">
+        <!-- Artigo 01 (Card de Destaque) -->
+        <article class="editorial-featured-card">
+          <div class="editorial-card-thumb">
+            <img src="/images/artigo-terceirizar-mente-ia.jpg" alt="Ilustração do artigo: Piloto Matt Brown em cabine noturna com representação do cérebro e livros" loading="lazy" width="600" height="340">
+          </div>
+          <div class="editorial-card-body">
+            <div class="editorial-card-tag">
+              CIÊNCIA DA APRENDIZAGEM &bull; 5 MIN DE LEITURA
+            </div>
+            <h2 class="editorial-card-title">
+              <a href="/artigos/terceirizar-mente-inteligencia-artificial.html">
+                O perigo silencioso de terceirizar a mente do seu filho para a inteligência artificial
+              </a>
+            </h2>
+            <p class="editorial-card-excerpt">
+              Ao receber a informação mastigada por um chat, o estudante perde o hábito da leitura, a retenção na memória e o julgamento crítico. Entenda por que o verdadeiro improviso exige repertório.
+            </p>
+            <div class="editorial-card-footer">
+              <a href="/artigos/terceirizar-mente-inteligencia-artificial.html" class="editorial-read-btn">
+                Ler artigo completo &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Banner CTA Inferior -->
+      <div class="bottom-cta-banner">
+        <h3>Pronto para construir repertório real?</h3>
+        <p>
+          O Meu Ciclo organiza seus editais e estudos livres, calcula suas horas líquidas reais e automatiza suas revisões periódicas. Experimente grátis.
+        </p>
+        <a href="#play" class="btn btn-gold btn-play" data-play-url="https://play.google.com/store/apps/details?id=com.meuciclo.app" style="height: 52px; padding: 0 2rem; font-size: 1rem;">
+          Começar 7 Dias Grátis na Google Play
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div class="footer-col" style="max-width: 320px;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <svg class="brand-icon-svg" style="width: 24px; height: 24px;" viewBox="0 0 100 100" fill="none">
+            <rect width="100" height="100" rx="20" fill="#142E54"/>
+            <path d="M 50 16 A 34 34 0 1 1 20 62" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+            <polygon points="50,4 66,22 44,28" fill="#FFFFFF"/>
+            <rect x="42" y="38" width="16" height="24" fill="#FFFFFF"/>
+            <path d="M 42 56 L 50 50 L 58 56 L 58 64 L 50 58 L 42 64 Z" fill="#C59B27"/>
+          </svg>
+          <span style="font-weight: 800; color: var(--white); font-size: 1.1rem;">Meu Ciclo</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--slate-400); line-height: 1.5;">
+          A engenharia da sua preparação. Desenvolvido para pessoas de alta performance.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Canais &amp; Recursos</h5>
+        <div style="display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.88rem;">
+          <div>Radar: <a href="/concursos" style="color: var(--gold-light); font-weight: 600;">Concursos &amp; Provas (72h)</a></div>
+          <div>Artigos: <a href="/artigos/" style="color: var(--gold-light); font-weight: 600;">Artigos &amp; Guias</a></div>
+          <div>Contato: <a href="mailto:contato@meuciclo.app.br">contato@meuciclo.app.br</a></div>
+          <div>Suporte: <a href="mailto:suporte@meuciclo.app.br">suporte@meuciclo.app.br</a></div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Exclusão de Dados</h5>
+        <p style="font-size: 0.85rem; color: var(--slate-400); line-height: 1.5;">
+          Eliminação total e revogação de conta.<br>
+          Arquitetura Local-First (SQLite/Room no aparelho).<br>
+          <a href="/exclusao-de-dados" style="color: var(--gold-light); font-weight: 600;">Exclusão de Conta &amp; Dados</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Privacidade &amp; Tecnologia</h5>
+        <p style="font-size: 0.85rem; color: var(--slate-400); line-height: 1.5;">
+          Sem anúncios intrusivos. Google Play Billing.<br>
+          <a href="/politica-de-privacidade" style="color: var(--gold-light); font-weight: 600;">Declaração de Privacidade</a><br>
+          <a href="/termos-de-uso" style="color: var(--gold-light); font-weight: 600;">Termos de Uso</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Barra Discreta de Metadados -->
+    <div class="container footer-meta-bar">
+      <div class="footer-meta-copy">
+        &copy; 2026 Meu Ciclo. Todos os direitos reservados.
+      </div>
+      <div class="footer-meta-links">
+        <a href="/politica-de-privacidade">Política de Privacidade</a>
+        <span class="meta-sep">|</span>
+        <a href="/termos-de-uso">Termos de Uso</a>
+        <span class="meta-sep">|</span>
+        <a href="/exclusao-de-dados">Exclusão de Dados</a>
+        <span class="meta-sep">|</span>
+        <a href="mailto:contato@meuciclo.app.br">Fale Conosco</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal QR Code -->
+  <div id="qr-modal" class="qr-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title">
+    <div class="qr-modal-card">
+      <button id="qr-modal-close-btn" class="qr-modal-close" aria-label="Fechar modal">&times;</button>
+      
+      <div class="section-tag section-tag-gold" style="margin-bottom: 0.5rem; display: inline-block;">
+        Instale no Smartphone
+      </div>
+      
+      <h3 id="qr-modal-title" style="font-size: 1.35rem; color: var(--brand-navy-950); margin-bottom: 0.4rem; font-weight: 800;">
+        Abra o Meu Ciclo no seu celular
+      </h3>
+      
+      <p style="font-size: 0.88rem; color: var(--slate-600); margin: 0 auto; line-height: 1.45; max-width: 340px;">
+        Aponte a câmera do seu smartphone Android para o QR Code abaixo e inicie seus <strong>7 dias grátis</strong> na Google Play.
+      </p>
+
+      <div class="qr-modal-frame">
+        <img src="/qrcode-play.svg" alt="QR Code para download do app Meu Ciclo na Google Play Store - Ciclo de estudos e TAF" width="180" height="180">
+        <div style="font-size: 0.76rem; font-weight: 700; color: #166534; margin-top: 0.65rem; display: flex; align-items: center; gap: 0.35rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Compatível com qualquer Android
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.65rem; margin-top: 0.25rem;">
+        <a id="qr-browser-direct-link" href="https://play.google.com/store/apps/details?id=com.meuciclo.app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="height: 44px; font-size: 0.85rem; width: 100%; box-sizing: border-box;">
+          Ou abrir Google Play no navegador do PC &rarr;
+        </a>
+        <span style="font-size: 0.75rem; color: var(--slate-500); line-height: 1.3;">
+          Cancelamento em 1 clique direto na Google Play. Sem fidelidade.
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.meuciclo.app";
+      const qrModal = document.getElementById('qr-modal');
+      const qrModalClose = document.getElementById('qr-modal-close-btn');
+      const qrDirectLink = document.getElementById('qr-browser-direct-link');
+
+      function isDesktopScreen() { return window.innerWidth > 992; }
+
+      function openQrModal(target) {
+        if (!qrModal) return;
+        if (qrDirectLink) qrDirectLink.href = target || PLAY_STORE_URL;
+        qrModal.classList.add('active');
+        qrModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeQrModal() {
+        if (!qrModal) return;
+        qrModal.classList.remove('active');
+        qrModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      if (qrModalClose) qrModalClose.addEventListener('click', closeQrModal);
+      if (qrModal) {
+        qrModal.addEventListener('click', function(e) {
+          if (e.target === qrModal) closeQrModal();
+        });
+      }
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && qrModal && qrModal.classList.contains('active')) closeQrModal();
+      });
+
+      document.querySelectorAll('.btn-play').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = this.getAttribute('data-play-url') || PLAY_STORE_URL;
+          if (isDesktopScreen()) {
+            openQrModal(target);
+          } else {
+            window.open(target, '_blank', 'noopener,noreferrer');
+          }
+        });
+      });
+
+      // Menu Mobile Toggle
+      const menuBtn = document.getElementById('apple-menu-toggle');
+      const mobileOverlay = document.getElementById('mobile-menu-overlay');
+      const mobileLinks = document.querySelectorAll('.mobile-menu-link');
+
+      if (menuBtn && mobileOverlay) {
+        menuBtn.addEventListener('click', function() {
+          const isOpen = mobileOverlay.classList.toggle('open');
+          menuBtn.classList.toggle('active', isOpen);
+          menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          mobileOverlay.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+          document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileOverlay.classList.remove('open');
+            menuBtn.classList.remove('active');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            mobileOverlay.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+          });
+        });
+      }
+
+      // Dropdown Desktop Funcionalidades
+      const navDropdown = document.getElementById('nav-dropdown-func');
+      const navDropdownBtn = document.getElementById('btn-dropdown-func');
+      if (navDropdown && navDropdownBtn) {
+        navDropdownBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const isOpen = navDropdown.classList.toggle('active');
+          navDropdownBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        document.addEventListener('click', function(e) {
+          if (!navDropdown.contains(e.target)) {
+            navDropdown.classList.remove('active');
+            navDropdownBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+
+      // Acordeão Mobile Funcionalidades
+      const mobileAccordionBtn = document.getElementById('mobile-accordion-func');
+      const mobileAccordionItem = mobileAccordionBtn ? mobileAccordionBtn.closest('.mobile-accordion-item') : null;
+      if (mobileAccordionBtn && mobileAccordionItem) {
+        mobileAccordionBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isOpen = mobileAccordionItem.classList.toggle('open');
+          mobileAccordionBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
