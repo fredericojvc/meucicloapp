@@ -266,4 +266,43 @@ publicHtmlFiles.forEach(file => {
 
 console.log('12. ✓ Telemetria & Analytics: Google Tag (GTM-WHLK3Q8M) e rastreamento de cliques validados em todas as 8 páginas.');
 
+// 9. Verificação de Favicon, Ícones e Web Manifest
+const expectedIconFiles = [
+  'public/favicon.ico',
+  'public/favicon.svg',
+  'public/favicon-96x96.png',
+  'public/apple-touch-icon.png',
+  'public/icon-192.png',
+  'public/icon-512.png',
+  'public/site.webmanifest'
+];
+
+expectedIconFiles.forEach(file => {
+  assert.ok(fs.existsSync(file), `Arquivo de ícone obrigatório deve existir: ${file}`);
+  assert.ok(fs.statSync(file).size > 0, `Arquivo de ícone não pode ser vazio: ${file}`);
+});
+
+// Validação do site.webmanifest
+const manifestContent = JSON.parse(fs.readFileSync('public/site.webmanifest', 'utf8'));
+assert.strictEqual(manifestContent.name, 'Meu Ciclo', 'Manifest name deve ser "Meu Ciclo"');
+assert.strictEqual(manifestContent.short_name, 'Meu Ciclo', 'Manifest short_name deve ser "Meu Ciclo"');
+assert.strictEqual(manifestContent.theme_color, '#0B192C', 'Manifest theme_color deve ser "#0B192C"');
+assert.strictEqual(manifestContent.background_color, '#FFFFFF', 'Manifest background_color deve ser "#FFFFFF"');
+assert.ok(Array.isArray(manifestContent.icons) && manifestContent.icons.length >= 2, 'Manifest deve conter ao menos 2 ícones');
+const iconSizes = manifestContent.icons.map(i => i.sizes);
+assert.ok(iconSizes.includes('192x192'), 'Manifest deve declarar ícone 192x192');
+assert.ok(iconSizes.includes('512x512'), 'Manifest deve declarar ícone 512x512');
+
+// Validação das tags no <head> de todos os arquivos HTML públicos
+publicHtmlFiles.forEach(file => {
+  const fileContent = fs.readFileSync(file, 'utf8');
+  assert.ok(fileContent.includes('rel="icon"'), `${file} deve conter link rel="icon"`);
+  assert.ok(fileContent.includes('rel="shortcut icon"'), `${file} deve conter link rel="shortcut icon"`);
+  assert.ok(fileContent.includes('rel="apple-touch-icon"'), `${file} deve conter link rel="apple-touch-icon"`);
+  assert.ok(fileContent.includes('rel="manifest"'), `${file} deve conter link rel="manifest"`);
+  assert.ok(fileContent.includes('content="#0B192C"'), `${file} deve conter theme-color "#0B192C"`);
+});
+
+console.log('13. ✓ Favicon & Web Manifest: Arquivos físicos, manifest JSON e tags <head> validados em todas as páginas.');
+
 console.log('\n=== TODAS AS VERIFICAÇÕES PASSARAM COM 100% DE SUCESSO! ===');
