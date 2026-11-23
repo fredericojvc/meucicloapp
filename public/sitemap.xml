@@ -14,8 +14,14 @@
   </url>
   <url>
     <loc>https://meuciclo.app.br/artigos/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meuciclo.app.br/artigos/releitura-marca-texto-sabotando-estudos</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>

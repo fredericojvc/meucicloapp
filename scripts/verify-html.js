@@ -195,7 +195,15 @@ assert.ok(artigo01Html.includes('"@type": "Article"') || artigo01Html.includes('
 assert.ok(artigo01Html.includes('O improviso com conteúdo é a fórmula do sucesso. O improviso sem conteúdo é o fracasso garantido.'), 'Artigo deve conter a citação de destaque');
 assert.ok(artigo01Html.includes('Como você vai testar o que o seu filho realmente aprendeu hoje?'), 'Artigo deve conter a pergunta final');
 assert.ok(artigo01Html.includes('Construa repertório real, sem atalhos ilusórios.'), 'Artigo deve conter o card de conversão');
-console.log('10. ✓ Área Editorial: Vitrine na home, índice /artigos/ e Artigo 01 completos e validados.');
+
+// 6.3 Página do Artigo 02 Completo
+assert.ok(fs.existsSync('public/artigos/releitura-marca-texto-sabotando-estudos.html'), 'Arquivo do artigo 02 deve existir');
+const artigo02Html = fs.readFileSync('public/artigos/releitura-marca-texto-sabotando-estudos.html', 'utf8');
+assert.ok(artigo02Html.includes('Por que horas de releitura e marca-texto estão sabotando os estudos do seu filho'), 'Artigo 02 deve conter título H1 exato');
+assert.ok(artigo02Html.includes('Frederico Juliano'), 'Artigo 02 deve conter autor Frederico Juliano');
+assert.ok(artigo02Html.includes('"@type": "Article"') || artigo02Html.includes('"@type":"Article"'), 'Artigo 02 deve conter Schema.org Article');
+assert.ok(artigo02Html.includes('Troque a releitura passiva pela ciência da retenção'), 'Artigo 02 deve conter o card de conversão');
+console.log('10. ✓ Área Editorial: Vitrine na home, índice /artigos/ e Artigos 01 e 02 completos e validados.');
 
 // 7. Verificação de SEO: sitemap.xml e robots.txt
 const { XMLValidator } = require('fast-xml-parser');
@@ -210,6 +218,7 @@ const expectedRoutes = [
   'https://meuciclo.app.br/',
   'https://meuciclo.app.br/concursos',
   'https://meuciclo.app.br/artigos/',
+  'https://meuciclo.app.br/artigos/releitura-marca-texto-sabotando-estudos',
   'https://meuciclo.app.br/artigos/terceirizar-mente-inteligencia-artificial',
   'https://meuciclo.app.br/politica-de-privacidade',
   'https://meuciclo.app.br/termos-de-uso',
@@ -236,13 +245,14 @@ assert.strictEqual(hostingConfig.public, 'public', 'Firebase hosting deve servir
 const hasCatchAllRewrite = (hostingConfig.rewrites || []).some(r => r.source === '**' || r.source === '/*' || r.source === '/sitemap.xml' || r.source === '/robots.txt');
 assert.strictEqual(hasCatchAllRewrite, false, 'Firebase hosting não deve ter regras catch-all ou interceptação de arquivos estáticos da raiz');
 
-console.log('11. ✓ SEO & Crawling: sitemap.xml e robots.txt validados com 7 rotas canônicas e conformidade Firebase.');
+console.log('11. ✓ SEO & Crawling: sitemap.xml e robots.txt validados com 8 rotas canônicas e conformidade Firebase.');
 
 // 8. Verificação de Telemetria: Google Tag (GTM-WHLK3Q8M) e Rastreamento de Cliques
 const publicHtmlFiles = [
   'public/index.html',
   'public/concursos.html',
   'public/artigos/index.html',
+  'public/artigos/releitura-marca-texto-sabotando-estudos.html',
   'public/artigos/terceirizar-mente-inteligencia-artificial.html',
   'public/politica-de-privacidade.html',
   'public/termos-de-uso.html',
